@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J'ai supprimé Notion pour ça (Claude Code + Obsidian) — meydeey KB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="../index.html">meydeey<span class="logo-accent"> KB</span></a>
+    <nav class="main-nav">
+      <a href="../index.html"       class="nav-link">Accueil</a>
+      <a href="../categories.html"  class="nav-link">Catégories</a>
+      <a href="../videos.html"      class="nav-link">Vidéothèque</a>
+      <a href="../ouvertures.html"  class="nav-link">Ouvertures</a>
+      <a href="../demo.html"        class="nav-link">Démo</a>
+    </nav>
+    <div class="search-wrap">
+      <input id="global-search" type="search" placeholder="Rechercher…" autocomplete="off">
+      <div id="search-results" class="search-dropdown hidden"></div>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="video-hero">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="../index.html">Accueil</a>
+      <span>›</span>
+      <a href="../categories.html#claude-code">Claude Code — Tutos</a>
+      <span>›</span>
+      <span>Obsidian GodMode</span>
+    </div>
+    <div class="video-meta-badges">
+      <span class="badge cat-badge cat-5">Claude Code</span>
+      <span class="badge badge-green">✓ Analysée</span>
+      <span class="badge level-avance">Avancé</span>
+      <span class="badge" style="background:rgba(255,255,255,.08)">⏱ 33:48</span>
+      <span class="badge" style="background:rgba(255,255,255,.08)">2026-04-20</span>
+    </div>
+    <h1 class="video-title">J'ai supprimé Notion pour ça (Claude Code + Obsidian)</h1>
+    <p class="video-summary-hero">Obsidian GodMode : générer 1 000+ pages interconnectées sur un seul prompt Claude Code. RAG jetable vs wiki compilé, fact-checking intégré, 7 agents en parallèle, souveraineté totale en local.</p>
+    <div class="youtube-cta">
+      <a href="https://www.youtube.com/watch?v=555m6SpTGnU" target="_blank" rel="noopener" class="btn-youtube">▶ Voir sur YouTube</a>
+      <span class="youtube-url-text">youtube.com/watch?v=555m6SpTGnU</span>
+    </div>
+  </div>
+</div>
+
+<!-- TABS -->
+<div class="tab-nav-sticky">
+  <div class="container">
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="resume">Résumé</button>
+      <button class="tab-btn" data-tab="analyse">Analyse</button>
+      <button class="tab-btn" data-tab="transcription">Transcription</button>
+      <button class="tab-btn" data-tab="fiches">Fiches</button>
+      <button class="tab-btn" data-tab="passages">Passages clés</button>
+    </div>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<div class="container content-with-sidebar" style="padding-top:var(--gap-xl);padding-bottom:var(--gap-2xl);">
+
+  <main>
+
+    <!-- TAB 1 — RÉSUMÉ -->
+    <div class="tab-panel active" id="tab-resume">
+
+      <p style="font-size:1.05rem;line-height:1.75;margin-bottom:var(--gap-xl)">
+        Le protocole Obsidian GodMode permet de générer un vault de 500 à 1 000+ pages markdown entièrement interconnectées à partir d'un seul prompt Claude Code. Contrairement au RAG traditionnel (recalculé à chaque requête), le wiki compilé est produit une fois, navigable, sourcé et interrogeable — en local, sans aucun cloud.
+      </p>
+
+      <h2 class="section-title" style="margin-bottom:var(--gap-md)">Synthèse profonde</h2>
+
+      <p>La démonstration centrale est spectaculaire : un vault Obsidian déjà construit — 1 000+ pages, 10 000+ relations — généré avec un seul prompt et un protocole propriétaire. La comparaison avec un Obsidian créé en 2023 avec GPT-4 est parlante : le résultat d'avant est "de la merde" par rapport à ce que Claude Code Opus 4.7 produit en 2026.</p>
+
+      <p>Le cœur de l'argument repose sur l'opposition RAG vs wiki compilé, inspirée du "Pattern Karpathy" (Andrej Karpathy, cofondateur OpenAI) : <em>"Arrêtez de refaire du RAG jetable — laissez le LLM compiler une fois pour toutes dans un wiki structuré. Votre savoir doit bénéficier de l'effet cumulé, il ne doit pas se dissoudre à chaque requête."</em> En 2026, le RAG "c'est du McDonald" ; le wiki compilé "c'est la huitième merveille du monde."</p>
+
+      <p>La méthode GodMode se déroule en 3 phases. Phase pilote (40 pages, 1 cluster, 3 checkpoints humains) : bootstrap → cartographie → 8 pages pilote → rédaction complète → linking + MOC → audit qualité → débrief. Phase scale (500+ pages, multi-agents) : 7 agents en parallèle par batch, cross-referencing, fact-checking intégré via websearch. Phase consolidation : toutes les pages interconnectées, MOC global, audit final.</p>
+
+      <p>La souveraineté est un argument fort : Obsidian stocke tout en local en markdown. Pas de cloud, pas d'accès tiers. Les fichiers sont versionnables sous Git, portables, indépendants de l'outil. "Demain il y a peut-être un outil qui va remplacer Obsidian — si tu as ta structure, tes fichiers markdown, ils vont être répercutables."</p>
+
+      <p>Le système d'anti-hallucination est intégré au protocole : websearch sur les pages sensibles (personnes, dates, chiffres, controverses), maximum 2 requêtes par page, log des incertitudes dans <code>fact-check-log.md</code>, statut "to verify" si pas de source trouvée. Avec Opus 4.7, les hallucinations sont "quasi-supprimées" selon l'auteur.</p>
+
+      <h2 class="section-title" style="margin:var(--gap-xl) 0 var(--gap-md)">Méthode — Étapes</h2>
+      <ol class="steps-list">
+        <li>Installer Obsidian, créer un vault vide (dossier local)</li>
+        <li>Ouvrir Claude Code sur le dossier du vault (Warp, VS Code, ou terminal)</li>
+        <li>Copier le prompt GodMode (disponible en description / repo GitHub)</li>
+        <li>Remplir les variables : sujet, clusters, chemin vault, nombre de pages cibles</li>
+        <li>Lancer le pilote (40 pages, 1 cluster) — valider la qualité à chaque checkpoint</li>
+        <li>Ajuster le protocole selon le débrief, puis lancer le scale (7 agents en parallèle)</li>
+        <li>Attendre la consolidation finale — audit des liaisons cross-clusters</li>
+      </ol>
+
+      <h2 class="section-title" style="margin:var(--gap-xl) 0 var(--gap-md)">Citations notables</h2>
+      <blockquote>Le RAG aujourd'hui en 2026, c'est du McDonald. Par contre le wiki compilé, c'est ce que j'appelle la huitième merveille du monde.</blockquote>
+      <blockquote>Arrêtez de refaire du RAG jetable — laissez le LLM compiler une fois pour toutes dans un wiki structuré. Votre savoir doit bénéficier de l'effet cumulé. (Andrej Karpathy, 2024–2025)</blockquote>
+      <blockquote>Obsidian n'est qu'un outil. C'est juste une question de structure, de données. Si tu as ton architecture mémorielle et tes fichiers markdown, ils vont être répercutables.</blockquote>
+    </div>
+
+    <!-- TAB 2 — ANALYSE -->
+    <div class="tab-panel" id="tab-analyse">
+
+      <h2 class="section-title" style="margin-bottom:var(--gap-lg)">Concepts clés</h2>
+
+      <div class="concept-card">
+        <div class="concept-term">Obsidian GodMode</div>
+        <div class="concept-def">Protocole propriétaire pour générer un vault Obsidian de 500–1000+ pages entièrement interconnectées via Claude Code, en une seule session. Comprend : structure YAML normalisée, Wikilinks automatiques, fact-checking web intégré, MOC (Map of Content) par cluster, multi-agents en parallèle pour le scale.</div>
+        <div class="concept-why"><strong>Pourquoi c'est important :</strong> Remplace des semaines de documentation manuelle par quelques heures de génération supervisée. La base est verstonable, portable, interrogeable par n'importe quel LLM et peut être connectée à des agents IA spécialisés.</div>
+      </div>
+
+      <div class="concept-card">
+        <div class="concept-term">RAG jetable vs Wiki compilé</div>
+        <div class="concept-def">RAG (Retrieval-Augmented Generation) : à chaque requête, le système recompute le contexte depuis des sources dispersées — énergie gaspillée, non-navigable, non-cumulatif. Wiki compilé : généré une fois, structuré en clusters, navigable via graphe, interrogeable sans recalcul. L'effet cumulé est la différence clé : le savoir s'enrichit à chaque ajout au lieu de se dissoudre.</div>
+        <div class="concept-why"><strong>Pourquoi c'est important :</strong> En 2026, un concurrent avec un wiki compilé répond plus vite, mieux, avec moins de ressources. Le RAG est une dette de connaissance à chaque requête — le wiki compilé est un actif qui s'apprécie.</div>
+      </div>
+
+      <div class="concept-card">
+        <div class="concept-term">Pattern Karpathy</div>
+        <div class="concept-def">Principe formulé par Andrej Karpathy (cofondateur OpenAI, ex-directeur IA Tesla) : les LLMs ne doivent pas être utilisés en mode "requête-réponse-oubli" mais en mode "compilation structurée une fois pour toutes." Le savoir accumulé doit bénéficier de l'effet cumulé — comme un expert humain qui ne réapprend pas chaque matin.</div>
+        <div class="concept-why"><strong>Pourquoi c'est important :</strong> Ce principe justifie architecturalement pourquoi le wiki compilé surpasse le RAG à long terme. C'est une décision d'infrastructure, pas juste de workflow.</div>
+      </div>
+
+      <div class="concept-card">
+        <div class="concept-term">Système d'anti-hallucination intégré</div>
+        <div class="concept-def">Composante du protocole GodMode : (1) websearch systématique sur les pages "sensibles" (personnes, dates précises, chiffres, controverses) — max 2 requêtes par page ; (2) log des incertitudes dans <code>fact-check-log.md</code> ; (3) statut "to verify" si aucune source confirmée. Avec Opus 4.7, le taux d'hallucination est réduit à quasi-zéro sur des domaines documentés.</div>
+        <div class="concept-why"><strong>Pourquoi c'est important :</strong> Sans ce système, générer 500 pages en full-auto produit "des hallucinations partout, des Wikilinks cassés, de la merde." C'est la différence entre un vault utilisable et un vault à jeter.</div>
+      </div>
+
+      <div class="concept-card">
+        <div class="concept-term">MOC — Map of Content</div>
+        <div class="concept-def">Page d'index par cluster qui structure la navigation : pages piliers, pages secondaires, pages pont vers d'autres clusters, pages à approfondir. Le MOC est la colonne vertébrale du vault — il permet de savoir par où commencer, ce qui est documenté, ce qui manque, et quelles connexions cross-clusters existent.</div>
+        <div class="concept-why"><strong>Pourquoi c'est important :</strong> Sans MOC, un vault de 500 pages devient une jungle. Le MOC permet à un agent IA ou un humain de naviguer efficacement et d'identifier les lacunes.</div>
+      </div>
+
+      <h2 class="section-title" style="margin:var(--gap-xl) 0 var(--gap-md)">Insights non-évidents</h2>
+      <ul class="insights-list">
+        <li>L'outil importe peu — ce qui importe c'est l'<strong>architecture mémorielle</strong>. Si Obsidian disparaît demain, les fichiers markdown restent portables et répercutables dans n'importe quel autre outil.</li>
+        <li>Le protocole impose <strong>3 checkpoints humains</strong> pendant le pilote — pas pour contrôler le contenu phrase par phrase, mais pour valider la structure, détecter les dérives et calibrer avant le scale. C'est un audit architectural, pas éditorial.</li>
+        <li>Le coût réel pour 500 pages en API directe : <strong>200–400€ de tokens</strong>. Avec l'abonnement Claude Code Pro (200€/mois), c'est inclus — mais les limits de session existent (5h de CPU/session bloquées).</li>
+        <li>Le vault peut être connecté à la <strong>mémoire personnelle de l'utilisateur</strong> via Claude Code pour créer un système qui connaît à la fois le domaine et le profil cognitif de l'utilisateur — identification des biais propres, recommandations personnalisées.</li>
+        <li>Application business directe : documenter les process d'une entreprise dans un vault Obsidian, puis le connecter à des agents IA. Les nouveaux employés sont formés automatiquement — plus de formation orale répétée.</li>
+      </ul>
+
+      <h2 class="section-title" style="margin:var(--gap-xl) 0 var(--gap-md)">Mental models</h2>
+      <div class="model-card">
+        <div class="model-title">Effet cumulé du savoir</div>
+        <div class="model-body">Chaque page ajoutée au vault ne s'additionne pas — elle multiplie. Une nouvelle page sur un concept crée N nouvelles connexions avec les pages existantes. Après 500 pages, chaque ajout enrichit l'ensemble de façon non-linéaire. C'est exactement l'inverse du RAG qui "se dissout à chaque requête."</div>
+      </div>
+      <div class="model-card">
+        <div class="model-title">Pilote avant scale</div>
+        <div class="model-body">Ne jamais lancer 500 pages en full-auto sans un pilote de 40 pages. Le pilote calibre la qualité, détecte les patterns d'hallucination, valide l'architecture. Un pilote raté coûte 30 minutes. Un scale raté coûte 300€ de tokens et un vault à reconstruire.</div>
+      </div>
+
+      <h2 class="section-title" style="margin:var(--gap-xl) 0 var(--gap-md)">Outils &amp; techniques</h2>
+      <div class="tools-badges">
+        <span class="tool-pill">Obsidian</span>
+        <span class="tool-pill">Claude Code</span>
+        <span class="tool-pill">Claude Opus 4.7</span>
+        <span class="tool-pill">Warp Terminal</span>
+        <span class="tool-pill">Wikilinks</span>
+        <span class="tool-pill">YAML frontmatter</span>
+        <span class="tool-pill">Multi-agents parallèles</span>
+        <span class="tool-pill">Websearch fact-check</span>
+        <span class="tool-pill">MOC</span>
+        <span class="tool-pill">Git versioning</span>
+        <span class="tool-pill">Graph View</span>
+      </div>
+
+      <h2 class="section-title" style="margin:var(--gap-xl) 0 var(--gap-md)">Définitions</h2>
+      <dl class="definitions-list">
+        <div class="def-item">
+          <dt>Vault Obsidian</dt>
+          <dd>Dossier local de fichiers markdown géré par Obsidian. Chaque fichier est une note. Les Wikilinks (<code>[[nom-de-page]]</code>) créent des connexions navigables et visualisables dans le Graph View.</dd>
+        </div>
+        <div class="def-item">
+          <dt>Wikilinks</dt>
+          <dd>Syntaxe <code>[[titre-de-page]]</code> dans markdown qui crée un lien cliquable vers une autre note du vault. Obsidian les visualise en graphe — plus une note a de Wikilinks entrants, plus sa bulle est grande dans le graphe.</dd>
+        </div>
+        <div class="def-item">
+          <dt>Cluster</dt>
+          <dd>Regroupement thématique de pages dans le vault. Dans la démo psychologie : biais cognitifs, troubles mentaux, psychologie sociale, psychanalyse… Chaque cluster a son MOC et ses pages piliers, secondaires et "deep cuts."</dd>
+        </div>
+        <div class="def-item">
+          <dt>YAML frontmatter</dt>
+          <dd>Bloc de métadonnées en haut de chaque fichier markdown (entre <code>---</code>), contenant : titre, type, cluster, statut fact-check, niveau de controverse, sources. Permet des filtres et requêtes dynamiques dans Obsidian.</dd>
+        </div>
+      </dl>
+
+      <h2 class="section-title" style="margin:var(--gap-xl) 0 var(--gap-md)">Connexions</h2>
+      <div class="connection-tags">
+        <span class="theme-pill">70% équipes — socle mémoriel d'entreprise</span>
+        <span class="theme-pill">Hermes Agent — base de connaissance personnelle</span>
+        <span class="theme-pill">MiroShark — orchestration multi-agent</span>
+        <span class="theme-pill">Claude Routines — automatisation récurrente</span>
+      </div>
+    </div>
+
+    <!-- TAB 3 — TRANSCRIPTION -->
+    <div class="tab-panel" id="tab-transcription">
+      <div style="display:flex;align-items:center;gap:var(--gap-md);margin-bottom:var(--gap-lg);flex-wrap:wrap;">
+        <input id="transcript-search" type="search" placeholder="Rechercher dans la transcription…" style="flex:1;min-width:200px;padding:.5rem .75rem;background:var(--bg-input);border:1px solid var(--border);border-radius:6px;color:var(--text-primary);font-size:.9rem;">
+        <span style="color:var(--text-muted);font-size:.85rem;white-space:nowrap">~5 500 mots</span>
+      </div>
+      <div class="transcription-body" id="transcript-content">
+        <p>Ce que tu vois sur mon écran ici, c'est un Obsidian avec plus de 1000 pages et plus de 10 000 relations entre des pages. Et tout ça, ça a été généré avec un seul prompt sur Claude Code, avec un protocole que j'ai créé, que tu ne retrouveras nulle part ailleurs. Et en plus de ça, je te donne le prompt dans cette vidéo. Il y a un total de 8 clusters, tous axés sur un seul sujet principal et tout est décortiqué, toutes les liaisons sont faites. Rien qu'ici, il y a déjà 2000 relations entre les éléments.</p>
+        <p>Tu vois cet Obsidian ? Dis-toi une chose, c'est de la merde. J'ai retrouvé ce vieil Obsidian qui date de 2023, je l'ai utilisé avec GPT-4 à sa sortie, etc. Aujourd'hui, je vais te montrer une méthode que j'appelle la méthode divine, le GodMode. Ça, c'est à la poubelle, on va faire 10 000 fois plus puissant avec Claude Code, automatique et plus aligné. C'est ce que j'appelle l'Obsidian GodMode.</p>
+        <p>Claude Code va te compiler 500 pages de connaissances ou plus, c'est toi qui vas pouvoir choisir. Elles vont toutes être interconnectées, sourcées et navigables. Si on se pose la question : et si ton LLM compilait un wiki au lieu de refaire du RAG à chaque fois et à chaque question ? Ce qui est plutôt chiant. Refaire le même travail à la place d'avoir quelque chose, une base solide qui est réutilisable.</p>
+        <p>Si tu ne sais pas du tout ce qu'est Obsidian, je vais te l'expliquer en moins de 60 secondes. C'est un software que tu peux installer sur Windows ou sur Mac qui te permet d'avoir un dossier en local de fichiers Markdown. En gros, c'est un éditeur de notes qui va te permettre de lire des fichiers MD qui sont chez toi sur ton disque en local. Elles ne sont pas en cloud, donc personne n'y a accès sauf toi et c'est là où on joue sur la carte de la souveraineté.</p>
+        <p>La magie d'Obsidian, elle tient en trois couches. La première, c'est le Markdown — du texte brut, portable, versionnable avec Git si besoin. En deuxième, c'est le Wikilinks — double crochet d'ouverture et double crochet de fermeture, la note va se connecter automatiquement au sujet. Et en troisième c'est le Graph View — tes notes elles vont devenir un réseau virtuel.</p>
+        <p>On va parler du Pattern Karpathy. André Karpathy — cofondateur d'OpenAI, ex-directeur IA Tesla — lui ce qu'il a dit en 2024-2025 lors d'interventions publiques sur X : "Arrêtez de refaire du RAG jetable, laissez le LLM compiler une fois pour toutes dans un wiki structuré. Votre savoir doit bénéficier de l'effet cumulé, il ne doit pas se dissoudre à chaque requête." Ce qui est plutôt intelligent, mais à refaire techniquement ce n'était pas forcément facile en 2024-2025.</p>
+        <p>Le match est simple entre RAG jetable et wiki compilé. Un RAG jetable : tu recomputes à chaque fois, tu réutilises de l'énergie, c'est non navigable, il n'y a pas de graphes. À la différence du wiki compilé qui lui, tu vas le faire une seule fois et tu peux le réutiliser, et tu peux créer 500 pages ou plus. Moi ce que j'en pense : le RAG aujourd'hui en 2026, c'est du McDonald. Par contre le wiki compilé, c'est ce que j'appelle la huitième merveille du monde.</p>
+        <p>Il y a un piège à éviter. Si on lance 500 pages en full automatique comme un bourrin, on va se retrouver avec des hallucinations partout, des Wikilinks cassés, de la merde. Donc on va procéder en deux temps. En premier, l'étape du pilote : 40 pages dans un seul cluster avec trois checkpoints humains. En deuxième, un débrief. En troisième, l'étape du scale : plus de 500 pages du multiple, calibré par rapport au retour d'expérience.</p>
+        <p>Les phases du protocole. Bootstrap : construire la structure du vault avec des schémas en YAML pour déterminer la structure — quelles sont les pages piliers, les pages secondaires. Cartographie : 40 pages planifiées avec des types, des priorités, validation de la structure. Ensuite 8 pages pilote plus un checkpoint. Rédaction complète de toutes les pages. Liaison, audit et débrief. Dans ce protocole j'ai bien sûr intégré un système d'anti-hallucination : recherche web sur les pages sensibles (personnes, expériences, controverses, chiffres précis) — deux requêtes web search max par page. Intégration d'un système de logs dans un fichier markdown qui s'appelle fact-check-log.md — si web search ne trouve pas d'informations, on met un statut "to verify."</p>
+        <p>Cette méthode va être adaptée pour n'importe quel domaine : psychologie, marketing, philosophie, crypto, nutrition, histoire de l'art. Crypto ? Récupérer tous les tokens du marché, les analyser fondamentalement, avoir un vault avec plus de 10 000 pages, faire des liaisons sémantiques, créer un protocole de notation — voir quels tokens répondent à ta métrique d'analyse fondamentale. Il n'y a presque personne qui est prêt sur le marché pour ce qui va nous tomber dessus avant 2030.</p>
+        <p>Démonstration live. On ouvre Claude Code, on navigue vers le dossier Psychologie V2 (vault Obsidian vide). On colle le prompt GodMode avec les variables remplies : sujet = psychologie, clusters = tous les clusters possibles, chemin vault = le chemin direct, nombre de pages cibles = 555.</p>
+        <p>Claude recadre immédiatement : le prompt est un pilote calibré, on respecte le proto. Option A : vrai pilote. On choisit A. Il prépare les clusters : Biais Cognitif, Psychologie Sociale, Troubles Mentaux. On choisit Biais Cognitif. Il commence le bootstrap — création du Cloud MD, du README, du 99-meta avec le fact-check log.</p>
+        <p>Phase cartographie. Il crée le plan.md : 47 termes classés par type (concept, personnes, termes, théories, expériences, controverses), par priorité (pilier, standard, deep cut), par niveau de controverse (faible, médium, haute). 27 pages nécessitent fact-checking. Go pour la phase 2.</p>
+        <p>Il rédige les 8 pages pilotes. Il lance des websearchs — Daniel Kahneman, Amos Tversky — récupère les biographies. Avec Opus 4.7, les sources sont de meilleure qualité. Il rédige en respectant la structure YAML : titre, type, résumé, définition, contexte et origine, mécanismes, nuances critiques, sources avec références bibliographiques. Les Wikilinks sont automatiques — biais de confirmation → Gerd Gigerenzer → Fast and Frugal, Daniel Kahneman → Système 1, Système 2.</p>
+        <p>Checkpoint 2 : 8 pages pilotes rédigées. 5 websearchs effectués, dates vérifiées, sources contradictoires signalées. Go pour rédiger — on envoie. Il rédige les 47 pages du cluster biais cognitif. À la fin : 47 pages, 54 962 mots, 1 030 Wikilinks. Il rédige le MOC — Map of Content : pages par type, pages pont vers autres clusters, pages à approfondir, fondations et index.</p>
+        <p>Phase audit qualité. Il a enrichi, supprimé des éléments, rajouté. Il est conscient de ses erreurs. Les pages déconnectées ont disparu. Dans le 99-meta audit : pages totales 47, cible 35-50 ✓. Mots total largement au-dessus de la cible ✓. Conformité des formats YAML ✓. Wikilinks validés ✓.</p>
+        <p>On lance la production à 555 pages. On décide : 7 agents en parallèle. Pas de checkpoint intermédiaire — on termine et on fait l'audit final. Budget estimé : 200-400€ de tokens API (couvert par l'abonnement Claude Code 200€/mois). Les 7 agents travaillent — chacun respecte le plan, fait des recherches websearch, cross-reference, double-check. Le graphe commence à s'animer, les pastilles clignotent, les relations s'établissent. C'est "un organisme vivant."</p>
+        <p>Limite atteinte : 102% de contexte (limite de 5h de CPU Claude Code). La base est solide — clusters créés, pages partiellement remplies. La consolidation finale (interconnexion cross-clusters) reste à faire lors d'une session suivante.</p>
+        <p>Applications concrètes : chatbot d'exercice sur la psychologie, skill d'analyse de biais cognitifs personnels (un "avocat du diable" qui te contredit), documentation d'entreprise (nouveaux employés formés automatiquement via le vault). Obsidian n'est qu'un outil — l'architecture mémorielle en markdown est ce qui compte, elle est portative et indépendante de l'outil.</p>
+        <p>Pour ceux qui ont des boîtes : tu rentres dans une boîte, c'est le bordel, il n'y a pas de process. Tu utilises un vault Obsidian pour structurer ça, créer une base de connaissances dynamique reconnectée ensuite avec des agents IA. Les employés n'ont pas besoin de s'emmerder, les nouveaux sont automatiquement formés, tous les process sont déjà là.</p>
+        <p>N'hésite pas à liker, partager et t'abonner. Si tu veux un deuxième épisode sur la consolidation finale, dis-le en commentaire. C'était Mayday, ciao !</p>
+      </div>
+    </div>
+
+    <!-- TAB 4 — FICHES -->
+    <div class="tab-panel" id="tab-fiches">
+
+      <div class="fiche" id="fiche-resume">
+        <div class="fiche-header">
+          <h2>Fiche de résumé</h2>
+          <button onclick="window.print()" class="btn btn-secondary" style="font-size:.85rem">🖨 Imprimer</button>
+        </div>
+        <table class="fiche-table">
+          <tr class="fiche-row"><td class="fiche-label">Titre</td><td>J'ai supprimé Notion pour ça (Claude Code + Obsidian)</td></tr>
+          <tr class="fiche-row"><td class="fiche-label">Date</td><td>2026-04-20</td></tr>
+          <tr class="fiche-row"><td class="fiche-label">Durée</td><td>33:48</td></tr>
+          <tr class="fiche-row"><td class="fiche-label">Niveau</td><td>Avancé</td></tr>
+          <tr class="fiche-row"><td class="fiche-label">Catégorie</td><td>Claude Code — Tutos &amp; Pratique</td></tr>
+          <tr class="fiche-row"><td class="fiche-label">Protocole</td><td>Obsidian GodMode — 3 phases : pilote → débrief → scale</td></tr>
+          <tr class="fiche-row"><td class="fiche-label">Résultat démo</td><td>1 000+ pages, 10 000+ relations, 1 seul prompt</td></tr>
+          <tr class="fiche-row"><td class="fiche-label">Concepts clés</td><td>RAG vs wiki compilé, Pattern Karpathy, MOC, anti-hallucination, souveraineté</td></tr>
+          <tr class="fiche-row"><td class="fiche-label">Outils</td><td>Obsidian, Claude Code Opus 4.7, Warp, Git, YAML, Wikilinks</td></tr>
+          <tr class="fiche-row"><td class="fiche-label">Coût API estimé</td><td>200–400€ pour 500 pages (inclus abonnement 200€/mois)</td></tr>
+          <tr class="fiche-row"><td class="fiche-label">Citation</td><td>"Le RAG en 2026, c'est du McDonald. Le wiki compilé, c'est la 8e merveille du monde."</td></tr>
+          <tr class="fiche-row"><td class="fiche-label">URL</td><td><code>youtube.com/watch?v=555m6SpTGnU</code></td></tr>
+        </table>
+      </div>
+
+      <div class="fiche" style="margin-top:var(--gap-xl)">
+        <div class="fiche-header"><h2>Fiche d'action</h2></div>
+        <ul class="action-list">
+          <li><label><input type="checkbox" data-idx="0"> Télécharger Obsidian et créer un premier vault vide sur un sujet de son choix</label></li>
+          <li><label><input type="checkbox" data-idx="1"> Récupérer le prompt GodMode depuis la description YouTube (repo GitHub)</label></li>
+          <li><label><input type="checkbox" data-idx="2"> Lancer le pilote (40 pages, 1 cluster) et valider la structure aux 3 checkpoints</label></li>
+          <li><label><input type="checkbox" data-idx="3"> Lire le débrief généré dans 99-meta/audit.md avant de lancer le scale</label></li>
+          <li><label><input type="checkbox" data-idx="4"> Lancer le scale avec 7 agents en parallèle — batch par batch</label></li>
+          <li><label><input type="checkbox" data-idx="5"> Connecter le vault à un agent Claude pour créer un "skill" interrogeable sur le domaine</label></li>
+        </ul>
+      </div>
+
+      <div class="fiche" style="margin-top:var(--gap-xl)">
+        <div class="fiche-header"><h2>Thèmes abordés</h2></div>
+        <div class="themes-grid">
+          <span class="theme-pill">Documentation</span>
+          <span class="theme-pill">Gestion de connaissance</span>
+          <span class="theme-pill">Multi-agents</span>
+          <span class="theme-pill">Souveraineté IA</span>
+          <span class="theme-pill">RAG vs wiki</span>
+          <span class="theme-pill">Fact-checking automatisé</span>
+          <span class="theme-pill">Graph de connaissance</span>
+          <span class="theme-pill">Effet cumulé</span>
+        </div>
+        <div style="margin-top:var(--gap-lg)">
+          <div style="font-size:.8rem;color:var(--text-muted);margin-bottom:.5rem;text-transform:uppercase;letter-spacing:.05em">Catégorie principale</div>
+          <span class="badge cat-badge cat-5">Claude Code — Tutos</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 5 — PASSAGES CLÉS -->
+    <div class="tab-panel" id="tab-passages">
+      <p style="color:var(--text-muted);margin-bottom:var(--gap-lg)">Cliquez sur un timestamp pour ouvrir YouTube au bon moment.</p>
+      <ul class="timestamps-list">
+        <li class="timestamp-item">
+          <a href="https://www.youtube.com/watch?v=555m6SpTGnU&t=0" target="_blank" rel="noopener">
+            <span class="ts-badge">00:00</span>
+            <span class="ts-label">Démo du vault final — 1 000+ pages, 10 000+ relations</span>
+          </a>
+        </li>
+        <li class="timestamp-item">
+          <a href="https://www.youtube.com/watch?v=555m6SpTGnU&t=120" target="_blank" rel="noopener">
+            <span class="ts-badge">02:00</span>
+            <span class="ts-label">Obsidian expliqué en 60 secondes — Markdown, Wikilinks, Graph View</span>
+          </a>
+        </li>
+        <li class="timestamp-item">
+          <a href="https://www.youtube.com/watch?v=555m6SpTGnU&t=240" target="_blank" rel="noopener">
+            <span class="ts-badge">04:00</span>
+            <span class="ts-label">Pattern Karpathy — RAG jetable vs wiki compilé, effet cumulé</span>
+          </a>
+        </li>
+        <li class="timestamp-item">
+          <a href="https://www.youtube.com/watch?v=555m6SpTGnU&t=420" target="_blank" rel="noopener">
+            <span class="ts-badge">07:00</span>
+            <span class="ts-label">Protocole GodMode — 3 phases, checkpoints humains, anti-hallucination</span>
+          </a>
+        </li>
+        <li class="timestamp-item">
+          <a href="https://www.youtube.com/watch?v=555m6SpTGnU&t=600" target="_blank" rel="noopener">
+            <span class="ts-badge">10:00</span>
+            <span class="ts-label">Démo live — setup Obsidian, prompt GodMode, variables</span>
+          </a>
+        </li>
+        <li class="timestamp-item">
+          <a href="https://www.youtube.com/watch?v=555m6SpTGnU&t=900" target="_blank" rel="noopener">
+            <span class="ts-badge">15:00</span>
+            <span class="ts-label">Cartographie des clusters — plan.md, 47 termes structurés</span>
+          </a>
+        </li>
+        <li class="timestamp-item">
+          <a href="https://www.youtube.com/watch?v=555m6SpTGnU&t=1200" target="_blank" rel="noopener">
+            <span class="ts-badge">20:00</span>
+            <span class="ts-label">8 pages pilotes — websearch en direct, YAML, Wikilinks automatiques</span>
+          </a>
+        </li>
+        <li class="timestamp-item">
+          <a href="https://www.youtube.com/watch?v=555m6SpTGnU&t=1500" target="_blank" rel="noopener">
+            <span class="ts-badge">25:00</span>
+            <span class="ts-label">Scale — 7 agents en parallèle, graphe animé, 555 pages en cours</span>
+          </a>
+        </li>
+        <li class="timestamp-item">
+          <a href="https://www.youtube.com/watch?v=555m6SpTGnU&t=1800" target="_blank" rel="noopener">
+            <span class="ts-badge">30:00</span>
+            <span class="ts-label">Applications concrètes — chatbot, skill biais cognitifs, documentation entreprise</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  </main>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-card">
+      <div class="sidebar-card-title">Informations</div>
+      <div class="info-row"><span>Date</span><strong>2026-04-20</strong></div>
+      <div class="info-row"><span>Durée</span><strong>33:48</strong></div>
+      <div class="info-row"><span>Niveau</span><strong>Avancé</strong></div>
+      <div class="info-row"><span>Catégorie</span><strong>Claude Code</strong></div>
+      <div class="info-row"><span>Résultat</span><strong>1 000+ pages</strong></div>
+      <div class="info-row"><span>Relations</span><strong>10 000+</strong></div>
+      <div class="info-row"><span>Agents</span><strong>7 en parallèle</strong></div>
+    </div>
+
+    <a href="https://www.youtube.com/watch?v=555m6SpTGnU" target="_blank" rel="noopener" class="btn-youtube" style="display:block;text-align:center;margin-bottom:var(--gap-md)">▶ Voir sur YouTube</a>
+
+    <div class="sidebar-card">
+      <div class="sidebar-card-title">Vidéos liées</div>
+      <a class="related-video-link" href="2026-04-25_70-equipes-ia.html">70% équipes — socle mémoriel</a>
+      <a class="related-video-link" href="2026-04-19_hermes-agent.html">Hermes Agent — souveraineté</a>
+      <a class="related-video-link" href="2026-04-27_miroshark.html">MiroShark — Swarm Agency</a>
+    </div>
+
+    <div class="sidebar-card" style="border-left:3px solid var(--accent-purple)">
+      <div class="sidebar-card-title" style="color:var(--accent-purple)">Schéma interactif</div>
+      <p style="font-size:.85rem;color:var(--text-secondary);margin:0 0 .75rem">Le graphe Obsidian GodMode est animé sur la page démo.</p>
+      <a href="../demo.html#obsidian" class="btn btn-secondary" style="font-size:.85rem">→ Voir le schéma</a>
+    </div>
+  </aside>
+
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Base de connaissance · <a href="../index.html">Accueil</a> · <a href="../videos.html">Vidéothèque</a></p>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hermes Agent : l'agent IA qui t'appartient vraiment — meydeey KB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="../index.html">meydeey<span class="logo-accent"> KB</span></a>
+    <nav class="main-nav">
+      <a href="../index.html" class="nav-link">Accueil</a>
+      <a href="../categories.html" class="nav-link">Catégories</a>
+      <a href="../videos.html" class="nav-link">Vidéothèque</a>
+      <a href="../ouvertures.html" class="nav-link">Ouvertures</a>
+      <a href="../demo.html" class="nav-link">Démo</a>
+    </nav>
+    <div class="search-wrap">
+      <input id="global-search" type="search" placeholder="Rechercher…" autocomplete="off">
+      <div id="search-results" class="search-dropdown hidden"></div>
+    </div>
+  </div>
+</header>
+
+<div class="video-hero">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="../index.html">Accueil</a><span>›</span>
+      <a href="../categories.html#technique">Technique &amp; Outils IA</a><span>›</span>
+      <span>Hermes Agent</span>
+    </div>
+    <div class="video-meta-badges">
+      <span class="badge cat-badge cat-4">Technique &amp; Outils</span>
+      <span class="badge badge-green">✓ Analysée</span>
+      <span class="badge level-intermediaire">Intermédiaire</span>
+      <span class="badge" style="background:rgba(255,255,255,.08)">⏱ 21:01</span>
+      <span class="badge" style="background:rgba(255,255,255,.08)">2026-04-19</span>
+    </div>
+    <h1 class="video-title">Hermes Agent : l'agent IA qui t'appartient vraiment</h1>
+    <p class="video-summary-hero">Agent open source de Nous Research — 95 000 étoiles GitHub en 7 semaines. Tourne 24/7 sur un VPS à 5€/mois, multicanal (Telegram, Slack, WhatsApp, Signal), apprend de tes habitudes. Souveraineté totale sur tes données.</p>
+    <div class="youtube-cta">
+      <a href="https://www.youtube.com/watch?v=ho_ba_TtSWk" target="_blank" rel="noopener" class="btn-youtube">▶ Voir sur YouTube</a>
+      <span class="youtube-url-text">youtube.com/watch?v=ho_ba_TtSWk</span>
+    </div>
+  </div>
+</div>
+
+<div class="tab-nav-sticky">
+  <div class="container">
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="resume">Résumé</button>
+      <button class="tab-btn" data-tab="analyse">Analyse</button>
+      <button class="tab-btn" data-tab="transcription">Transcription</button>
+      <button class="tab-btn" data-tab="fiches">Fiches</button>
+      <button class="tab-btn" data-tab="passages">Passages clés</button>
+    </div>
+  </div>
+</div>
+
+<div class="container content-with-sidebar" style="padding-top:var(--gap-xl);padding-bottom:var(--gap-2xl);">
+  <main>
+
+    <!-- TAB 1 — RÉSUMÉ -->
+    <div class="tab-panel active" id="tab-resume">
+      <p style="font-size:1.05rem;line-height:1.75;margin-bottom:var(--gap-xl)">
+        Hermes Agent est le framework agent open source le plus adopté de 2026 — 95 000 étoiles GitHub en 7 semaines, 502 contributeurs. Contrairement à Claude Code (équipier de coding au terminal), Hermes est un <strong>employé autonome</strong> qui tourne sur un serveur distant 24/7, apprend de tes habitudes et répond sur Telegram, WhatsApp, Signal, Slack ou email — même quand l'ordi est éteint.
+      </p>
+
+      <h2 class="section-title" style="margin-bottom:var(--gap-md)">Synthèse profonde</h2>
+      <p>La distinction centrale est entre Claude Code (équipier de dev présent quand tu es devant l'écran) et Hermes (employé autonome qu'on peut briefer et laisser tourner). Hermes peut être installé sur un VPS Hostinger ou OVH à 5€/mois en une seule ligne de commande — ou en local sur Mac. Il fonctionne avec n'importe quel modèle via Open Router (DeepSeek, Claude, GPT, Llama…), ce qui signifie que la qualité et le coût sont contrôlables.</p>
+      <p>Le mécanisme d'apprentissage est la vraie proposition de valeur : après 20 répétitions d'une même tâche, Hermes crée un raccourci automatique. Le benchmark GEPA (avril 2026, TokenMix) annonce 40% de temps gagné. Concrètement : une tâche qui prend 45 min la première fois descend à 27 min après 20 répétitions.</p>
+      <p>Les cas d'usage business sont documentés : développeur freelance qui automatise ses logs serveurs (résumé à 8h chaque matin), directrice tech FinTech qui ne peut pas utiliser Claude Code pour raison RGPD/bancaire (Hermes déployé sur serveur interne, modèle téléchargé une fois, 0 coût externe, audit RGPD sans friction), consultant qui fait de la veille automatisée.</p>
+      <p>Les 77 skills disponibles incluent Arxiv, BlockWatcher, LLM Wiki, PolyMarket, Google Workspace, Nano PDF — et un système de mémoire persistante qui clusterise les informations au fur et à mesure que l'agent apprend le contexte utilisateur.</p>
+
+      <h2 class="section-title" style="margin:var(--gap-xl) 0 var(--gap-md)">Méthode — Installation</h2>
+      <ol class="steps-list">
+        <li>Installer Hermes en une commande <code>curl</code> (macOS) ou via template Docker sur Hostinger</li>
+        <li>Choisir le provider IA (Open Router recommandé — accès à DeepSeek, Claude, GPT…)</li>
+        <li>Entrer sa clé API et sélectionner un modèle (ex. <code>deepseek/deepseek-v3.2</code>)</li>
+        <li>Configurer le canal de messagerie (Telegram : créer un bot via BotFather, coller la clé API)</li>
+        <li>Lancer <code>hermes chat</code> — l'interface ressemble à Claude Code (77 skills, slash commands)</li>
+        <li>Calibrer : donner 5 tâches répétitives, observer l'apprentissage automatique</li>
+      </ol>
+
+      <h2 class="section-title" style="margin:var(--gap-xl) 0 var(--gap-md)">Citations notables</h2>
+      <blockquote>C'est un agent qui va vivre sur ton serveur — pas dans le cloud d'une boîte américaine. Tes données, tes règles, pour 5 euros par mois.</blockquote>
+      <blockquote>Il apprend et il se souvient. Plus tu vas l'utiliser, plus il va devenir rapide. Après 20 tâches répétées, c'est 40% de temps gagné.</blockquote>
+    </div>
+
+    <!-- TAB 2 — ANALYSE -->
+    <div class="tab-panel" id="tab-analyse">
+      <h2 class="section-title" style="margin-bottom:var(--gap-lg)">Concepts clés</h2>
+
+      <div class="concept-card">
+        <div class="concept-term">Hermes Agent (Nous Research)</div>
+        <div class="concept-def">Framework agent open source MIT, 95 000 étoiles GitHub en 7 semaines (record 2026). Agent qui tourne 24/7 sur serveur distant, multicanal (Telegram, WhatsApp, Signal, Slack, Email, SMS, domotique), compatible tout modèle via Open Router. 77 skills préinstallés, mémoire persistante, apprentissage par répétition.</div>
+        <div class="concept-why"><strong>Pourquoi c'est important :</strong> Premier agent où le code, les données et les règles appartiennent vraiment à l'utilisateur — sans abonnement propriétaire, sans cloud américain obligatoire. Positionnement unique sur la souveraineté.</div>
+      </div>
+
+      <div class="concept-card">
+        <div class="concept-term">Mémoire persistante vs session</div>
+        <div class="concept-def">Hermes a deux systèmes de mémoire : mémoire persistante (stockage long terme des habitudes, contextes, inventaires) et mémoire de session (contexte actif). À chaque tâche répétée, il crée automatiquement un raccourci interne — sans que l'utilisateur ait à le programmer.</div>
+        <div class="concept-why"><strong>Pourquoi c'est important :</strong> C'est la différence entre un outil et un assistant qui évolue. Un LLM standard oublie à chaque conversation — Hermes capitalise sur l'historique d'usage.</div>
+      </div>
+
+      <div class="concept-card">
+        <div class="concept-term">Open Router comme passerelle modèle</div>
+        <div class="concept-def">Hermes ne force aucun modèle — il se connecte à n'importe quel LLM via Open Router (DeepSeek V3.2, Claude Opus, GPT-4o, Llama, Mistral…). L'utilisateur choisit le meilleur ratio qualité/prix selon la tâche.</div>
+        <div class="concept-why"><strong>Pourquoi c'est important :</strong> Neutralité fournisseur = pas de lock-in. Si un modèle devient trop cher ou moins bon, on change de provider sans réinstaller quoi que ce soit.</div>
+      </div>
+
+      <h2 class="section-title" style="margin:var(--gap-xl) 0 var(--gap-md)">Hermes vs Claude Code — comparaison</h2>
+      <div class="model-card">
+        <div class="model-title">Claude Code</div>
+        <div class="model-body"><strong>Rôle :</strong> équipier de dev, présent quand tu codes. <strong>Localisation :</strong> terminal local, s'éteint quand on ferme l'ordi. <strong>Canal :</strong> IDE uniquement. <strong>Licence :</strong> propriétaire. <strong>Force :</strong> codage brut, raisonnement complexe.</div>
+      </div>
+      <div class="model-card">
+        <div class="model-title">Hermes Agent</div>
+        <div class="model-body"><strong>Rôle :</strong> employé autonome, tourne sans toi. <strong>Localisation :</strong> serveur distant 24/7. <strong>Canal :</strong> Telegram, WhatsApp, Signal, Slack, Email, SMS, domotique. <strong>Licence :</strong> open source MIT. <strong>Force :</strong> vie privée, multicanal, apprentissage continu.</div>
+      </div>
+
+      <h2 class="section-title" style="margin:var(--gap-xl) 0 var(--gap-md)">Insights non-évidents</h2>
+      <ul class="insights-list">
+        <li>Les <strong>77 skills préinstallés</strong> incluent PolyMarket (prédiction marchés), Arxiv (recherche académique), BlockWatcher (crypto) — des cas d'usage très au-delà du simple chatbot.</li>
+        <li>Le <strong>Godmode</strong> est une commande native dans l'interface Hermes — slash-commandes avancées pour contournement de restrictions, non documenté publiquement.</li>
+        <li>Pour les boîtes avec contraintes RGPD bancaires (Sophie, FinTech Paris) : Hermes + modèle téléchargé localement = <strong>zéro donnée externe</strong>, audit RGPD sans friction — impossible avec Claude Code.</li>
+        <li>Le coût réel = VPS (~5€/mois) + tokens API (Open Router, pay-as-you-go) + temps d'installation. Si une heure de maintenance coûte 600€/h pour un consultant senior, il faut calculer ce coût caché.</li>
+      </ul>
+
+      <h2 class="section-title" style="margin:var(--gap-xl) 0 var(--gap-md)">Outils &amp; techniques</h2>
+      <div class="tools-badges">
+        <span class="tool-pill">Hermes Agent</span>
+        <span class="tool-pill">Nous Research</span>
+        <span class="tool-pill">Open Router</span>
+        <span class="tool-pill">Telegram Bot</span>
+        <span class="tool-pill">WhatsApp Bridge</span>
+        <span class="tool-pill">Signal</span>
+        <span class="tool-pill">Hostinger VPS</span>
+        <span class="tool-pill">Docker</span>
+        <span class="tool-pill">DeepSeek V3.2</span>
+        <span class="tool-pill">GEPA Benchmark</span>
+      </div>
+
+      <h2 class="section-title" style="margin:var(--gap-xl) 0 var(--gap-md)">Connexions</h2>
+      <div class="connection-tags">
+        <span class="theme-pill">Claude Routines — automatisation 24/7</span>
+        <span class="theme-pill">70% équipes — souveraineté données</span>
+        <span class="theme-pill">Obsidian GodMode — base mémorielle locale</span>
+        <span class="theme-pill">DeepSeek V4 — coût modèles Open Router</span>
+      </div>
+    </div>
+
+    <!-- TAB 3 — TRANSCRIPTION -->
+    <div class="tab-panel" id="tab-transcription">
+      <div style="display:flex;align-items:center;gap:var(--gap-md);margin-bottom:var(--gap-lg);flex-wrap:wrap;">
+        <input id="transcript-search" type="search" placeholder="Rechercher dans la transcription…" style="flex:1;min-width:200px;padding:.5rem .75rem;background:var(--bg-input);border:1px solid var(--border);border-radius:6px;color:var(--text-primary);font-size:.9rem;">
+        <span style="color:var(--text-muted);font-size:.85rem;white-space:nowrap">~4 000 mots</span>
+      </div>
+      <div class="transcription-body" id="transcript-content">
+        <p>C'est en train d'exploser en ce moment, le monde de la tech s'enflamme comme d'habitude, et aujourd'hui je vais te parler de Hermès Agent. Nous allons voir si c'est une hype ou une vraie révolution. Si on doit le définir en une seule phrase, c'est un agent open source qui apprend tout seul que nous allons décortiquer.</p>
+        <p>Forcément, je vous vois arriver, vous allez me dire encore un agent, il y a de plus, on en voit tous les jours. Et je vais t'apporter une nuance — est-ce que c'est le premier qui va vraiment sortir du lot de la même manière qu'OpenClo ? Au début quand c'est sorti, il y a à peu près 3 semaines (le 19 avril 2026), j'ai cru que c'était encore une hype. Je l'ai testé, c'est pas mal du tout.</p>
+        <p>C'est un agent, mais ce n'est pas comme Claude Code. Sa définition est très simple : un agent IA qui tourne 24/7 sur un serveur distant. Si tu as pris un Hostinger avec n8n dessus, tu as installé n8n dans ton VPS qui tourne 24/7 — eh bien là c'est pareil. Tu peux installer Hermès sur ton VPS, sur ta machine, c'est open source. Il permet d'avoir un vrai process indépendant qui continue à bosser même quand tu fermes ton ordi.</p>
+        <p>Tu peux lui parler sur Telegram, Slack, WhatsApp ou depuis ton terminal. C'est gratuit, open source, fait par Nous Research (N-O-U-S), et tu peux l'installer en une seule ligne de commande sur un petit serveur à 5€/mois — ou sur ta machine locale Mac.</p>
+        <p>95 000 étoiles GitHub en 7 semaines — le framework agent le plus adopté de 2026. Plus de 502 contributeurs. Comment les créateurs le définissent en une phrase : "Un agent qui vit sur ton serveur, se souvient de ce qu'il apprend et devient plus capable au fil du temps."</p>
+        <p>3 promesses : (1) il apprend de tes habitudes — chaque tâche répétée devient un raccourci automatique. (2) il te suit partout — Telegram, Slack, WhatsApp, Email, Signal, eMap, domotique, Home Assistant. (3) il bosse pendant que tu dors — tâches planifiées, rapports auto. La notion la plus importante : "devient plus capable au fil du temps."</p>
+        <p>Ça va prendre 45 min la première fois, et après 20 répétitions de la même tâche, ça prend 27 min. Il crée sa propre recette. Benchmark GEPA, avril 2026 (TokenMix) : 40% de temps gagné.</p>
+        <p>Deux profils business. Thomas, développeur freelance fullstack, 5 ans d'expérience. Un mardi à 23h, il en a marre de payer 200€/mois sur Claude Code pour des tâches simples. Il installe Hermes en une commande — 45 min plus tard, son agent tourne sur Telegram. Résultat : résumé de ses logs serveurs chaque matin à 8h.</p>
+        <p>Sophie, directrice tech, FinTech Paris. Son comité sécurité refuse Claude Code — les données doivent rester en France (règlements bancaires). Avec Hermes, elle déploie sur leur serveur interne, avec un modèle téléchargé une fois. Résultat : un seul agent pour toute l'équipe, 0 coût externe, audit RGPD sans friction.</p>
+        <p>Coût mensuel moyen VPS : 5€/mois. Coût par tâche : ~30 centimes. Temps gagné : 6h/semaine en moyenne sur des tâches répétitives.</p>
+        <p>4 cas concrets : (1) freelance qui chasse des missions, (2) agence qui prépare des rendez-vous clients, (3) développeur SaaS qui surveille sa production, (4) consultant qui fait de la veille. Ce dernier adapté à tout le monde.</p>
+        <p>Pour qui c'est : développeurs freelance, founders SaaS techniques, CTO, ingénieurs DevOps (cibles primaires). Chercheurs IA en labo, agences IA prestataires, consultants IA, data analysts (cibles secondaires avec accompagnement). Ce n'est pas encore pour ceux qui ne sont pas à l'aise avec un terminal.</p>
+        <p>Différence Claude Code vs Hermes. Rôle : équipier de dev vs employé autonome. Localisation : local Mac (s'éteint avec le terminal) vs serveur distant 24/7. Canaux : IDE uniquement vs multicanal. Licence : propriétaire vs open source MIT. Claude Code gagne sur tous les axes sauf deux : vie privée et multicanal — où Hermes est nettement meilleur.</p>
+        <p>Installation live sur macOS. Commande curl → detected macOS → installe les dépendances (dont bridge WhatsApp). Quick setup → provider : Open Router → clé API → modèle : DeepSeek v3.2 (copier l'endpoint depuis Open Router) → canal : Telegram → créer un bot via BotFather (slash newbot → nom → copier le token) → entrer son ID Telegram utilisateur → configurer comme home channel. Lancer : <code>hermes chat</code> → interface similaire à Claude Code, 28 outils disponibles, 77 skills.</p>
+        <p>Test live. "Dans mon inventaire, j'ai 19 clés de 12 et 21 clés de 17." → Hermes calcule (total 40), enregistre dans mémoire persistante. Commande suivante : "Comment enregistres-tu les données ?" → "J'ai enregistré ton inventaire dans la mémoire persistante — deux systèmes : mémoire persistante et session search. La semaine prochaine si ton inventaire change, je mettrai à jour." Cas d'usage : chatbot WhatsApp/Telegram pour clients, l'agent apprend les réponses au fur et à mesure.</p>
+        <p>Mon avis : note 8,2/10. Pour un bon profil tech, autonome, attaché à ses données — c'est l'outil de l'année 2026. Ce qui coûte : le serveur, les tokens API, ton temps d'installation et de maintenance. Ce qui ne coûte pas : le code Hermes lui-même.</p>
+        <p>3 phrases pour le définir à un dîner : (1) "C'est un agent qui vit sur ton serveur — tes données, tes règles, 5€/mois." (2) "Il apprend — après 20 répétitions, 40% de temps gagné." (3) "Si tu peux ouvrir un terminal, c'est le meilleur deal de l'année." Ciao !</p>
+      </div>
+    </div>
+
+    <!-- TAB 4 — FICHES -->
+    <div class="tab-panel" id="tab-fiches">
+      <div class="fiche" id="fiche-resume">
+        <div class="fiche-header">
+          <h2>Fiche de résumé</h2>
+          <button onclick="window.print()" class="btn btn-secondary" style="font-size:.85rem">🖨 Imprimer</button>
+        </div>
+        <table class="fiche-table">
+          <tr class="fiche-row"><td class="fiche-label">Titre</td><td>Hermes Agent : l'agent IA qui t'appartient vraiment</td></tr>
+          <tr class="fiche-row"><td class="fiche-label">Date</td><td>2026-04-19</td></tr>
+          <tr class="fiche-row"><td class="fiche-label">Durée</td><td>21:01</td></tr>
+          <tr class="fiche-row"><td class="fiche-label">Niveau</td><td>Intermédiaire</td></tr>
+          <tr class="fiche-row"><td class="fiche-label">Créateur</td><td>Nous Research — open source MIT</td></tr>
+          <tr class="fiche-row"><td class="fiche-label">GitHub</td><td>95 000 ⭐ en 7 semaines, 502 contributeurs</td></tr>
+          <tr class="fiche-row"><td class="fiche-label">Coût</td><td>VPS ~5€/mois + tokens API (Open Router)</td></tr>
+          <tr class="fiche-row"><td class="fiche-label">Skills</td><td>77 — Arxiv, PolyMarket, BlockWatcher, Google Workspace…</td></tr>
+          <tr class="fiche-row"><td class="fiche-label">Canaux</td><td>Telegram, WhatsApp, Signal, Slack, Email, SMS, domotique</td></tr>
+          <tr class="fiche-row"><td class="fiche-label">Apprentissage</td><td>40% de temps gagné après 20 répétitions (benchmark GEPA)</td></tr>
+          <tr class="fiche-row"><td class="fiche-label">URL</td><td><code>youtube.com/watch?v=ho_ba_TtSWk</code></td></tr>
+        </table>
+      </div>
+
+      <div class="fiche" style="margin-top:var(--gap-xl)">
+        <div class="fiche-header"><h2>Fiche d'action</h2></div>
+        <ul class="action-list">
+          <li><label><input type="checkbox" data-idx="0"> Créer un compte Hostinger ou utiliser sa machine locale pour le test</label></li>
+          <li><label><input type="checkbox" data-idx="1"> Installer Hermes en une commande curl (suivre la doc officielle)</label></li>
+          <li><label><input type="checkbox" data-idx="2"> Configurer Open Router + DeepSeek V3.2 (moins cher, performant)</label></li>
+          <li><label><input type="checkbox" data-idx="3"> Créer un bot Telegram via BotFather et le connecter à Hermes</label></li>
+          <li><label><input type="checkbox" data-idx="4"> Identifier 3 tâches répétitives à automatiser et les répéter 20 fois pour activer l'apprentissage</label></li>
+        </ul>
+      </div>
+
+      <div class="fiche" style="margin-top:var(--gap-xl)">
+        <div class="fiche-header"><h2>Thèmes abordés</h2></div>
+        <div class="themes-grid">
+          <span class="theme-pill">Souveraineté IA</span>
+          <span class="theme-pill">Open source</span>
+          <span class="theme-pill">Automatisation 24/7</span>
+          <span class="theme-pill">Apprentissage continu</span>
+          <span class="theme-pill">Multicanal</span>
+          <span class="theme-pill">RGPD / données locales</span>
+          <span class="theme-pill">VPS</span>
+          <span class="theme-pill">Open Router</span>
+        </div>
+        <div style="margin-top:var(--gap-lg)">
+          <span class="badge cat-badge cat-4">Technique &amp; Outils IA</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 5 — PASSAGES CLÉS -->
+    <div class="tab-panel" id="tab-passages">
+      <p style="color:var(--text-muted);margin-bottom:var(--gap-lg)">Cliquez sur un timestamp pour ouvrir YouTube au bon moment.</p>
+      <ul class="timestamps-list">
+        <li class="timestamp-item">
+          <a href="https://www.youtube.com/watch?v=ho_ba_TtSWk&t=0" target="_blank" rel="noopener">
+            <span class="ts-badge">00:00</span><span class="ts-label">Définition — agent qui tourne 24/7 vs Claude Code</span>
+          </a>
+        </li>
+        <li class="timestamp-item">
+          <a href="https://www.youtube.com/watch?v=ho_ba_TtSWk&t=120" target="_blank" rel="noopener">
+            <span class="ts-badge">02:00</span><span class="ts-label">95 000 étoiles GitHub en 7 semaines — benchmark GEPA 40%</span>
+          </a>
+        </li>
+        <li class="timestamp-item">
+          <a href="https://www.youtube.com/watch?v=ho_ba_TtSWk&t=300" target="_blank" rel="noopener">
+            <span class="ts-badge">05:00</span><span class="ts-label">Cas Thomas (freelance) et Sophie (FinTech RGPD)</span>
+          </a>
+        </li>
+        <li class="timestamp-item">
+          <a href="https://www.youtube.com/watch?v=ho_ba_TtSWk&t=540" target="_blank" rel="noopener">
+            <span class="ts-badge">09:00</span><span class="ts-label">Comparaison Claude Code vs Hermes — 4 axes</span>
+          </a>
+        </li>
+        <li class="timestamp-item">
+          <a href="https://www.youtube.com/watch?v=ho_ba_TtSWk&t=720" target="_blank" rel="noopener">
+            <span class="ts-badge">12:00</span><span class="ts-label">Installation live macOS — curl, Open Router, DeepSeek</span>
+          </a>
+        </li>
+        <li class="timestamp-item">
+          <a href="https://www.youtube.com/watch?v=ho_ba_TtSWk&t=960" target="_blank" rel="noopener">
+            <span class="ts-badge">16:00</span><span class="ts-label">Connexion Telegram via BotFather — démo complète</span>
+          </a>
+        </li>
+        <li class="timestamp-item">
+          <a href="https://www.youtube.com/watch?v=ho_ba_TtSWk&t=1140" target="_blank" rel="noopener">
+            <span class="ts-badge">19:00</span><span class="ts-label">Test mémoire persistante — inventaire et apprentissage</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  </main>
+
+  <aside class="sidebar">
+    <div class="sidebar-card">
+      <div class="sidebar-card-title">Informations</div>
+      <div class="info-row"><span>Date</span><strong>2026-04-19</strong></div>
+      <div class="info-row"><span>Durée</span><strong>21:01</strong></div>
+      <div class="info-row"><span>Niveau</span><strong>Intermédiaire</strong></div>
+      <div class="info-row"><span>Créateur</span><strong>Nous Research</strong></div>
+      <div class="info-row"><span>GitHub ⭐</span><strong>95 000</strong></div>
+      <div class="info-row"><span>Skills</span><strong>77</strong></div>
+      <div class="info-row"><span>VPS</span><strong>~5€/mois</strong></div>
+    </div>
+    <a href="https://www.youtube.com/watch?v=ho_ba_TtSWk" target="_blank" rel="noopener" class="btn-youtube" style="display:block;text-align:center;margin-bottom:var(--gap-md)">▶ Voir sur YouTube</a>
+    <div class="sidebar-card">
+      <div class="sidebar-card-title">Vidéos liées</div>
+      <a class="related-video-link" href="2026-04-20_obsidian-notion-claude-code.html">Obsidian GodMode — données en local</a>
+      <a class="related-video-link" href="2026-04-16_claude-routines.html">Claude Routines — automatisation cloud</a>
+      <a class="related-video-link" href="2026-04-24_deepseek-v4-humilie-claude.html">DeepSeek V4 — coût Open Router</a>
+    </div>
+  </aside>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Base de connaissance · <a href="../index.html">Accueil</a> · <a href="../videos.html">Vidéothèque</a></p>
+  </div>
+</footer>
+<script src="../js/main.js"></script>
+</body>
+</html>

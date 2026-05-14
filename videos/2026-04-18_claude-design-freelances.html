@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claude Design : la fin des freelances templates — meydeey KB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="../index.html">meydeey<span class="logo-accent"> KB</span></a>
+    <nav class="main-nav">
+      <a href="../index.html" class="nav-link">Accueil</a>
+      <a href="../categories.html" class="nav-link">Catégories</a>
+      <a href="../videos.html" class="nav-link">Vidéothèque</a>
+      <a href="../ouvertures.html" class="nav-link">Ouvertures</a>
+      <a href="../demo.html" class="nav-link">Démo</a>
+    </nav>
+    <div class="search-wrap">
+      <input id="global-search" type="search" placeholder="Rechercher…" autocomplete="off">
+      <div id="search-results" class="search-dropdown hidden"></div>
+    </div>
+  </div>
+</header>
+
+<div class="video-hero">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="../index.html">Accueil</a><span>›</span>
+      <a href="../categories.html#technique">Technique &amp; Outils IA</a><span>›</span>
+      <span>Claude Design</span>
+    </div>
+    <div class="video-meta-badges">
+      <span class="badge cat-badge cat-4">Technique &amp; Outils</span>
+      <span class="badge badge-green">✓ Analysée</span>
+      <span class="badge level-intermediaire">Intermédiaire</span>
+      <span class="badge" style="background:rgba(255,255,255,.08)">⏱ 18:23</span>
+      <span class="badge" style="background:rgba(255,255,255,.08)">2026-04-18</span>
+    </div>
+    <h1 class="video-title">Claude Design : la fin des freelances templates</h1>
+    <p class="video-summary-hero">Anthropic lance Claude Design (17 avril 2026) — tout prompt devient un visuel éditable. Figma −10%, Adobe −2,7% à l'annonce. Les designers créatifs survivent, les exécutants Canva à 2 500€ la landing non.</p>
+    <div class="youtube-cta">
+      <a href="https://www.youtube.com/watch?v=5FcFUw_n59M" target="_blank" rel="noopener" class="btn-youtube">▶ Voir sur YouTube</a>
+      <span class="youtube-url-text">youtube.com/watch?v=5FcFUw_n59M</span>
+    </div>
+  </div>
+</div>
+
+<div class="tab-nav-sticky">
+  <div class="container">
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="resume">Résumé</button>
+      <button class="tab-btn" data-tab="analyse">Analyse</button>
+      <button class="tab-btn" data-tab="transcription">Transcription</button>
+      <button class="tab-btn" data-tab="fiches">Fiches</button>
+      <button class="tab-btn" data-tab="passages">Passages clés</button>
+    </div>
+  </div>
+</div>
+
+<div class="container content-with-sidebar" style="padding-top:var(--gap-xl);padding-bottom:var(--gap-2xl);">
+  <main>
+
+    <!-- TAB 1 -->
+    <div class="tab-panel active" id="tab-resume">
+      <p style="font-size:1.05rem;line-height:1.75;margin-bottom:var(--gap-xl)">
+        Le 17 avril 2026, Anthropic lance Claude Design — propulsé par Opus 4.7, il transforme n'importe quel prompt en visuel éditable (prototype, slides, one-page, maquette) exportable en Canva, PDF, PowerPoint, HTML ou directement importable dans Claude Code. Réaction immédiate des marchés : Figma −10%, Wix −4,7%, Adobe −2,7%.
+      </p>
+
+      <h2 class="section-title" style="margin-bottom:var(--gap-md)">Synthèse profonde</h2>
+      <p>Claude Design est une research preview (limites imposées à la sortie, comme Mythos). Le CPO d'Anthropic avait démissionné du board Figma trois jours avant le lancement — signal interne qui n'avait pas échappé à la presse tech. L'outil ne "remplace pas Figma" — il remplace Kevin, le freelance qui facture 2 500€ une landing page qu'il a exécutée sur Canva.</p>
+      <p>La démo live construit une application iOS de vente de livres (TickRead) : prompt, choix de l'esthétique (sombre premium), sélection des écrans (onboarding, accueil, bibliothèque, panier, checkout, profil, search), 3 variations de styles, tweak en temps réel (couleurs, polices, densité), commentaires directement sur les éléments visuels, export ZIP (JSX + HTML standalone + handoff Claude Code).</p>
+      <p>Le handoff Claude Code est le cas d'usage le plus stratégique : partir du design vers le code prod. Claude Code excelle sur la logique/sécurité mais produit souvent du "design de merde" quand on lui demande de styler from scratch. Claude Design résout le maillon manquant — design → code en une commande.</p>
+      <p>La discrimination est claire : le designer créatif relationnel (qui a une âme, un point de vue, qui utilise ces outils comme passerelle) n'a jamais été aussi précieux. L'intermédiaire template-corporate-rigide est remplacé. "Kevin" qui n'a pas su répondre à "tu fais quoi que je ne peux pas faire avec ça pour 20$/mois ?" n'avait pas de réponse parce qu'il faisait de l'exécution Canva déguisée en expertise.</p>
+
+      <h2 class="section-title" style="margin:var(--gap-xl) 0 var(--gap-md)">Méthode — Workflow Claude Design → Claude Code</h2>
+      <ol class="steps-list">
+        <li>Ouvrir Claude Design — prompt de création (app iOS, landing, slides…)</li>
+        <li>Répondre aux questions de précision (nom, esthétique, écrans, variations, Twix)</li>
+        <li>Itérer en conversation inline — commenter les éléments, modifier couleurs/polices/espacement</li>
+        <li>Valider le design system (charte, identité, character de l'app)</li>
+        <li>Exporter → "End off to Claude Code" → copier la commande générée</li>
+        <li>Coller dans Claude Code → la logique, la sécurité et le code prod sont générés à partir du design</li>
+      </ol>
+
+      <h2 class="section-title" style="margin:var(--gap-xl) 0 var(--gap-md)">Citations notables</h2>
+      <blockquote>Claude Design ne tue pas Figma. Il tue les freelancers qui vendaient des templates déguisés à 2 500€.</blockquote>
+      <blockquote>Le designer créatif relationnel n'a jamais été aussi précieux. Celui qui vit des templates corporate rigides est déjà remplacé.</blockquote>
+    </div>
+
+    <!-- TAB 2 -->
+    <div class="tab-panel" id="tab-analyse">
+      <h2 class="section-title" style="margin-bottom:var(--gap-lg)">Concepts clés</h2>
+
+      <div class="concept-card">
+        <div class="concept-term">Claude Design</div>
+        <div class="concept-def">Outil Anthropic Labs (research preview) propulsé par Opus 4.7. Transforme un prompt en visuel éditable interactif. Fonctionnalités : design system automatique (upload charte/codebase), prototypes et sites (itération conversationnelle, édition inline), slide decks et one-pagers. Export : Canva, PDF, PowerPoint, HTML standalone, handoff Claude Code.</div>
+        <div class="concept-why"><strong>Pourquoi c'est important :</strong> Supprime le maillon de friction entre idée et design livrable. Surtout via le handoff Claude Code — le passage design→code qui était une galère constante devient une commande.</div>
+      </div>
+
+      <div class="concept-card">
+        <div class="concept-term">Twix — panneau d'ajustements en temps réel</div>
+        <div class="concept-def">Interface de personnalisation "on-screen" dans Claude Design : modifier couleurs, typographies, densité d'informations, thème clair/sombre directement sur le visuel sans repasser par un prompt. Proche du comportement attendu dans Figma mais piloté par IA.</div>
+        <div class="concept-why"><strong>Pourquoi c'est important :</strong> Élimine le cycle prompt → attente → résultat → re-prompt pour chaque micro-ajustement visuel. Rend l'outil utilisable même sans maîtriser le prompting avancé.</div>
+      </div>
+
+      <div class="concept-card">
+        <div class="concept-term">Handoff Claude Code</div>
+        <div class="concept-def">Export spécifique qui génère une commande prête à coller dans Claude Code. La commande lui dit de "fetch this design" et d'implémenter le HTML/JSX — partant du design validé vers le code de production. Sépare clairement : Claude Design = design system + UI, Claude Code = logique + sécurité + API.</div>
+        <div class="concept-why"><strong>Pourquoi c'est important :</strong> C'est le workflow idéal qui manquait. Jusqu'ici Claude Code faisait du "design de merde" quand on lui demandait de styler from scratch. Avec Claude Design, il reçoit des specs visuelles précises et les traduit en code.</div>
+      </div>
+
+      <h2 class="section-title" style="margin:var(--gap-xl) 0 var(--gap-md)">Insights non-évidents</h2>
+      <ul class="insights-list">
+        <li>Le CPO d'Anthropic avait démissionné du board Figma <strong>3 jours avant</strong> le lancement de Claude Design — signal interne fort qui n'a été remarqué qu'après l'annonce.</li>
+        <li>Le code produit est en <strong>JSX (React)</strong>, pas en HTML pur — implique de savoir passer d'un fichier JSX à un composant React utilisable dans un projet réel.</li>
+        <li>Claude Design permet de <strong>sauvegarder des templates</strong> : créer une fois la charte de sa boîte → la réutiliser sur tous les projets futurs sans re-prompter l'identité.</li>
+        <li>La valeur perçue d'une présentation animée vs une slide statique : un client qui voit une présentation Claude Design animée face à un concurrent avec un vieux PowerPoint — la valeur perçue explose même si le fond est identique.</li>
+      </ul>
+
+      <h2 class="section-title" style="margin:var(--gap-xl) 0 var(--gap-md)">Outils &amp; techniques</h2>
+      <div class="tools-badges">
+        <span class="tool-pill">Claude Design</span>
+        <span class="tool-pill">Claude Opus 4.7</span>
+        <span class="tool-pill">Claude Code</span>
+        <span class="tool-pill">Figma (concurrent)</span>
+        <span class="tool-pill">Canva (export)</span>
+        <span class="tool-pill">JSX/React</span>
+        <span class="tool-pill">HTML standalone</span>
+        <span class="tool-pill">Design System</span>
+        <span class="tool-pill">Twix</span>
+      </div>
+
+      <h2 class="section-title" style="margin:var(--gap-xl) 0 var(--gap-md)">Connexions</h2>
+      <div class="connection-tags">
+        <span class="theme-pill">Claude Opus 4.7 — modèle sous-jacent</span>
+        <span class="theme-pill">Claude Code — handoff design→code</span>
+        <span class="theme-pill">70% équipes — valeur perçue client</span>
+      </div>
+    </div>
+
+    <!-- TAB 3 -->
+    <div class="tab-panel" id="tab-transcription">
+      <div style="display:flex;align-items:center;gap:var(--gap-md);margin-bottom:var(--gap-lg);flex-wrap:wrap;">
+        <input id="transcript-search" type="search" placeholder="Rechercher dans la transcription…" style="flex:1;min-width:200px;padding:.5rem .75rem;background:var(--bg-input);border:1px solid var(--border);border-radius:6px;color:var(--text-primary);font-size:.9rem;">
+        <span style="color:var(--text-muted);font-size:.85rem;white-space:nowrap">~3 500 mots</span>
+      </div>
+      <div class="transcription-body" id="transcript-content">
+        <p>Nouvelle mise à jour de Claude. Encore une fois, ça s'arrête jamais. Laissez-nous dormir les gars. Concrètement, aujourd'hui c'est très puissant ce qui vient d'arriver. Nous pouvons désormais créer des designs, créer des templates, des modèles et de très haute qualité, modifiables, personnalisables. Figma, Photoshop et tous les designers sont désormais à terre.</p>
+        <p>Regardez-moi ça en prompt : la personne crée directement une application ou une extension visuellement, elle peut changer les couleurs, changer les textes, passer en dark mode, demander des itérations ou faire encore plein de design. Elle peut aussi commenter, modifier la taille des polices, modifier la taille des textes et tout est personnalisable et ça peut être aussi interactif pour de l'animation.</p>
+        <p>Dès que c'est sorti : Figma moins 10%, Adobe presque moins 2% et ce n'est pas fini. Le 17 avril 2026, Claude ont sorti Claude Design, de la société Anthropic. Claude Design est un nouvel outil d'Anthropic propulsé par Opus 4.7, qui transforme n'importe quel prompt en visuel éditable. Prototype, slides, one page, maquettes avec exportation Canva, PDF, PowerPoint, HTML, ou hand-off directement importables dans Claude Code.</p>
+        <p>Le marché prend une claque. Figma : 18,84$ alors qu'il était à 20 et quelques. Wix : -4,7%. Adobe : -2,7%. Tout un écosystème corrigé en une heure. 14 avril 2026 : le chief product officer d'Anthropic démissionne du board Figma — trois jours avant le lancement.</p>
+        <p>Qu'est-ce que Claude Design fait vraiment ? Design system automatique (upload codebase, charte graphique). Prototypes et sites (itération conversationnelle, édition inline). Slide decks et one-pagers (export Canva, PDF, PowerPoint, HTML en un clic). Hand-off Claude Code — pour passer du design au code prod.</p>
+        <p>Claude Design ne tue pas Figma — il tue Kevin. Kevin le freelance qui facture 2 500€ la landing page qu'il a faite sur Canva. Les designers pro gardent leur boulot, les intermédiaires templates meurent. Le vrai graphiste designer qui a une âme, une compréhension de son métier, qui utilise ces outils comme passerelle — pourquoi pas. Mais les intermédiaires vont se faire manger par le marché.</p>
+        <p>Kevin — profil type qui va mourir. Il vend des templates à 2 500€ créés sur Canva. Ça fait 3 mois qu'il n'a pas signé. La semaine dernière un prospect lui envoie le lien Claude Design avec une question : "Tu fais quoi que je ne peux pas faire avec ça pour 20 dollars par mois ?" Kevin n'a pas su répondre, parce que la vérité c'est qu'il ne faisait pas de design, il faisait de l'exécution Canva déguisée en expertise.</p>
+        <p>Démo live. Claude Design, by Anthropic Labs. Premier test : app de livraison bio en Suisse — prompt basique, questions posées automatiquement, moins de 5 minutes, application avec 3 langues (allemand, français, italien), charte graphique sélectionnable, édition inline, modification des polices, modification des couleurs.</p>
+        <p>Deuxième test : design to code. On part du principe qu'on sait utiliser Claude Code mais le design c'est la galère. On va créer une app iOS de vente de livres. Prompt dans le dashboard Claude Design — on peut importer des fichiers Figma existants, attacher une codebase, mettre des screenshots de projets. Prompt : "Je veux créer une application iOS mobile sur iPhone pour vendre des livres. Interface moderne, sobre, épurée. Multiples catégories, panier d'achat, intégration paiement Stripe et Paypal."</p>
+        <p>Questions de précision automatiques : nom de l'app (TickRead), esthétique (sombre premium mode nuit), types de livres (toutes catégories), écrans à inclure (accueil, découverte, checkout, recherche, panier, profil — on a dit "tout"), variations à explorer (3), qu'est-ce qu'on fait varier (styles visuels), Stripe et Paypal (Apple Pay + carte), langue (français), Twix activé (thème clair/sombre + couleur d'accent). On lance.</p>
+        <p>Résultat en moins de 5 minutes : librairie iOS complète. Onboarding, accueil (2104 titres), bibliothèque, détails/avis/panier, commandes en cours, profil Elise Santos. Les éléments interactifs fonctionnent (like/dislike, panier). Export disponible : ZIP (JSX + HTML), PDF, PowerPoint, Canva, HTML standalone, end off to Claude Code.</p>
+        <p>Commentaires inline : sélectionner un élément → écrire directement "le header qui est censé être sticky est en plein milieu, fais cet ajustement" + capture d'écran → il corrige. Ou utiliser Twix pour modifier en temps réel : couleur arrière-plan, typo, densité.</p>
+        <p>Export "end off to Claude Code" génère une commande : "fetch this design" + implement TickRead HTML. On colle dans Claude Code → il génère la partie logique, code, sécurité — en partant du design validé. C'est ça le workflow idéal : Claude Design pour le design system et le battement de cœur de l'app, Claude Code pour la technique.</p>
+        <p>Templates sauvegardables : créer une fois sa charte d'entreprise → la réutiliser sur tous les projets. Présentation santé financière d'un client → augmenter la valeur perçue du service. "Quelqu'un qui arrive avec sa présentation animée et propre face à une vieille présentation — c'est terminé."</p>
+        <p>Le designer créatif relationnel n'a jamais été aussi précieux. Celui qui vit des templates corporate rigides est déjà remplacé. Choisissez votre camp très rapidement. Ciao !</p>
+      </div>
+    </div>
+
+    <!-- TAB 4 -->
+    <div class="tab-panel" id="tab-fiches">
+      <div class="fiche" id="fiche-resume">
+        <div class="fiche-header">
+          <h2>Fiche de résumé</h2>
+          <button onclick="window.print()" class="btn btn-secondary" style="font-size:.85rem">🖨 Imprimer</button>
+        </div>
+        <table class="fiche-table">
+          <tr class="fiche-row"><td class="fiche-label">Titre</td><td>Claude Design : la fin des freelances templates</td></tr>
+          <tr class="fiche-row"><td class="fiche-label">Date</td><td>2026-04-18 (Claude Design lancé le 17 avril)</td></tr>
+          <tr class="fiche-row"><td class="fiche-label">Durée</td><td>18:23</td></tr>
+          <tr class="fiche-row"><td class="fiche-label">Niveau</td><td>Intermédiaire</td></tr>
+          <tr class="fiche-row"><td class="fiche-label">Modèle</td><td>Claude Opus 4.7</td></tr>
+          <tr class="fiche-row"><td class="fiche-label">Réaction marché</td><td>Figma −10%, Wix −4,7%, Adobe −2,7%</td></tr>
+          <tr class="fiche-row"><td class="fiche-label">Exports</td><td>Canva, PDF, PowerPoint, HTML standalone, handoff Claude Code</td></tr>
+          <tr class="fiche-row"><td class="fiche-label">Cibles survivantes</td><td>Designers créatifs relationnels avec point de vue</td></tr>
+          <tr class="fiche-row"><td class="fiche-label">Cibles remplacées</td><td>Freelances templates / exécution Canva à 2 500€</td></tr>
+          <tr class="fiche-row"><td class="fiche-label">URL</td><td><code>youtube.com/watch?v=5FcFUw_n59M</code></td></tr>
+        </table>
+      </div>
+
+      <div class="fiche" style="margin-top:var(--gap-xl)">
+        <div class="fiche-header"><h2>Fiche d'action</h2></div>
+        <ul class="action-list">
+          <li><label><input type="checkbox" data-idx="0"> Tester Claude Design sur un projet réel (landing, app, slides) — évaluer le gap vs Figma</label></li>
+          <li><label><input type="checkbox" data-idx="1"> Créer un design system sauvegardé avec la charte de sa boîte ou de ses clients</label></li>
+          <li><label><input type="checkbox" data-idx="2"> Tester le workflow Claude Design → handoff Claude Code sur un composant simple</label></li>
+          <li><label><input type="checkbox" data-idx="3"> Produire une présentation animée pour un client et mesurer la différence de valeur perçue</label></li>
+        </ul>
+      </div>
+
+      <div class="fiche" style="margin-top:var(--gap-xl)">
+        <div class="fiche-header"><h2>Thèmes abordés</h2></div>
+        <div class="themes-grid">
+          <span class="theme-pill">Design IA</span>
+          <span class="theme-pill">Prototypage</span>
+          <span class="theme-pill">Disruption freelance</span>
+          <span class="theme-pill">Design System</span>
+          <span class="theme-pill">Handoff code</span>
+          <span class="theme-pill">Valeur perçue</span>
+          <span class="theme-pill">React JSX</span>
+        </div>
+        <div style="margin-top:var(--gap-lg)">
+          <span class="badge cat-badge cat-4">Technique &amp; Outils IA</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 5 -->
+    <div class="tab-panel" id="tab-passages">
+      <p style="color:var(--text-muted);margin-bottom:var(--gap-lg)">Cliquez sur un timestamp pour ouvrir YouTube au bon moment.</p>
+      <ul class="timestamps-list">
+        <li class="timestamp-item">
+          <a href="https://www.youtube.com/watch?v=5FcFUw_n59M&t=0" target="_blank" rel="noopener">
+            <span class="ts-badge">00:00</span><span class="ts-label">Annonce — Figma −10%, Adobe −2,7%, réaction marchés</span>
+          </a>
+        </li>
+        <li class="timestamp-item">
+          <a href="https://www.youtube.com/watch?v=5FcFUw_n59M&t=120" target="_blank" rel="noopener">
+            <span class="ts-badge">02:00</span><span class="ts-label">Définition Claude Design — fonctionnalités et exports</span>
+          </a>
+        </li>
+        <li class="timestamp-item">
+          <a href="https://www.youtube.com/watch?v=5FcFUw_n59M&t=300" target="_blank" rel="noopener">
+            <span class="ts-badge">05:00</span><span class="ts-label">Kevin vs design créatif — qui survit, qui meurt</span>
+          </a>
+        </li>
+        <li class="timestamp-item">
+          <a href="https://www.youtube.com/watch?v=5FcFUw_n59M&t=480" target="_blank" rel="noopener">
+            <span class="ts-badge">08:00</span><span class="ts-label">Démo live — app iOS TickRead, prompt, questions, variations</span>
+          </a>
+        </li>
+        <li class="timestamp-item">
+          <a href="https://www.youtube.com/watch?v=5FcFUw_n59M&t=720" target="_blank" rel="noopener">
+            <span class="ts-badge">12:00</span><span class="ts-label">Résultat et itérations — Twix, commentaires inline, export</span>
+          </a>
+        </li>
+        <li class="timestamp-item">
+          <a href="https://www.youtube.com/watch?v=5FcFUw_n59M&t=960" target="_blank" rel="noopener">
+            <span class="ts-badge">16:00</span><span class="ts-label">Handoff Claude Code — commande générée, workflow design→prod</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  </main>
+
+  <aside class="sidebar">
+    <div class="sidebar-card">
+      <div class="sidebar-card-title">Informations</div>
+      <div class="info-row"><span>Date</span><strong>2026-04-18</strong></div>
+      <div class="info-row"><span>Durée</span><strong>18:23</strong></div>
+      <div class="info-row"><span>Niveau</span><strong>Intermédiaire</strong></div>
+      <div class="info-row"><span>Modèle</span><strong>Opus 4.7</strong></div>
+      <div class="info-row"><span>Figma</span><strong>−10% à l'annonce</strong></div>
+    </div>
+    <a href="https://www.youtube.com/watch?v=5FcFUw_n59M" target="_blank" rel="noopener" class="btn-youtube" style="display:block;text-align:center;margin-bottom:var(--gap-md)">▶ Voir sur YouTube</a>
+    <div class="sidebar-card">
+      <div class="sidebar-card-title">Vidéos liées</div>
+      <a class="related-video-link" href="2026-04-16_claude-opus-47.html">Claude Opus 4.7 — modèle sous-jacent</a>
+      <a class="related-video-link" href="2026-04-20_obsidian-notion-claude-code.html">Obsidian GodMode — Claude Code avancé</a>
+    </div>
+  </aside>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Base de connaissance · <a href="../index.html">Accueil</a> · <a href="../videos.html">Vidéothèque</a></p>
+  </div>
+</footer>
+<script src="../js/main.js"></script>
+</body>
+</html>

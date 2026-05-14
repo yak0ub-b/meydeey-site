@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>meydeey — Base de Connaissance IA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════ HEADER ═══════════════════════════════ -->
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="index.html">meydeey<span class="logo-accent"> KB</span></a>
+    <nav class="main-nav">
+      <a href="index.html"      class="nav-link active">Accueil</a>
+      <a href="categories.html" class="nav-link">Catégories</a>
+      <a href="videos.html"     class="nav-link">Vidéothèque</a>
+      <a href="ouvertures.html" class="nav-link">Ouvertures</a>
+      <a href="demo.html"       class="nav-link">Démo</a>
+    </nav>
+    <div class="search-wrap">
+      <input id="global-search" type="search" placeholder="Rechercher…" autocomplete="off">
+      <div id="search-results" class="search-dropdown hidden"></div>
+    </div>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════ HERO ════════════════════════════════ -->
+<section class="hero">
+  <div class="container">
+    <h1 class="hero-title">Base de Connaissance IA</h1>
+    <p class="hero-sub">79 vidéos · 9 analysées en profondeur · Novembre 2025 → Avril 2026</p>
+    <div class="hero-stats">
+      <div class="stat-card">
+        <span class="stat-num">79</span>
+        <span class="stat-label">Vidéos</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num">9</span>
+        <span class="stat-label">Analysées</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num">5</span>
+        <span class="stat-label">Catégories</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num">65h</span>
+        <span class="stat-label">Contenu</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ NAVIGATION ══════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Navigation</h2>
+    </div>
+    <div class="nav-cards">
+      <a class="nav-card" href="categories.html">
+        <div class="nav-card-icon">◈</div>
+        <h3>Catégories</h3>
+        <p>5 catégories — de la vision macro à la pratique quotidienne Claude Code</p>
+      </a>
+      <a class="nav-card" href="videos.html">
+        <div class="nav-card-icon">▶</div>
+        <h3>Vidéothèque</h3>
+        <p>79 vidéos — filtrable par catégorie, niveau, contenu. Recherche plein texte.</p>
+      </a>
+      <a class="nav-card" href="ouvertures.html">
+        <div class="nav-card-icon">◉</div>
+        <h3>Ouvertures</h3>
+        <p>Zones d'approfondissement — angles morts, sujets flous, questions ouvertes.</p>
+      </a>
+      <a class="nav-card" href="demo.html">
+        <div class="nav-card-icon">⬡</div>
+        <h3>Démo Concepts</h3>
+        <p>5 schémas interactifs — Pyramide IA, Swarm agents, Obsidian, RAG vs Wiki…</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ CATÉGORIES ══════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Catégories</h2>
+      <a href="categories.html" class="btn btn-secondary">Voir tout →</a>
+    </div>
+    <div class="cat-strip">
+      <a class="cat-strip-card c1" href="categories.html#vision">
+        <span class="cat-num">01</span>
+        <span class="cat-name">Vision &amp; Société</span>
+        <span class="cat-count">9 vidéos</span>
+      </a>
+      <a class="cat-strip-card c2" href="categories.html#info">
+        <span class="cat-num">02</span>
+        <span class="cat-name">Info &amp; Actualité IA</span>
+        <span class="cat-count">21 vidéos</span>
+      </a>
+      <a class="cat-strip-card c3" href="categories.html#management">
+        <span class="cat-num">03</span>
+        <span class="cat-name">Management &amp; Entrepreneuriat</span>
+        <span class="cat-count">16 vidéos</span>
+      </a>
+      <a class="cat-strip-card c4" href="categories.html#technique">
+        <span class="cat-num">04</span>
+        <span class="cat-name">Technique &amp; Outils IA</span>
+        <span class="cat-count">16 vidéos</span>
+      </a>
+      <a class="cat-strip-card c5" href="categories.html#claude-code">
+        <span class="cat-num">05</span>
+        <span class="cat-name">Claude Code — Tutos</span>
+        <span class="cat-count">17 vidéos</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ VIDÉOS ANALYSÉES ════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Vidéos analysées <span class="badge badge-green">9</span></h2>
+      <a href="videos.html?content=full" class="btn btn-secondary">Voir tout →</a>
+    </div>
+    <div class="video-grid">
+
+      <a class="video-card has-content" href="videos/2026-04-27_miroshark.html">
+        <div class="card-badges">
+          <span class="badge cat-badge cat-2">Info &amp; Actualité IA</span>
+          <span class="badge badge-green">✓ Analysée</span>
+        </div>
+        <div class="card-title">MiroShark EXPLOSE MiroFish (test en direct)</div>
+        <div class="card-meta">2026-04-27 · ⏱ 41:56</div>
+        <div class="card-summary">MiroShark testé en direct sur 40 rounds de simulation — 678 événements générés, Neo4j, Swarm Agency.</div>
+      </a>
+
+      <a class="video-card has-content" href="videos/2026-04-25_70-equipes-ia.html">
+        <div class="card-badges">
+          <span class="badge cat-badge cat-3">Management</span>
+          <span class="badge badge-green">✓ Analysée</span>
+        </div>
+        <div class="card-title">70% du temps de tes équipes part en fumée (système IA)</div>
+        <div class="card-meta">2026-04-25 · ⏱ 25:25</div>
+        <div class="card-summary">Pyramide d'intégration IA en 4 niveaux, rôle AI Officer, base mémorielle d'entreprise.</div>
+      </a>
+
+      <a class="video-card has-content" href="videos/2026-04-24_deepseek-v4-humilie-claude.html">
+        <div class="card-badges">
+          <span class="badge cat-badge cat-2">Info &amp; Actualité IA</span>
+          <span class="badge badge-green">✓ Analysée</span>
+        </div>
+        <div class="card-title">DeepSeek V4 HUMILIE Claude Opus 4.7 (preuves en direct)</div>
+        <div class="card-meta">2026-04-24 · ⏱ 11:03</div>
+        <div class="card-summary">DeepSeek V4 Pro surpasse Claude Opus 4.7 à une fraction du coût — benchmarks en direct.</div>
+      </a>
+
+      <a class="video-card has-content" href="videos/2026-04-20_obsidian-notion-claude-code.html">
+        <div class="card-badges">
+          <span class="badge cat-badge cat-5">Claude Code</span>
+          <span class="badge badge-green">✓ Analysée</span>
+          <span class="badge level-avance">Avancé</span>
+        </div>
+        <div class="card-title">J'ai supprimé Notion pour ça (Claude Code + Obsidian)</div>
+        <div class="card-meta">2026-04-20 · ⏱ 33:48</div>
+        <div class="card-summary">Obsidian GodMode : 1000+ pages, 10 000+ relations, 7 agents parallèles.</div>
+      </a>
+
+      <a class="video-card has-content" href="videos/2026-04-19_hermes-agent.html">
+        <div class="card-badges">
+          <span class="badge cat-badge cat-4">Technique &amp; Outils</span>
+          <span class="badge badge-green">✓ Analysée</span>
+        </div>
+        <div class="card-title">Hermes Agent : l'agent IA qui t'appartient vraiment</div>
+        <div class="card-meta">2026-04-19 · ⏱ 21:01</div>
+        <div class="card-summary">Hermes Agent avec 77 compétences — souveraineté totale sur ton agent IA personnel.</div>
+      </a>
+
+      <a class="video-card has-content" href="videos/2026-04-18_claude-design-freelances.html">
+        <div class="card-badges">
+          <span class="badge cat-badge cat-4">Technique &amp; Outils</span>
+          <span class="badge badge-green">✓ Analysée</span>
+        </div>
+        <div class="card-title">Claude Design : la fin des freelances templates</div>
+        <div class="card-meta">2026-04-18 · ⏱ 18:23</div>
+        <div class="card-summary">Claude Design arrive et bouleverse le marché des freelances en design et templates.</div>
+      </a>
+
+      <a class="video-card has-content" href="videos/2026-04-16_claude-routines.html">
+        <div class="card-badges">
+          <span class="badge cat-badge cat-5">Claude Code</span>
+          <span class="badge badge-green">✓ Analysée</span>
+          <span class="badge level-intermediaire">Intermédiaire</span>
+        </div>
+        <div class="card-title">Claude /routines ÉCRASE les tâches répétitives (démo live)</div>
+        <div class="card-meta">2026-04-16 · ⏱ 25:36</div>
+        <div class="card-summary">Claude /routines automatise toutes les tâches répétitives — démo live avec cas concrets.</div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ OUVERTURES TEASER ═══════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Zones à approfondir <span class="badge badge-red">🔴 Urgent</span></h2>
+      <a href="ouvertures.html" class="btn btn-secondary">Voir tout →</a>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:var(--gap-md);">
+
+      <div class="ouverture-card p-red" data-priority="red" style="margin-bottom:0">
+        <div class="ouverture-card-header">
+          <div>
+            <span class="badge badge-red" style="margin-bottom:0.5rem;display:inline-flex">🔴 Urgent</span>
+            <h3>Claude Mythos — le modèle fantôme</h3>
+          </div>
+          <a href="videos/2026-04-08_claude-mythos.html" class="btn-sm">→ Vidéo</a>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Ce qui est flou</div>
+          <p style="font-size:.88rem">Anthropic a évoqué un modèle interne d'une capacité supérieure sans jamais le rendre public. Aucun benchmark, aucun accès, aucune confirmation officielle. Rumeurs d'un usage restreint en interne uniquement.</p>
+        </div>
+      </div>
+
+      <div class="ouverture-card p-red" data-priority="red" style="margin-bottom:0">
+        <div class="ouverture-card-header">
+          <div>
+            <span class="badge badge-red" style="margin-bottom:0.5rem;display:inline-flex">🔴 Urgent</span>
+            <h3>Skills Claude — jamais documentées en détail</h3>
+          </div>
+          <a href="videos/2026-04-10_seule-video-skills-claude.html" class="btn-sm">→ Vidéo</a>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Ce qui manque</div>
+          <p style="font-size:.88rem">La vidéo de 21 min sur les Skills Claude n'a pas encore été transcrite et analysée. C'est la pièce manquante pour comprendre comment personnaliser Claude Code en profondeur.</p>
+        </div>
+      </div>
+
+      <div class="ouverture-card p-orange" data-priority="orange" style="margin-bottom:0">
+        <div class="ouverture-card-header">
+          <div>
+            <span class="badge badge-orange" style="margin-bottom:0.5rem;display:inline-flex">🟠 Important</span>
+            <h3>MiroShark — test incomplet à 40 rounds</h3>
+          </div>
+          <a href="videos/2026-04-27_miroshark.html" class="btn-sm">→ Vidéo analysée</a>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Ce qui reste ouvert</div>
+          <p style="font-size:.88rem">40 rounds exécutés, 678 événements générés, rapport partiel. L'utilité réelle de l'intégration Polymarket reste non démontrée. Phase finale du test non atteinte.</p>
+        </div>
+      </div>
+
+    </div>
+    <div style="margin-top:var(--gap-lg)">
+      <a href="ouvertures.html" class="btn btn-secondary">Voir toutes les ouvertures →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ FOOTER ══════════════════════════════ -->
+<footer class="site-footer">
+  <div class="container">
+    <p>Base de connaissance générée le <strong>2026-05-04</strong> · 9/79 vidéos analysées · Pipeline Groq API</p>
+    <p style="margin-top:0.5rem"><a href="categories.html">Catégories</a> · <a href="videos.html">Vidéothèque</a> · <a href="ouvertures.html">Ouvertures</a> · <a href="demo.html">Démo</a></p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

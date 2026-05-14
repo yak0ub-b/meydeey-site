@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vidéothèque — meydeey KB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="index.html">meydeey<span class="logo-accent"> KB</span></a>
+    <nav class="main-nav">
+      <a href="index.html"      class="nav-link">Accueil</a>
+      <a href="categories.html" class="nav-link">Catégories</a>
+      <a href="videos.html"     class="nav-link active">Vidéothèque</a>
+      <a href="ouvertures.html" class="nav-link">Ouvertures</a>
+      <a href="demo.html"       class="nav-link">Démo</a>
+    </nav>
+    <div class="search-wrap">
+      <input id="global-search" type="search" placeholder="Rechercher…" autocomplete="off">
+      <div id="search-results" class="search-dropdown hidden"></div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="library-controls container">
+    <h1 style="font-size:2rem;font-weight:900;letter-spacing:-.02em;">Vidéothèque <span id="results-count" style="font-size:1rem;color:var(--text-muted);font-weight:500;"></span></h1>
+    <div class="controls-bar">
+      <div class="control-group" style="flex:1;min-width:180px;">
+        <label for="library-search">Recherche</label>
+        <input id="library-search" type="search" placeholder="Titre, concept, outil…">
+      </div>
+      <div class="control-group">
+        <label for="filter-category">Catégorie</label>
+        <select id="filter-category">
+          <option value="">Toutes</option>
+          <option value="vision">Vision &amp; Société</option>
+          <option value="info">Info &amp; Actualité IA</option>
+          <option value="management">Management</option>
+          <option value="technique">Technique &amp; Outils</option>
+          <option value="claude-code">Claude Code</option>
+        </select>
+      </div>
+      <div class="control-group">
+        <label for="filter-content">Contenu</label>
+        <select id="filter-content">
+          <option value="">Toutes</option>
+          <option value="full">✓ Analysée</option>
+          <option value="stub">⏳ En attente</option>
+        </select>
+      </div>
+      <div class="control-group">
+        <label for="filter-level">Niveau</label>
+        <select id="filter-level">
+          <option value="">Tous niveaux</option>
+          <option value="debutant">Débutant</option>
+          <option value="intermediaire">Intermédiaire</option>
+          <option value="avance">Avancé</option>
+        </select>
+      </div>
+      <div class="control-group">
+        <label for="sort-by">Trier par</label>
+        <select id="sort-by">
+          <option value="date-desc">Plus récent</option>
+          <option value="date-asc">Plus ancien</option>
+          <option value="duration-desc">Durée (↓)</option>
+          <option value="duration-asc">Durée (↑)</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="padding-bottom:var(--gap-2xl);">
+    <div class="video-grid" id="video-grid">
+      <!-- Rendu dynamiquement par main.js (Library module) -->
+      <div style="grid-column:1/-1;color:var(--text-muted);padding:2rem 0;">Chargement…</div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Base de connaissance générée le <strong>2026-05-04</strong> · 9/79 vidéos analysées</p>
+    <p style="margin-top:.5rem"><a href="index.html">Accueil</a> · <a href="categories.html">Catégories</a> · <a href="ouvertures.html">Ouvertures</a> · <a href="demo.html">Démo</a></p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+  // Pré-remplir les filtres depuis les query params de l'URL si présents
+  (function() {
+    const params = new URLSearchParams(window.location.search);
+    const content = params.get('content');
+    if (content) {
+      document.addEventListener('DOMContentLoaded', () => {
+        const el = document.getElementById('filter-content');
+        if (el) { el.value = content; el.dispatchEvent(new Event('change')); }
+      });
+    }
+  })();
+</script>
+</body>
+</html>

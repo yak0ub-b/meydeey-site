@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ouvertures — meydeey KB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="index.html">meydeey<span class="logo-accent"> KB</span></a>
+    <nav class="main-nav">
+      <a href="index.html"      class="nav-link">Accueil</a>
+      <a href="categories.html" class="nav-link">Catégories</a>
+      <a href="videos.html"     class="nav-link">Vidéothèque</a>
+      <a href="ouvertures.html" class="nav-link active">Ouvertures</a>
+      <a href="demo.html"       class="nav-link">Démo</a>
+    </nav>
+    <div class="search-wrap">
+      <input id="global-search" type="search" placeholder="Rechercher…" autocomplete="off">
+      <div id="search-results" class="search-dropdown hidden"></div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- PAGE HEADER -->
+  <div style="background:linear-gradient(180deg,rgba(239,68,68,.04) 0%,transparent 100%);border-bottom:1px solid var(--border);padding:var(--gap-2xl) 0 var(--gap-xl);">
+    <div class="container">
+      <h1 class="page-title">Zones d'approfondissement</h1>
+      <p class="page-sub">Cartographie des angles morts, fils non terminés, concepts cités mais jamais développés<br>
+        Basé sur l'analyse de <strong>9 vidéos</strong> — mis à jour le 2026-05-05</p>
+
+      <div class="priority-legend" style="margin-top:var(--gap-lg);">
+        <span class="badge badge-red">🔴 Urgent</span>
+        <span class="badge badge-orange">🟠 Important</span>
+        <span class="badge badge-yellow">🟡 Moyen</span>
+        <span class="badge badge-blue">🔵 Curiosité</span>
+      </div>
+
+      <div class="priority-filter-bar" style="margin-top:var(--gap-md);">
+        <button class="filter-btn active" data-priority="all">Tous</button>
+        <button class="filter-btn" data-priority="red">🔴 Urgent</button>
+        <button class="filter-btn" data-priority="orange">🟠 Important</button>
+        <button class="filter-btn" data-priority="yellow">🟡 Moyen</button>
+        <button class="filter-btn" data-priority="blue">🔵 Curiosité</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="padding-top:var(--gap-2xl);padding-bottom:var(--gap-2xl);">
+
+    <!-- ═══ 1. INFO & ACTUALITÉ IA ════════════════════════════════════════ -->
+    <div class="ouverture-section" id="info-ia">
+      <p class="ouverture-section-title">1. Info &amp; Actualité IA</p>
+
+      <div class="ouverture-card p-red" data-priority="red">
+        <div class="ouverture-card-header">
+          <div>
+            <span class="badge badge-red" style="margin-bottom:.5rem;display:inline-flex;">🔴 Urgent</span>
+            <h3>Claude Mythos — le modèle fantôme</h3>
+          </div>
+          <a href="videos/2026-04-08_claude-mythos.html" class="btn-sm">→ Vidéo liée</a>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Ce qui est dit</div>
+          <p style="font-size:.88rem">Mythos existe, il est bien au-dessus de 4.7, il est "bridé parce que trop puissant", certaines boîtes y ont accès.</p>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Ce qui est tu / flou</div>
+          <p style="font-size:.88rem">Aucun benchmark public accessible. Zéro cas d'usage documenté. Qui y a accès ? Sous quelles conditions ? Pourquoi Anthropic l'a annoncé publiquement s'il n'est pas disponible ?</p>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Pourquoi c'est flou</div>
+          <p style="font-size:.88rem">Stratégie délibérée d'Anthropic ("ils ont 2 à 3 tours d'avance") + pas d'accès possible pour l'auteur au moment du tournage.</p>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Pour approfondir</div>
+          <p style="font-size:.88rem">Surveiller les pages Anthropic Research + les annonces enterprise. Le benchmark "Misalign Behavior" est la seule donnée publique — creuser ce que ça mesure exactement.</p>
+        </div>
+      </div>
+
+      <div class="ouverture-card p-red" data-priority="red">
+        <div class="ouverture-card-header">
+          <div>
+            <span class="badge badge-red" style="margin-bottom:.5rem;display:inline-flex;">🔴 Urgent</span>
+            <h3>Protocole de test 21 jours — jamais montré en public</h3>
+          </div>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Ce qui est dit</div>
+          <p style="font-size:.88rem">"J'ai un protocole de 3 semaines, 21 jours pour donner un avis concret sur un modèle." Mentionné pour Claude 4.7 et DeepSeek V4.</p>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Ce qui est tu / flou</div>
+          <p style="font-size:.88rem">Le protocole lui-même n'est jamais détaillé. Quelles dimensions ? Quels tests ? Comment noter la "profondeur sémantique" ?</p>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Pourquoi c'est flou</div>
+          <p style="font-size:.88rem">Contenu réservé au Labo IA Elite (masterclass mercredi). C'est un actif propriétaire.</p>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Pour approfondir</div>
+          <p style="font-size:.88rem">Reconstituer le protocole à partir des indices : profondeur sémantique, reconnaissance de patterns, raisonnement long, anti-hallucination, vitesse d'inférence. Créer sa propre grille.</p>
+        </div>
+      </div>
+
+      <div class="ouverture-card p-orange" data-priority="orange">
+        <div class="ouverture-card-header">
+          <div>
+            <span class="badge badge-orange" style="margin-bottom:.5rem;display:inline-flex;">🟠 Important</span>
+            <h3>DeepSeek V4 Pro — rapport jamais sorti</h3>
+          </div>
+          <a href="videos/2026-04-24_deepseek-v4-humilie-claude.html" class="btn-sm">→ Vidéo analysée</a>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Ce qui est dit</div>
+          <p style="font-size:.88rem">"Je vous donne mon avis dans 3 semaines." Comparatif partiel sur benchmarks. Affirmation "7 à 15 fois moins cher" sans démonstration complète sur un projet réel.</p>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Ce qui est tu / flou</div>
+          <p style="font-size:.88rem">Le vrai verdict sur du code sérieux. Est-ce qu'il tient vraiment la comparaison avec Opus 4.7 sur un SaaS complet ?</p>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Pour approfondir</div>
+          <p style="font-size:.88rem">Test comparatif sur 3 cas : refactoring d'un projet existant, debugging complexe, génération d'architecture. Utiliser OpenRouter pour tester les deux en parallèle.</p>
+        </div>
+      </div>
+
+      <div class="ouverture-card p-orange" data-priority="orange">
+        <div class="ouverture-card-header">
+          <div>
+            <span class="badge badge-orange" style="margin-bottom:.5rem;display:inline-flex;">🟠 Important</span>
+            <h3>Adaptive Thinking vs Extended Thinking — comparaison superficielle</h3>
+          </div>
+          <a href="videos/2026-04-16_claude-opus-47.html" class="btn-sm">→ Vidéo analysée</a>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Ce qui est dit</div>
+          <p style="font-size:.88rem">Distinction faite (adaptatif = interne et modulé vs étendu = visible et binaire). Test rapide de vitesse montré.</p>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Ce qui est tu / flou</div>
+          <p style="font-size:.88rem">Dans quels cas l'Adaptive est réellement supérieur ? Y a-t-il des tâches où l'Extended reste meilleur ? Impact sur le coût réel en tokens ?</p>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Pour approfondir</div>
+          <p style="font-size:.88rem">Tester les deux modes sur : (1) question simple, (2) raisonnement complexe multi-étapes, (3) tâche de code avec débug — mesurer tokens et qualité.</p>
+        </div>
+      </div>
+
+      <div class="ouverture-card p-yellow" data-priority="yellow">
+        <div class="ouverture-card-header">
+          <div>
+            <span class="badge badge-yellow" style="margin-bottom:.5rem;display:inline-flex;">🟡 Moyen</span>
+            <h3>"Mes sources" — informations internes jamais citées</h3>
+          </div>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Ce qui est dit</div>
+          <p style="font-size:.88rem">"D'après mes sources..." concernant Mythos et les modèles en développement interne chez Anthropic.</p>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Ce qui est tu / flou</div>
+          <p style="font-size:.88rem">Qui ? Comment ? Fiabilité ? Sources protégées — probablement membres du Labo ou contacts dans l'industrie.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══ 2. TECHNIQUE & OUTILS IA ══════════════════════════════════════ -->
+    <div class="ouverture-section" id="technique">
+      <p class="ouverture-section-title">2. Technique &amp; Outils IA</p>
+
+      <div class="ouverture-card p-red" data-priority="red">
+        <div class="ouverture-card-header">
+          <div>
+            <span class="badge badge-red" style="margin-bottom:.5rem;display:inline-flex;">🔴 Urgent</span>
+            <h3>MiroShark — simulation inachevée, questions non résolues</h3>
+          </div>
+          <a href="videos/2026-04-27_miroshark.html" class="btn-sm">→ Vidéo analysée</a>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Ce qui est dit</div>
+          <p style="font-size:.88rem">Test en direct avec DeepSeek V4 Pro (trop lent), puis Qwen 3 (plus rapide). Génération d'un graphe de 33 nœuds. Rapport partiel obtenu.</p>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Ce qui est tu / flou</div>
+          <p style="font-size:.88rem">La vraie valeur du rapport final sur 40 rounds complets · Polymarket intégré : réellement utile ou bruit ? · Comparaison qualitative MiroShark vs MiroFish · Quel modèle choisir selon le type de décision ?</p>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Pourquoi c'est flou</div>
+          <p style="font-size:.88rem">Test en live improvisé, problèmes de performance, complexité de l'outil.</p>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Pour approfondir</div>
+          <p style="font-size:.88rem">Lancer une simulation complète (40 rounds) avec Qwen 3-235B sur un cas métier réel. Comparer le rapport vs une prise de décision solo. Documenter le coût en tokens.</p>
+        </div>
+      </div>
+
+      <div class="ouverture-card p-red" data-priority="red">
+        <div class="ouverture-card-header">
+          <div>
+            <span class="badge badge-red" style="margin-bottom:.5rem;display:inline-flex;">🔴 Urgent</span>
+            <h3>Obsidian GodMode — consolidation finale jamais montrée</h3>
+          </div>
+          <a href="videos/2026-04-20_obsidian-notion-claude-code.html" class="btn-sm">→ Vidéo analysée</a>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Ce qui est dit</div>
+          <p style="font-size:.88rem">7 agents en parallèle lancés, structure de 8 clusters créée, ~400+ pages générées, protocole anti-hallucination décrit.</p>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Ce qui est tu / flou</div>
+          <p style="font-size:.88rem">La phase 5 (consolidation finale) n'est pas montrée — limite de contexte atteinte à 102% · Benchmark avant/après consolidation · Prompt complet GitHub : jamais vérifié · Comment faire sur API sans l'abonnement 200€ ?</p>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Pour approfondir</div>
+          <p style="font-size:.88rem">Récupérer le prompt GitHub. Tester la phase de consolidation séparément, en découpant par cluster. Mesurer la différence de qualité des Wikilinks avant/après.</p>
+        </div>
+      </div>
+
+      <div class="ouverture-card p-orange" data-priority="orange">
+        <div class="ouverture-card-header">
+          <div>
+            <span class="badge badge-orange" style="margin-bottom:.5rem;display:inline-flex;">🟠 Important</span>
+            <h3>Hermès Agent — 77 skills jamais détaillés</h3>
+          </div>
+          <a href="videos/2026-04-19_hermes-agent.html" class="btn-sm">→ Vidéo analysée</a>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Ce qui est dit</div>
+          <p style="font-size:.88rem">Installation montrée sur Mac, connexion Telegram démontrée, 77 skills disponibles.</p>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Ce qui est tu / flou</div>
+          <p style="font-size:.88rem">Ce que sont réellement les 77 skills · Fonctionnalité Godmode / jailbreak mentionnée mais non expliquée · Différence concrète avec n8n · Performance mémoire persistante sur 30 jours</p>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Pour approfondir</div>
+          <p style="font-size:.88rem">Lire le README complet du repo Hermès Agent (502 contributeurs). Cartographier les 77 skills par catégorie. Tester le cas "consultant veille" cité comme idéal.</p>
+        </div>
+      </div>
+
+      <div class="ouverture-card p-orange" data-priority="orange">
+        <div class="ouverture-card-header">
+          <div>
+            <span class="badge badge-orange" style="margin-bottom:.5rem;display:inline-flex;">🟠 Important</span>
+            <h3>LightRAG — entièrement absent des transcriptions</h3>
+          </div>
+          <a href="videos/2026-04-03_lightrag-guide.html" class="btn-sm">→ Vidéo (non transcrite)</a>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Ce qui est tu / flou</div>
+          <p style="font-size:.88rem">Tout. C'est une vidéo "guide complet" sur une technologie RAG nouvelle génération — directement liée au concept de "base mémorielle" qui revient dans 5 vidéos différentes.</p>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Pour approfondir</div>
+          <p style="font-size:.88rem">Transcription à traiter en priorité — LightRAG est directement lié au concept de "base mémorielle" qui revient dans 5 vidéos différentes.</p>
+        </div>
+      </div>
+
+      <div class="ouverture-card p-yellow" data-priority="yellow">
+        <div class="ouverture-card-header">
+          <div>
+            <span class="badge badge-yellow" style="margin-bottom:.5rem;display:inline-flex;">🟡 Moyen</span>
+            <h3>Orchestration multi-agents en parallèle — montrée, jamais architecturée</h3>
+          </div>
+          <a href="videos/2026-04-09_claude-agents-autonomes.html" class="btn-sm">→ Vidéo liée</a>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Ce qui est dit</div>
+          <p style="font-size:.88rem">"7 agents en parallèle" dans Obsidian, "300 agents" dans MiroFish, "swarm agents" avec DeepSeek V4.</p>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Ce qui est tu / flou</div>
+          <p style="font-size:.88rem">Comment orchestrer 7 agents qui ne se marchent pas dessus ? Quel framework ? Quelle structure de communication entre agents ? Comment gérer les conflits de fichiers ?</p>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Pour approfondir</div>
+          <p style="font-size:.88rem">La vidéo du 9 avril "Claude lance ses AGENTS AUTONOMES" (non transcrite) est probablement la réponse directe.</p>
+        </div>
+      </div>
+
+      <div class="ouverture-card p-yellow" data-priority="yellow">
+        <div class="ouverture-card-header">
+          <div>
+            <span class="badge badge-yellow" style="margin-bottom:.5rem;display:inline-flex;">🟡 Moyen</span>
+            <h3>Claude Design → Claude Code — handoff incomplet</h3>
+          </div>
+          <a href="videos/2026-04-18_claude-design-freelances.html" class="btn-sm">→ Vidéo analysée</a>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Ce qui est dit</div>
+          <p style="font-size:.88rem">Export "End to Claude Code" montré, commande générée, principe expliqué.</p>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Ce qui est tu / flou</div>
+          <p style="font-size:.88rem">Comment Claude Code interprète réellement ce handoff ? Le résultat final (design + logique combinés) n'est jamais montré de A à Z. Vidéo tournée à J+1 de la sortie.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══ 3. MANAGEMENT & ENTREPRENEURIAT ══════════════════════════════ -->
+    <div class="ouverture-section" id="management">
+      <p class="ouverture-section-title">3. Management &amp; Entrepreneuriat</p>
+
+      <div class="ouverture-card p-red" data-priority="red">
+        <div class="ouverture-card-header">
+          <div>
+            <span class="badge badge-red" style="margin-bottom:.5rem;display:inline-flex;">🔴 Urgent</span>
+            <h3>La pyramide d'intégration IA — niveaux 3 et 4 jamais détaillés</h3>
+          </div>
+          <a href="videos/2026-04-25_70-equipes-ia.html" class="btn-sm">→ Vidéo analysée</a>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Ce qui est dit</div>
+          <p style="font-size:.88rem">4 niveaux (Individu → Équipe → Département → Organisation). Niveaux 1 et 2 décrits. Niveaux 3 et 4 esquissés.</p>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Ce qui est tu / flou</div>
+          <p style="font-size:.88rem">Comment passer du niveau 2 au niveau 3 ? Qui installe l'orchestration multi-agent dans un département de 30 personnes ? Le niveau 4 (franchisation) : quel format ? La "valorisation x4" : aucune source citée.</p>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Pourquoi c'est flou</div>
+          <p style="font-size:.88rem">C'est le cœur de l'offre payante (done for you 3 mois). Révéler le comment en détail = donner la méthode gratuitement.</p>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Pour approfondir</div>
+          <p style="font-size:.88rem">Modéliser soi-même la pyramide sur un cas réel. Identifier quel département automatiser en premier (ROI le plus rapide). Chercher les cas des 3 boîtes citées.</p>
+        </div>
+      </div>
+
+      <div class="ouverture-card p-red" data-priority="red">
+        <div class="ouverture-card-header">
+          <div>
+            <span class="badge badge-red" style="margin-bottom:.5rem;display:inline-flex;">🔴 Urgent</span>
+            <h3>L'AI Officer — concept clé sans guide de formation</h3>
+          </div>
+          <a href="videos/2026-04-25_70-equipes-ia.html" class="btn-sm">→ Vidéo analysée</a>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Ce qui est dit</div>
+          <p style="font-size:.88rem">"Un manager existant formé à l'IA, pas un nouveau chief officer à 120k€." Périmètre : pilotage, monitoring, évolution des systèmes IA.</p>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Ce qui est tu / flou</div>
+          <p style="font-size:.88rem">Quel cursus de formation ? En combien de temps ? Quels outils doit-il maîtriser ? Comment est-il évalué ? Quels KPI surveille-t-il ?</p>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Pourquoi c'est flou</div>
+          <p style="font-size:.88rem">C'est ce que l'auteur vend (accompagnement 3 mois).</p>
+        </div>
+      </div>
+
+      <div class="ouverture-card p-orange" data-priority="orange">
+        <div class="ouverture-card-header">
+          <div>
+            <span class="badge badge-orange" style="margin-bottom:.5rem;display:inline-flex;">🟠 Important</span>
+            <h3>Socle mémoriel d'entreprise — jamais construit step by step</h3>
+          </div>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Ce qui est dit</div>
+          <p style="font-size:.88rem">Mentionné dans 4 vidéos différentes. "Documenter son savoir intelligemment pour augmenter la valorisation." Exemples : fonderie 80 personnes, industriel 140 personnes.</p>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Ce qui est tu / flou</div>
+          <p style="font-size:.88rem">Quel format exactement ? Markdown ? Obsidian ? Base vectorielle ? Comment l'alimenter au quotidien ? Qui est responsable ?</p>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Pour approfondir</div>
+          <p style="font-size:.88rem">La vidéo Obsidian GodMode + la vidéo sur le protocole mémoriel (27 mars, non transcrite) sont les deux pièces du puzzle.</p>
+        </div>
+      </div>
+
+      <div class="ouverture-card p-orange" data-priority="orange">
+        <div class="ouverture-card-header">
+          <div>
+            <span class="badge badge-orange" style="margin-bottom:.5rem;display:inline-flex;">🟠 Important</span>
+            <h3>Vente d'automatisations à 5000€+ — mentionné sans méthode</h3>
+          </div>
+          <a href="videos/2026-01-01_vendre-automatisations-5000.html" class="btn-sm">→ Vidéo (non transcrite)</a>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Ce qui est tu / flou</div>
+          <p style="font-size:.88rem">La méthode concrète de prospection, de pricing, de qualification client. Vidéo séparée non encore transcrite.</p>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Pour approfondir</div>
+          <p style="font-size:.88rem">Prioriser la transcription de cette vidéo + "Ton agence IA te rend PAUVRE" (30 janvier, 1h21).</p>
+        </div>
+      </div>
+
+      <div class="ouverture-card p-yellow" data-priority="yellow">
+        <div class="ouverture-card-header">
+          <div>
+            <span class="badge badge-yellow" style="margin-bottom:.5rem;display:inline-flex;">🟡 Moyen</span>
+            <h3>"18 mois d'écart opérationnel" — affirmation forte sans preuve</h3>
+          </div>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Ce qui est dit</div>
+          <p style="font-size:.88rem">"Si tu n'as pas franchisé l'IA dans tes process d'ici 18 mois, tu vendras ta boîte avec une décote de 30% en 2027."</p>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Ce qui est tu / flou</div>
+          <p style="font-size:.88rem">Quelle source ? Le rapport McKinsey cité (70% des tâches automatisables) est de 2023. L'écart opérationnel de 3,5x aussi. Probablement empirique + extrapolé.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══ 4. CLAUDE CODE ════════════════════════════════════════════════ -->
+    <div class="ouverture-section" id="claude-code">
+      <p class="ouverture-section-title">4. Claude Code — Tutos &amp; Pratique</p>
+
+      <div class="ouverture-card p-red" data-priority="red">
+        <div class="ouverture-card-header">
+          <div>
+            <span class="badge badge-red" style="margin-bottom:.5rem;display:inline-flex;">🔴 Urgent</span>
+            <h3>Les Skills Claude — outil central jamais documenté exhaustivement</h3>
+          </div>
+          <a href="videos/2026-04-10_seule-video-skills-claude.html" class="btn-sm">→ Vidéo (non transcrite)</a>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Ce qui est dit</div>
+          <p style="font-size:.88rem">Mentionnés dans de nombreuses vidéos. Une vidéo entière leur est consacrée (10 avril, 21 min, non transcrite). "LA SEULE vidéo Skills Claude dont tu as besoin."</p>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Ce qui est tu / flou</div>
+          <p style="font-size:.88rem">Qu'est-ce qu'un skill exactement ? Comment en créer un ? Comment les versionner ? Différence avec CLAUDE.md ?</p>
+        </div>
+        <div class="ouverture-card-footer">
+          <span class="badge badge-red">Priorité transcription #1</span>
+        </div>
+      </div>
+
+      <div class="ouverture-card p-red" data-priority="red">
+        <div class="ouverture-card-header">
+          <div>
+            <span class="badge badge-red" style="margin-bottom:.5rem;display:inline-flex;">🔴 Urgent</span>
+            <h3>CLAUDE.md — architecture jamais détaillée</h3>
+          </div>
+          <a href="videos/2026-03-19_arreter-coder-aveugle.html" class="btn-sm">→ Vidéo liée</a>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Ce qui est dit</div>
+          <p style="font-size:.88rem">Mentionné dans plusieurs vidéos ("j'ai mis dans mes skills", "mon CLAUDE.md"). Utilisé pour driver le comportement du modèle.</p>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Ce qui est tu / flou</div>
+          <p style="font-size:.88rem">Structure exacte. Que met-on dedans ? Comment le versionner ? Différence entre CLAUDE.md global et CLAUDE.md de projet ? Probablement traité dans "Arrête de coder à l'aveugle" (19 mars, non transcrit).</p>
+        </div>
+      </div>
+
+      <div class="ouverture-card p-orange" data-priority="orange">
+        <div class="ouverture-card-header">
+          <div>
+            <span class="badge badge-orange" style="margin-bottom:.5rem;display:inline-flex;">🟠 Important</span>
+            <h3>Claude /routines — pricing non résolu</h3>
+          </div>
+          <a href="videos/2026-04-16_claude-routines.html" class="btn-sm">→ Vidéo analysée</a>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Ce qui est dit</div>
+          <p style="font-size:.88rem">Fonctionnalité puissante, plan Team premium à 100$/mois requis.</p>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Ce qui est tu / flou</div>
+          <p style="font-size:.88rem">Est-ce que le plan Pro individuel à 20$/mois permet d'accéder aux routines via Claude Code ? Quelle est la limite de runs par jour/mois ? Anthropic n'a pas encore tout documenté (fonctionnalité récente).</p>
+        </div>
+      </div>
+
+      <div class="ouverture-card p-yellow" data-priority="yellow">
+        <div class="ouverture-card-header">
+          <div>
+            <span class="badge badge-yellow" style="margin-bottom:.5rem;display:inline-flex;">🟡 Moyen</span>
+            <h3>Protocole anti-hallucination Obsidian — pas encore généralisé</h3>
+          </div>
+          <a href="videos/2026-04-20_obsidian-notion-claude-code.html" class="btn-sm">→ Vidéo analysée</a>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Ce qui est dit</div>
+          <p style="font-size:.88rem">Deux requêtes web max par page sensible, fichier fact-check-log.md, statut "to verify" si rien trouvé.</p>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Ce qui est tu / flou</div>
+          <p style="font-size:.88rem">Comment adapter ce protocole à d'autres domaines que la psychologie ? Quid du médical, juridique, financier où l'hallucination est vraiment dangereuse ?</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══ 5. VISION & SOCIÉTÉ ════════════════════════════════════════════ -->
+    <div class="ouverture-section" id="vision">
+      <p class="ouverture-section-title">5. Vision &amp; Société</p>
+
+      <div class="ouverture-card p-orange" data-priority="orange">
+        <div class="ouverture-card-header">
+          <div>
+            <span class="badge badge-orange" style="margin-bottom:.5rem;display:inline-flex;">🟠 Important</span>
+            <h3>Le médecin IA — question posée, jamais tranchée</h3>
+          </div>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Ce qui est dit</div>
+          <p style="font-size:.88rem">"Si on enlève la dimension émotionnelle, ça n'a plus aucun sens d'avoir un médecin physique en face de toi pour qu'il te donne quelque chose qui est déjà déterminé et écrit. À creuser."</p>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Ce qui est tu / flou</div>
+          <p style="font-size:.88rem">La réponse. La dimension émotionnelle (accompagnement, cas atypiques, urgences). Quelles spécialités résistent vraiment ? Question rhétorique lancée en passant.</p>
+        </div>
+      </div>
+
+      <div class="ouverture-card p-yellow" data-priority="yellow">
+        <div class="ouverture-card-header">
+          <div>
+            <span class="badge badge-yellow" style="margin-bottom:.5rem;display:inline-flex;">🟡 Moyen</span>
+            <h3>Architecte vs Exécutant — thèse incomplète</h3>
+          </div>
+          <a href="videos/2026-01-24_executant-architecte-ia.html" class="btn-sm">→ Vidéo (non transcrite)</a>
+        </div>
+        <div class="field-block">
+          <div class="field-label">Ce qui est tu / flou</div>
+          <p style="font-size:.88rem">Référence à la vidéo "Exécutant ou Architecte" (24 janvier, non transcrite). C'est un concept central dans la philosophie de l'auteur — toute la base de connaissance y fait référence.</p>
+        </div>
+        <div class="ouverture-card-footer">
+          <span class="badge badge-orange">Priorité transcription #5</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══ 6. ZONES INTENTIONNELLEMENT OPAQUES ═══════════════════════════ -->
+    <div class="ouverture-section" id="payant">
+      <p class="ouverture-section-title">6. Zones intentionnellement réservées au payant</p>
+      <p style="font-size:.88rem;color:var(--text-muted);margin-bottom:var(--gap-lg);">Ces sujets sont délibérément gardés flous dans les vidéos publiques. Les nommer est utile pour ne pas les chercher en vain dans les transcriptions.</p>
+      <table class="priority-table">
+        <thead>
+          <tr>
+            <th>Sujet</th>
+            <th>Où c'est caché</th>
+            <th>Indice disponible</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Masterclass mercredi (Labo Elite)</td>
+            <td>MiroShark vidéo</td>
+            <td>Contenu sur le décorticage technique</td>
+          </tr>
+          <tr>
+            <td>Les 450+ transcripts d'appels analysés</td>
+            <td>Vidéo 70%</td>
+            <td>Base de connaissance empirique</td>
+          </tr>
+          <tr>
+            <td>Protocole de test 21 jours complet</td>
+            <td>Vidéos 4.7 et DeepSeek</td>
+            <td>Dimensions : sémantique, patterns, raisonnement</td>
+          </tr>
+          <tr>
+            <td>Templates Labo Elite (prompts versionnés)</td>
+            <td>Vidéo 70%</td>
+            <td>"Prompts adaptés pas packs"</td>
+          </tr>
+          <tr>
+            <td>Architecture complète d'un système client</td>
+            <td>Vidéo 70%</td>
+            <td>"Mois 1 audit, mois 2 build, mois 3 production"</td>
+          </tr>
+          <tr>
+            <td>Pôle investissement / trading IA</td>
+            <td>MiroShark</td>
+            <td>Traders + banquiers 30 ans d'expérience</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ═══ 7. VIDÉOS À PRIORISER ══════════════════════════════════════════ -->
+    <div class="ouverture-section" id="priorites">
+      <p class="ouverture-section-title">7. Vidéos non transcrites à prioriser</p>
+      <table class="priority-table">
+        <thead>
+          <tr>
+            <th>Priorité</th>
+            <th>Date</th>
+            <th>Vidéo</th>
+            <th>Pourquoi prioritaire</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="badge badge-red">🔴 #1</span></td>
+            <td style="font-family:var(--font-mono);font-size:.8rem;">2026-04-10</td>
+            <td><a href="videos/2026-04-10_seule-video-skills-claude.html">LA SEULE vidéo Skills Claude dont tu as besoin</a></td>
+            <td>Skills = fondation de Claude Code</td>
+          </tr>
+          <tr>
+            <td><span class="badge badge-red">🔴 #2</span></td>
+            <td style="font-family:var(--font-mono);font-size:.8rem;">2026-03-27</td>
+            <td><a href="videos/2026-03-27_protocole-memoire-ia.html">J'ai inventé un PROTOCOLE pour que l'IA ne m'oublie PLUS JAMAIS</a></td>
+            <td>Protocole mémoriel = base de tout</td>
+          </tr>
+          <tr>
+            <td><span class="badge badge-red">🔴 #3</span></td>
+            <td style="font-family:var(--font-mono);font-size:.8rem;">2026-04-07</td>
+            <td><a href="videos/2026-04-07_protocole-ia-detruit.html">Ce protocole DÉTRUIT la façon dont tu utilises l'IA</a></td>
+            <td>Protocole usage quotidien</td>
+          </tr>
+          <tr>
+            <td><span class="badge badge-orange">🟠 #4</span></td>
+            <td style="font-family:var(--font-mono);font-size:.8rem;">2026-04-03</td>
+            <td><a href="videos/2026-04-03_lightrag-guide.html">LightRAG : Guide Complet du RAG nouvelle génération</a></td>
+            <td>Complète le concept base mémorielle</td>
+          </tr>
+          <tr>
+            <td><span class="badge badge-orange">🟠 #5</span></td>
+            <td style="font-family:var(--font-mono);font-size:.8rem;">2026-01-24</td>
+            <td><a href="videos/2026-01-24_executant-architecte-ia.html">Exécutant ou Architecte : L'IA va DÉTRUIRE l'un des deux</a></td>
+            <td>Thèse philosophique centrale</td>
+          </tr>
+          <tr>
+            <td><span class="badge badge-orange">🟠 #6</span></td>
+            <td style="font-family:var(--font-mono);font-size:.8rem;">2026-03-19</td>
+            <td><a href="videos/2026-03-19_arreter-coder-aveugle.html">Arrête de coder à l'aveugle avec Claude Code</a></td>
+            <td>Probablement contient CLAUDE.md</td>
+          </tr>
+          <tr>
+            <td><span class="badge badge-orange">🟠 #7</span></td>
+            <td style="font-family:var(--font-mono);font-size:.8rem;">2026-04-02</td>
+            <td><a href="videos/2026-04-02_entreprise-ia-autonome.html">J'ai créé une ENTREPRISE IA AUTONOME (Paperclip + Claude Code)</a></td>
+            <td>Cas concret niveau 4 pyramide</td>
+          </tr>
+          <tr>
+            <td><span class="badge badge-yellow">🟡 #8</span></td>
+            <td style="font-family:var(--font-mono);font-size:.8rem;">2026-01-30</td>
+            <td><a href="videos/2026-01-30_agence-ia-te-rend-pauvre.html">Ton agence IA te rend PAUVRE</a></td>
+            <td>Vision business complète</td>
+          </tr>
+          <tr>
+            <td><span class="badge badge-yellow">🟡 #9</span></td>
+            <td style="font-family:var(--font-mono);font-size:.8rem;">2026-04-09</td>
+            <td><a href="videos/2026-04-09_claude-agents-autonomes.html">Claude lance ses AGENTS AUTONOMES : 3 cas d'usage concrets</a></td>
+            <td>Multi-agents détaillés</td>
+          </tr>
+          <tr>
+            <td><span class="badge badge-yellow">🟡 #10</span></td>
+            <td style="font-family:var(--font-mono);font-size:.8rem;">2026-04-13</td>
+            <td><a href="videos/2026-04-13_piege-claude-code-pauvre.html">Le piège Claude Code qui te garde pauvre</a></td>
+            <td>Erreurs management</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ═══ 8. QUESTIONS TRANSVERSALES ════════════════════════════════════ -->
+    <div class="ouverture-section" id="questions">
+      <p class="ouverture-section-title">8. Questions transversales encore ouvertes</p>
+      <ol class="open-questions-list">
+        <li class="question-item">
+          <strong>Quel est le vrai coût d'un système IA en entreprise ?</strong><br>
+          <span style="font-size:.85rem;color:var(--text-muted);">(tokens + temps + maintenance + formation AI Officer) — estimations données mais jamais totalisées</span>
+        </li>
+        <li class="question-item">
+          <strong>Comment mesurer le ROI d'une automatisation ?</strong><br>
+          <span style="font-size:.85rem;color:var(--text-muted);">Mentionné comme étape clé mais aucune formule donnée.</span>
+        </li>
+        <li class="question-item">
+          <strong>Open source vs propriétaire : quelle frontière selon le cas ?</strong><br>
+          <span style="font-size:.85rem;color:var(--text-muted);">Hermès vs Claude Code, DeepSeek vs Opus 4.7, mais pas de règle claire.</span>
+        </li>
+        <li class="question-item">
+          <strong>Souveraineté des données en pratique</strong><br>
+          <span style="font-size:.85rem;color:var(--text-muted);">Le paradoxe Microsoft/Google vs IA est soulevé mais la solution (pseudonymisation, anonymisation) reste vague.</span>
+        </li>
+        <li class="question-item">
+          <strong>Comment choisir son premier processus à automatiser ?</strong><br>
+          <span style="font-size:.85rem;color:var(--text-muted);">Cité comme étape 1 mais les critères de choix ne sont jamais explicités.</span>
+        </li>
+      </ol>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Dernière mise à jour : <strong>2026-05-05</strong> · 9 vidéos analysées sur 79</p>
+    <p style="margin-top:.5rem"><a href="index.html">Accueil</a> · <a href="categories.html">Catégories</a> · <a href="videos.html">Vidéothèque</a> · <a href="demo.html">Démo</a></p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

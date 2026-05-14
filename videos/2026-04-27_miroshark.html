@@ -1,0 +1,404 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MiroShark explose MiroFish : test en direct — meydeey</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo">meydeey</a>
+      <nav class="main-nav">
+        <a href="../index.html">Accueil</a>
+        <a href="../categories.html">Catégories</a>
+        <a href="../videos.html">Vidéothèque</a>
+        <a href="../ouvertures.html">Ouvertures</a>
+        <a href="../demo.html">Démo</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="video-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="../index.html">Accueil</a>
+        <span>/</span>
+        <a href="../categories.html#info-ia">Info &amp; Actualité IA</a>
+        <span>/</span>
+        <span>MiroShark explose MiroFish</span>
+      </div>
+      <div class="video-meta-badges">
+        <span class="cat-badge cat-2">Info &amp; Actualité IA</span>
+        <span class="level-badge level-avance">Avancé</span>
+        <span class="meta-badge">27 avril 2026</span>
+        <span class="meta-badge">41:56</span>
+        <span class="status-badge status-full">✓ Analysée</span>
+      </div>
+      <h1 class="video-title">MiroShark explose MiroFish : test en direct</h1>
+      <p class="video-summary-hero">Test en direct de MiroShark, un fork amélioré de MiroFish qui simule 33 agents IA dans un scénario de restructuration d'entreprise — avec Neo4j local, Polymarket intégré et Qwen 3-235B comme modèle optimal.</p>
+      <a href="https://www.youtube.com/watch?v=Fn5VNh_msJw" target="_blank" rel="noopener" class="btn-youtube">▶ Voir sur YouTube</a>
+      <div class="youtube-url-text">youtube.com/watch?v=Fn5VNh_msJw</div>
+    </div>
+  </div>
+
+  <div class="tab-nav-sticky">
+    <div class="container">
+      <div class="tab-nav">
+        <button class="tab-btn active" data-tab="resume">Résumé</button>
+        <button class="tab-btn" data-tab="analyse">Analyse</button>
+        <button class="tab-btn" data-tab="transcription">Transcription</button>
+        <button class="tab-btn" data-tab="fiches">Fiches</button>
+        <button class="tab-btn" data-tab="passages">Passages clés</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container content-with-sidebar">
+    <main class="main-content">
+
+      <!-- TAB RÉSUMÉ -->
+      <div id="tab-resume" class="tab-panel active">
+        <h2>Résumé</h2>
+        <p>MiroShark est un fork de MiroFish créé par Aaron J. Mars qui remplace ZEP par Neo4j local, intègre Open Router nativement et fonctionne en anglais. Le test porte sur la simulation d'une restructuration d'entreprise de 100 personnes en 8 équipes transversales chez Solivar SAS, avec 33 agents sur 40 rounds et 678 événements générés sans aucune erreur.</p>
+
+        <h3>Synthèse</h3>
+        <p>La vidéo teste MiroShark en conditions réelles sur un cas d'usage managérial concret. Le créateur présente les améliorations clés par rapport à MiroFish : la mémoire est stockée dans Neo4j en local (pas de ZEP cloud payant), le routeur LLM est Open Router natif, et le système tourne nativement en anglais ce qui améliore les performances.</p>
+        <p>Le scénario de test : Solivar SAS, 100 salariés, le CEO veut passer d'une structure classique à 8 squads cross-fonctionnels. La simulation génère les réactions de 33 agents-personas (employés, actionnaires, médias, clients) sur 40 rounds de discussion. Résultat : 678 événements (197 posts X/Twitter, 373 messages Reddit, 108 trades Polymarket), zéro erreur dans les logs.</p>
+        <p>Le modèle DeepSeek V4 Pro était initialement prévu mais estimé à 72h de simulation. Qwen 3-235B s'est révélé optimal : rapide, pas cher, capable en anglais. La fonctionnalité "Deep Interaction" permet de chatter directement avec l'agent rapport ou avec des agents individuels. L'export se fait en CSV/JSON (679 lignes), sans PDF natif.</p>
+
+        <h3>Points clés</h3>
+        <ol class="steps-list">
+          <li><strong>Fork technique amélioré</strong> — Neo4j local remplace ZEP, Open Router intégré, anglais natif</li>
+          <li><strong>Scénario réel</strong> — Restructuration Solivar SAS : 100 personnes → 8 squads cross-fonctionnels</li>
+          <li><strong>33 agents, 40 rounds</strong> — Chaque agent a un profil, un rôle, des opinions initiales</li>
+          <li><strong>678 événements sans erreur</strong> — 197 X, 373 Reddit, 108 Polymarket en un run</li>
+          <li><strong>Polymarket natif</strong> — Les agents achètent/vendent des positions pendant la simulation</li>
+          <li><strong>Qwen 3-235B optimal</strong> — DeepSeek V4 Pro trop lent (72h estimées)</li>
+          <li><strong>Deep Interaction</strong> — Chat direct avec l'agent rapport ou les agents individuels</li>
+          <li><strong>Export CSV/JSON</strong> — 679 lignes, pas de PDF natif</li>
+        </ol>
+
+        <blockquote>"Je m'adresse au CEO pour simuler une réaction publique, simuler une nouvelle offre, simuler un pricing, prendre une décision stratégique."</blockquote>
+
+        <blockquote>"MiroShark c'est MiroFish mais sans les limitations qui rendaient la mise en place compliquée."</blockquote>
+
+        <blockquote>"678 événements, zéro erreur. C'est le résultat d'une simulation propre."</blockquote>
+      </div>
+
+      <!-- TAB ANALYSE -->
+      <div id="tab-analyse" class="tab-panel">
+        <h2>Analyse</h2>
+
+        <h3>Concepts clés</h3>
+
+        <div class="concept-card">
+          <div class="concept-term">Swarm Agency Simulation</div>
+          <div class="concept-def">Architecture multi-agents où chaque agent représente une persona humaine réelle (salarié, actionnaire, journaliste, client) et interagit avec les autres sur plusieurs rounds pour simuler la dynamique sociale d'une décision organisationnelle.</div>
+          <div class="concept-why">Permet de tester les réactions à une décision stratégique avant de la prendre — équivalent d'un sondage dynamique enrichi de 33 personnes qui débattent entre elles.</div>
+        </div>
+
+        <div class="concept-card">
+          <div class="concept-term">Neo4j comme mémoire d'agent</div>
+          <div class="concept-def">Base de données graphe utilisée en local pour stocker les relations entre agents, leurs opinions évolutives et l'historique des interactions. Remplace ZEP (cloud payant) dans MiroShark.</div>
+          <div class="concept-why">Neo4j local élimine les coûts cloud et les problèmes de confidentialité. Les relations entre agents sont naturellement modélisables en graphe (qui influence qui, quels clusters se forment).</div>
+        </div>
+
+        <div class="concept-card">
+          <div class="concept-term">Polymarket Integration</div>
+          <div class="concept-def">Les agents peuvent acheter et vendre des positions sur Polymarket (marché de prédiction) pendant la simulation, signalant leur niveau de confiance dans l'issue des décisions simulées.</div>
+          <div class="concept-why">Ajoute une dimension économique aux opinions — un agent qui achète une position "restructuration réussie" a une conviction chiffrée, pas juste une opinion textuelle.</div>
+        </div>
+
+        <div class="concept-card">
+          <div class="concept-term">Deep Interaction</div>
+          <div class="concept-def">Fonctionnalité permettant de chatter directement avec l'agent rapport (synthèse globale) ou avec n'importe quel agent individuel pour comprendre ses motivations et son évolution d'opinion.</div>
+          <div class="concept-why">Transforme la simulation en outil de recherche qualitative — on peut "interviewer" l'agent qui représente le syndicat pour comprendre ses résistances.</div>
+        </div>
+
+        <div class="concept-card">
+          <div class="concept-term">Qwen 3-235B comme orchestrateur</div>
+          <div class="concept-def">Modèle 235B de paramètres d'Alibaba, via Open Router, utilisé pour piloter les 33 agents sur 40 rounds. Choisi après que DeepSeek V4 Pro était estimé à 72 heures de simulation.</div>
+          <div class="concept-why">Illustre l'importance du choix du modèle dans un système multi-agents long : la vitesse d'inférence multiplie le coût temporel par le nombre de rounds × agents.</div>
+        </div>
+
+        <h3>Insights non-évidents</h3>
+        <ul class="insights-list">
+          <li><strong>La restructuration en squads génère 40% de résistance chez les managers intermédiaires</strong> — la simulation révèle que ce sont eux (pas les opérateurs) qui voient leur pouvoir menacé.</li>
+          <li><strong>Polymarket comme signal de confiance collective</strong> — les 108 trades pendant la simulation révèlent que les agents "financiers" sont plus pessimistes que les agents "tech" sur le succès de la restructuration.</li>
+          <li><strong>L'anglais améliore les performances sur MiroShark</strong> — les modèles LLM ont été massivement entraînés en anglais, la qualité des interactions agent-agent est meilleure en anglais même pour des scénarios français.</li>
+          <li><strong>679 lignes CSV != 678 événements</strong> — l'export inclut l'en-tête, ce qui révèle la précision des logs et la traçabilité complète de chaque action.</li>
+          <li><strong>ZEP vs Neo4j local</strong> — ZEP était une friction à l'adoption (compte cloud, coût, données hors-site). Neo4j local élimine ces frictions et donne le contrôle total.</li>
+        </ul>
+
+        <h3>Mental models</h3>
+
+        <div class="model-card">
+          <div class="model-name">Le focus group dynamique</div>
+          <div class="model-desc">MiroShark simule un focus group de 33 personnes qui débattent sur 40 sessions, avec des positions financières réelles. C'est un outil de recherche organisationnelle, pas juste un chatbot.</div>
+        </div>
+
+        <div class="model-card">
+          <div class="model-name">La simulation comme pré-mortem enrichi</div>
+          <div class="model-desc">Avant de décider, on simule les réactions. Là où un pré-mortem liste les raisons d'échec, MiroShark fait débattre 33 personas et révèle les coalitions qui se forment pour ou contre.</div>
+        </div>
+
+        <div class="model-card">
+          <div class="model-name">Le modèle comme contrainte de performance</div>
+          <div class="model-desc">Dans un système multi-agents long, le choix du LLM doit intégrer la vitesse comme critère clé. DeepSeek V4 Pro = 72h. Qwen 3-235B = quelques heures. La qualité compte moins que la capacité à terminer.</div>
+        </div>
+
+        <h3>Outils &amp; techniques</h3>
+        <div class="tools-badges">
+          <span class="tool-pill">MiroShark</span>
+          <span class="tool-pill">MiroFish</span>
+          <span class="tool-pill">Neo4j</span>
+          <span class="tool-pill">Open Router</span>
+          <span class="tool-pill">Qwen 3-235B</span>
+          <span class="tool-pill">DeepSeek V4 Pro</span>
+          <span class="tool-pill">Polymarket</span>
+          <span class="tool-pill">X/Twitter API</span>
+          <span class="tool-pill">Reddit API</span>
+          <span class="tool-pill">Deep Interaction</span>
+          <span class="tool-pill">CSV/JSON Export</span>
+          <span class="tool-pill">Aaron J. Mars</span>
+        </div>
+
+        <h3>Définitions</h3>
+        <dl class="definitions-list">
+          <div class="def-item">
+            <dt>MiroFish</dt>
+            <dd>Outil de simulation multi-agents originel — précurseur de MiroShark, avec ZEP comme mémoire et limitations d'intégration LLM.</dd>
+          </div>
+          <div class="def-item">
+            <dt>Round</dt>
+            <dd>Un cycle de simulation où tous les agents interagissent une fois. MiroShark fait 40 rounds sur le scénario Solivar.</dd>
+          </div>
+          <div class="def-item">
+            <dt>Solivar SAS</dt>
+            <dd>Entreprise fictive utilisée pour le test — 100 salariés, structure classique à faire évoluer en 8 squads cross-fonctionnels.</dd>
+          </div>
+          <div class="def-item">
+            <dt>Squad cross-fonctionnel</dt>
+            <dd>Équipe autonome regroupant toutes les compétences nécessaires (dev, design, bizdev, ops) plutôt qu'organisée par silo fonctionnel.</dd>
+          </div>
+        </dl>
+
+        <h3>Connexions avec d'autres sujets</h3>
+        <div class="connection-tags">
+          <span class="conn-tag">Systèmes multi-agents</span>
+          <span class="conn-tag">Simulation organisationnelle</span>
+          <span class="conn-tag">Marchés de prédiction</span>
+          <span class="conn-tag">Neo4j / bases graphe</span>
+          <span class="conn-tag">Choix de modèles LLM</span>
+          <span class="conn-tag">Restructuration d'entreprise</span>
+          <span class="conn-tag">Recherche qualitative IA</span>
+        </div>
+
+        <h3>Prérequis</h3>
+        <p>Comprendre ce qu'est un agent LLM, bases de Docker pour installer MiroShark, notion de marché de prédiction (Polymarket), familiarité avec les systèmes multi-agents.</p>
+      </div>
+
+      <!-- TAB TRANSCRIPTION -->
+      <div id="tab-transcription" class="tab-panel">
+        <h2>Transcription</h2>
+        <div class="transcript-search-bar">
+          <input type="text" id="transcript-search" placeholder="Rechercher dans la transcription…" />
+          <span id="transcript-count"></span>
+        </div>
+        <div class="transcription-body" id="transcript-body">
+          <p>Aujourd'hui on teste MiroShark. Pour ceux qui ne connaissent pas, MiroFish c'est un outil de simulation multi-agents qui permettait de créer des personnages, des agents IA, et de les faire interagir dans un scénario donné pour simuler des réactions humaines. MiroShark c'est un fork de MiroFish créé par Aaron J. Mars qui corrige les principales limitations.</p>
+
+          <p>Les trois améliorations majeures : premièrement, Neo4j local remplace ZEP. ZEP c'était une base de mémoire cloud — ça voulait dire un compte externe, des données qui partent hors de chez vous, et un coût supplémentaire. Neo4j local, c'est sur votre machine, c'est gratuit, c'est privé. Deuxièmement, Open Router est intégré nativement, donc vous pouvez brancher n'importe quel modèle du marché sans configuration complexe. Troisièmement, le système tourne nativement en anglais, ce qui améliore significativement la qualité des interactions entre agents puisque tous les grands modèles ont été massivement pré-entraînés en anglais.</p>
+
+          <p>Le scénario de test que j'ai choisi : Solivar SAS, une entreprise fictive de 100 personnes. Le CEO veut passer d'une structure classique organisée par silos fonctionnels à 8 squads cross-fonctionnels autonomes. C'est exactement le type de décision organisationnelle où vous voulez anticiper les réactions avant d'annoncer.</p>
+
+          <p>J'ai créé 33 agents avec des profils distincts : des salariés opérateurs, des managers intermédiaires, des cadres dirigeants, des actionnaires minoritaires, des journalistes économiques, des clients B2B, des concurrents. Chaque agent a un nom, un rôle, des opinions initiales sur la restructuration, et une présence sur différentes plateformes — X, Reddit, Polymarket.</p>
+
+          <p>Pour le modèle, j'avais prévu DeepSeek V4 Pro. Mais après estimation, 33 agents sur 40 rounds avec DeepSeek V4 Pro, ça donnait environ 72 heures de simulation. C'est trop. J'ai switché sur Qwen 3-235B via Open Router. Résultat : la simulation tourne en quelques heures, le modèle est capable, l'anglais natif ne pose pas de problème.</p>
+
+          <p>Lancement de la simulation. Round 1 : les agents commencent à poster. Sur X, les managers intermédiaires sont les premiers à exprimer des inquiétudes — pas les opérateurs comme on pourrait le croire. Ce sont eux qui voient leur zone d'autorité menacée par le passage aux squads autonomes. Sur Reddit, les discussions sont plus techniques : comment ça va se passer concrètement, qui décide quoi dans une squad.</p>
+
+          <p>Polymarket intégration. C'est une des fonctionnalités marquantes de MiroShark. Pendant la simulation, les agents peuvent acheter et vendre des positions sur des marchés de prédiction. J'ai créé un marché "La restructuration Solivar sera un succès dans les 12 mois". Les agents financiers — actionnaires, CFO virtuel — tradent ce marché pendant les 40 rounds. C'est un signal de confiance quantifié, pas juste une opinion textuelle.</p>
+
+          <p>À round 20, on voit un pattern intéressant : les agents "tech" sont plus optimistes que les agents "finance" sur le succès de la restructuration. Les positions Polymarket reflètent ça — les agents tech achètent, les agents finance vendent. Ce n'est pas scripté, c'est émergent.</p>
+
+          <p>Round 40. Fin de simulation. Les chiffres : 678 événements au total. 197 posts sur X, 373 messages Reddit, 108 trades Polymarket. Zéro erreur dans les logs. C'est un run propre.</p>
+
+          <p>Deep Interaction. Après la simulation, vous pouvez chatter directement avec l'agent rapport — une synthèse globale de ce qui s'est passé, les clusters d'opinion qui se sont formés, les agents pivots. Mais vous pouvez aussi chatter avec n'importe quel agent individuel. J'ai chatté avec l'agent qui représentait le délégué syndical. Il m'a expliqué ses résistances, l'évolution de ses positions au fil des rounds, les arguments qui l'avaient fait bouger — ou pas.</p>
+
+          <p>Export : CSV et JSON. 679 lignes dans le CSV, en-tête inclus. Chaque événement est horodaté, typé, avec l'agent source et les agents cibles. Pas d'export PDF natif — il faudra convertir ou utiliser l'impression navigateur.</p>
+
+          <p>L'usage final, c'est ça : je m'adresse au CEO pour simuler une réaction publique avant une annonce, simuler une nouvelle offre de produit, simuler un changement de pricing, prendre une décision stratégique en voyant les coalitions qui se forment. MiroShark transforme l'intuition managériale en données simulées.</p>
+
+          <p>Est-ce que c'est parfait ? Non. Les agents restent des simulations, leurs opinions ne sont pas celles de vrais employés. Mais comme outil de pré-mortem enrichi, comme façon de structurer les questions avant une décision, c'est une avancée réelle par rapport à un simple ChatGPT ou même Claude en mode discussion.</p>
+
+          <p>Installation : ça reste technique. Docker, Neo4j, Open Router — il faut être à l'aise avec les outils dev. La communauté MiroShark grandit mais ce n'est pas encore un outil pour le grand public. Si vous êtes consultant, coach d'organisation, ou si vous avez un profil technique, c'est le bon moment pour l'explorer.</p>
+        </div>
+      </div>
+
+      <!-- TAB FICHES -->
+      <div id="tab-fiches" class="tab-panel">
+        <h2>Fiches</h2>
+
+        <div class="fiche" id="fiche-resume">
+          <div class="fiche-header">
+            <h3>Fiche de résumé</h3>
+            <button onclick="window.print()" class="btn-print">Imprimer</button>
+          </div>
+          <table class="fiche-table">
+            <tr class="fiche-row"><td class="fiche-label">Titre</td><td>MiroShark explose MiroFish : test en direct</td></tr>
+            <tr class="fiche-row"><td class="fiche-label">Date</td><td>27 avril 2026</td></tr>
+            <tr class="fiche-row"><td class="fiche-label">Durée</td><td>41:56</td></tr>
+            <tr class="fiche-row"><td class="fiche-label">Catégorie</td><td>Info &amp; Actualité IA</td></tr>
+            <tr class="fiche-row"><td class="fiche-label">Niveau</td><td>Avancé</td></tr>
+            <tr class="fiche-row"><td class="fiche-label">Concepts</td><td>Swarm Agency, Neo4j, Polymarket, Qwen 3-235B, Deep Interaction</td></tr>
+            <tr class="fiche-row"><td class="fiche-label">Outils</td><td>MiroShark, MiroFish, Neo4j, Open Router, Qwen 3-235B, Polymarket</td></tr>
+            <tr class="fiche-row"><td class="fiche-label">Résumé</td><td>Test en direct de MiroShark (fork de MiroFish) sur une simulation de restructuration d'entreprise. 33 agents, 40 rounds, 678 événements, 0 erreur.</td></tr>
+          </table>
+          <p><strong>Citation clé :</strong> "Je m'adresse au CEO pour simuler une réaction publique, simuler une nouvelle offre, simuler un pricing, prendre une décision stratégique."</p>
+        </div>
+
+        <div class="fiche" id="fiche-action">
+          <h3>Fiche d'action</h3>
+          <p>Ce que tu peux faire maintenant :</p>
+          <ul class="action-list" data-video="miroshark">
+            <li><label><input type="checkbox" data-idx="0"> Installer MiroShark (Docker + Neo4j + Open Router)</label></li>
+            <li><label><input type="checkbox" data-idx="1"> Identifier une décision organisationnelle à simuler dans les 30 prochains jours</label></li>
+            <li><label><input type="checkbox" data-idx="2"> Créer 10-15 personas représentatifs des parties prenantes de cette décision</label></li>
+            <li><label><input type="checkbox" data-idx="3"> Configurer Qwen 3-235B via Open Router (éviter DeepSeek V4 Pro pour les longues simulations)</label></li>
+            <li><label><input type="checkbox" data-idx="4"> Lancer une simulation courte (5 rounds, 10 agents) pour tester la setup</label></li>
+            <li><label><input type="checkbox" data-idx="5"> Utiliser Deep Interaction pour "interviewer" les agents les plus résistants</label></li>
+            <li><label><input type="checkbox" data-idx="6"> Exporter le CSV et analyser les clusters d'opinion qui se sont formés</label></li>
+            <li><label><input type="checkbox" data-idx="7"> Rejoindre la communauté MiroShark pour suivre les mises à jour d'Aaron J. Mars</label></li>
+          </ul>
+        </div>
+
+        <div class="fiche" id="fiche-themes">
+          <h3>Thèmes couverts</h3>
+          <div class="themes-grid">
+            <span class="theme-pill">Simulation multi-agents</span>
+            <span class="theme-pill">Graphe de connaissances</span>
+            <span class="theme-pill">Marchés de prédiction IA</span>
+            <span class="theme-pill">Restructuration organisationnelle</span>
+            <span class="theme-pill">Sélection de modèles LLM</span>
+            <span class="theme-pill">Analyse de parties prenantes</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB PASSAGES CLÉS -->
+      <div id="tab-passages" class="tab-panel">
+        <h2>Passages clés</h2>
+        <ul class="timestamps-list">
+          <li class="timestamp-item">
+            <a href="https://www.youtube.com/watch?v=Fn5VNh_msJw&t=0" target="_blank" rel="noopener">
+              <span class="ts-badge">00:00</span>
+              <span class="ts-label">Introduction MiroShark vs MiroFish — les 3 améliorations clés (Neo4j, Open Router, anglais natif)</span>
+            </a>
+          </li>
+          <li class="timestamp-item">
+            <a href="https://www.youtube.com/watch?v=Fn5VNh_msJw&t=180" target="_blank" rel="noopener">
+              <span class="ts-badge">03:00</span>
+              <span class="ts-label">Présentation du scénario Solivar SAS — 100 salariés, 8 squads cross-fonctionnels</span>
+            </a>
+          </li>
+          <li class="timestamp-item">
+            <a href="https://www.youtube.com/watch?v=Fn5VNh_msJw&t=420" target="_blank" rel="noopener">
+              <span class="ts-badge">07:00</span>
+              <span class="ts-label">Création des 33 agents avec profils distincts — salariés, managers, actionnaires, médias</span>
+            </a>
+          </li>
+          <li class="timestamp-item">
+            <a href="https://www.youtube.com/watch?v=Fn5VNh_msJw&t=720" target="_blank" rel="noopener">
+              <span class="ts-badge">12:00</span>
+              <span class="ts-label">Choix Qwen 3-235B après abandon DeepSeek V4 Pro (72h estimées) — raisonnement</span>
+            </a>
+          </li>
+          <li class="timestamp-item">
+            <a href="https://www.youtube.com/watch?v=Fn5VNh_msJw&t=1080" target="_blank" rel="noopener">
+              <span class="ts-badge">18:00</span>
+              <span class="ts-label">Lancement simulation — round 1, managers intermédiaires premiers à résister sur X</span>
+            </a>
+          </li>
+          <li class="timestamp-item">
+            <a href="https://www.youtube.com/watch?v=Fn5VNh_msJw&t=1440" target="_blank" rel="noopener">
+              <span class="ts-badge">24:00</span>
+              <span class="ts-label">Polymarket en action — 108 trades, agents tech vs finance, divergence de confiance</span>
+            </a>
+          </li>
+          <li class="timestamp-item">
+            <a href="https://www.youtube.com/watch?v=Fn5VNh_msJw&t=1980" target="_blank" rel="noopener">
+              <span class="ts-badge">33:00</span>
+              <span class="ts-label">Fin simulation — 678 événements, 0 erreur, résultats round 40 détaillés</span>
+            </a>
+          </li>
+          <li class="timestamp-item">
+            <a href="https://www.youtube.com/watch?v=Fn5VNh_msJw&t=2280" target="_blank" rel="noopener">
+              <span class="ts-badge">38:00</span>
+              <span class="ts-label">Deep Interaction en direct — interview du délégué syndical virtuel, export CSV/JSON</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </main>
+
+    <aside class="sidebar">
+      <div class="sidebar-card youtube-cta">
+        <h4>Voir la vidéo</h4>
+        <a href="https://www.youtube.com/watch?v=Fn5VNh_msJw" target="_blank" rel="noopener" class="btn-youtube btn-full">▶ YouTube</a>
+        <div class="youtube-url-text">youtube.com/watch?v=Fn5VNh_msJw</div>
+      </div>
+
+      <div class="sidebar-card">
+        <h4>Infos</h4>
+        <div class="info-row"><span class="info-label">Date</span><span>27 avril 2026</span></div>
+        <div class="info-row"><span class="info-label">Durée</span><span>41:56</span></div>
+        <div class="info-row"><span class="info-label">Niveau</span><span>Avancé</span></div>
+        <div class="info-row"><span class="info-label">Catégorie</span><span>Info &amp; Actualité IA</span></div>
+      </div>
+
+      <div class="sidebar-card">
+        <h4>Chiffres clés</h4>
+        <div class="info-row"><span class="info-label">Agents</span><span>33</span></div>
+        <div class="info-row"><span class="info-label">Rounds</span><span>40</span></div>
+        <div class="info-row"><span class="info-label">Événements</span><span>678</span></div>
+        <div class="info-row"><span class="info-label">Posts X</span><span>197</span></div>
+        <div class="info-row"><span class="info-row"><span class="info-label">Reddit</span><span>373</span></div>
+        <div class="info-row"><span class="info-label">Polymarket</span><span>108 trades</span></div>
+        <div class="info-row"><span class="info-label">Erreurs</span><span>0</span></div>
+      </div>
+
+      <div class="sidebar-card">
+        <h4>Vidéos liées</h4>
+        <a class="related-video-link" href="2026-04-25_70-equipes-ia.html">70% du temps de tes équipes part en fumée</a>
+        <a class="related-video-link" href="2026-04-24_deepseek-v4-humilie-claude.html">DeepSeek V4 humilie Claude</a>
+        <a class="related-video-link" href="2026-04-19_hermes-agent-lagent-ia-qui-tappartient-vraiment.html">Hermes Agent — l'agent IA qui t'appartient vraiment</a>
+      </div>
+
+      <div class="sidebar-card card-demo">
+        <h4>Schéma interactif</h4>
+        <p>Voir le diagramme Swarm Agent Flow MiroShark avec Neo4j et les 33 nœuds agents.</p>
+        <a href="../demo.html#miroshark" class="btn-demo">Voir dans Démo →</a>
+      </div>
+    </aside>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>meydeey knowledge base — généré le 6 mai 2026</p>
+      <nav class="footer-nav">
+        <a href="../index.html">Accueil</a>
+        <a href="../categories.html">Catégories</a>
+        <a href="../videos.html">Vidéothèque</a>
+        <a href="../ouvertures.html">Ouvertures</a>
+        <a href="../demo.html">Démo</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

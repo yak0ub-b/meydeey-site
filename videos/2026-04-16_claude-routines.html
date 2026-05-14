@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claude /routines ÉCRASE les tâches répétitives (démo live) — meydeey KB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="../index.html">meydeey<span class="logo-accent"> KB</span></a>
+    <nav class="main-nav">
+      <a href="../index.html" class="nav-link">Accueil</a>
+      <a href="../categories.html" class="nav-link">Catégories</a>
+      <a href="../videos.html" class="nav-link">Vidéothèque</a>
+      <a href="../ouvertures.html" class="nav-link">Ouvertures</a>
+      <a href="../demo.html" class="nav-link">Démo</a>
+    </nav>
+    <div class="search-wrap">
+      <input id="global-search" type="search" placeholder="Rechercher…" autocomplete="off">
+      <div id="search-results" class="search-dropdown hidden"></div>
+    </div>
+  </div>
+</header>
+
+<div class="video-hero">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="../index.html">Accueil</a><span>›</span>
+      <a href="../categories.html#claude-code">Claude Code — Tutos</a><span>›</span>
+      <span>Claude /routines</span>
+    </div>
+    <div class="video-meta-badges">
+      <span class="badge cat-badge cat-5">Claude Code</span>
+      <span class="badge badge-green">✓ Analysée</span>
+      <span class="badge level-intermediaire">Intermédiaire</span>
+      <span class="badge" style="background:rgba(255,255,255,.08)">⏱ 25:36</span>
+      <span class="badge" style="background:rgba(255,255,255,.08)">2026-04-16</span>
+    </div>
+    <h1 class="video-title">Claude /routines ÉCRASE les tâches répétitives (démo live)</h1>
+    <p class="video-summary-hero">Anthropic sort les Routines — des configurations Claude sauvegardées qui tournent seules dans le cloud ou en local. 3 déclencheurs (schedule, API, GitHub), démo avocat + DRH en live, piège pricing 100$/mois.</p>
+    <div class="youtube-cta">
+      <a href="https://www.youtube.com/watch?v=jzlsiyy054Q" target="_blank" rel="noopener" class="btn-youtube">▶ Voir sur YouTube</a>
+      <span class="youtube-url-text">youtube.com/watch?v=jzlsiyy054Q</span>
+    </div>
+  </div>
+</div>
+
+<div class="tab-nav-sticky">
+  <div class="container">
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="resume">Résumé</button>
+      <button class="tab-btn" data-tab="analyse">Analyse</button>
+      <button class="tab-btn" data-tab="transcription">Transcription</button>
+      <button class="tab-btn" data-tab="fiches">Fiches</button>
+      <button class="tab-btn" data-tab="passages">Passages clés</button>
+    </div>
+  </div>
+</div>
+
+<div class="container content-with-sidebar" style="padding-top:var(--gap-xl);padding-bottom:var(--gap-2xl);">
+  <main>
+
+    <!-- TAB 1 -->
+    <div class="tab-panel active" id="tab-resume">
+      <p style="font-size:1.05rem;line-height:1.75;margin-bottom:var(--gap-xl)">
+        Les Routines Claude sont des configurations sauvegardées (fiche de poste + clés d'accès + déclencheur) qui tournent automatiquement — localement via Claude Desktop ou dans le cloud via Claude Code. Conçues pour les entrepreneurs et professionnels ayant des tâches répétitives : veille, reporting, triage de CV, mise à jour de repos.
+      </p>
+
+      <h2 class="section-title" style="margin-bottom:var(--gap-md)">Synthèse profonde</h2>
+      <p>L'image mentale proposée est le "stagiaire qui vit dans le cloud" — très compétent, invisible, disponible 24/7, qu'on ne verra jamais. On lui donne trois choses : une fiche de poste (ce qu'il doit faire), des clés d'accès (Gmail, Notion, Drive, Slack…), et un déclencheur (quand se mettre au boulot). Il se met au travail même quand l'ordi est éteint.</p>
+      <p>Trois types de déclencheurs : (1) réveil matin = schedule cron (tous les jours à 8h, chaque lundi…), (2) sonnette = API/webhook (un formulaire rempli déclenche le run), (3) détecteur de mouvements = GitHub (une PR ouverte, un push…). Pour les débutants, seul le schedule est accessible sans expertise technique.</p>
+      <p>Deux modes d'exécution. Local (Claude Desktop) : accès aux fichiers locaux, données sensibles non transmises au cloud, parfait pour contrats/factures/pièces client. Distant (Claude Code + GitHub) : repo comme source de vérité, exécution dans le cloud d'Anthropic, parfait pour trier des CV envoyés par email, mettre à jour des repos, faire de la veille.</p>
+      <p>Piège pricing : le plan Team standard à 25$/siège ne donne pas accès aux Routines — il faut le plan Team Premium à 100$/siège. 100$/mois = 14× moins cher qu'un SMIC. Les données de la routine tournent dans le cloud d'Anthropic — contrats confidentiels, bulletins de paie, liasses fiscales doivent rester en local (Claude Desktop local uniquement).</p>
+
+      <h2 class="section-title" style="margin:var(--gap-xl) 0 var(--gap-md)">Méthode — Créer une routine locale (avocat)</h2>
+      <ol class="steps-list">
+        <li>Ouvrir Claude Desktop → icône Code → section Routines → Nouveau</li>
+        <li>Choisir "Local" (fichiers sur ta machine)</li>
+        <li>Renseigner : nom, description, prompt détaillé (sources, domaines, périmètre, format de sortie)</li>
+        <li>Sélectionner le dossier client auquel donner accès</li>
+        <li>Choisir la fréquence (quotidien à 9h)</li>
+        <li>Activer "accepter modifications automatiquement" si le périmètre est bien défini</li>
+        <li>Créer → tester avec "Exécuter maintenant" → vérifier l'historique</li>
+      </ol>
+
+      <h2 class="section-title" style="margin:var(--gap-xl) 0 var(--gap-md)">Citations notables</h2>
+      <blockquote>Imagine un stagiaire très compétent que tu ne verras jamais. Il vit sur internet, il vit chez Anthropic. Tu n'as pas besoin de lui payer de bureau. Il va bosser pour toi même la nuit.</blockquote>
+      <blockquote>100 dollars par mois, c'est 14 fois moins cher qu'un SMIC. Et un SMIC pour faire du travail mécanique remplaçable — c'est complètement stupide de ne pas l'automatiser.</blockquote>
+    </div>
+
+    <!-- TAB 2 -->
+    <div class="tab-panel" id="tab-analyse">
+      <h2 class="section-title" style="margin-bottom:var(--gap-lg)">Concepts clés</h2>
+
+      <div class="concept-card">
+        <div class="concept-term">Claude Routines</div>
+        <div class="concept-def">Configurations Claude sauvegardées = fiche de poste (prompt) + clés d'accès (outils connectés) + déclencheur (schedule/API/GitHub). Tournent automatiquement sans intervention humaine. Disponibles dans Claude Desktop (local) ou Claude Code (cloud, nécessite GitHub). Accessibles uniquement sur le plan Team Premium (100$/siège/mois).</div>
+        <div class="concept-why"><strong>Pourquoi c'est important :</strong> Première fonctionnalité officielle d'Anthropic pour l'automatisation récurrente sans code — accessible aux non-développeurs via Claude Desktop. Équivalent d'un agent 24/7 mais piloté par des configurations sauvegardées, pas du code.</div>
+      </div>
+
+      <div class="concept-card">
+        <div class="concept-term">Local vs Distant — deux modes d'exécution</div>
+        <div class="concept-def">Local (Claude Desktop) : les fichiers restent sur ta machine, Claude y accède pendant l'exécution — idéal pour données sensibles (contrats, bilans). Distant (Claude Code + GitHub) : le repo est la source de vérité, Claude tourne dans le cloud d'Anthropic, laptop peut être éteint — idéal pour CV par email, veille, monitoring de repos.</div>
+        <div class="concept-why"><strong>Pourquoi c'est important :</strong> La distinction local/distant détermine ce qui peut être automatisé légalement et sans risque de fuite. Confondre les deux = risque RGPD réel sur des données sensibles.</div>
+      </div>
+
+      <div class="concept-card">
+        <div class="concept-term">GitHub comme source de vérité pour les routines</div>
+        <div class="concept-def">Pour les routines distantes, le repo GitHub contient : le contexte de l'entreprise, les fiches de poste, les données à traiter (CV, rapports), et les résultats produits par la routine. Claude lit, traite et re-push dans le repo — entièrement sans intervention humaine. Le repo est auditable, versionné, récupérable si le PC crame.</div>
+        <div class="concept-why"><strong>Pourquoi c'est important :</strong> Transforme GitHub en "base mémorielle d'entreprise" automatiquement maintenue — applicable même sans infrastructure cloud complexe.</div>
+      </div>
+
+      <h2 class="section-title" style="margin:var(--gap-xl) 0 var(--gap-md)">3 cas métier concrets</h2>
+      <div class="model-card">
+        <div class="model-title">Avocat — veille juridique quotidienne</div>
+        <div class="model-body">Tous les matins à 8h : Claude scanne Legifrance, Dalloz, Village Justice → filtre les domaines du dossier client → envoie les 3 décisions clés par email. Gain : 45 min/jour. Le junior se concentre sur la plaidoirie, pas la veille.</div>
+      </div>
+      <div class="model-card">
+        <div class="model-title">Expert-comptable — reporting client automatique</div>
+        <div class="model-body">Le 5 de chaque mois : Claude ouvre l'export comptable → calcule les écarts avec Python déterministe (pas d'IA pour les maths) → détecte les anomalies → prépare un PDF de 2 pages par client. Gain : 10h/mois sur 30 clients (20 min × 30).</div>
+      </div>
+      <div class="model-card">
+        <div class="model-title">DRH — préqualification CV</div>
+        <div class="model-body">Les CV arrivent par email → automatisation → repo GitHub dossier "CV à traiter" → routine tourne la nuit → score sur 100, classement, rapport. Le lendemain matin : tout est dans "CV traités". La DRH contrôle, valide, envoie. Zéro lecture manuelle de CV hors-sujet.</div>
+      </div>
+
+      <h2 class="section-title" style="margin:var(--gap-xl) 0 var(--gap-md)">Insights non-évidents</h2>
+      <ul class="insights-list">
+        <li>Le plan Team standard à 25$/siège <strong>ne donne pas accès aux Routines</strong> — piège courant. Il faut le Team Premium à 100$/siège. Vérifier avant d'investir du temps de setup.</li>
+        <li>Pour le reporting comptable, Claude utilise du <strong>code Python déterministe</strong> pour les calculs — pas de l'IA probabiliste. La routine garde son rôle de préparateur, le comptable garde son rôle de contrôleur.</li>
+        <li>L'automatisation email → GitHub → routine → résultats → rapport est possible <strong>sans coder</strong> : une automatisation n8n ou Zapier peut déposer les CV dans le repo GitHub avant que la routine s'exécute.</li>
+        <li>Claude est le meilleur sur les benchmarks de <strong>search/recherche web</strong> (au-dessus de Gemini, GPT-5.2, Grok) — c'est ce qui rend la veille juridique particulièrement fiable avec les Routines.</li>
+      </ul>
+
+      <h2 class="section-title" style="margin:var(--gap-xl) 0 var(--gap-md)">Outils &amp; techniques</h2>
+      <div class="tools-badges">
+        <span class="tool-pill">Claude Desktop</span>
+        <span class="tool-pill">Claude Code</span>
+        <span class="tool-pill">GitHub</span>
+        <span class="tool-pill">Routines</span>
+        <span class="tool-pill">Schedule cron</span>
+        <span class="tool-pill">Webhook API</span>
+        <span class="tool-pill">n8n</span>
+        <span class="tool-pill">Python déterministe</span>
+        <span class="tool-pill">Legifrance</span>
+        <span class="tool-pill">Dalloz</span>
+      </div>
+
+      <h2 class="section-title" style="margin:var(--gap-xl) 0 var(--gap-md)">Connexions</h2>
+      <div class="connection-tags">
+        <span class="theme-pill">Hermes Agent — automatisation 24/7 alternative</span>
+        <span class="theme-pill">70% équipes — tâches répétitives automatisables</span>
+        <span class="theme-pill">Obsidian GodMode — base mémorielle GitHub</span>
+      </div>
+    </div>
+
+    <!-- TAB 3 -->
+    <div class="tab-panel" id="tab-transcription">
+      <div style="display:flex;align-items:center;gap:var(--gap-md);margin-bottom:var(--gap-lg);flex-wrap:wrap;">
+        <input id="transcript-search" type="search" placeholder="Rechercher dans la transcription…" style="flex:1;min-width:200px;padding:.5rem .75rem;background:var(--bg-input);border:1px solid var(--border);border-radius:6px;color:var(--text-primary);font-size:.9rem;">
+        <span style="color:var(--text-muted);font-size:.85rem;white-space:nowrap">~5 000 mots</span>
+      </div>
+      <div class="transcription-body" id="transcript-content">
+        <p>Anthropic vient de sortir une fonctionnalité qui s'appelle Routine et elle te permet de créer des employés illimités à 400 QI qui travaillent 24/7. Et pendant que tu vas ronfler, ils vont travailler sur tes tâches à un haut niveau de précision. À la fin de cette vidéo, je vais te montrer une démonstration. On va voir comment l'utiliser principalement sur Cloud Desktop, si tu l'as installé sur ton PC Windows ou Mac, et bien sûr sur Claude Code.</p>
+        <p>Nous sommes lundi, il est 8 heures, tu as 47 emails et tu as 12 veilles à faire. Et toi, comme d'habitude, tu fais ça à la main, tous les lundis, chaque semaine, pendant que tes emails s'empilent. Et si je te disais que Claude pouvait le faire tout seul la nuit — c'est ce qu'on appelle le stagiaire qui vit dans le cloud.</p>
+        <p>C'est très simple : imagine un stagiaire très compétent, que tu ne verras jamais. Il vit sur internet, il vit chez Anthropic. Tu n'as pas besoin de lui payer de bureau, il va dormir dans un cloud. Mais l'avantage principal, c'est qu'il va bosser pour toi même la nuit. Et il faut que tu lui donnes trois choses : (1) une fiche de poste — qu'est-ce qu'il doit faire précisément, (2) des clés d'accès — Gmail, Notion, Drive, Slack, (3) un déclencheur — quand se mettre au boulot, par exemple tous les matins à 8h.</p>
+        <p>Claude Code Routine, fiche résumée : une configuration Claude sauvegardée qui va tourner toute seule dans le cloud anthropique. À quoi ça sert ? Automatiser la veille, le reporting, le triage, sans toucher à ton PC. Pour qui ? Les entrepreneurs et professionnels avec des tâches répétitives qui mangent leur semaine. Sa force : elle va réfléchir à chaque lancement — c'est un mini cerveau en autonomie.</p>
+        <p>Il y a trois façons de lancer une routine. (1) Le réveil matin — schedule cron : tous les jours à 8h, chaque lundi, minimum une heure entre deux runs. (2) La sonnette — API/webhook : un client remplit ton formulaire, ça sonne chez le stagiaire et il se réveille. (3) Le détecteur de mouvements — GitHub : pour les développeurs, se déclenche à chaque événement Git (PR, push…).</p>
+        <p>3 cas d'usage concrets. Pour les avocats : veille juridique automatique tous les matins à 8h. Claude scanne Legifrance, Dalloz, Village Justice, filtre les domaines prioritaires, envoie les 3 décisions importantes par email. Gain : 45 min/jour minimum. Le junior peut travailler sur autre chose. Pour les experts-comptables : reporting client automatique le 5 de chaque mois. Claude ouvre l'export comptable, calcule les écarts avec du code Python déterministe (pas de l'IA pour les maths), détecte les anomalies, prépare un PDF de 2 pages par client. 30 clients × 20 min = 10h économisées. Pour les DRH : un nouveau CV arrive par email → déposé dans GitHub → routine tourne la nuit → CV scoré sur 100 selon critères → classé dans "CV traités" → rapport généré. La DRH arrive le matin avec tout traité.</p>
+        <p>Pièges. (1) Pricing : le plan Team standard à 25$/siège ne donne pas accès à Claude Code ni aux routines. Il faut le Team Premium à 100$/siège. 100$/mois = 14× moins cher qu'un SMIC. (2) Données sensibles : les routines tournent dans le cloud d'Anthropic. Contrats confidentiels, bulletins de paie, liasses fiscales → utilise uniquement le mode local sur Claude Desktop. (3) RGPD : en France, attention. Secteur médical, juridique, financier — lire les conditions. "Toutes tes données clients ne passent pas par là."</p>
+        <p>Démo 1 — Local (Claude Desktop). Aller dans Claude Desktop → icône Code → Routines → Nouveau → Local. Nom : "Veille juridique Novara". Description : "Notes juridiques quotidiennes sur les textes impactant mon activité." Prompt : persona Maître Chevalier, avocat droit numérique, sources (URL directes), domaines à couvrir, format du rapport, instruction "tu n'es pas là pour rassurer, tu es là pour protéger les arrières du dossier." Fréquence : quotidien à 9h. Autorisations : accepter automatiquement. Dossier : sélectionner le dossier client Novara en local.</p>
+        <p>Exécution manuelle → historique → on voit le prompt envoyé, les recherches web, la réponse structurée : "Maître Chevalier, note juridique du 16 avril 2026 pour le dossier Novara Consulting. Sources récentes : CNIL, formulaire 5472, OBA, loi influenceur." La routine est configurée — chaque matin à 9h, automatiquement.</p>
+        <p>Démo 2 — Distant (Claude Code + GitHub). Aller dans Routines → Nouveau → À distance. Connecter un repo GitHub → créer un repo "Test DRH Vidéo" sur GitHub (privé, sans readme). Revenir dans Routines → dépôts → sélectionner "Test DRH Vidéo". Prompt : persona Catherine Morel, directrice recrutement Luminara, critères de scoring, template de rapport. Déclencheur : schedule à 9h quotidien. Créer la routine.</p>
+        <p>Préparer le dossier local Luminara Recrutement : archives CV traités, CV à traiter (faux CV en markdown), contexte entreprise, fiche de poste, grille de notation, readme avec architecture. Pousser vers GitHub via Claude Code (commande push).</p>
+        <p>Exécuter manuellement → Claude lit le contexte, les fiches de poste, les CV → les analyse → génère un rapport dans le repo → push vers GitHub : "Marie Dupont — 97/100 — priorité haute. Julien Martin — 68/100 — à écarter." Les CV sont déplacés de "CV à traiter" vers "CV traités". Le DRH arrive le matin : tout est fait.</p>
+        <p>Comparaison Routines / Cowork / n8n. Routines : laptop fermé ✓, cloud uniquement, réflexion à chaque run. Cowork : fichiers locaux sensibles ✓. n8n : tâches mécaniques sans réflexion (routing, reformatage). Les 3 coexistent — choisir selon le cas.</p>
+        <p>Si ça t'a plu, n'hésite pas à liker, partager, t'abonner. Merci à Claude pour les routines. Ciao !</p>
+      </div>
+    </div>
+
+    <!-- TAB 4 -->
+    <div class="tab-panel" id="tab-fiches">
+      <div class="fiche" id="fiche-resume">
+        <div class="fiche-header">
+          <h2>Fiche de résumé</h2>
+          <button onclick="window.print()" class="btn btn-secondary" style="font-size:.85rem">🖨 Imprimer</button>
+        </div>
+        <table class="fiche-table">
+          <tr class="fiche-row"><td class="fiche-label">Titre</td><td>Claude /routines ÉCRASE les tâches répétitives</td></tr>
+          <tr class="fiche-row"><td class="fiche-label">Date</td><td>2026-04-16</td></tr>
+          <tr class="fiche-row"><td class="fiche-label">Durée</td><td>25:36</td></tr>
+          <tr class="fiche-row"><td class="fiche-label">Pricing requis</td><td>Team Premium 100$/siège/mois (pas le standard 25$)</td></tr>
+          <tr class="fiche-row"><td class="fiche-label">3 déclencheurs</td><td>Schedule (cron) · API webhook · GitHub events</td></tr>
+          <tr class="fiche-row"><td class="fiche-label">2 modes</td><td>Local (Claude Desktop) · Distant (Cloud Code + GitHub)</td></tr>
+          <tr class="fiche-row"><td class="fiche-label">Cas avocat</td><td>Veille juridique → 45 min/jour économisées</td></tr>
+          <tr class="fiche-row"><td class="fiche-label">Cas DRH</td><td>Triage CV → score sur 100, rapport automatique la nuit</td></tr>
+          <tr class="fiche-row"><td class="fiche-label">Attention</td><td>Données sensibles en local UNIQUEMENT (cloud Anthropic pour le reste)</td></tr>
+          <tr class="fiche-row"><td class="fiche-label">URL</td><td><code>youtube.com/watch?v=jzlsiyy054Q</code></td></tr>
+        </table>
+      </div>
+
+      <div class="fiche" style="margin-top:var(--gap-xl)">
+        <div class="fiche-header"><h2>Fiche d'action</h2></div>
+        <ul class="action-list">
+          <li><label><input type="checkbox" data-idx="0"> Vérifier son abonnement — Team Premium 100$/siège requis pour les Routines</label></li>
+          <li><label><input type="checkbox" data-idx="1"> Identifier 1 tâche répétitive hebdomadaire (veille, reporting, triage) à automatiser en priorité</label></li>
+          <li><label><input type="checkbox" data-idx="2"> Créer une première routine locale dans Claude Desktop avec un prompt bien périmétré</label></li>
+          <li><label><input type="checkbox" data-idx="3"> Tester l'exécution manuelle 3×, ajuster le prompt jusqu'à obtenir un résultat déterministe</label></li>
+          <li><label><input type="checkbox" data-idx="4"> Pour un cas DRH : mettre en place l'automatisation email → GitHub → routine → rapport</label></li>
+        </ul>
+      </div>
+
+      <div class="fiche" style="margin-top:var(--gap-xl)">
+        <div class="fiche-header"><h2>Thèmes abordés</h2></div>
+        <div class="themes-grid">
+          <span class="theme-pill">Automatisation</span>
+          <span class="theme-pill">Claude Desktop</span>
+          <span class="theme-pill">GitHub CI/CD</span>
+          <span class="theme-pill">Veille juridique</span>
+          <span class="theme-pill">DRH / RH IA</span>
+          <span class="theme-pill">RGPD / données</span>
+          <span class="theme-pill">n8n</span>
+          <span class="theme-pill">Productivité</span>
+        </div>
+        <div style="margin-top:var(--gap-lg)">
+          <span class="badge cat-badge cat-5">Claude Code — Tutos</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 5 -->
+    <div class="tab-panel" id="tab-passages">
+      <p style="color:var(--text-muted);margin-bottom:var(--gap-lg)">Cliquez sur un timestamp pour ouvrir YouTube au bon moment.</p>
+      <ul class="timestamps-list">
+        <li class="timestamp-item">
+          <a href="https://www.youtube.com/watch?v=jzlsiyy054Q&t=0" target="_blank" rel="noopener">
+            <span class="ts-badge">00:00</span><span class="ts-label">Le stagiaire qui vit dans le cloud — image mentale et définition</span>
+          </a>
+        </li>
+        <li class="timestamp-item">
+          <a href="https://www.youtube.com/watch?v=jzlsiyy054Q&t=180" target="_blank" rel="noopener">
+            <span class="ts-badge">03:00</span><span class="ts-label">3 déclencheurs — schedule, API/webhook, GitHub</span>
+          </a>
+        </li>
+        <li class="timestamp-item">
+          <a href="https://www.youtube.com/watch?v=jzlsiyy054Q&t=360" target="_blank" rel="noopener">
+            <span class="ts-badge">06:00</span><span class="ts-label">3 cas métier — avocat, expert-comptable, DRH</span>
+          </a>
+        </li>
+        <li class="timestamp-item">
+          <a href="https://www.youtube.com/watch?v=jzlsiyy054Q&t=600" target="_blank" rel="noopener">
+            <span class="ts-badge">10:00</span><span class="ts-label">Piège pricing — 100$/mois Team Premium requis</span>
+          </a>
+        </li>
+        <li class="timestamp-item">
+          <a href="https://www.youtube.com/watch?v=jzlsiyy054Q&t=780" target="_blank" rel="noopener">
+            <span class="ts-badge">13:00</span><span class="ts-label">Démo 1 — routine locale avocat dans Claude Desktop</span>
+          </a>
+        </li>
+        <li class="timestamp-item">
+          <a href="https://www.youtube.com/watch?v=jzlsiyy054Q&t=1080" target="_blank" rel="noopener">
+            <span class="ts-badge">18:00</span><span class="ts-label">Démo 2 — routine distante DRH avec GitHub</span>
+          </a>
+        </li>
+        <li class="timestamp-item">
+          <a href="https://www.youtube.com/watch?v=jzlsiyy054Q&t=1380" target="_blank" rel="noopener">
+            <span class="ts-badge">23:00</span><span class="ts-label">Résultat DRH — CV traités, scoring 97/100, rapport poussé sur GitHub</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  </main>
+
+  <aside class="sidebar">
+    <div class="sidebar-card">
+      <div class="sidebar-card-title">Informations</div>
+      <div class="info-row"><span>Date</span><strong>2026-04-16</strong></div>
+      <div class="info-row"><span>Durée</span><strong>25:36</strong></div>
+      <div class="info-row"><span>Niveau</span><strong>Intermédiaire</strong></div>
+      <div class="info-row"><span>Pricing</span><strong>100$/siège/mois</strong></div>
+      <div class="info-row"><span>Modes</span><strong>Local + Distant</strong></div>
+    </div>
+    <a href="https://www.youtube.com/watch?v=jzlsiyy054Q" target="_blank" rel="noopener" class="btn-youtube" style="display:block;text-align:center;margin-bottom:var(--gap-md)">▶ Voir sur YouTube</a>
+    <div class="sidebar-card">
+      <div class="sidebar-card-title">Vidéos liées</div>
+      <a class="related-video-link" href="2026-04-19_hermes-agent.html">Hermes Agent — alternative open source</a>
+      <a class="related-video-link" href="2026-04-25_70-equipes-ia.html">70% équipes — tâches automatisables</a>
+      <a class="related-video-link" href="2026-04-20_obsidian-notion-claude-code.html">Obsidian GodMode — Claude Code avancé</a>
+    </div>
+    <div class="sidebar-card" style="border-left:3px solid var(--accent-yellow)">
+      <div class="sidebar-card-title" style="color:var(--accent-yellow)">Attention pricing</div>
+      <p style="font-size:.85rem;color:var(--text-secondary);margin:0">Le plan Team standard (25$/mois) ne donne PAS accès aux Routines. Il faut le Team Premium à 100$/siège.</p>
+    </div>
+  </aside>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Base de connaissance · <a href="../index.html">Accueil</a> · <a href="../videos.html">Vidéothèque</a></p>
+  </div>
+</footer>
+<script src="../js/main.js"></script>
+</body>
+</html>

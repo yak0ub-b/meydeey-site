@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Démo Concepts — meydeey KB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* ── Demo page specific ── */
+    .demo-section {
+      padding: var(--gap-2xl) 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .demo-section:last-child { border-bottom: none; }
+    .demo-header {
+      display: flex;
+      flex-direction: column;
+      gap: var(--gap-xs);
+      margin-bottom: var(--gap-xl);
+    }
+    .demo-num {
+      font-family: var(--font-mono);
+      font-size: .75rem;
+      color: var(--text-muted);
+      letter-spacing: .08em;
+    }
+    .demo-title {
+      font-size: 1.6rem;
+      font-weight: 800;
+      letter-spacing: -.02em;
+      color: var(--text-primary);
+    }
+    .demo-source {
+      font-size: .82rem;
+      color: var(--text-muted);
+    }
+    .demo-source a { color: var(--accent-blue); }
+    .demo-figure {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: var(--gap-xl);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 360px;
+    }
+
+    /* ── 1. Pyramide IA ── */
+    .pyramid-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+      width: 100%;
+      max-width: 620px;
+    }
+    .pyramid-row {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      gap: var(--gap-md);
+      margin-bottom: 6px;
+    }
+    .pyramid-shape {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      padding: 18px 12px;
+      font-weight: 700;
+      font-size: .95rem;
+      letter-spacing: -.01em;
+      transition: filter .2s;
+      cursor: default;
+    }
+    .pyramid-shape:hover { filter: brightness(1.15); }
+    .pyramid-label {
+      width: 120px;
+      font-size: .78rem;
+      color: var(--text-secondary);
+      text-align: right;
+      flex-shrink: 0;
+    }
+    .pyr-1 { background: linear-gradient(135deg, #7c6af7 0%, #9b59f5 100%); color: #fff; max-width: 30%; }
+    .pyr-2 { background: linear-gradient(135deg, #4a9eff 0%, #2d85f0 100%); color: #fff; max-width: 50%; }
+    .pyr-3 { background: linear-gradient(135deg, #4caf82 0%, #3a9868 100%); color: #fff; max-width: 70%; }
+    .pyr-4 { background: linear-gradient(135deg, #f97316 0%, #ea6010 100%); color: #fff; max-width: 90%; }
+    .pyramid-desc {
+      margin-top: var(--gap-lg);
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--gap-sm);
+      width: 100%;
+      max-width: 620px;
+    }
+    .pyramid-desc-item {
+      background: var(--bg-input);
+      border-radius: 8px;
+      padding: 10px 14px;
+      font-size: .78rem;
+    }
+    .pyramid-desc-item strong { display: block; margin-bottom: 2px; }
+
+    /* ── 2. Swarm Agent Flow ── */
+    .swarm-svg-wrap { width: 100%; max-width: 680px; }
+    .swarm-svg-wrap svg { width: 100%; height: auto; }
+
+    /* ── 3. Obsidian Graph (handled by JS) ── */
+    #obsidian-graph {
+      width: 100%;
+      max-width: 600px;
+      height: 420px;
+      position: relative;
+    }
+
+    /* ── 4. RAG vs Wiki ── */
+    .comparison-diagram {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--gap-lg);
+      width: 100%;
+      max-width: 740px;
+    }
+    .comp-panel {
+      border-radius: 12px;
+      padding: var(--gap-lg);
+      border: 2px solid transparent;
+    }
+    .comp-rag {
+      background: rgba(74,158,255,.08);
+      border-color: var(--accent-blue);
+    }
+    .comp-wiki {
+      background: rgba(76,175,130,.08);
+      border-color: var(--accent-green);
+    }
+    .comp-panel h3 {
+      font-size: 1rem;
+      font-weight: 800;
+      margin-bottom: var(--gap-sm);
+    }
+    .comp-rag h3 { color: var(--accent-blue); }
+    .comp-wiki h3 { color: var(--accent-green); }
+    .comp-panel ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: .82rem;
+      color: var(--text-secondary);
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .comp-panel ul li::before { content: "→ "; color: var(--text-muted); }
+    .comp-ideal {
+      margin-top: var(--gap-sm);
+      padding-top: var(--gap-sm);
+      border-top: 1px solid var(--border);
+      font-size: .75rem;
+      color: var(--text-muted);
+    }
+    .comp-ideal strong { display: block; color: var(--text-secondary); margin-bottom: 2px; }
+
+    /* ── 5. AI Officer Org-chart ── */
+    .orgchart-svg-wrap { width: 100%; max-width: 720px; }
+    .orgchart-svg-wrap svg { width: 100%; height: auto; }
+
+    @media (max-width: 600px) {
+      .comparison-diagram { grid-template-columns: 1fr; }
+      .pyramid-desc { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="index.html">meydeey<span class="logo-accent"> KB</span></a>
+    <nav class="main-nav">
+      <a href="index.html"      class="nav-link">Accueil</a>
+      <a href="categories.html" class="nav-link">Catégories</a>
+      <a href="videos.html"     class="nav-link">Vidéothèque</a>
+      <a href="ouvertures.html" class="nav-link">Ouvertures</a>
+      <a href="demo.html"       class="nav-link active">Démo</a>
+    </nav>
+    <div class="search-wrap">
+      <input id="global-search" type="search" placeholder="Rechercher…" autocomplete="off">
+      <div id="search-results" class="search-dropdown hidden"></div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container" style="padding-top:var(--gap-2xl)">
+    <h1 style="font-size:2rem;font-weight:900;letter-spacing:-.03em;margin-bottom:.5rem">Démo Concepts</h1>
+    <p style="color:var(--text-secondary);font-size:.95rem;margin-bottom:0">5 schémas interactifs illustrant les concepts clés extraits des vidéos analysées.</p>
+  </div>
+
+  <!-- ══════════════════ 1. PYRAMIDE ═══════════════════ -->
+  <section class="demo-section">
+    <div class="container">
+      <div class="demo-header">
+        <span class="demo-num">01 / 05</span>
+        <h2 class="demo-title">Pyramide d'Intégration IA</h2>
+        <p class="demo-source">Source : <a href="videos/2026-04-25_70-equipes-ia.html">70% du temps de tes équipes part en fumée (système IA)</a></p>
+      </div>
+      <div class="demo-figure">
+        <div style="display:flex;flex-direction:column;align-items:center;width:100%">
+          <div class="pyramid-wrap">
+            <div class="pyramid-row" style="justify-content:center">
+              <div class="pyramid-shape pyr-1" style="margin:0 auto">Organisation</div>
+            </div>
+            <div class="pyramid-row" style="justify-content:center">
+              <div class="pyramid-shape pyr-2" style="margin:0 auto">Département</div>
+            </div>
+            <div class="pyramid-row" style="justify-content:center">
+              <div class="pyramid-shape pyr-3" style="margin:0 auto">Équipe</div>
+            </div>
+            <div class="pyramid-row" style="justify-content:center">
+              <div class="pyramid-shape pyr-4" style="margin:0 auto">Individu</div>
+            </div>
+          </div>
+          <div class="pyramid-desc" style="margin-top:var(--gap-xl)">
+            <div class="pyramid-desc-item">
+              <strong style="color:#f97316">Niveau 1 — Individu</strong>
+              Chaque collaborateur adopte ses propres outils IA. Gains rapides mais silotés.
+            </div>
+            <div class="pyramid-desc-item">
+              <strong style="color:#4caf82">Niveau 2 — Équipe</strong>
+              Workflows partagés, prompts standardisés, premiers gains collectifs.
+            </div>
+            <div class="pyramid-desc-item">
+              <strong style="color:#4a9eff">Niveau 3 — Département</strong>
+              Intégration aux outils métier, mémorisation des contextes, AI Officer désigné.
+            </div>
+            <div class="pyramid-desc-item">
+              <strong style="color:#7c6af7">Niveau 4 — Organisation</strong>
+              Base mémorielle d'entreprise, agents autonomes, ROI systémique mesuré.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ 2. SWARM AGENT FLOW ═══════════════════ -->
+  <section class="demo-section">
+    <div class="container">
+      <div class="demo-header">
+        <span class="demo-num">02 / 05</span>
+        <h2 class="demo-title">Swarm Agent Flow — MiroShark</h2>
+        <p class="demo-source">Source : <a href="videos/2026-04-27_miroshark.html">MiroShark EXPLOSE MiroFish (test en direct)</a></p>
+      </div>
+      <div class="demo-figure">
+        <div class="swarm-svg-wrap">
+          <svg viewBox="0 0 680 420" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+            <defs>
+              <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+                <path d="M0,0 L0,6 L8,3 z" fill="#5c6580"/>
+              </marker>
+              <filter id="glow">
+                <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+            </defs>
+
+            <!-- Lines from orchestrator to agents -->
+            <line x1="340" y1="180" x2="160" y2="100" stroke="#7c6af7" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow)" opacity=".7"/>
+            <line x1="340" y1="180" x2="520" y2="100" stroke="#7c6af7" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow)" opacity=".7"/>
+            <line x1="340" y1="210" x2="100" y2="240" stroke="#4a9eff" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow)" opacity=".7"/>
+            <line x1="340" y1="210" x2="580" y2="240" stroke="#4a9eff" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow)" opacity=".7"/>
+            <line x1="340" y1="235" x2="160" y2="340" stroke="#4caf82" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow)" opacity=".7"/>
+            <line x1="340" y1="235" x2="520" y2="340" stroke="#4caf82" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow)" opacity=".7"/>
+
+            <!-- Line to Neo4j -->
+            <line x1="340" y1="260" x2="340" y2="360" stroke="#f97316" stroke-width="2" marker-end="url(#arrow)" opacity=".9"/>
+
+            <!-- Orchestrateur central -->
+            <circle cx="340" cy="210" r="56" fill="#1c2130" stroke="#7c6af7" stroke-width="2.5" filter="url(#glow)"/>
+            <text x="340" y="204" text-anchor="middle" fill="#7c6af7" font-size="11" font-weight="700">ORCHESTRATEUR</text>
+            <text x="340" y="220" text-anchor="middle" fill="#9aa3c0" font-size="9.5">MiroShark</text>
+            <text x="340" y="235" text-anchor="middle" fill="#5c6580" font-size="9">40 rounds</text>
+
+            <!-- Agent nodes -->
+            <!-- Agent A — Marché -->
+            <circle cx="160" cy="80" r="38" fill="#1c2130" stroke="#4a9eff" stroke-width="1.8"/>
+            <text x="160" y="76" text-anchor="middle" fill="#4a9eff" font-size="10" font-weight="600">Agent</text>
+            <text x="160" y="90" text-anchor="middle" fill="#9aa3c0" font-size="9">Marché</text>
+
+            <!-- Agent B — Événements -->
+            <circle cx="520" cy="80" r="38" fill="#1c2130" stroke="#4a9eff" stroke-width="1.8"/>
+            <text x="520" y="76" text-anchor="middle" fill="#4a9eff" font-size="10" font-weight="600">Agent</text>
+            <text x="520" y="90" text-anchor="middle" fill="#9aa3c0" font-size="9">Événements</text>
+
+            <!-- Agent C — Analyse -->
+            <circle cx="82" cy="240" r="38" fill="#1c2130" stroke="#4caf82" stroke-width="1.8"/>
+            <text x="82" y="236" text-anchor="middle" fill="#4caf82" font-size="10" font-weight="600">Agent</text>
+            <text x="82" y="250" text-anchor="middle" fill="#9aa3c0" font-size="9">Analyse</text>
+
+            <!-- Agent D — Prédiction -->
+            <circle cx="598" cy="240" r="38" fill="#1c2130" stroke="#4caf82" stroke-width="1.8"/>
+            <text x="598" y="236" text-anchor="middle" fill="#4caf82" font-size="10" font-weight="600">Agent</text>
+            <text x="598" y="250" text-anchor="middle" fill="#9aa3c0" font-size="9">Prédiction</text>
+
+            <!-- Agent E — Scoring -->
+            <circle cx="160" cy="345" r="38" fill="#1c2130" stroke="#eab308" stroke-width="1.8"/>
+            <text x="160" y="341" text-anchor="middle" fill="#eab308" font-size="10" font-weight="600">Agent</text>
+            <text x="160" y="355" text-anchor="middle" fill="#9aa3c0" font-size="9">Scoring</text>
+
+            <!-- Agent F — Rapport -->
+            <circle cx="520" cy="345" r="38" fill="#1c2130" stroke="#eab308" stroke-width="1.8"/>
+            <text x="520" y="341" text-anchor="middle" fill="#eab308" font-size="10" font-weight="600">Agent</text>
+            <text x="520" y="355" text-anchor="middle" fill="#9aa3c0" font-size="9">Rapport</text>
+
+            <!-- Neo4j DB -->
+            <rect x="280" y="365" width="120" height="44" rx="8" fill="#1c2130" stroke="#f97316" stroke-width="2"/>
+            <text x="340" y="384" text-anchor="middle" fill="#f97316" font-size="10" font-weight="700">Neo4j</text>
+            <text x="340" y="398" text-anchor="middle" fill="#9aa3c0" font-size="8.5">678 événements</text>
+
+            <!-- Stats labels -->
+            <text x="340" y="18" text-anchor="middle" fill="#5c6580" font-size="10">Polymarket integration — simulation économique multi-agents</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ 3. OBSIDIAN GRAPH ═══════════════════ -->
+  <section class="demo-section">
+    <div class="container">
+      <div class="demo-header">
+        <span class="demo-num">03 / 05</span>
+        <h2 class="demo-title">Obsidian GodMode — Knowledge Graph</h2>
+        <p class="demo-source">Source : <a href="videos/2026-04-20_obsidian-notion-claude-code.html">J'ai supprimé Notion pour ça (Claude Code + Obsidian)</a></p>
+      </div>
+      <div class="demo-figure" style="flex-direction:column;gap:var(--gap-lg)">
+        <div id="obsidian-graph"></div>
+        <div style="display:flex;gap:var(--gap-lg);flex-wrap:wrap;justify-content:center">
+          <span style="font-size:.78rem;color:var(--text-muted)">⬤ <span style="color:#7c6af7">Nœud central</span></span>
+          <span style="font-size:.78rem;color:var(--text-muted)">⬤ <span style="color:#4a9eff">Clusters</span></span>
+          <span style="font-size:.78rem;color:var(--text-muted)">1000+ pages · 10 000+ relations · 7 agents parallèles</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ 4. RAG vs WIKI ═══════════════════ -->
+  <section class="demo-section">
+    <div class="container">
+      <div class="demo-header">
+        <span class="demo-num">04 / 05</span>
+        <h2 class="demo-title">RAG vs Wiki Compilé</h2>
+        <p class="demo-source">Source : <a href="videos/2026-04-20_obsidian-notion-claude-code.html">J'ai supprimé Notion pour ça (Claude Code + Obsidian)</a></p>
+      </div>
+      <div class="demo-figure">
+        <div class="comparison-diagram">
+          <div class="comp-panel comp-rag">
+            <h3>RAG — Retrieval Augmented Generation</h3>
+            <ul>
+              <li>Recherche vectorielle à la volée</li>
+              <li>Chunks de documents bruts</li>
+              <li>Pas de synthèse préalable</li>
+              <li>Latence de retrieval à chaque requête</li>
+              <li>Hallucinations possibles sur gaps</li>
+              <li>Contexte limité par la fenêtre de retrieval</li>
+            </ul>
+            <div class="comp-ideal">
+              <strong>Idéal pour</strong>
+              Documents non structurés, recherche full-text, corpus changeant très fréquemment
+            </div>
+          </div>
+          <div class="comp-panel comp-wiki">
+            <h3>Wiki Compilé (Obsidian + Claude)</h3>
+            <ul>
+              <li>Synthèse sémantique pré-calculée</li>
+              <li>Relations explicites entre concepts</li>
+              <li>Zéro latence retrieval (contexte injecté)</li>
+              <li>Structure imposée par l'auteur</li>
+              <li>10 000+ backlinks actifs</li>
+              <li>Mémorisation persistante cross-sessions</li>
+            </ul>
+            <div class="comp-ideal">
+              <strong>Idéal pour</strong>
+              Base de connaissance personnelle, contexte stable, besoin de cohérence à long terme
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ 5. AI OFFICER ORG-CHART ═══════════════════ -->
+  <section class="demo-section">
+    <div class="container">
+      <div class="demo-header">
+        <span class="demo-num">05 / 05</span>
+        <h2 class="demo-title">Rôle AI Officer — Carte Organisationnelle</h2>
+        <p class="demo-source">Source : <a href="videos/2026-04-25_70-equipes-ia.html">70% du temps de tes équipes part en fumée (système IA)</a></p>
+      </div>
+      <div class="demo-figure">
+        <div class="orgchart-svg-wrap">
+          <svg viewBox="0 0 720 380" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+            <defs>
+              <marker id="arrow2" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto">
+                <path d="M0,0 L0,6 L7,3 z" fill="#5c6580"/>
+              </marker>
+            </defs>
+
+            <!-- CEO -->
+            <rect x="270" y="20" width="180" height="50" rx="10" fill="#1c2130" stroke="#7c6af7" stroke-width="2"/>
+            <text x="360" y="42" text-anchor="middle" fill="#7c6af7" font-size="11" font-weight="700">CEO / Dirigeant</text>
+            <text x="360" y="58" text-anchor="middle" fill="#9aa3c0" font-size="9">Décision stratégique IA</text>
+
+            <!-- Line CEO → AI Officer -->
+            <line x1="360" y1="70" x2="360" y2="120" stroke="#5c6580" stroke-width="1.5" marker-end="url(#arrow2)"/>
+
+            <!-- AI Officer -->
+            <rect x="255" y="120" width="210" height="56" rx="10" fill="#7c6af7" stroke="none"/>
+            <text x="360" y="144" text-anchor="middle" fill="#fff" font-size="12" font-weight="800">AI Officer</text>
+            <text x="360" y="161" text-anchor="middle" fill="rgba(255,255,255,.75)" font-size="9">Responsable déploiement IA transversal</text>
+
+            <!-- Lines AI Officer → 3 domains -->
+            <line x1="280" y1="176" x2="130" y2="230" stroke="#5c6580" stroke-width="1.5" marker-end="url(#arrow2)"/>
+            <line x1="360" y1="176" x2="360" y2="230" stroke="#5c6580" stroke-width="1.5" marker-end="url(#arrow2)"/>
+            <line x1="440" y1="176" x2="590" y2="230" stroke="#5c6580" stroke-width="1.5" marker-end="url(#arrow2)"/>
+
+            <!-- Domain 1 — Formation -->
+            <rect x="50" y="230" width="160" height="50" rx="8" fill="#1c2130" stroke="#4a9eff" stroke-width="1.8"/>
+            <text x="130" y="251" text-anchor="middle" fill="#4a9eff" font-size="10" font-weight="700">Formation</text>
+            <text x="130" y="267" text-anchor="middle" fill="#9aa3c0" font-size="8.5">Adoption · Onboarding IA</text>
+
+            <!-- Domain 2 — Outils -->
+            <rect x="270" y="230" width="180" height="50" rx="8" fill="#1c2130" stroke="#4caf82" stroke-width="1.8"/>
+            <text x="360" y="251" text-anchor="middle" fill="#4caf82" font-size="10" font-weight="700">Stack Outils</text>
+            <text x="360" y="267" text-anchor="middle" fill="#9aa3c0" font-size="8.5">Sélection · Intégration · ROI</text>
+
+            <!-- Domain 3 — Mémoire -->
+            <rect x="510" y="230" width="160" height="50" rx="8" fill="#1c2130" stroke="#f97316" stroke-width="1.8"/>
+            <text x="590" y="251" text-anchor="middle" fill="#f97316" font-size="10" font-weight="700">Base Mémorielle</text>
+            <text x="590" y="267" text-anchor="middle" fill="#9aa3c0" font-size="8.5">Contexte · Historique · Agents</text>
+
+            <!-- Lines to sub-agents -->
+            <line x1="130" y1="280" x2="130" y2="330" stroke="#5c6580" stroke-width="1.2" stroke-dasharray="3,3"/>
+            <line x1="360" y1="280" x2="360" y2="330" stroke="#5c6580" stroke-width="1.2" stroke-dasharray="3,3"/>
+            <line x1="590" y1="280" x2="590" y2="330" stroke="#5c6580" stroke-width="1.2" stroke-dasharray="3,3"/>
+
+            <!-- Sub-agent nodes -->
+            <rect x="60" y="330" width="140" height="36" rx="6" fill="#141720" stroke="#3a4060" stroke-width="1"/>
+            <text x="130" y="351" text-anchor="middle" fill="#5c6580" font-size="9">Agent Formation ×3</text>
+
+            <rect x="285" y="330" width="150" height="36" rx="6" fill="#141720" stroke="#3a4060" stroke-width="1"/>
+            <text x="360" y="351" text-anchor="middle" fill="#5c6580" font-size="9">Agent Veille IA ×N</text>
+
+            <rect x="520" y="330" width="140" height="36" rx="6" fill="#141720" stroke="#3a4060" stroke-width="1"/>
+            <text x="590" y="351" text-anchor="middle" fill="#5c6580" font-size="9">Agent Mémoire ×N</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Base de connaissance générée le <strong>2026-05-04</strong> · 9/79 vidéos analysées</p>
+    <p style="margin-top:.5rem"><a href="index.html">Accueil</a> · <a href="categories.html">Catégories</a> · <a href="ouvertures.html">Ouvertures</a> · <a href="videos.html">Vidéothèque</a></p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
