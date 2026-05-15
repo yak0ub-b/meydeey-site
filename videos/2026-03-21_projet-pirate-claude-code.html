@@ -3,34 +3,623 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ton projet se fait pirater en 30 Secondes (Claude Code corrige tout) — meydeey</title>
+  <title>Ton projet se fait pirater en 30 Secondes (Claude Code corrige tout) — meydeey KB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-  <header class="site-header"><div class="header-inner"><a href="../index.html" class="logo">meydeey</a><nav class="main-nav"><a href="../index.html">Accueil</a><a href="../categories.html">Catégories</a><a href="../videos.html">Vidéothèque</a><a href="../ouvertures.html">Ouvertures</a><a href="../demo.html">Démo</a></nav></div></header>
-  <div class="video-hero">
-    <div class="container">
-      <div class="breadcrumb"><a href="../index.html">Accueil</a><span>/</span><a href="../categories.html#claude-code">Claude Code — Tutos</a><span>/</span><span>Piratage en 30s — Claude Code corrige</span></div>
-      <div class="video-meta-badges"><span class="cat-badge cat-5">Claude Code — Tutos</span><span class="level-badge level-avance">Avancé</span><span class="meta-badge">21 mar. 2026</span><span class="meta-badge">31:45</span><span class="status-badge status-partial">⏳ Transcription à venir</span></div>
-      <h1 class="video-title">Ton projet se fait pirater en 30 Secondes (Claude Code corrige tout)</h1>
-      <p class="video-summary-hero">Démonstration des vulnérabilités de sécurité les plus courantes dans les projets Claude Code — et comment les corriger automatiquement avant qu'un pirate les exploite.</p>
-      <a href="https://www.youtube.com/watch?v=DjgioQcYI7Y" target="_blank" rel="noopener" class="btn-youtube">▶ Voir sur YouTube</a>
-      <div class="youtube-url-text">youtube.com/watch?v=DjgioQcYI7Y</div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="../index.html">meydeey<span class="logo-accent"> KB</span></a>
+    <nav class="main-nav">
+      <a href="../index.html"       class="nav-link">Accueil</a>
+      <a href="../categories.html"  class="nav-link">Catégories</a>
+      <a href="../videos.html"      class="nav-link">Vidéothèque</a>
+      <a href="../ouvertures.html"  class="nav-link">Ouvertures</a>
+      <a href="../demo.html"        class="nav-link">Démo</a>
+    </nav>
+    <div class="search-wrap">
+      <input id="global-search" type="search" placeholder="Rechercher…" autocomplete="off">
+      <div id="search-results" class="search-dropdown hidden"></div>
     </div>
   </div>
-  <div class="container content-with-sidebar">
-    <main class="main-content">
-      <div class="partial-notice"><h2>Transcription non encore disponible</h2><p>Cette vidéo est référencée dans la base mais n'a pas encore été analysée.</p></div>
-      <h2>Thèmes couverts</h2>
-      <div class="themes-grid"><span class="theme-pill">Sécurité IA</span><span class="theme-pill">Vulnérabilités</span><span class="theme-pill">Claude Code audit</span><span class="theme-pill">Correction automatique</span><span class="theme-pill">Cybersécurité</span></div>
-      <ul class="action-list" data-video="securite-claude-code"><li><label><input type="checkbox" data-idx="0"> Regarder la démonstration sur YouTube</label></li><li><label><input type="checkbox" data-idx="1"> Auditer la sécurité de ses projets Claude Code existants</label></li></ul>
-    </main>
-    <aside class="sidebar">
-      <div class="sidebar-card youtube-cta"><h4>Voir la vidéo</h4><a href="https://www.youtube.com/watch?v=DjgioQcYI7Y" target="_blank" rel="noopener" class="btn-youtube btn-full">▶ YouTube</a><div class="youtube-url-text">youtube.com/watch?v=DjgioQcYI7Y</div></div>
-      <div class="sidebar-card"><h4>Infos</h4><div class="info-row"><span class="info-label">Date</span><span>21 mar. 2026</span></div><div class="info-row"><span class="info-label">Durée</span><span>31:45</span></div><div class="info-row"><span class="info-label">Niveau</span><span>Avancé</span></div><div class="info-row"><span class="info-label">Catégorie</span><span>Claude Code — Tutos</span></div></div>
-    </aside>
+</header>
+
+<div class="video-hero">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="../index.html">Accueil</a>
+      <span>›</span>
+      <a href="../categories.html#claude-code">Claude Code — Tutos &amp; Pratique</a>
+      <span>›</span>
+      <span>Ton projet se fait pirater en 30 Secondes (Cl…</span>
+    </div>
+    <div class="video-meta-badges">
+      <span class="badge cat-badge cat-5">Claude Code</span>
+      <span class="badge badge-green">✓ Analysée</span>
+      <span class="badge level-intermediaire">Intermédiaire</span>
+      <span class="badge" style="background:rgba(255,255,255,.08)">⏱ 31:45</span>
+      <span class="badge" style="background:rgba(255,255,255,.08)">2026-03-21</span>
+    </div>
+    <h1 class="video-title">Ton projet se fait pirater en 30 Secondes (Claude Code corrige tout)</h1>
+    <p class="video-summary-hero">Cette masterclass expose les 7 failles de sécurité web les plus critiques affectant 99% des projets Claude Code : injection SQL, XSS, secrets exposés, rate limiting absent, middleware absent, CORS mal configuré et validation insuffisante.</p>
+    <div class="youtube-cta">
+      <a href="https://www.youtube.com/watch?v=DjgioQcYI7Y" target="_blank" rel="noopener" class="btn-youtube">▶ Voir sur YouTube</a>
+      <span class="youtube-url-text">youtube.com/watch?v=DjgioQcYI7Y</span>
+    </div>
   </div>
-  <footer class="site-footer"><div class="container"><p>meydeey knowledge base — généré le 6 mai 2026</p><nav class="footer-nav"><a href="../index.html">Accueil</a><a href="../categories.html">Catégories</a><a href="../videos.html">Vidéothèque</a><a href="../ouvertures.html">Ouvertures</a><a href="../demo.html">Démo</a></nav></div></footer>
-  <script src="../js/main.js"></script>
+</div>
+
+<div class="tab-nav-sticky">
+  <div class="container">
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="resume">Résumé</button>
+      <button class="tab-btn" data-tab="analyse">Analyse</button>
+      <button class="tab-btn" data-tab="transcription">Transcription</button>
+      <button class="tab-btn" data-tab="fiches">Fiches</button>
+      <button class="tab-btn" data-tab="passages">Passages clés</button>
+    </div>
+  </div>
+</div>
+
+<div class="container content-with-sidebar" style="padding-top:var(--gap-xl);padding-bottom:var(--gap-2xl);">
+
+  <main>
+
+<div class="tab-panel active" id="tab-resume">
+<p style="font-size:1.05rem;line-height:1.75;margin-bottom:var(--gap-xl)">Cette masterclass expose les 7 failles de sécurité web les plus critiques affectant 99% des projets Claude Code : injection SQL, XSS, secrets exposés, rate limiting absent, middleware absent, CORS mal configuré et validation insuffisante. Pour chaque faille, le créateur explique le mécanisme d'attaque, l'impact (vol de données, crash serveur, factures massives) et la correction (placeholders SQL, CSP headers, .env/.gitignore, rate limiting, middleware, CORS restrictif, validation Zod). Il démontre en live comment utiliser Claude Code avec un prompt d'audit pour analyser automatiquement un projet et générer un rapport technique, remplaçant un audit humain coûtant 2000€.</p>
+<h2 class="section-title" style="margin:var(--gap-xl) 0 var(--gap-md)">Philosophie &amp; Pensée profonde</h2>
+<p>Claude Code n'est pas magique : il faut lui donner les bons mots-clés et concepts pour qu'il sécurise correctement. L'IA amplifie la vitesse de développement mais aussi les risques si on ne la guide pas - elle ne sécurise pas automatiquement sans instructions explicites. La vraie compétence est de savoir quoi demander à l'IA et de vérifier son travail par itération.</p>
+<p>La sécurité web n'est pas un luxe mais une urgence : 99% des projets Claude Code contiennent au moins une faille critique exploitable en 30 secondes par des bots automatisés. Claude Code lui-même peut auditer et corriger ces failles via des prompts structurés, transformant un audit humain de 2000€ en analyse automatisée, mais seulement si tu sais explicitement quoi lui demander et comment vérifier son travail.</p>
+<h2 class="section-title" style="margin:var(--gap-xl) 0 var(--gap-md)">Méthode — Étapes</h2>
+<ol class="steps-list">
+  <li>Les 7 failles critiques expliquées</li>
+  <li>Corrections techniques pour chaque faille</li>
+  <li>OWASP Top 10 et référence mondiale</li>
+  <li>Audit automatisé avec Claude Code</li>
+  <li>Démonstration live sur extension Chrome YouTube</li>
+  <li>Philosophie et appel à l&#x27;action</li>
+</ol>
+<h2 class="section-title" style="margin:var(--gap-xl) 0 var(--gap-md)">Schéma conceptuel</h2>
+<pre class="ascii-schema" style="font-family:var(--font-mono,monospace);white-space:pre;overflow-x:auto;background:var(--bg-card,#1a1a2e);padding:var(--gap-lg,1.5rem);border-radius:8px;font-size:.82rem;line-height:1.5">┌─────────────────────────────────────────────────────────────┐
+│  TON PROJET (Vibe Coding = Rapide mais Poreux)              │
+└────────────────────┬────────────────────────────────────────┘
+                     │
+        ┌────────────┴────────────┐
+        │                         │
+   [7 FAILLES]              [HACKER BOT]
+   ├─ SQL Injection              │
+   ├─ XSS                        │
+   ├─ Secrets Exposed            │
+   ├─ No Rate Limit              │
+   ├─ No Middleware              │
+   ├─ CORS Open                  │
+   └─ No Validation              │
+        │                         │
+        └────────────┬────────────┘
+                     │ (30 sec)
+                     ▼
+        ┌──────────────────────┐
+        │  DONNÉES VOLÉES      │
+        │  SERVEUR CRASH       │
+        │  FACTURE 2000€       │
+        └──────────────────────┘
+
+        SOLUTION: CLAUDE CODE AUDIT
+        ┌──────────────────────────┐
+        │ Prompt Structuré (8pts)  │
+        │ + Multi-Agent Parallel   │
+        │ = Rapport Technique      │
+        │ = Corrections Auto       │
+        └──────────────────────────┘</pre>
+<h2 class="section-title" style="margin:var(--gap-xl) 0 var(--gap-md)">Citations notables</h2>
+<blockquote>Ton projet est une passoire</blockquote>
+<blockquote>Je suis prêt à prêter serment que 99% des personnes aujourd'hui qui utilisent Claude Code ont une faille de sécurité sur tout leur projet</blockquote>
+<blockquote>Un hacker, lui, il n'a besoin que d'une seule porte ouverte</blockquote>
+<blockquote>En 30 secondes, il y a un bot qui va la trouver automatiquement</blockquote>
+<blockquote>Tout ce qui vient de l'utilisateur est suspect. Absolument.</blockquote>
+<blockquote>Soit c'est bien, soit c'est non. C'est binaire.</blockquote>
+<blockquote>Je ne fais confiance à personne</blockquote>
+<blockquote>Un audit de sécurité que tu aurais payé au moins 2000 balles, là, un prompt, il va tout auditer</blockquote>
+<blockquote>Vous allez tous faire pareil, ceux qui débutent... tu vas créer des projets, ils vont fonctionner, tu vas être content, tu vas augmenter en compétences, et tu vas venir refactorer, sécuriser à mort tes projets</blockquote>
+</div>
+
+<div class="tab-panel" id="tab-analyse">
+<h2 class="section-title" style="margin-bottom:var(--gap-lg)">Concepts clés</h2>
+<div class="concept-card">
+  <div class="concept-term">Cross-Site Scripting (XSS)</div>
+  <div class="concept-def">Un hacker injecte du code JavaScript malveillant dans une page web. Quand un utilisateur visite la page, le code s'exécute dans son navigateur, permettant au hacker de voler ses cookies, tokens, ou contrôler le site. La correction : ajouter un header CSP (Content Security Policy) qui dit au navigateur 'tu n'exécutes que les scripts que je te dis'.</div>
+  <div class="concept-why"><strong>Pourquoi c'est important :</strong> C'est la faille la plus courante côté frontend. Elle affecte directement les utilisateurs, pas juste ton serveur. Un utilisateur compromis = accès à ses données personnelles.</div>
+</div>
+<div class="concept-card">
+  <div class="concept-term">Secrets Exposed</div>
+  <div class="concept-def">Tu mets une clé API OpenAI, une clé de base de données, ou un mot de passe en dur dans ton code et tu le push sur GitHub. En 30 secondes, des bots automatisés le trouvent et l'utilisent. Coût : 2000€ de facture OpenAI en quelques minutes. La correction : utiliser un fichier .env (local, jamais commité) et .gitignore (liste des fichiers à ignorer).</div>
+  <div class="concept-why"><strong>Pourquoi c'est important :</strong> C'est la faille la plus facile à exploiter et la plus coûteuse. Les bots scannent GitHub 24/7. Une clé exposée = perte financière immédiate et accès à tes services.</div>
+</div>
+<div class="concept-card">
+  <div class="concept-term">Rate Limiting</div>
+  <div class="concept-def">Sans rate limiting, un hacker peut envoyer 10 000 requêtes par seconde à ton serveur, le surchargeant et le crashant (attaque DDoS). La correction : limiter le nombre de requêtes par IP/utilisateur dans une fenêtre de temps (ex: 100 requêtes par minute).</div>
+  <div class="concept-why"><strong>Pourquoi c'est important :</strong> C'est la défense contre les attaques par force brute (essayer tous les mots de passe) et les surcharges. Sans rate limiting, ton serveur est vulnérable à des attaques triviales.</div>
+</div>
+<div class="concept-card">
+  <div class="concept-term">Middleware de Sécurité</div>
+  <div class="concept-def">Un middleware est une fonction qui intercepte CHAQUE requête avant qu'elle n'atteigne ton code métier. Elle peut vérifier l'authentification (JWT), les limites de taux, les headers CORS, etc. Exemple : Helmet.js configure automatiquement les headers de sécurité HTTP.</div>
+  <div class="concept-why"><strong>Pourquoi c'est important :</strong> C'est la couche de défense la plus importante. Sans middleware, chaque requête va directement à ton code, sans vérification. Avec middleware, tu filtres les requêtes malveillantes avant qu'elles ne causent des dégâts.</div>
+</div>
+<div class="concept-card">
+  <div class="concept-term">CORS (Cross-Origin Resource Sharing)</div>
+  <div class="concept-def">Par défaut, un navigateur bloque les requêtes d'un domaine A vers une API du domaine B (protection contre les attaques cross-site). CORS te permet de dire 'le domaine X a le droit d'appeler mon API'. Si tu mets CORS: * (tous les domaines), n'importe qui peut appeler ton API.</div>
+  <div class="concept-why"><strong>Pourquoi c'est important :</strong> C'est la barrière entre ton API et le reste du web. Mal configurée, elle permet à n'importe quel site malveillant d'appeler ton API et de voler des données utilisateurs.</div>
+</div>
+<div class="concept-card">
+  <div class="concept-term">JWT (JSON Web Token)</div>
+  <div class="concept-def">Un token crypté qui prouve l'identité d'un utilisateur. Au lieu de stocker une session serveur, tu donnes un JWT au client. À chaque requête, le client envoie le JWT, et tu vérifies sa signature pour confirmer que c'est bien cet utilisateur.</div>
+  <div class="concept-why"><strong>Pourquoi c'est important :</strong> C'est le standard moderne pour l'authentification stateless (sans session serveur). Permet de scaler horizontalement et de sécuriser les APIs.</div>
+</div>
+<div class="concept-card">
+  <div class="concept-term">Validation des Données (Zod)</div>
+  <div class="concept-def">Avant de traiter une donnée utilisateur, tu vérifies qu'elle a la bonne forme (ex: email doit être un email valide, âge doit être un nombre entre 0 et 150). Zod est une librairie TypeScript qui fait ça automatiquement. La philosophie : 'Tout ce qui vient de l'utilisateur est suspect. Absolument.'</div>
+  <div class="concept-why"><strong>Pourquoi c'est important :</strong> C'est la première ligne de défense. Si tu acceptes n'importe quelle donnée, tu peux avoir des injections SQL, des données pourries en BDD, des crashes. La validation filtre 80% des attaques.</div>
+</div>
+<div class="concept-card">
+  <div class="concept-term">CSP (Content Security Policy)</div>
+  <div class="concept-def">Un header HTTP qui dit au navigateur 'tu n'exécutes que les scripts que je te dis'. Exemple : CSP: script-src 'self' bloque tous les scripts sauf ceux du même domaine. Bloque les injections XSS.</div>
+  <div class="concept-why"><strong>Pourquoi c'est important :</strong> C'est la défense contre XSS côté navigateur. Même si un hacker injecte du code JavaScript, le navigateur le bloque parce que le CSP l'interdit.</div>
+</div>
+<div class="concept-card">
+  <div class="concept-term">Audit Automatisé par Claude Code</div>
+  <div class="concept-def">Tu fournis un prompt structuré avec 8 éléments à vérifier (SQL injection, XSS, secrets, rate limiting, middleware, CORS, validation, CSP). Claude Code analyse ton code, identifie les failles, et génère un rapport technique avec corrections proposées. Multi-agent : plusieurs agents auditent en parallèle.</div>
+  <div class="concept-why"><strong>Pourquoi c'est important :</strong> C'est le multiplicateur de productivité. Un audit humain prend des jours et coûte 2000€. Claude Code le fait en minutes. Mais tu dois savoir structurer le prompt et vérifier le rapport.</div>
+</div>
+<div class="concept-card">
+  <div class="concept-term">OWASP Top 10</div>
+  <div class="concept-def">Liste mondiale des 10 failles web les plus critiques et communes. Établie par l'Open Web Application Security Project (OWASP), l'organisme de référence en sécurité web. Les 7 failles de la vidéo sont un sous-ensemble du Top 10.</div>
+  <div class="concept-why"><strong>Pourquoi c'est important :</strong> C'est le standard obligatoire. Si tu vérifies les 10 failles OWASP avant déploiement, tu couvres 80-90% des risques. C'est le 80/20 de la sécurité web.</div>
+</div>
+<div class="concept-card">
+  <div class="concept-term">Vibe Coding</div>
+  <div class="concept-def">Approche de développement rapide basée sur l'intuition et la création sans expertise technique approfondie. Tu codes vite, tu itères, tu apprends en faisant. Dangereux en sécurité parce que tu ne penses pas aux failles.</div>
+  <div class="concept-why"><strong>Pourquoi c'est important :</strong> C'est le piège de Claude Code. L'IA te permet de coder très vite, mais si tu ne penses pas sécurité, tu crées des passoires. Vibe Coding + Sécurité = contradiction.</div>
+</div>
+<h2 class="section-title" style="margin:var(--gap-xl) 0 var(--gap-md)">Insights non-évidents</h2>
+<ul class="insights-list">
+  <li>Le vrai problème n'est pas que Claude Code génère du code non-sécurisé, mais que les développeurs ne savent pas QUOI demander à Claude Code en termes de sécurité. L'IA amplifie la vitesse mais aussi l'ignorance - elle ne sécurise pas par défaut, elle exécute ce qu'on lui demande.</li>
+  <li>Les bots qui snipent les clés API sur GitHub opèrent en temps réel (30 secondes après un push). Cela signifie que la sécurité n'est pas une phase de test, c'est une phase de conception - tu dois penser sécurité AVANT de coder, pas après.</li>
+  <li>Un audit humain coûte 2000€ parce qu'il faut du temps et de l'expertise. Claude Code peut faire la même chose en minutes, mais le vrai coût caché est le temps d'apprentissage pour savoir structurer le prompt d'audit correctement - c'est un transfert de coût, pas une suppression.</li>
+  <li>La validation des données (Zod) n'est pas une feature, c'est une barrière mentale : 'Tout ce qui vient de l'utilisateur est suspect. Absolument.' C'est un mindset binaire (bon/mauvais) qui doit devenir automatique avant même de coder.</li>
+  <li>Le multi-agent autonome mentionné n'est pas juste une optimisation de vitesse - c'est une stratégie de couverture : plusieurs agents auditent en parallèle des angles différents, réduisant les angles morts qu'un seul agent pourrait rater.</li>
+</ul>
+<h2 class="section-title" style="margin:var(--gap-xl) 0 var(--gap-md)">Mental models</h2>
+<div class="model-card">
+  <div class="model-title">Le modèle du Château Poreux</div>
+  <div class="model-body"></div>
+</div>
+<div class="model-card">
+  <div class="model-title">Le modèle du Filtre en Cascade</div>
+  <div class="model-body"></div>
+</div>
+<div class="model-card">
+  <div class="model-title">Le modèle du Prompt comme Spécification</div>
+  <div class="model-body"></div>
+</div>
+<div class="model-card">
+  <div class="model-title">Le modèle de la Vitesse vs Sécurité</div>
+  <div class="model-body"></div>
+</div>
+<div class="model-card">
+  <div class="model-title">Le modèle de l&#x27;Itération Sécuritaire</div>
+  <div class="model-body"></div>
+</div>
+<h2 class="section-title" style="margin:var(--gap-xl) 0 var(--gap-md)">Prompting &amp; Sagesse d'usage</h2>
+<ul class="insights-list">
+  <li>Ne pas faire confiance à l'IA pour sécuriser automatiquement : il faut lui dire explicitement 'sécurise ça, ça, ça et ça'</li>
+  <li>Utiliser des prompts structurés avec 8 éléments clairs plutôt que des demandes vagues</li>
+  <li>Auditer plusieurs fois (5-6-10 fois) avec des angles différents, pas une seule fois</li>
+  <li>Lire absolument le rapport généré par l'IA : 'Si tu lis comme ça pendant un an, dans un an, tu vas savoir quoi faire'</li>
+  <li>Utiliser le multi-agent (plusieurs agents en parallèle) pour gagner du temps sur les gros projets</li>
+  <li>Générer un rapport markdown technique en sortie pour documenter avant/après et justifier les corrections</li>
+  <li>Relancer l'audit après corrections pour vérifier que tout a bien été fixé</li>
+  <li>Prompt simple et clair vaut mieux que prompt hyper complexe : 'Sécurise ça' + liste des 8 éléments suffit</li>
+</ul>
+<h2 class="section-title" style="margin:var(--gap-xl) 0 var(--gap-md)">Outils &amp; techniques</h2>
+<div class="tools-badges">
+  <span class="tool-pill">Claude Code</span>
+  <span class="tool-pill">Helmet.js</span>
+  <span class="tool-pill">Zod</span>
+  <span class="tool-pill">Acunetix Web Application Vulnerability</span>
+  <span class="tool-pill">OWASP</span>
+  <span class="tool-pill">SkillsSH</span>
+  <span class="tool-pill">Supabase</span>
+  <span class="tool-pill">Vercel/Netlify</span>
+</div>
+<h2 class="section-title" style="margin:var(--gap-xl) 0 var(--gap-md)">Définitions</h2>
+<dl class="definitions-list">
+  <div class="def-item">
+    <dt>Injection SQL</dt>
+    <dd>Faille permettant à un hacker d'envoyer du code SQL dans un champ de formulaire, exécuté comme vraie requête, donnant accès à toute la base de données</dd>
+  </div>
+  <div class="def-item">
+    <dt>XSS (Cross-Site Scripting)</dt>
+    <dd>Injection de code JavaScript malveillant qui s'exécute dans le navigateur des utilisateurs, permettant au hacker de voler des données ou contrôler le site</dd>
+  </div>
+  <div class="def-item">
+    <dt>Secrets Exposed</dt>
+    <dd>Exposition de clés API, mots de passe ou tokens en clair dans le code source, particulièrement dangereux si pushé sur GitHub</dd>
+  </div>
+  <div class="def-item">
+    <dt>Rate Limiting</dt>
+    <dd>Limitation du nombre de requêtes qu'une IP ou un utilisateur peut faire dans une fenêtre de temps donnée pour prévenir le spam et les attaques par force brute</dd>
+  </div>
+  <div class="def-item">
+    <dt>Middleware</dt>
+    <dd>Fonction qui intercepte chaque requête avant qu'elle n'atteigne le code métier, effectuant authentification, validation et vérification des limites</dd>
+  </div>
+  <div class="def-item">
+    <dt>CORS</dt>
+    <dd>Règle définissant quel domaine a le droit d'appeler ton API (Cross-Origin Resource Sharing)</dd>
+  </div>
+  <div class="def-item">
+    <dt>.env</dt>
+    <dd>Fichier local stockant les secrets et clés API de manière chiffrée, jamais commité sur Git</dd>
+  </div>
+  <div class="def-item">
+    <dt>.gitignore</dt>
+    <dd>Liste des fichiers que Git ne doit jamais envoyer sur GitHub, notamment le .env</dd>
+  </div>
+  <div class="def-item">
+    <dt>JWT (JSON Web Token)</dt>
+    <dd>Jeton crypté prouvant l'identité de l'utilisateur à chaque requête, empêchant l'usurpation d'identité</dd>
+  </div>
+  <div class="def-item">
+    <dt>CSP (Content Security Policy)</dt>
+    <dd>Header HTTP indiquant au navigateur quel script il a le droit d'exécuter, bloquant les scripts injectés</dd>
+  </div>
+  <div class="def-item">
+    <dt>Vibe Coding</dt>
+    <dd>Approche de développement rapide basée sur l'intuition et la création sans expertise technique approfondie, risquée en sécurité</dd>
+  </div>
+  <div class="def-item">
+    <dt>OWASP Top 10</dt>
+    <dd>Liste des 10 failles web les plus critiques et communes en cybersécurité, référence mondiale obligatoire</dd>
+  </div>
+</dl>
+<h2 class="section-title" style="margin:var(--gap-xl) 0 var(--gap-md)">Connexions</h2>
+<div class="connection-tags">
+  <span class="theme-pill">Prompt Engineering</span>
+  <span class="theme-pill">Multi</span>
+  <span class="theme-pill">RAG (Retrieval</span>
+  <span class="theme-pill">Claude Code (Terminal IA Agentique)</span>
+  <span class="theme-pill">Vibe Coding vs Structured Coding</span>
+  <span class="theme-pill">Mindset de Sécurité</span>
+  <span class="theme-pill">Itération et Feedback</span>
+  <span class="theme-pill">Coût de l&#x27;IA vs Coût Humain</span>
+  <span class="theme-pill">Transfert de Compétence</span>
+</div>
+<h2 class="section-title" style="margin:var(--gap-xl) 0 var(--gap-md)">Ouvertures — Pour aller plus loin</h2>
+<ul>
+  <li>Sujet mentionné mais non développé : les autres failles OWASP au-delà des 7 principales (il y en a 10 au total)</li>
+  <li>Sujet mentionné mais non développé : les bots qui snipent les clés API sur GitHub - comment fonctionnent-ils exactement ?</li>
+  <li>Sujet mentionné mais non développé : les protocoles de sécurité supplémentaires au-delà du rate limiting pour bloquer les attaques</li>
+  <li>Question ouverte : comment structurer un skill d'audit de sécurité optimal pour Claude Code ?</li>
+  <li>Question ouverte : comment gérer les secrets en production sur Vercel/Netlify de manière sécurisée ?</li>
+  <li>Sujet mentionné mais non développé : l'entraînement de modèles IA sur des données de BDD pourries - quels impacts exacts ?</li>
+  <li>Implication non-dite 1 : Si 99% des projets Claude Code ont une faille, cela signifie que la majorité des développeurs qui utilisent Claude Code n'ont PAS suivi de formation en sécurité web. Le problème est systémique, pas accidentel.</li>
+  <li>Ce qu'on peut en déduire : Les frameworks modernes (Next.js, Vercel, etc.) ne sécurisent pas par défaut - ils offrent des outils (Helmet.js, CSP headers) mais c'est au développeur de les activer. Claude Code ne change pas cette réalité.</li>
+</ul>
+</div>
+
+<div class="tab-panel" id="tab-transcription">
+<div style="display:flex;align-items:center;gap:var(--gap-md);margin-bottom:var(--gap-lg);flex-wrap:wrap;">
+  <input id="transcript-search" type="search" placeholder="Rechercher dans la transcription…" style="flex:1;min-width:200px;padding:.5rem .75rem;background:var(--bg-input);border:1px solid var(--border);border-radius:6px;color:var(--text-primary);font-size:.9rem;">
+  <span style="color:var(--text-muted);font-size:.85rem;white-space:nowrap">~7700 mots</span>
+</div>
+<div class="transcription-body" id="transcript-content">
+<p>Kind: captions Language: fr Bon, c&#x27;est bien joli de créer des interfaces avec Claude Code, des SaaS, des solutions clients et tout ce qui s&#x27;ensuit, mais qu&#x27;en est-il de la sécurité des projets ? Sur le marché, il y a plein de gens qui vont t&#x27;expliquer comment créer des projets, comment déployer plus rapidement, mais si tu déploies encore plus de failles plus rapidement, forcément, tu t&#x27;exposes. Cette vidéo, c&#x27;est une masterclass pour toutes les personnes utilisant Claude Code, parce que pas grand monde vous explique ça sur YouTube, mais c&#x27;est capital.</p>
+<p>Comme je l&#x27;ai écrit ici, ton projet est une passoire. Je suis prêt à prêter serment que 99% des personnes aujourd&#x27;hui qui utilisent Claude Code ont une faille de sécurité sur tout leur projet. L&#x27;objectif de cette vidéo est simple.</p>
+<p>En premier, on va comprendre les failles les plus courantes, pour pouvoir au moins les identifier. On va apprendre à sécuriser un projet avant le déploiement. Et je vais aussi te partager un prompt pour tout auditer automatiquement.</p>
+<p>Concernant les failles web, la source, c&#x27;est Acunetix Web Application Vulnerability, donc des spécialisés dans la cybersécurité, dont 85% des applications web ont au moins une vulnérabilité. La majorité viennent d&#x27;erreurs basiques que tu peux éviter, et très facilement. On va aussi parler de l&#x27;OWASP dans cette vidéo.</p>
+<p>Pour te donner le détail, c&#x27;est Open Web Application Security Project. C&#x27;est un organisme mondial de référence en sécurité web. On va en reparler plus tard, mais au moins, tu as les détails.</p>
+<p>C&#x27;est quoi le problème ? Vous êtes beaucoup à vibe coder. Vous avez des fonctionnalités, vous créez des projets, des solutions pour vos clients, pour vous, pour vos équipes, etc.</p>
+<p>Ça marche, nickel. Mais les secrets vont être exposés, donc les clés API, les mots de passe, etc. Les données sont exposées, les bases de données, tout ce qui s&#x27;ensuit, c&#x27;est très dangereux.</p>
+<p>Un hacker, lui, il n&#x27;a besoin que d&#x27;une seule porte ouverte. Il n&#x27;a pas besoin de dix portes ouvertes. Des fois, une seule, il peut accéder à tout.</p>
+<p>Donc, pour un cas réel, par exemple, un développeur va pusher sa clé API OpenAI sur GitHub, en faisant du coup un push sur GitHub, et en 30 secondes, il y a un bot qui va la trouver automatiquement, parce qu&#x27;il y a des bots qui snipent automatiquement, et des bots qui tournent 24 sur 7. Et le résultat, c&#x27;est que 2000 euros de factures vont être du coup utilisés par ce hacker en token consommé par un inconnu. Je préfère vous rassurer, il y en a certains qui vont dire « Mais je ne comprends pas si, par exemple, il y a un hacker qui récupère ma clé API, il va faire quoi, il va générer quoi, etc.</p>
+<p>» Dis-toi une chose, c&#x27;est qu&#x27;il y en a qui font ça juste pour le plaisir de défoncer des tokens. Donc, ils vont récupérer ta clé, ils vont générer un maximum en asynchrone, ils vont lancer plein de requêtes, et tu peux vite arriver à 2000 euros, juste pour te faire chier. Ce n&#x27;est même pas pour les utiliser ou pour les rentabiliser.</p>
+<p>Donc, attention à ça aussi. On va parler de sept portes ouvertes, ok ? Donc, en premier, on va parler des injections SQL, ce qui permet, en gros, à un hacker de voler ta base de données.</p>
+<p>Donc, par exemple, imaginons du Supabase. On va parler de FileXSS, donc du code malveillant chez tes utilisateurs. On va parler de SecretsExposed, donc les clés API qui sont affichées en clair sur GitHub, mais ça, je te l&#x27;ai déjà expliqué précédemment et même dans une autre vidéo, mais on va le revoir.</p>
+<p>On va parler des RateLimits, donc ça, c&#x27;est pour éviter le spam infini sur ton API. On va parler aussi du MiddlewareAbsent, donc aucune vérification des requêtes, n&#x27;importe qui peut faire des requêtes, c&#x27;est un danger. On va parler aussi du CORS qui est mal configuré, donc n&#x27;importe qui qui tape ton API.</p>
+<p>Et on va aussi parler, en dernier, des pas de validation, donc, en gros, les données qui sont pourries en base de données. Une base de données, c&#x27;est quand même de l&#x27;or, il faut bien la structurer, il ne faut pas que n&#x27;importe quoi rentre dedans. Donc, en premier, on va parler de l&#x27;injection SQL, c&#x27;est la faille numéro 1.</p>
+<p>En gros, c&#x27;est très simple. Le hacker, il envoie du code SQL dans un champ de formulaire. Donc, imaginons que tu as un formulaire sur ton site, quoi que ce soit, et ta base de données, elle l&#x27;exécute comme une vraie requête.</p>
+<p>Donc, bien sûr, tu as des schémas en dessous, ça te permettra de visualiser. Le but, ce n&#x27;est pas de comprendre concrètement comment ça se passe, si vraiment tu es passionné. Moi, j&#x27;aime bien la cybersécurité, j&#x27;aime bien les...</p>
+<p>dans ce domaine-là. Si tu t&#x27;en fous et tu te dis, bon, c&#x27;est juste obligatoire de le faire, juste les textes sont suffisants. Les schémas et la compréhension, c&#x27;est pour ceux qui veulent comprendre en profondeur.</p>
+<p>Donc, je ne vais pas tous les expliquer, bien sûr. Donc, en gros, qu&#x27;est-ce qui se passe en coulisses avec une injection SQL ? Le hacker, il va taper dans un champ email, par exemple, admin.admin.com.</p>
+<p>Ta requête SQL, elle va se transformer comme ça. Et dans la finalité, le résultat, c&#x27;est que ça renvoie tous les utilisateurs. Donc, une personne mal intentionnée pourra récupérer tous tes utilisateurs.</p>
+<p>Si tu as 50 clients, si tu as 5 000 clients, si tu as 1 million de clients, elle peut récupérer tous les users. Pour te donner même un contexte, j&#x27;avais un collègue qui n&#x27;était même pas dans la cybersécurité, qui était juste développeur, et il m&#x27;avait montré comment il avait réussi à accéder, avec une faille bidon, à 800 000 comptes clients d&#x27;un SaaS. C&#x27;est un SaaS qui est énorme.</p>
+<p>Bon, c&#x27;était juste pour me montrer, mais je peux t&#x27;assurer qu&#x27;il faut faire très attention. Même ceux qui ont le plus d&#x27;argent, qui sont exposés, etc., ont des failles, des fois, minimes, qui sont bidons, mais qui permettent de les exposer et qui les mettent en danger. Donc, la correction, elle est simple.</p>
+<p>Ça, c&#x27;est le code avant, et ça, c&#x27;est le code après. Donc, le $1, en fait, c&#x27;est un placeholder, comme tu le vois. La base de données, elle va traiter la valeur comme du texte, jamais comme du SQL.</p>
+<p>Pour te donner un exemple encore plus clair que tu vas comprendre, quand tu fais du R-table, quand tu as une base de données très simple, et que tu mets des numéros, par exemple, des numbers, 1, 2, 3, 4, 5, 6, 7, 8, 9, eh bien, tu mets un champ number. Eh bien, imaginons que là, tu as un champ qui n&#x27;est pas number, mais qu&#x27;il accepte tout. Il accepte du texte, du nombre, du code.</p>
+<p>Et comme il accepte du code, c&#x27;est là où l&#x27;injection est dangereuse. La faille numéro 2, c&#x27;est la faille XSS. Donc, c&#x27;est ce qu&#x27;on appelle le cross-site scripting.</p>
+<p>Le hacker, il va injecter du code JavaScript dans ton site. Donc, de par la console, de par certaines manières, on peut le faire de plein de manières différentes, mais en général, de par la console. Et il s&#x27;exécute dans le navigateur de tes utilisateurs.</p>
+<p>Donc, voilà, il envoie directement un script JS dans la console, donc avec une requête. Le site, il affiche le commentaire tel quel. Voilà.</p>
+<p>Et le navigateur, il est victime. Donc, ça va exécuter le script. Le fixe, il est très simple, c&#x27;est qu&#x27;on va tout simplement ajouter un header CSP.</p>
+<p>Donc, le CSP, c&#x27;est le Content Security Policy. C&#x27;est un header HTTP qui va dire au navigateur quel script il a le droit d&#x27;exécuter ou non. Et il va pouvoir bloquer les scripts injectés.</p>
+<p>Donc, ça, il faut faire très attention. En général, toutes les IA, je parle des IA neutres, sans skill, sans aim, on va rester sur Cloud Code, ne vont pas automatiquement sécuriser ça. Il faut leur dire.</p>
+<p>Il faut leur dire avec les bons mots. Il n&#x27;y a pas besoin de faire un prompt hyper complexe, etc. Il faut juste dire, voilà, sécurise ça, sécurise ça, ça, ça et ça.</p>
+<p>Boum, audit, note sur 10. Une fois qu&#x27;il a terminé, tu ré-audites. Mais on verra par la suite.</p>
+<p>La faille numéro 3, c&#x27;est celle qui vous fait le plus peur, ceux qui sont dans l&#x27;IA, bien sûr, et qui font des intégrations. Ce sont les secrets exposés. Donc, tes clés API qui sont dans le code.</p>
+<p>Eh bien, c&#x27;est des cadeaux pour les hackers. Tu peux faire un push sur GitHub et c&#x27;est public. Donc là, bien sûr, pour les techniciens, le .env sera votre meilleur ami.</p>
+<p>Et le git ignore en plus de ça en seconde sécurité. Et si tu pushes ça, ça va faire très mal parce que les bots, ils vont choper ta clé API. Parce que même si tu le pushes et qu&#x27;ensuite, tu vas supprimer ta clé API, des fois, en moins de 5 minutes, ils ont déjà siphonné.</p>
+<p>Donc, attention à ça. Donc, le fixe, la correction, comme je te l&#x27;ai dit, c&#x27;est que tu codes pas ou tu mets pas de clé API en dur dans ton code, tu vas le mettre dans un .env. Comme là, on le voit, le code est ici.</p>
+<p>Donc, la clé API, c&#x27;est skproject, etc. Et là, tout simplement, il fait un appel à la fonction dans le .env avec la clé API qui sera chiffrée parce que le .env, voilà, tu auras tes secrets, tes clés API, tous tes mots de passe et toutes tes clés API OpenAI. Et même si tu fais 10 IA en même temps, donc tu fais OpenRouter, Anthropic, Cloud, tu mets toutes tes clés API là-bas.</p>
+<p>Et tu les ajoutes dans le gitignore pour ne pas qu&#x27;elles soient pushées. Donc, la définition la plus claire, c&#x27;est que le .env, c&#x27;est le fichier local qui va stocker tes secrets et .gitignore, c&#x27;est la liste des fichiers que Git ne doit jamais envoyer sur GitHub. C&#x27;est de là, il faut les maîtriser.</p>
+<p>La faille numéro 4, celle-là, je l&#x27;avais très sous-estimée. Et en l&#x27;occurrence, j&#x27;avais fait, si tu veux, j&#x27;ai fait une simulation d&#x27;attaque. J&#x27;ai fait un skills.</p>
+<p>C&#x27;est un simulateur d&#x27;attaque. Il prend le profil, le personnage d&#x27;un hacker, un fou, un gars qui veut tout détruire. Il rentre dans le projet et il trouve des failles.</p>
+<p>Et plusieurs fois, le rate limiting sur mes projets, il n&#x27;y était pas sécurisé. Et ça, ça m&#x27;a vraiment mis les nerfs parce que je me suis dit, putain, heureusement que j&#x27;ai bien trouvé ça parce que ça aurait fait mal. Donc, en gros, la définition, c&#x27;est quoi ?</p>
+<p>C&#x27;est limiter le nombre de requêtes par IP utilisateur. Sans ça, un bot peut spammer ton API 10 000 fois par seconde. Je t&#x27;explique.</p>
+<p>En gros, toi, tu vas héberger ton projet, imaginons sur Vercel, sur Netlify, sur un VPS, peu importe. Tu crées ton SaaS, tu le mets en ligne, etc. Et là, il y a un gars.</p>
+<p>Par exemple, tu fais un outil de génération. Tu mets du texte, t&#x27;appuies sur un bouton, ça génère. OK ?</p>
+<p>Simple, tu comprends ? Donc, quand t&#x27;appuies une fois avec ta souris en tant qu&#x27;humain, tu fais une génération, tu fais une requête. Et si t&#x27;as pas mis de rate limit, eh bien, là, tu fais un script qui va envoyer 10 000 requêtes d&#x27;un coup.</p>
+<p>Et là, en fait, en envoyant 10 000 requêtes d&#x27;un coup, tu vas générer 10 000 fois ta clé API d&#x27;un coup, 10 000 fois. Tu peux faire crasher ton serveur, ton VPS, tu peux faire crasher Vercel. Donc, c&#x27;est vraiment très important.</p>
+<p>Donc, après, il y a plein de méthodes pour le faire. Ça dépend des projets, etc. Moi, en général, je bloque par IP.</p>
+<p>Par IP, et en plus de ça, je mets des limitations. Après, j&#x27;aime bien mettre plusieurs couches. Tu vois, je suis un petit peu un fou furieux.</p>
+<p>Mais des fois, il faut mettre plusieurs couches. Ça rassure, tu vois, je dors mieux. Donc, sans rate limit, 10 000 requêtes par seconde possible.</p>
+<p>Donc, crash server, facture x100. Voilà, ce qui est possible. Et avec le rate limit, 100 requêtes minimum max.</p>
+<p>Tu peux mettre moins, ça peut être 5. Par exemple, tu peux aussi mettre 2 requêtes par heure. 3 requêtes, 5 requêtes, 10 requêtes par heure.</p>
+<p>Comme ça, si le mec, il met des proxys, il balance ça comme un porc. Il met plein de requêtes avec plein de proxys. Même s&#x27;il met 10 proxys, il veut faire 3 requêtes.</p>
+<p>Ok, tu es limité à 3. Eh bien, 10 fois 3, ça fera 30. Il ne pourra faire que 30 requêtes max par heure.</p>
+<p>Voilà, au moins, tu sais que même si le mec, c&#x27;est un fou furieux, il veut te dézinguer, il ne pourra pas, vraiment. Mais tu as encore d&#x27;autres protocoles de sécurité que tu peux mettre pour bloquer ça, etc. Donc, le code, il est simple.</p>
+<p>C&#x27;est du code JavaScript. Il n&#x27;y a pas plus compliqué. Regardez, vous avez ça au début où il n&#x27;y a rien.</p>
+<p>Aucune limite. Ce n&#x27;est pas minimité. Et en secondaire, vous mettez ce qu&#x27;on appelle un Windows MS.</p>
+<p>C&#x27;est une fenêtre de temps. Ici, 15 minutes. Et en max, c&#x27;est le nombre max de requêtes dans cette fenêtre.</p>
+<p>Donc, le Windows MS, il est là, tu vois. Bam ! Et le max, il est là, 100 requêtes.</p>
+<p>Très simple. Là, tu vois, même si tu es débutant, tu peux venir modifier ça si tu as envie de rendre plus sécurisé, etc. Bon, après, c&#x27;est Cloud Code qui va le faire.</p>
+<p>Mais il faut connaître tout ça, ok ? La faille numéro 5, c&#x27;est le middleware de sécurité. Avant d&#x27;atteindre ton code.</p>
+<p>Donc, en gros, lorsque un utilisateur va faire une requête. Donc, on appelle ça un client. Un client va faire une requête.</p>
+<p>Le middleware, lui, c&#x27;est le leader. Il va faire l&#x27;authentification. Il va valider ou non.</p>
+<p>Et il va déterminer les limites. Et ton code, il sera en sécurité. En gros, la définition du middleware, c&#x27;est tout simplement une fonction qui va intercepter chaque requête avant qu&#x27;elle n&#x27;atteigne ton code métier.</p>
+<p>Le leader de boîte de nuit. Donc, le checklist middleware, c&#x27;est assez intéressant de s&#x27;y pencher dessus. Au moins, pour comprendre un petit peu.</p>
+<p>En premier, on a le helmet.js. C&#x27;est celui qui va sécuriser les leaders HTTP. Donc, c&#x27;est un package à NPM qui va configurer automatiquement les leaders de sécurité de ton serveur.</p>
+<p>Tout ça, il n&#x27;y a pas besoin de le coder ou je ne sais pas quoi. Tout ça, c&#x27;est facile. Il faut juste le comprendre.</p>
+<p>Tu balances ça à l&#x27;IA, à Cloud Code. Et il va t&#x27;installer le package si jamais tu veux sécuriser pour le middleware, etc. Il va te le faire tout seul.</p>
+<p>Il faut que tu comprennes ce qu&#x27;il a fait et pourquoi. Et comment tu peux bien dormir sur tes deux oreilles. Parce que mettre sécurise mon projet à mort, je n&#x27;ai pas envie de me faire pirater, ça ne veut rien dire.</p>
+<p>Tu ne diriges pas l&#x27;IA. En deuxième, on a le CORS. Donc, c&#x27;est contrôle qui peut appeler ton API.</p>
+<p>Qu&#x27;on appelle le Cross Origin Resource Sharing avec l&#x27;accent. C&#x27;est la règle qui définit quel domaine on a le droit d&#x27;appeler ton API ou non. Ensuite, on a le Auth Middleware.</p>
+<p>Donc, celui qui va vérifier le token JWT. Donc, JWT, c&#x27;est le JSON Web Token. On l&#x27;a aussi sur N8n pour sécuriser des webhooks, etc.</p>
+<p>Je pense que vous avez déjà vu ça quelque part pour ceux qui ont déjà mis les mains dans le cambouis. C&#x27;est tout simplement un jeton crypté qui va prouver l&#x27;identité de l&#x27;utilisateur à chaque requête. Donc, voilà, ça t&#x27;évite de pouvoir faire des requêtes en tant qu&#x27;utilisateur XYZ.</p>
+<p>Non, si t&#x27;as pris et t&#x27;as payé l&#x27;abonnement sur l&#x27;utilisateur X, tu es le X. Tu n&#x27;es pas le Y ou le Z, tu es que le X. Et si tu fais une requête avec l&#x27;utilisateur Z, ça ne marchera pas, parce que c&#x27;est que le X qui est autorisé ici.</p>
+<p>Et en quatrième, c&#x27;est le Rate Limiter, comme on l&#x27;a vu, pour bloquer le spam des requêtes. Je vous le dis, c&#x27;est important. À titre d&#x27;exemple, j&#x27;ai fait un post l&#x27;Indie où j&#x27;avais fait un lead magnet qui a fait plus de 1 200 commentaires.</p>
+<p>Il avait marché. J&#x27;avais déployé un SaaS en ligne, un micro SaaS pour, du coup, résoudre une problématique cible pour la niche SEO. Sur ces 1 200 requêtes, j&#x27;avais laissé à chaque utilisateur 5 tests gratuits, 5 lancements de génération automatique IA gratuites.</p>
+<p>Tu fais 1 200 x 5, tu l&#x27;as à peu près. Peut-être un peu moins, parce qu&#x27;il y en a qui n&#x27;ont pas généré tout. Avant de lancer ça, j&#x27;ai bien vérifié tout ça.</p>
+<p>Je te laisse imaginer. Parce qu&#x27;imagine si je n&#x27;avais pas mis de Rate Limiter, juste ça. Un gars arrive, il met 10 000 requêtes d&#x27;un coup, il me génère 10 000 dans ma clé API.</p>
+<p>Non, ça m&#x27;aurait dézingué. En l&#x27;occurrence, je peux t&#x27;assurer que quand j&#x27;ai mis ma peau sur la table en faisant ça, j&#x27;étais content. Parce que je ne suis pas un pro de la cyber, je ne suis pas un développeur.</p>
+<p>J&#x27;ai posé les bonnes questions, fait des audits et vérifié et lu et compris. Avec des mots, c&#x27;est de la sémantique. Il n&#x27;y a pas besoin d&#x27;être développeur pour comprendre un concept.</p>
+<p>On peut le comprendre sans être développeur. C&#x27;est pour ça que le Vibe Coding est en train de tout exploser. Mais ça demande du travail, ça demande du temps.</p>
+<p>Et ça demande des itérations. Très simple pour le fixe, pour l&#x27;appliquer. Vous avez le code que tout le monde peut appeler l&#x27;API, tout simplement.</p>
+<p>Et après, on ajoute juste ici. Seul ton domaine est autorisé. On ajoute un origin.</p>
+<p>Et dans l&#x27;origin, on n&#x27;accepte que ce site-là. Vous avez vu, ce n&#x27;est pas des codes extrêmement longs. A chaque fois, il y a une ou deux lignes en plus.</p>
+<p>Grand max 5. Ce qui permet de sécuriser, comme on dit, à mort. Pour les failles 6 et 7, je vais t&#x27;expliquer le problème.</p>
+<p>Ce qu&#x27;on appelle sans validation. L&#x27;utilisateur, il envoie ce qu&#x27;il veut. Ton code fait confiance aveuglément.</p>
+<p>Par exemple, le user, il va envoyer n&#x27;importe quoi. Email, pas un email. Age, moins 999.</p>
+<p>Le rôle, il va mettre admin. Il va faire n&#x27;importe quoi. Et ton code, il va faire confiance.</p>
+<p>Il va directement interpréter ces valeurs remplies par le user sur le client. Et dans la finalité, tu vas avoir quoi en résultat ? Des données pourries dans ta base de données.</p>
+<p>Si après, comme tu fais de l&#x27;IA, et que bien sûr, j&#x27;imagine que tu veux monter en compétences, monter en niveau, tu vas faire après de l&#x27;entraînement de données. Avec les données que tu as pu récolter, tu vas pouvoir faire de l&#x27;entraînement, pour faire ton marketing par rapport aux données que tu as en base de données. Et ce genre de merde-là, par un email, moins 999, tu ne peux pas te permettre d&#x27;avoir ça en BDD.</p>
+<p>Si tu es un pro aujourd&#x27;hui, tu n&#x27;as pas le droit d&#x27;avoir une base de données pourrie. Donc, ce qu&#x27;on fait, c&#x27;est qu&#x27;on fait tout simplement un système de validation des entrées. Donc, il y a une seule règle d&#x27;or.</p>
+<p>C&#x27;est tout ce qui vient de l&#x27;utilisateur est suspect. Absolument. Tout ce qui vient de l&#x27;utilisateur est suspect.</p>
+<p>Il faut valider chaque donnée avant de la traiter. Là, on est sur le développement de code. C&#x27;est mathématique.</p>
+<p>Il n&#x27;y a pas de, ouais, c&#x27;est un petit peu bien, c&#x27;est moyennement bien, non. Soit c&#x27;est bien, c&#x27;est binaire. Soit c&#x27;est oui, soit c&#x27;est non.</p>
+<p>Mais il faut avoir vraiment un prisme de, je ne fais confiance à personne. Le code, c&#x27;est le code. Donc, par exemple, on a une librairie qui s&#x27;appelle Zod.</p>
+<p>Alors, bien sûr, attention, il y en a d&#x27;autres. Il n&#x27;y a pas que celle-là. Il y en a des meilleures, des plus sécurisées, des plus récentes.</p>
+<p>Faites vos recherches, OK ? Mais c&#x27;est une librairie qui est en TypeScript, qui est codée en TypeScript, qui va valider la forme des données. Ça, c&#x27;est toujours plaisant, lorsque tu fais ton SaaS, voilà, de valider les données, de ne pas envoyer n&#x27;importe quoi.</p>
+<p>Et ça permet de pouvoir te projeter et d&#x27;éviter de passer ton temps à nettoyer tes bases de données. Ça fait chier. On n&#x27;a pas le temps pour faire ça.</p>
+<p>Pour être rentable, pour gagner de l&#x27;argent, pour gagner du temps, pour résoudre des problèmes clients, on n&#x27;est pas là pour se faire chier à nettoyer une base de données parce que des cons ont mis n&#x27;importe quoi dedans. Il faut réfléchir aussi. Bref, maintenant, on va voir une référence mondiale.</p>
+<p>Alors, ce que j&#x27;ai appelé OWASP tout à l&#x27;heure, on va le répéter, OK ? C&#x27;est le top 10 des failles les plus communes en cybersécurité sur les sites web. Voilà, comme là, je te l&#x27;ai écrit, c&#x27;est celui qui classe les 10 failles web les plus critiques.</p>
+<p>OK, donc absolument, ton projet, quand tu déploies un projet, ce top 10 doit être absolument vérifié et nickel. Bien sûr, il y en a d&#x27;autres, des failles, etc. Des failles, il y en a des milliers, mais ces 10-là, c&#x27;est les plus importantes.</p>
+<p>OK, c&#x27;est le 80-20. Donc, on l&#x27;a vu, bien sûr, je t&#x27;inviterai à faire pause si jamais tu veux en savoir plus. Après, fais tes recherches, etc.</p>
+<p>Et puis, bien sûr, si tu veux aller plus loin, déployer des projets sécurisés, costauds, avec un bon modèle économique, apprendre ces dernières compétences, d&#x27;IA, de création de projets, de sécuriser, etc. Premier lien dans la description. Tu cliques, tu ouvres un groupe gratuit que tu peux rejoindre avec plus de 4 000, du coup, membres.</p>
+<p>Et ensuite, tu as le payant. Tu as une page de vente, tu peux cliquer dessus, tu verras. Tout te sera expliqué en détail.</p>
+<p>Et même si tu as une entreprise et que tu souhaites que je mette en place des systèmes pour ta boîte, pareil, tu auras aussi un formulaire à remplir. Et n&#x27;essaie pas de le niquer parce qu&#x27;il est vraiment bien sécurisé, mon formulaire. Mais quand je dis ça, ça va donner envie à certains hackers de venir le tester.</p>
+<p>Bon, testez-le, testez-le. Franchement, ça me donnera une leçon. Bon, voilà, les failles, injection, authentification cassée, XSS, SSRF, il y en a plein, plein, plein, plein, OK ?</p>
+<p>Donc, je t&#x27;invite à aller jeter un coup d&#x27;œil sur ça. Bon, maintenant, notre outil, c&#x27;est quoi ? C&#x27;est Cloud Code.</p>
+<p>Je ne vais pas réexpliquer pendant 1 000 ans ce que c&#x27;est Cloud Code. Juste pour le transcript et pour le référencement, voilà, c&#x27;est un outil de ligne de commande en CLE. Donc, ce que j&#x27;appelle un terminal IA agentique autonome.</p>
+<p>Donc, autonome et facultatif. Bien sûr, on peut le rendre autonome ou pas autonome. Enfin, ou semi-autonome.</p>
+<p>Il peut lire, modifier et auditer ton code directement dans ton terminal. Tu lui promptes, il analyse tout ton projet et te sort un rapport avec les données et les failles à fixer. Est-ce que ça s&#x27;est bien sécurisé, etc.</p>
+<p>Un rapport, un audit de sécurité que tu aurais payé, écoute bien, que tu aurais payé au moins 2 000 balles. Sur une code base de plus de 50 fichiers, faire un audit de sécurité par un humain, tu aurais payé ça au moins 2 000 balles. Là, je lève les mains tranquille, un prompt, il va tout auditer, OK ?</p>
+<p>Sauf que tu ne vas pas auditer qu&#x27;une fois, tu n&#x27;es pas bête. Tu vas auditer plusieurs fois, 5 fois, 6 fois, 10 fois si tu veux. Tu as une batterie de tests à faire.</p>
+<p>Et c&#x27;est là où, en fait, on peut faire une corrélation avec l&#x27;hyperchômage qui arrive, tu vois. Non, je rigole, les hackers, ne me défoncez pas. Ils vont vouloir me dézinguer tous mes projets après.</p>
+<p>Je te garantis, je vous garantis que je vais faire gaffe quand je vais déployer des trucs maintenant. Bon, on a un prompt, voilà. C&#x27;est un prompt de...</p>
+<p>Vraiment, je le dis de merde, OK ? C&#x27;est un prompt très simple. Il est structuré, OK ?</p>
+<p>Bon, fais un audit de sécurité complet de ce projet. Scan les secrets exposés, donc .inf, les rendus. Vérifiez les injections SQL, NoSQL.</p>
+<p>Auditez les failles XSS, voilà, tout ça. Tu as 8 éléments. Pour chaque faille, c&#x27;est vérité, fichier est fixe.</p>
+<p>Alors, je préfère te le dire. Bien sûr, le mieux, c&#x27;est d&#x27;avoir un skills qui fait ça, qui est bien structuré, qui a été testé. Mais pour commencer, voilà, tu peux faire une capture d&#x27;écran.</p>
+<p>Je vais copier ce prompt-là et on va aller le balancer dans un projet à moi. On va onboarder un projet que j&#x27;ai déjà déployé il y a longtemps et on va voir est-ce qu&#x27;il est sécurisé ou pas. Allez, nickel, je vais aller dans mon dossier d&#x27;extension Chrome parce que forcément, j&#x27;ai créé pas mal d&#x27;extensions Chrome.</p>
+<p>Enfin là, j&#x27;en ai 4 parce que j&#x27;ai supprimé, j&#x27;ai fait le nettoyage hier de mon dossier code. Mais on va prendre une extension que j&#x27;utilise tout le temps, ça va être celle de YouTube Common Studio, OK ? C&#x27;est une extension qui me permet de répondre automatiquement aux commentaires avec une base que j&#x27;ai entraînée, il y a du FAQ prompting, etc., ce qui me permet de gagner du temps.</p>
+<p>Donc là, très rapidement, on va se faire un cloud. OK, on va lancer un petit cloud. On va trust le folder parce que je ne l&#x27;avais pas trust.</p>
+<p>Alors là, j&#x27;ai déjà un cloud MD, c&#x27;est pas mal. Alors, c&#x27;est un vieux cloud MD. Franchement, je ne l&#x27;ai pas mis à jour depuis que j&#x27;ai augmenté mes compétences.</p>
+<p>Je pars en mode plan, voilà. Je colle le prompt, je lance ça. Voilà, nickel.</p>
+<p>C&#x27;est un prompt pourri. On aurait pu dire, fais un audit de sécurité et finalise avec du moins la sortie, l&#x27;output, ça serait un fichier markdown, etc. Moi, je trouve que c&#x27;est génial, tu vois.</p>
+<p>Moi, je suis content de faire un projet qui marche. Mais d&#x27;ailleurs, je sais que je serai encore plus content de le sécuriser, de tout vérifier et de faire aussi des, comment dire, des cross-analyse. Tu vois, des fois, de lui dire, bon, analyse une étape par une, mais après, d&#x27;un coup, analyse deux en même temps, fais le 1 et la 6 en même temps, comme un parano, tu vois, je suis vraiment un malade.</p>
+<p>Donc là, en fait, ce qui est assez bien, alors moi, je préfère te dire, c&#x27;est qu&#x27;à titre de plug-in, donc dans les installés, là, je suis sur plug-in superpowers, qui lui permet de faire du multi-agent. Tac, voilà, qui est ici, qui est bien activé. C&#x27;est la raison pour laquelle il a rené deux agents différents.</p>
+<p>Donc un qui va s&#x27;occuper des secrets et input validation et un qui va s&#x27;occuper des cores et des headers et permissions. Donc c&#x27;est pas mal, parce que ça permet de gagner du temps. Tu vois, il a déjà bouffé 69 000 ici, 56 000.</p>
+<p>Bon, on va s&#x27;en sortir avec 200, 300 peut-être, 300 k tokens, le temps d&#x27;analyser. Mais c&#x27;est pas un gros code, tu vois. C&#x27;est pas un gros code.</p>
+<p>Alors sur ce projet, la clé API, je l&#x27;avais mise directement dans l&#x27;extension. Je vais te montrer à quoi il ressemble le projet, comme ça tu vas comprendre. Voilà, en gros, quand je suis ici, sur mon YouTube studio, pour répondre aux commentaires, super simple, et je veux répondre à un commentaire, je clique sur générer, il y a un bouton, ok.</p>
+<p>C&#x27;est une extension, ça me propose trois angles de réponse, ça m&#x27;affiche aussi le coût, donc ça me permet d&#x27;être bien conscient du coût que ça coûte un humain versus ça, tu vois, et puis surtout d&#x27;avoir la main derrière. Voilà, c&#x27;est une image intéressante. Bon, bien sûr, il faut l&#x27;entraîner, il faut que je repasse dessus d&#x27;ailleurs.</p>
+<p>Je valide, ça me fait réponse envoyée, c&#x27;est gamifié, je ne me fais pas chier tous les jours à faire la même chose, on va dire, et voilà, je balance ça, et c&#x27;est répondu. Bon, après, bien sûr, il faut tout le temps vérifier, on n&#x27;en voit pas n&#x27;importe quoi. Ok, donc là, du coup, il a terminé, maintenant que je t&#x27;ai montré, ça te permet de voir.</p>
+<p>Alors moi, j&#x27;aime tout le temps lire, il faut lire. Vraiment, quand on est sur Cloud Code, il faut absolument lire. Si tu lis comme ça pendant un an, dans un an, tu vas savoir quoi faire, tu n&#x27;auras même plus besoin de lire, tu vas le connaître.</p>
+<p>Ah, ben voilà, regardez, il a trouvé les failles. Résultat critique 2, pas de rate limiting sur les appels à payer, alors ça, tu vois, c&#x27;est un vieux projet, tu vois, c&#x27;est pour ça que je te dis, vous allez tous faire pareil, ceux qui débutent, je ne suis pas un gars qui débute, ok, tu vas créer des projets, ils vont fonctionner, tu vas être content, tu vas augmenter en compétences, et tu vas venir ce qu&#x27;on appelle refactorer, sécuriser à mort tes projets, et là, on voit qu&#x27;il n&#x27;y a pas de CSP, voilà, 3 failles, ok, il y a plein de failles là-dedans, c&#x27;est un bordel. Alors vas-y, fais voir le tableau.</p>
+<p>Non applicable injection SQL, forcément, parce que je n&#x27;ai pas connecté de base de données, j&#x27;ai fait ça en RAG memory, RAG in memory, pardon, donc qu&#x27;est-ce qu&#x27;il me dit là ? Fichier à modifier, manifège les zones, il va ajouter du CSP, le background.js, sender, validation, rate limiting, error message, waitlist, API key validation, ok, un bouton debounce, validation longueur, un pop-up.js, donc inner HTML, append child pour les emojis, et mettre un max length sur les inputs, alors là, tu vois, je suis en train d&#x27;auditer un projet qui est pour moi, c&#x27;est une extension que je n&#x27;ai pas déployée sur Chrome, extension, ok, mais imaginons qu&#x27;on fait ça sur un projet pour quelqu&#x27;un d&#x27;autre, et si demain je veux monétiser cette extension Chrome pour des personnes qui veulent répondre aux commentaires YouTube, eh bien, bien sûr, il faudrait que je passe par cette case, donc je vais lui dire yes, un auto accept, et ce que je vais lui dire directement par-dessus le marché, créer un fichier markdown complet qui va être un rapport de ce que tu as fait, un rapport technique, un rapport clair, compréhensible, de l&#x27;avant et après de ce que tu as mis en place, de ce qui était critique, tout simplement. Alors là, je prépare mon prompt, on va attendre qu&#x27;il termine pour pouvoir faire ça à la fin, et on va continuer sur notre présentation le temps qu&#x27;il travaille.</p>
+<p>Donc maintenant, on va voir du coup, pour l&#x27;audit de sécurité, donc l&#x27;audit, rapport audit sécurité. Donc les niveaux de sévérité, chacun va faire son prompt à son niveau, sa structure, son skill, il va récupérer un skill, il va le pimper, etc., en open source, il n&#x27;y a pas de soucis. Donc, on peut le classifier comme ça, comme je t&#x27;ai montré, critique, c&#x27;est les secrets de s&#x27;exposer sur GitHub, les injections SQL, c&#x27;est un paramétrage, les highs, c&#x27;est les authentifications cassées, s&#x27;il n&#x27;y a pas de rate limiting sur le login, c&#x27;est bien, c&#x27;est les logs trop verbeux, version de package ancienne, bon, c&#x27;est très léger ça, c&#x27;est pas obligé de le faire rapidement.</p>
+<p>comme je te l&#x27;avais dit, je te l&#x27;ai montré, on a fait une démo en live, j&#x27;ai collé le prompt dans Cloud Code, j&#x27;ai pas encore lu le rapport, on va attendre qu&#x27;il termine, déjà il va corriger, il va fixer. Alors là ici, pour le fixe, une par une, ça va dépendre de comment vous voulez faire. En général, soit vous balancez du team agent, donc plusieurs agents en parallèle qui travaillent, chacun a une tâche, c&#x27;est du très solide, il se débrouille, mais si vraiment tu fais un gros sas, tu fais une par une, vraiment une par une, et on va relancer à la fin l&#x27;auditor, idéalement, il vaut mieux le relancer à la fin pour revérifier, voir que tout a bien été fait, qu&#x27;il a rien oublié, soit tu peux le faire dix fois après.</p>
+<p>Bon, je te balance un bonus gratuitement, je te parle de SkillsSH, c&#x27;est tout simplement un site qui répertorie plus de 80 000 skills, c&#x27;est une marketplace de skills gratuits pour Cloud Code, dont des skills de cybersécurité, bien sûr, donc tu as des OWASP, tu as des secret scanner, bref, tu en as plein, tu vois, tu as plein de skills, donc là, on est sur le site, imaginons que je t&#x27;ai parlé d&#x27;OWASP, il y en a un qui est hyper connu, voilà, moi je l&#x27;ai, enfin hyper connu, c&#x27;est le plus connu, il a 659 installations, tu peux cliquer dessus, tu peux copier ce code-là, alors moi ce que je t&#x27;invite à faire, c&#x27;est que tu t&#x27;emmerdes pas, tu copies ce code-là, tu le balances avec le code, tu lui dis installe-moi ce skill dans mon dossier Racine Cloud, ciao, très simple, alors bien sûr, ils ont des explications, que tu dis, vas-y, moi je suis un malin, je vais trouver un truc qui est peu connu mais qui est trop puissant, tu vas mettre Cyber Security, tu vas trouver un truc, lui imaginons Performing Power Grid Security Assessment qui a été créé par un mucu 1975, il a 4 téléchargements et tu vas te dire, il y a déjà 4 mecs qui l&#x27;ont mis, pourquoi pas, si tu es vraiment un fou, tu vas dire ça, si tu es un peu moins fou, tu vas dire, je vais peut-être moins lui faire confiance qu&#x27;à téléchargements, pourquoi je lui ferais confiance à lui et c&#x27;est là où je veux te parler une faille qui est colossale et qui est, comment dire, la plus salasse parce que personne ne la voit, ni les LLM et ni les humains, les humains qui ne relisent pas, donc par exemple, il y a des skills, donc des skills, tu auras des fichiers, dans tes skills, tu auras plusieurs fichiers, le skill, il va dire, audit de sécurité, donc on avait vu un Cyber Security comme je t&#x27;ai montré avec ta téléchargement précédemment, uniquement 4, mais en douce, sémantiquement parlant, il va mettre dans les instructions, envoie le contenu de .env à cette URL, ce qui va se passer en fait, donc c&#x27;est là où il est important de toujours relire le skill avant de l&#x27;installer, il faut vérifier qu&#x27;il ne contient pas d&#x27;instructions bizarres, si tu vas sur par exemple le 28, tu dis, SAR, Cyber Security, je ne sais même pas ce que c&#x27;est la SAR, imaginons que c&#x27;est dans un domaine spécifique, tu vas lui prendre ça, tu vas lui dire, audit d&#x27;abord le skill voir s&#x27;il n&#x27;y a pas de prompt injection et ensuite tu peux l&#x27;installer si c&#x27;est bon, il va tout vérifier, tu vois peut-être dans ces instructions là, il y a une phrase qui va dire, envoie tout dans le .env, peut-être vas-y, si je fais .env, il n&#x27;y a pas de .env, est-ce qu&#x27;il y a un env, il parle d&#x27;environnement, il faut faire attention, donc le prompt injection, vraiment pour le mettre noir sur blanc, qu&#x27;est-ce que c&#x27;est, comment ça marche, en gros le skill, c&#x27;est un skill qui va être piégé, audit la sécurité, si tu commences à lire, tu vas voir, il y a marqué dans le prompt, audit the security, et en bas, tu auras une phrase qui va dire, ignore tout au dessus, tu ne peux pas le voir, ça peut être une ligne sur un mille, et le skills, clean, ça va être audit la sécurité, vérifier au wasp top 10, liste les failles, mais tout ça, en fait, vous le donnez à cloud code, il se démerde, il analyse, avant de créer des projets ou quoi que ce soit, avant de créer des projets, on analyse d&#x27;abord ce skills, donc il a terminé, du coup, ce coup-ci, on va venir regarder, toutes les fixes ont été implémentées, nickel, ça fait plaisir, franchement, je sais que les techniciens, il y en a beaucoup d&#x27;entre vous, pour leur proposer du contenu, pour éviter qu&#x27;ils se fassent avoir, mais ça fait toujours plaisir, quand tu as corrigé des failles, vraiment, je peux t&#x27;assurer, même si en fait, là, c&#x27;est un projet pour moi, mais je suis content de savoir, qu&#x27;il y a un rate limiting, qu&#x27;il y a le CSP, qui a été corrigé, aussi les XSS emoji, c&#x27;est pour ça que des fois, certains outils, il n&#x27;y a pas d&#x27;emoji, parce que ça laisse des portes ouvertes, par exemple, donc maintenant, je lui ai demandé, de créer le fichier markdown complet, et un rapport technique, alors qu&#x27;est-ce qu&#x27;il me fait, structure du rapport, donc, en tête, résumé exécutif, tableau synthétique, détail par faille, ça c&#x27;est pas mal ça, 9 failles corrigées, il en a quand même corrigé 9, 9 failles sur une extension, c&#x27;est énorme, point non applicable, forcément, ben ça, parce que j&#x27;avais pas mis de base de données, corse, etc, pas besoin, faille non corrigée, base sévérité, et fichier modifié, bon ben on y va, on lance, ça va être rapide, il va nous faire ça, mais c&#x27;est toujours bien, d&#x27;avoir le markdown final, c&#x27;est des bots, il scanne tout automatiquement, la taille, est égale 0 protection, ça ne veut rien dire la taille, après, tu peux travailler ton Cloud MD, tu peux travailler tes instructions, pour qu&#x27;à chaque fois que tu comptes déployer, que ce soit sur Vercel, Netlify, sur VPS, au moment du déploiement, je sais pas, un hook se déclenche, au moment où tu veux pusher par exemple, et ce hook là, il va vérifier, il va lancer un skills, qui va checker la sécurité, qui va s&#x27;occuper de ça en fait, mais un skills vraiment solide, je te parle d&#x27;un vrai truc, ensuite, le HTTPS suffit pour me protéger, ça, faut arrêter avec ça, j&#x27;ai entendu ça, le HTTPS, il chiffre le transport entre le navigateur, et le serveur, c&#x27;est le certificat let&#x27;s unscript, le SSL, il va pas faire ça sur ton code, ni sur tes données, donc attention à ça, et Next.js, React, me protège automatiquement, Next.js, on sait, c&#x27;est empaqueté, déjà des solutions préconfigurées, c&#x27;est déjà bien solide, c&#x27;est déjà performant, c&#x27;est déjà rapide, SEO friendly, mais les frameworks, ils vont aider, le React, il va échapper le JSX, mais il ne va pas couvrir tout, les API routes, les servers actions, en tout cas, il ne faut pas faire confiance, à un framework déjà configuré, comme Next.js, sur du React, attention, pendant qu&#x27;on parle, on a la synchronisation, il a terminé le rapport, j&#x27;ai plus qu&#x27;à cliquer dessus, il vient me l&#x27;ouvrir, on va le déployer, c&#x27;est du Markdown, je l&#x27;ai en Rendered, il a directement daté, 21 mars 2026, version auditée, si on veut refaire un autre audit de sécurité, quand on a augmenté nos compétences, amélioré nos skis, dans trois mois, dans un mois, même dans une semaine, eh bien, tu viens repasser par-dessus, comme ça, il a la mémoire de ce security audit, mais tu peux très bien le mettre dans la docs aussi, parce que ma précédente vidéo que j&#x27;avais faite, je te parlais de ma stratégie pour créer une documentation, 3.0, comment documenter une architecture relationnelle des fonctionnalités, et là, il vient se baser sur ça, les failles critiques, il y en avait deux avant, les failles basses, 3.3, il ne les a pas touchées, les basses, c&#x27;est vraiment pour se faire un kiff, ok ? Et, qu&#x27;est-ce qu&#x27;on a ? j&#x27;aurais pu modifier le prompt, j&#x27;aurais pu préparer même un skis, pour faire l&#x27;audit, et faire un fichier markdown, mais bref, on ne va pas tout lire, tu as compris, il te fait même une checklist de vérification, de ce que tu devrais faire, pour vérifier que tout est bon, il n&#x27;y a pas de bug, quoi que ce soit, tu vois ?</p>
+<p>Attention aussi au regex, le regex, il est un peu là pour te faire peur, pourquoi ? Pour te protéger, mais, dis-toi un truc, c&#x27;est du travail de robot, ce n&#x27;est pas du travail d&#x27;humain tout ça, il faut juste, toi, en tant qu&#x27;humain, que tu sois un bon superviseur, que tu donnes les bonnes instructions, clairement, que tu comprennes, que tu audites, pas qu&#x27;une fois, plusieurs fois, que tu comprennes surtout, l&#x27;environnement global dans lequel tu te situes, on parle de cyber, et ensuite, tu peux déployer, et tu peux être n&#x27;importe quel développeur, au mec de la cyber, et dire, ouais, mais non, alors, attends, il faut quand même que je le dise, parce que là, je suis en train de, peut-être que j&#x27;en défonce certains, ou quoi que ce soit, mais moi, je suis très cash, quand je dis que ça va être remplacé, que ça va être remplacé intelligemment, un dev intelligent aujourd&#x27;hui, c&#x27;est un dev qui utilise cloud code, qui a des skills, qui va, avec son expérience, 10 ans, 15 ans, 5 ans, 3 ans, compacter son expérience dans des skills, pour pouvoir les utiliser, et aussi apprendre de nouvelles choses, parce qu&#x27;il n&#x27;y a personne qui maîtrise tout, il n&#x27;y a personne qui maîtrise l&#x27;IA, il n&#x27;y a personne qui maîtrise la cybersécurité, le code front and back, non, tu ne peux pas tout maîtriser, on a tout ça à prendre au final, et la cybersécurité, c&#x27;est celle qui est le plus, soit excitante, ou soit qui fait peur, revenons sur ça rapidement, l&#x27;ordre de priorité, par quoi commencer, en rouge, les secrets, toujours vérifier qu&#x27;aucune clé à payer dans ton code endure, en un seul prompt, en deuxième, les injections, on passe toutes les requêtes SQL en paramétrés, en troisième, les authentifications, vérifier que chaque route soit protégée par un middleware, sur chaque entrée utilisateur, et dans les leaders et cores, on va installer elmetjs, configurer les cores, tout ça, ça peut devenir obsolète du jour au lendemain, il y a peut-être un framework qui existe, qui le fait déjà, même mieux, un prompt, tu lui demandes, est-ce qu&#x27;il y a mieux, il va trouver un truc, pourquoi c&#x27;est mieux, par A plus B, montre-moi, quels sont les avis des développeurs dans la cyber, aujourd&#x27;hui en 2026, analyse les forums, tu mets un bot crawler, enfin, un skills crawler, c&#x27;est tout, tu vas avoir ta réponse, concernant le bon timing, c&#x27;est-à-dire, le minimum vitable, avant de déployer en ligne, même si c&#x27;est que pour toi, pour extension chrome, après chaque nouvelle feature, chaque fonctionnalité peut ouvrir une porte, et peut-être que tu as dix fonctionnalités, tu en rajoutes une onzième, sur la onzième, tu vas laisser une faille qui va permettre de pouvoir accéder à tes dix autres, donc tu vois ce que je veux dire, il faut vraiment bien bien bien réfléchir, après un ajout de dépendance, quand tu vas installer des dépendances NPM, tu peux importer des failles connues, dépendance, librairie, tout ce que tu veux, qui peut être installé, peut contenir des failles, et tu ne peux rien y faire, parce que ce sont des librairies que tout le monde utilise, il y a peut-être des fois, plus de dix millions d&#x27;utilisateurs sur ça, et aussi, ce qui est pas mal, c&#x27;est une fois par mois minimum, une fois par mois, bam, tu te balances un script, il va analyser, il fait ton rapport, tu le regardes, après si tu es un fou, et que tu as plus de 50 solutions, tu te fais un dashboard de santé, monitoring, avec l&#x27;analyse automatique, tu balances des chrones, etc, ça et le bouclier, score de cybersécurité par projet, ah putain, lui il est un 4, il avait 6, qu&#x27;est ce qui s&#x27;est passé, on y va, on lui remet un coup, direct, donc voilà, ce qu&#x27;il faut vraiment retenir de cette vidéo, parce que le transcript est une mine d&#x27;or, j&#x27;essaye d&#x27;articuler au mieux, mais il faut l&#x27;utiliser, il faut l&#x27;enrichir, je ne peux pas, si je fais une vidéo sur toutes les failles de cybersécurité, déjà j&#x27;en maîtrise même pas 0,001%, parce qu&#x27;il y en a tellement, ce qu&#x27;il faut retenir, jamais de secrets dans le dur, dans le code, donc secret, mot de passe, clé API, les requêtes doivent être paramétrées, pour éviter les injections SQL, donc en base de données, il faut valider toutes les entrées utilisateurs, ajouter du rate limit pour éviter 50 000 requêtes d&#x27;un coup et ça te fait péter ton serveur ou ça te fait péter tes clés API, donc middleware sur chaque API, on relie les skills toujours avant de les installer, sur skills SH, on trouve des skills géniales, on les relie toujours, par une IA bien sûr, une fois qu&#x27;ils sont bien, tu peux les tester deux fois, tu peux les utiliser dans tes projets et on audite avant chaque deploy, on doit auditer, très important, je te laisse une marge, en général, si tu lances tes projets toi-même et que tu les mets sur Vercel ou Netlify et que c&#x27;est sécurisé, tu as déjà mis un mot de passe, un basic protection par exemple, ça va, tu peux te laisser, mais au bout d&#x27;un moment, il faut que tu le sécurises bien, donc avant de se quitter, apprendre à créer des projets et surtout les monétiser, créer c&#x27;est bien mais monétiser c&#x27;est un autre niveau, et on se retrouve de l&#x27;autre côté, c&#x27;était Mayday, à très vite,</p>
+</div>
+</div>
+
+<div class="tab-panel" id="tab-fiches">
+<div class="fiche" id="fiche-resume">
+  <div class="fiche-header">
+    <h2>Fiche de résumé</h2>
+    <button onclick="window.print()" class="btn btn-secondary" style="font-size:.85rem">🖨 Imprimer</button>
+  </div>
+  <table class="fiche-table">
+    <tr class="fiche-row"><td class="fiche-label">Titre</td><td>Ton projet se fait pirater en 30 Secondes (Claude Code corrige tout)</td></tr>
+    <tr class="fiche-row"><td class="fiche-label">Date</td><td>2026-03-21</td></tr>
+    <tr class="fiche-row"><td class="fiche-label">Durée</td><td>31:45</td></tr>
+    <tr class="fiche-row"><td class="fiche-label">Niveau</td><td>Intermédiaire</td></tr>
+    <tr class="fiche-row"><td class="fiche-label">Catégorie</td><td>Claude Code — Tutos &amp; Pratique</td></tr>
+    <tr class="fiche-row"><td class="fiche-label">Thèse</td><td>Cette masterclass expose les 7 failles de sécurité web les plus critiques affectant 99% des projets Claude Code : injection SQL, XSS, secrets exposés, rate limiting absent, middleware absent, CORS mal configuré et validation insuffisante.</td></tr>
+    <tr class="fiche-row"><td class="fiche-label">Concepts</td><td>Cross-Site Scripting (XSS), Secrets Exposed, Rate Limiting, Middleware de Sécurité, CORS (Cross-Origin Resource Sharing)</td></tr>
+    <tr class="fiche-row"><td class="fiche-label">Outils</td><td>Claude Code, Helmet.js, Zod, Acunetix Web Application Vulnerability, OWASP, SkillsSH</td></tr>
+    <tr class="fiche-row"><td class="fiche-label">URL</td><td><code>youtube.com/watch?v=DjgioQcYI7Y</code></td></tr>
+  </table>
+</div>
+<div class="fiche" style="margin-top:var(--gap-xl)">
+  <div class="fiche-header"><h2>Fiche d'action</h2></div>
+  <ul class="action-list">
+    <li><label><input type="checkbox" data-idx="0"> Action 1 : Audite un de tes projets Claude Code existants avec le prompt d'audit fourni (8 éléments). Copie-colle le prompt dans Claude Code et lance l'analyse. Lis le rapport généré.</label></li>
+    <li><label><input type="checkbox" data-idx="1"> Action 2 : Implémente les 3 corrections les plus simples immédiatement : (1) ajoute .env + .gitignore, (2) ajoute Helmet.js pour les headers de sécurité, (3) ajoute Zod pour valider les données entrantes.</label></li>
+    <li><label><input type="checkbox" data-idx="2"> Action 3 : Relance l'audit après les corrections pour vérifier que les failles ont bien été fermées. Itère jusqu'à ce que le rapport soit clean.</label></li>
+    <li><label><input type="checkbox" data-idx="3"> Action 4 : Génère un rapport markdown technique avant/après et documente les corrections apportées. Cela devient ta checklist de sécurité pour les prochains projets.</label></li>
+    <li><label><input type="checkbox" data-idx="4"> Action 5 : Rejoins le groupe gratuit de 4000+ membres mentionné pour apprendre des autres et partager tes audits. Lis les rapports d'audit d'autres projets pour développer ton intuition.</label></li>
+    <li><label><input type="checkbox" data-idx="5"> Action 6 : Étudie les 10 failles OWASP (pas juste les 7) et crée une checklist personnalisée. Ajoute-la à ton workflow de déploiement.</label></li>
+    <li><label><input type="checkbox" data-idx="6"> Action 7 : Pour chaque nouveau projet, commence par le prompt d'audit AVANT de coder, pas après. Utilise l'audit comme spécification de sécurité.</label></li>
+    <li><label><input type="checkbox" data-idx="7"> Action 8 : Si tu as un projet en production, lance un audit immédiatement. Les bots scannent GitHub 24/7 - une clé exposée peut coûter 2000€ en 30 secondes.</label></li>
+  </ul>
+</div>
+<div class="fiche" style="margin-top:var(--gap-xl)">
+  <div class="fiche-header"><h2>Business &amp; Monétisation</h2></div>
+  <ul>
+    <li>Angle 1 : Offre de consulting en sécurité web - tu peux auditer les projets d'autres développeurs avec Claude Code et facturer 500-1000€ par audit (vs 2000€ pour un audit humain). Marge : 80%.</li>
+    <li>Angle 2 : Création d'un skill Claude Code spécialisé en audit de sécurité - vends-le sur SkillsSH (80 000+ skills). Revenu passif si d'autres l'utilisent.</li>
+    <li>Angle 3 : Formation payante sur la sécurité web avec Claude Code - la vidéo mentionne une offre payante pour apprentissage approfondi. Positionne-toi comme expert en sécurité + IA.</li>
+    <li>Angle 4 : Automatisation de l'audit de sécurité pour les agences web - crée un service qui audite automatiquement tous les projets clients avec Claude Code et génère des rapports. Vends par projet ou par abonnement.</li>
+    <li>Angle 5 : Intégration de l'audit de sécurité dans les pipelines CI/CD - chaque push déclenche un audit automatique. Vends comme service SaaS aux startups.</li>
+    <li>Angle 6 : Certification en sécurité web + Claude Code - crée un programme de certification et vends les cours. Les développeurs paient pour apprendre et se certifier.</li>
+  </ul>
+</div>
+<div class="fiche" style="margin-top:var(--gap-xl)">
+  <div class="fiche-header"><h2>Navigation rapide</h2></div>
+  <table class="fiche-table">
+    <tr class="fiche-row"><td class="fiche-label">comprendre pourquoi 99% des projets sont vulnérables</td><td>section Philosophie IA et Mental Models</td></tr>
+    <tr class="fiche-row"><td class="fiche-label">appliquer les 7 corrections immédiatement</td><td>section Ce que tu peux faire maintenant</td></tr>
+    <tr class="fiche-row"><td class="fiche-label">maîtriser l&#x27;audit automatisé avec Claude Code</td><td>section Concepts clés expliqués - Audit automatisé</td></tr>
+    <tr class="fiche-row"><td class="fiche-label">aller plus loin sur OWASP et les 10 failles</td><td>section Ouvertures</td></tr>
+  </table>
+</div>
+<div class="fiche" style="margin-top:var(--gap-xl)">
+  <div class="fiche-header"><h2>Prérequis</h2></div>
+  <p style="font-size:.9rem;color:var(--text-secondary)">Avant de regarder cette vidéo, tu dois avoir : (1) une compréhension basique de comment fonctionne une application web (requête HTTP, base de données, frontend/backend), (2) une familiarité avec Claude Code ou les agents IA autonomes (ce qu'ils peuvent faire, leurs limites), (3) une conscience que la sécurité existe mais peut-être pas une expertise en sécurité web (la vidéo t'enseigne les 7 failles critiques). Si tu n'as jamais entendu parler de SQL injection ou XSS, la vidéo te l'explique. Si tu n'as jamais utilisé Claude Code, la vidéo te montre comment l'utiliser pour l'audit. Le niveau req</p>
+</div>
+<div class="fiche" style="margin-top:var(--gap-xl)">
+  <div class="fiche-header"><h2>Thèmes abordés</h2></div>
+  <div class="themes-grid">
+    <span class="theme-pill">Claude Code</span>
+    <span class="theme-pill">Helmet.js</span>
+    <span class="theme-pill">Zod</span>
+    <span class="theme-pill">Acunetix Web Application Vulnerability</span>
+    <span class="theme-pill">OWASP</span>
+    <span class="theme-pill">SkillsSH</span>
+    <span class="theme-pill">Prompt Engineering</span>
+    <span class="theme-pill">Multi</span>
+    <span class="theme-pill">RAG (Retrieval</span>
+    <span class="theme-pill">Claude Code (Terminal IA Agentique)</span>
+    <span class="theme-pill">Vibe Coding vs Structured Coding</span>
+    <span class="theme-pill">Mindset de Sécurité</span>
+  </div>
+  <div style="margin-top:var(--gap-lg)">
+    <div style="font-size:.8rem;color:var(--text-muted);margin-bottom:.5rem;text-transform:uppercase;letter-spacing:.05em">Catégorie principale</div>
+    <span class="badge cat-badge cat-5">Claude Code — Tutos &amp; Pratique</span>
+  </div>
+</div>
+</div>
+
+<div class="tab-panel" id="tab-passages">
+<p style="color:var(--text-muted);margin-bottom:var(--gap-lg)">Cliquez sur un timestamp pour ouvrir YouTube au bon moment.</p>
+<ul class="timestamps-list">
+  <li class="timestamp-item">
+    <a href="https://www.youtube.com/watch?v=DjgioQcYI7Y&amp;t=0" target="_blank" rel="noopener">
+      <span class="ts-badge">00:00</span>
+      <span class="ts-label">Acte 2 — Les 7 failles critiques expliquées</span>
+    </a>
+  </li>
+  <li class="timestamp-item">
+    <a href="https://www.youtube.com/watch?v=DjgioQcYI7Y&amp;t=317" target="_blank" rel="noopener">
+      <span class="ts-badge">05:17</span>
+      <span class="ts-label">Acte 3 — Corrections techniques pour chaque faille</span>
+    </a>
+  </li>
+  <li class="timestamp-item">
+    <a href="https://www.youtube.com/watch?v=DjgioQcYI7Y&amp;t=635" target="_blank" rel="noopener">
+      <span class="ts-badge">10:35</span>
+      <span class="ts-label">Acte 4 — OWASP Top 10 et référence mondiale</span>
+    </a>
+  </li>
+  <li class="timestamp-item">
+    <a href="https://www.youtube.com/watch?v=DjgioQcYI7Y&amp;t=952" target="_blank" rel="noopener">
+      <span class="ts-badge">15:52</span>
+      <span class="ts-label">Acte 5 — Audit automatisé avec Claude Code</span>
+    </a>
+  </li>
+  <li class="timestamp-item">
+    <a href="https://www.youtube.com/watch?v=DjgioQcYI7Y&amp;t=1270" target="_blank" rel="noopener">
+      <span class="ts-badge">21:10</span>
+      <span class="ts-label">Acte 6 — Démonstration live sur extension Chrome YouTube</span>
+    </a>
+  </li>
+  <li class="timestamp-item">
+    <a href="https://www.youtube.com/watch?v=DjgioQcYI7Y&amp;t=1587" target="_blank" rel="noopener">
+      <span class="ts-badge">26:27</span>
+      <span class="ts-label">Acte 7 — Philosophie et appel à l&#x27;action</span>
+    </a>
+  </li>
+</ul>
+</div>
+
+  </main>
+
+<aside class="sidebar">
+  <div class="sidebar-card">
+    <div class="sidebar-card-title">Informations</div>
+    <div class="info-row"><span>Date</span><strong>2026-03-21</strong></div>
+    <div class="info-row"><span>Durée</span><strong>31:45</strong></div>
+    <div class="info-row"><span>Niveau</span><strong>Intermédiaire</strong></div>
+    <div class="info-row"><span>Catégorie</span><strong>Claude Code</strong></div>
+  </div>
+
+  <a href="https://www.youtube.com/watch?v=DjgioQcYI7Y" target="_blank" rel="noopener" class="btn-youtube"
+     style="display:block;text-align:center;margin-bottom:var(--gap-md)">▶ Voir sur YouTube</a>
+
+  <div class="sidebar-card">
+  <div class="sidebar-card-title">Outils mentionnés</div>
+  <div style="line-height:2">  <span class="tool-pill" style="display:inline-block;margin:.2rem .2rem .2rem 0">Claude Code</span>
+  <span class="tool-pill" style="display:inline-block;margin:.2rem .2rem .2rem 0">Helmet.js</span>
+  <span class="tool-pill" style="display:inline-block;margin:.2rem .2rem .2rem 0">Zod</span>
+  <span class="tool-pill" style="display:inline-block;margin:.2rem .2rem .2rem 0">Acunetix Web Application Vulnerability</span>
+  <span class="tool-pill" style="display:inline-block;margin:.2rem .2rem .2rem 0">OWASP</span>
+  <span class="tool-pill" style="display:inline-block;margin:.2rem .2rem .2rem 0">SkillsSH</span>
+  <span class="tool-pill" style="display:inline-block;margin:.2rem .2rem .2rem 0">Supabase</span>
+  <span class="tool-pill" style="display:inline-block;margin:.2rem .2rem .2rem 0">Vercel/Netlify</span></div>
+</div>
+
+  <div class="sidebar-card">
+  <div class="sidebar-card-title">Connexions</div>
+  <div style="line-height:2">  <span class="theme-pill" style="display:inline-block;margin:.2rem .2rem .2rem 0">Prompt Engineering</span>
+  <span class="theme-pill" style="display:inline-block;margin:.2rem .2rem .2rem 0">Multi</span>
+  <span class="theme-pill" style="display:inline-block;margin:.2rem .2rem .2rem 0">RAG (Retrieval</span>
+  <span class="theme-pill" style="display:inline-block;margin:.2rem .2rem .2rem 0">Claude Code (Terminal IA Agentique)</span>
+  <span class="theme-pill" style="display:inline-block;margin:.2rem .2rem .2rem 0">Vibe Coding vs Structured Coding</span>
+  <span class="theme-pill" style="display:inline-block;margin:.2rem .2rem .2rem 0">Mindset de Sécurité</span></div>
+</div>
+</aside>
+
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Base de connaissance · <a href="../index.html">Accueil</a> · <a href="../videos.html">Vidéothèque</a></p>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
 </body>
 </html>

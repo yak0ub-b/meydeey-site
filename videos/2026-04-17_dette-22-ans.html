@@ -1,132 +1,656 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Il avait 30 000€ de dette à 22 ans — voici ce qu'il a fait — meydeey</title>
+  <title>Il avait 30 000€ de dette à 22 ans, voici ce qu&#x27;il a fait — meydeey KB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="header-inner">
-      <a href="../index.html" class="logo">meydeey</a>
-      <nav class="main-nav">
-        <a href="../index.html">Accueil</a>
-        <a href="../categories.html">Catégories</a>
-        <a href="../videos.html">Vidéothèque</a>
-        <a href="../ouvertures.html">Ouvertures</a>
-        <a href="../demo.html">Démo</a>
-      </nav>
-    </div>
-  </header>
 
-  <div class="video-hero">
-    <div class="container">
-      <div class="breadcrumb">
-        <a href="../index.html">Accueil</a>
-        <span>/</span>
-        <a href="../categories.html#management">Management &amp; Entrepreneuriat</a>
-        <span>/</span>
-        <span>Il avait 30 000€ de dette à 22 ans</span>
-      </div>
-      <div class="video-meta-badges">
-        <span class="cat-badge cat-3">Management &amp; Entrepreneuriat</span>
-        <span class="level-badge level-intermediaire">Intermédiaire</span>
-        <span class="meta-badge">17 avril 2026</span>
-        <span class="meta-badge">1:32:00</span>
-        <span class="status-badge status-partial">⏳ Transcription à venir</span>
-      </div>
-      <h1 class="video-title">Il avait 30 000€ de dette à 22 ans — voici ce qu'il a fait</h1>
-      <p class="video-summary-hero">L'histoire de Hugo : 30 000€ de dette à 22 ans, reconversion dans l'entrepreneuriat IA, méthode inspirée de Darren Hardy et l'effet cumulé des petites actions quotidiennes.</p>
-      <a href="https://www.youtube.com/watch?v=YHlHuHNKBSI" target="_blank" rel="noopener" class="btn-youtube">▶ Voir sur YouTube</a>
-      <div class="youtube-url-text">youtube.com/watch?v=YHlHuHNKBSI</div>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="../index.html">meydeey<span class="logo-accent"> KB</span></a>
+    <nav class="main-nav">
+      <a href="../index.html"       class="nav-link">Accueil</a>
+      <a href="../categories.html"  class="nav-link">Catégories</a>
+      <a href="../videos.html"      class="nav-link">Vidéothèque</a>
+      <a href="../ouvertures.html"  class="nav-link">Ouvertures</a>
+      <a href="../demo.html"        class="nav-link">Démo</a>
+    </nav>
+    <div class="search-wrap">
+      <input id="global-search" type="search" placeholder="Rechercher…" autocomplete="off">
+      <div id="search-results" class="search-dropdown hidden"></div>
     </div>
   </div>
+</header>
 
-  <div class="container content-with-sidebar">
-    <main class="main-content">
+<div class="video-hero">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="../index.html">Accueil</a>
+      <span>›</span>
+      <a href="../categories.html#management">Management &amp; Entrepreneuriat</a>
+      <span>›</span>
+      <span>Il avait 30 000€ de dette à 22 ans, voici ce …</span>
+    </div>
+    <div class="video-meta-badges">
+      <span class="badge cat-badge cat-3">Management</span>
+      <span class="badge badge-green">✓ Analysée</span>
+      <span class="badge level-intermediaire">Intermédiaire</span>
+      <span class="badge" style="background:rgba(255,255,255,.08)">⏱ 92:20</span>
+      <span class="badge" style="background:rgba(255,255,255,.08)">2026-04-17</span>
+    </div>
+    <h1 class="video-title">Il avait 30 000€ de dette à 22 ans, voici ce qu&#x27;il a fait</h1>
+    <p class="video-summary-hero">Hugo, ancien maçon tailleur de pierre formé aux Compagnons du Devoir, s'est lancé en entrepreneuriat IA après s'être endetté en crypto.</p>
+    <div class="youtube-cta">
+      <a href="https://www.youtube.com/watch?v=JTagUbRgVQ0" target="_blank" rel="noopener" class="btn-youtube">▶ Voir sur YouTube</a>
+      <span class="youtube-url-text">youtube.com/watch?v=JTagUbRgVQ0</span>
+    </div>
+  </div>
+</div>
 
-      <div class="partial-notice">
-        <h2>Transcription non encore disponible</h2>
-        <p>Cette vidéo est référencée dans la base de connaissance mais sa transcription complète n'a pas encore été analysée. Les informations ci-dessous proviennent des métadonnées disponibles.</p>
-      </div>
+<div class="tab-nav-sticky">
+  <div class="container">
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="resume">Résumé</button>
+      <button class="tab-btn" data-tab="analyse">Analyse</button>
+      <button class="tab-btn" data-tab="transcription">Transcription</button>
+      <button class="tab-btn" data-tab="fiches">Fiches</button>
+      <button class="tab-btn" data-tab="passages">Passages clés</button>
+    </div>
+  </div>
+</div>
 
-      <h2>Ce qu'on sait de cette vidéo</h2>
+<div class="container content-with-sidebar" style="padding-top:var(--gap-xl);padding-bottom:var(--gap-2xl);">
 
-      <div class="concept-card">
-        <div class="concept-term">L'histoire de Hugo</div>
-        <div class="concept-def">À 22 ans, Hugo se retrouve avec 30 000€ de dettes suite à des erreurs financières et entrepreneuriales. Cette vidéo retrace son parcours de reconversion et de redressement.</div>
-        <div class="concept-why">Un cas concret et chiffré qui illustre la résilience entrepreneuriale — plus parlant qu'un discours générique sur "l'échec comme apprentissage".</div>
-      </div>
+  <main>
 
-      <div class="concept-card">
-        <div class="concept-term">L'effet cumulé (Darren Hardy)</div>
-        <div class="concept-def">Concept central du livre "The Compound Effect" de Darren Hardy : de petites actions répétées chaque jour produisent des résultats exponentiels sur le long terme.</div>
-        <div class="concept-why">Appliqué à la dette et à l'entrepreneuriat, ça devient une méthode concrète : chaque action quotidienne, aussi minime soit-elle, s'accumule pour créer une transformation profonde.</div>
-      </div>
+<div class="tab-panel active" id="tab-resume">
+<p style="font-size:1.05rem;line-height:1.75;margin-bottom:var(--gap-xl)">Hugo, ancien maçon tailleur de pierre formé aux Compagnons du Devoir, s'est lancé en entrepreneuriat IA après s'être endetté en crypto. En 2-3 mois dans le laboratoire IA, il a généré du cash et des clients en se concentrant sur une seule niche (BTP), en écoutant les conseils des experts sans ego, et en participant activement aux sessions en direct. Son succès repose sur l'urgence financière qui a augmenté son niveau de conscience, sa capacité à supprimer son ego pour apprendre, et son application des principes d'effet cumulé et d'oscillation stratégique entre technicien, manager et entrepreneur.</p>
+<h2 class="section-title" style="margin:var(--gap-xl) 0 var(--gap-md)">Philosophie &amp; Pensée profonde</h2>
+<p>L'IA est un outil qui amplifie les capacités existantes mais ne remplace pas le cerveau humain, le mindset et la capacité décisionnelle. La vraie valeur réside dans la perception et l'application stratégique de la technique, pas dans la technique elle-même, car elle se commoditisera rapidement.</p>
+<p>La vraie valeur entrepreneuriale en IA ne vient pas de la maîtrise technique (qui se commoditisera), mais de trois facteurs : un niveau de conscience élevé créé par l'urgence, la capacité à supprimer l'ego pour apprendre vite, et l'application stratégique du raisonnement par le haut (vision) plutôt que par le bas (exécution). Hugo passe de 30k€ de dette à la rentabilité en 2-3 mois en concentrant ses efforts sur une seule niche et en oscillant intelligemment entre les rôles de technicien, manager et entrepreneur.</p>
+<h2 class="section-title" style="margin:var(--gap-xl) 0 var(--gap-md)">Méthode — Étapes</h2>
+<ol class="steps-list">
+  <li>État initial avant le labo (décembre 2024)</li>
+  <li>Déclencheur et shift décisionnel</li>
+  <li>Stratégie de prospection et focus</li>
+  <li>Facteurs de succès et mindset</li>
+  <li>Philosophie et principes universels</li>
+</ol>
+<h2 class="section-title" style="margin:var(--gap-xl) 0 var(--gap-md)">Schéma conceptuel</h2>
+<pre class="ascii-schema" style="font-family:var(--font-mono,monospace);white-space:pre;overflow-x:auto;background:var(--bg-card,#1a1a2e);padding:var(--gap-lg,1.5rem);border-radius:8px;font-size:.82rem;line-height:1.5">┌─────────────────────────────────────────────────────────────┐
+│                    PARCOURS HUGO (2-3 MOIS)                  │
+└─────────────────────────────────────────────────────────────┘
 
-      <div class="concept-card">
-        <div class="concept-term">Entrepreneuriat IA comme levier de sortie</div>
-        <div class="concept-def">Hugo utilise les outils IA (Claude Code, automatisation) comme levier pour créer une activité entrepreneuriale sans capital initial important.</div>
-        <div class="concept-why">Illustre comment l'IA démocratise la création de valeur : on peut construire des services et produits avec peu de ressources financières si on maîtrise les outils.</div>
-      </div>
+  URGENCE FINANCIÈRE (30k€ dette)
+         ↓
+  NIVEAU DE CONSCIENCE ÉLEVÉ
+         ↓
+  SHIFT DÉCISIONNEL (rejoindre le labo)
+         ↓
+  ┌─────────────────────────────────────┐
+  │  STRATÉGIE : FOCUS NICHE (BTP)      │
+  │  + ÉCOUTE SANS EGO                  │
+  │  + EXPOSITION PUBLIQUE              │
+  │  + RAISONNEMENT PAR LE HAUT         │
+  └─────────────────────────────────────┘
+         ↓
+  OSCILLATION STRATÉGIQUE
+  (Technicien ↔ Manager ↔ Entrepreneur)
+         ↓
+  EFFET CUMULÉ (petites actions répétées)
+         ↓
+  RÉSULTAT : CASH + CLIENTS EN 2-3 MOIS
 
-      <h3>Thèmes identifiés</h3>
-      <div class="themes-grid">
-        <span class="theme-pill">Résilience financière</span>
-        <span class="theme-pill">Effet cumulé</span>
-        <span class="theme-pill">Entrepreneuriat IA</span>
-        <span class="theme-pill">Reconversion</span>
-        <span class="theme-pill">Darren Hardy</span>
-        <span class="theme-pill">Mindset croissance</span>
-      </div>
+  ⚠️  COMMODITISATION TECHNIQUE INÉVITABLE
+  ✓   CERVEAU + MINDSET = AVANTAGE DURABLE</pre>
+<h2 class="section-title" style="margin:var(--gap-xl) 0 var(--gap-md)">Citations notables</h2>
+<blockquote>la technique va se commoditiser tout ce qui va nous rester c'est notre cerveau</blockquote>
+<blockquote>toute cause a son effet</blockquote>
+<blockquote>il faut juste essayer d'être plus intelligent et mettre des graines au bon endroit et pas trop les disperser</blockquote>
+<blockquote>la valeur c'est rien, tout est une question de perception</blockquote>
+<blockquote>quand tu passes de salariat à te lancer tout seul en entrepreneuriat il y a une grosse différence au niveau du mindset</blockquote>
+<blockquote>il y en a qui vont mourir, ils vont être dans leur lit de mort dans 20, 30, 40, 50 ans, avec cette décision qui n'aura jamais été prise</blockquote>
+<blockquote>tu dois faire ça parce que tu vas réussir et qu'on est déjà 10 derrière à avoir réussi la chose</blockquote>
+</div>
 
-      <h3>Actions possibles</h3>
-      <ul class="action-list" data-video="dette-22-ans">
-        <li><label><input type="checkbox" data-idx="0"> Lire "The Compound Effect" de Darren Hardy</label></li>
-        <li><label><input type="checkbox" data-idx="1"> Calculer l'effet cumulé de 1 heure de travail IA par jour sur 6 mois</label></li>
-        <li><label><input type="checkbox" data-idx="2"> Regarder la vidéo complète sur YouTube pour le témoignage complet de Hugo</label></li>
-        <li><label><input type="checkbox" data-idx="3"> Identifier une compétence IA qu'on peut monétiser rapidement</label></li>
-      </ul>
+<div class="tab-panel" id="tab-analyse">
+<h2 class="section-title" style="margin-bottom:var(--gap-lg)">Concepts clés</h2>
+<div class="concept-card">
+  <div class="concept-term">Le Niveau de Conscience</div>
+  <div class="concept-def">C'est la capacité à percevoir l'urgence et le danger, qui accélère la prise de décision. Hugo a un niveau de conscience élevé parce qu'il a 30k€ de dette et 500€/mois de crédits. C'est une pression constante.</div>
+  <div class="concept-why"><strong>Pourquoi c'est important :</strong> Parce que la conscience crée la clarté. Avec conscience, on ne se pose pas 100 questions ; on en pose 1 : 'Comment je gagne de l'argent rapidement ?' Cela élimine la paralysie d'analyse.</div>
+</div>
+<div class="concept-card">
+  <div class="concept-term">L&#x27;Effet Cumulé</div>
+  <div class="concept-def">Les petites actions répétées produisent des résultats exponentiels. 1% d'amélioration par jour = 37x mieux en un an. Hugo applique cela : petites actions (prospection, partage d'écran, écoute) répétées = résultats exponentiels.</div>
+  <div class="concept-why"><strong>Pourquoi c'est important :</strong> Parce que cela change la mentalité de 'je dois faire un grand coup' à 'je dois faire des petits coups régulièrement'. C'est plus durable et plus réaliste.</div>
+</div>
+<div class="concept-card">
+  <div class="concept-term">La Perception de la Valeur</div>
+  <div class="concept-def">La valeur d'une offre n'est pas objective (basée sur le coût de création) mais subjective (basée sur ce que le client perçoit). Hugo peut vendre une solution IA BTP à 5k€ ou 50k€ selon la perception du client, pas selon le temps qu'il a passé.</div>
+  <div class="concept-why"><strong>Pourquoi c'est important :</strong> Parce que cela signifie que le prix n'est pas limité par la technique (commoditisée) mais par la perception. C'est un levier de monétisation puissant.</div>
+</div>
+<div class="concept-card">
+  <div class="concept-term">L&#x27;Oscillation Stratégique</div>
+  <div class="concept-def">Alterner intelligemment entre les rôles de technicien (créer), manager (structurer), et entrepreneur (décider) selon le contexte. Hugo ne reste pas dans un rôle ; il bouge.</div>
+  <div class="concept-why"><strong>Pourquoi c'est important :</strong> Parce que cela permet de scaler sans embaucher. Un technicien pur reste technicien. Un entrepreneur qui oscille peut gérer plusieurs domaines.</div>
+</div>
+<div class="concept-card">
+  <div class="concept-term">Le Point de Friction</div>
+  <div class="concept-def">C'est le moment décisionnel où on doit choisir de passer à l'action ou rester bloqué. C'est souvent un moment d'inconfort ou de peur.</div>
+  <div class="concept-why"><strong>Pourquoi c'est important :</strong> Parce que c'est le vrai goulot d'étranglement. La technique est facile ; passer à l'action est difficile. Hugo a franchi ce point ; la plupart ne le font pas.</div>
+</div>
+<div class="concept-card">
+  <div class="concept-term">La Commoditisation de la Technique</div>
+  <div class="concept-def">Toute technique finit par devenir accessible à tous (commoditisée). Les agents IA, les workflows, les outils que Hugo crée aujourd'hui seront reproductibles par n'importe qui dans 2-3 ans.</div>
+  <div class="concept-why"><strong>Pourquoi c'est important :</strong> Parce que cela signifie que l'avantage compétitif durable n'est pas la technique mais ce qui l'entoure : la relation client, la compréhension du contexte, la capacité à itérer. Hugo le sait et construit là-dessus.</div>
+</div>
+<div class="concept-card">
+  <div class="concept-term">Le Raisonnement par le Haut vs par le Bas</div>
+  <div class="concept-def">Raisonnement par le bas = exécution (faire des tâches). Raisonnement par le haut = stratégie (décider quoi faire). Hugo utilise l'IA pour le haut (quelle niche, comment positionner), pas juste pour le bas (coder, rédiger).</div>
+  <div class="concept-why"><strong>Pourquoi c'est important :</strong> Parce que c'est un changement de paradigme. La plupart des gens utilisent l'IA pour l'exécution (bas). Hugo l'utilise pour la stratégie (haut). C'est 10x plus puissant.</div>
+</div>
+<h2 class="section-title" style="margin:var(--gap-xl) 0 var(--gap-md)">Insights non-évidents</h2>
+<ul class="insights-list">
+  <li>L'urgence financière n'est pas un handicap mais un catalyseur de conscience. Hugo ne réussit PAS malgré la dette, il réussit GRÂCE à elle car elle force une prise de décision rapide et élimine la procrastination. La plupart des gens sans urgence restent bloqués dans l'analyse paralysante.</li>
+  <li>Le 'shift décisionnel' est le vrai point de rupture, pas l'apprentissage technique. Hugo a probablement accès aux mêmes ressources IA que 1000 autres personnes, mais 999 ne franchissent jamais le point de friction où ils passent à l'action. C'est un problème psychologique, pas technique.</li>
+  <li>La suppression de l'ego est une compétence IA sous-estimée. Écouter les experts sans ego signifie : appliquer leurs conseils AVANT de les comprendre intellectuellement, plutôt que de débattre ou de chercher à optimiser. C'est un raccourci d'apprentissage exponential.</li>
+  <li>Le raisonnement 'par le haut' avec l'IA est l'inverse de ce que font 90% des gens. La majorité utilise ChatGPT pour des tâches d'exécution (rédiger un email, coder une fonction). Hugo l'utilise pour des décisions stratégiques (quelle niche, comment positionner, analyse psychologique des clients). C'est un changement de paradigme.</li>
+  <li>L'oscillation stratégique entre rôles est une compétence de scaling invisible. Hugo ne reste pas 'technicien IA' ; il alterne entre créer la solution (technicien), structurer le processus (manager), et prendre les décisions commerciales (entrepreneur). C'est ce qui permet de passer de 0 à N sans embaucher.</li>
+</ul>
+<h2 class="section-title" style="margin:var(--gap-xl) 0 var(--gap-md)">Mental models</h2>
+<div class="model-card">
+  <div class="model-title">Le modèle de l&#x27;Urgence comme Clarté</div>
+  <div class="model-body"></div>
+</div>
+<div class="model-card">
+  <div class="model-title">Le modèle de l&#x27;Ego comme Friction</div>
+  <div class="model-body"></div>
+</div>
+<div class="model-card">
+  <div class="model-title">Le modèle du Raisonnement Haut vs Bas</div>
+  <div class="model-body"></div>
+</div>
+<div class="model-card">
+  <div class="model-title">Le modèle de l&#x27;Oscillation Stratégique</div>
+  <div class="model-body"></div>
+</div>
+<div class="model-card">
+  <div class="model-title">Le modèle de la Commoditisation Inévitable</div>
+  <div class="model-body"></div>
+</div>
+<h2 class="section-title" style="margin:var(--gap-xl) 0 var(--gap-md)">Prompting &amp; Sagesse d'usage</h2>
+<ul class="insights-list">
+  <li>Raisonner par le haut avec l'IA plutôt que par le bas : utiliser l'IA pour des décisions stratégiques et de vision, pas seulement pour des tâches d'exécution</li>
+  <li>Choisir une seule niche et s'y enfoncer profondément plutôt que de disperser ses efforts sur 10 niches différentes</li>
+  <li>Partager son écran et s'exposer publiquement avec son travail réel pour accélérer l'apprentissage et recevoir des retours de qualité</li>
+  <li>Écouter les conseils des experts reconnus sans ego et les appliquer directement, car leur expérience vaut des années d'apprentissage personnel</li>
+  <li>Participer aux sessions en direct plutôt que regarder les rediffusions pour meilleur ancrage et interaction énergétique</li>
+</ul>
+<h2 class="section-title" style="margin:var(--gap-xl) 0 var(--gap-md)">Outils &amp; techniques</h2>
+<div class="tools-badges">
+  <span class="tool-pill">ChatGPT</span>
+  <span class="tool-pill">GPTs</span>
+  <span class="tool-pill">Claude Code</span>
+</div>
+<h2 class="section-title" style="margin:var(--gap-xl) 0 var(--gap-md)">Définitions</h2>
+<dl class="definitions-list">
+  <div class="def-item">
+    <dt>Le shift décisionnel</dt>
+    <dd>Le moment critique où l'on passe à l'action, qui détermine la réussite ou le blocage entrepreneurial</dd>
+  </div>
+  <div class="def-item">
+    <dt>Niveau de conscience</dt>
+    <dd>La capacité à percevoir l'urgence et le danger, qui accélère la prise de décision et l'apprentissage</dd>
+  </div>
+  <div class="def-item">
+    <dt>Effet cumulé</dt>
+    <dd>Le principe mathématique selon lequel les petites actions répétées produisent des résultats exponentiels</dd>
+  </div>
+  <div class="def-item">
+    <dt>Perception de la valeur</dt>
+    <dd>La manière dont le marché perçoit votre offre, plus importante que la valeur réelle du produit</dd>
+  </div>
+  <div class="def-item">
+    <dt>Oscillation stratégique</dt>
+    <dd>Alterner intelligemment entre les rôles de technicien, manager et entrepreneur selon le contexte</dd>
+  </div>
+  <div class="def-item">
+    <dt>Point de friction</dt>
+    <dd>Le moment décisionnel où l'on doit choisir de passer à l'action ou rester bloqué</dd>
+  </div>
+</dl>
+<h2 class="section-title" style="margin:var(--gap-xl) 0 var(--gap-md)">Connexions</h2>
+<div class="connection-tags">
+  <span class="theme-pill">Agents IA</span>
+  <span class="theme-pill">Workflows IA</span>
+  <span class="theme-pill">Prompting avancé</span>
+  <span class="theme-pill">Commoditisation technologique</span>
+  <span class="theme-pill">Mindset entrepreneurial</span>
+  <span class="theme-pill">Positioning et niche</span>
+  <span class="theme-pill">Analyse psychologique des clients</span>
+  <span class="theme-pill">Effet cumulé et croissance exponentielle</span>
+  <span class="theme-pill">Perception de la valeur et pricing</span>
+</div>
+<h2 class="section-title" style="margin:var(--gap-xl) 0 var(--gap-md)">Ouvertures — Pour aller plus loin</h2>
+<ul>
+  <li>Sujet mentionné mais non développé : Les détails spécifiques des systèmes IA créés par Hugo en BTP et leurs résultats chiffrés</li>
+  <li>Sujet mentionné mais non développé : La stratégie exacte de prospection et de vente utilisée par Hugo</li>
+  <li>Question ouverte laissée sans réponse : Quelles sont précisément les peurs d'Hugo quand il a rejoint le labo ?</li>
+  <li>Sujet mentionné mais non développé : Les conseils spécifiques des experts du CAC 40 et des leaders du labo</li>
+  <li>Sujet mentionné mais non développé : Comment utiliser Claude Code pendant 6 mois à 2 ans pour créer des systèmes non reproductibles</li>
+  <li>Implication non-dite 1 : Si la technique se commoditisera, alors dans 2-3 ans, les agents IA et workflows que Hugo crée aujourd'hui seront reproductibles par n'importe qui. Son avantage durable n'est pas le code, c'est sa relation client, sa compréhension du BTP, et sa capacité à itérer rapidement.</li>
+  <li>Implication non-dite 2 : Le 'niveau de conscience' qu'Hugo a développé via l'urgence est transférable. Cela signifie que sans urgence externe, il faut créer une urgence interne (deadline, public commitment, perte financière simulée). La plupart des gens ne le font pas.</li>
+  <li>Implication non-dite 3 : La participation aux 'lives en direct' plutôt qu'aux rediffusions n'est pas juste une question d'engagement. C'est une question de feedback en temps réel et de correction de trajectoire immédiate. Les rediffusions sont du contenu passé ; les lives sont du coaching actif.</li>
+</ul>
+</div>
 
-    </main>
+<div class="tab-panel" id="tab-transcription">
+<div style="display:flex;align-items:center;gap:var(--gap-md);margin-bottom:var(--gap-lg);flex-wrap:wrap;">
+  <input id="transcript-search" type="search" placeholder="Rechercher dans la transcription…" style="flex:1;min-width:200px;padding:.5rem .75rem;background:var(--bg-input);border:1px solid var(--border);border-radius:6px;color:var(--text-primary);font-size:.9rem;">
+  <span style="color:var(--text-muted);font-size:.85rem;white-space:nowrap">~17600 mots</span>
+</div>
+<div class="transcription-body" id="transcript-content">
+<p>Bon les amis, aujourd&#x27;hui je vais vous présenter un profil que j&#x27;aime beaucoup qui est un guerrier de renom et c&#x27;est Hugo. Comment tu vas Hugo ? Salut, ça va nickel.</p>
+<p>Nickel. Bon, il faut que je vous dise que Hugo c&#x27;est un profil dans le labo IA qui m&#x27;a le plus choqué et je vais vous expliquer pourquoi. Et il va vous expliquer aussi dans les détails pourquoi.</p>
+<p>C&#x27;est le profil qui avait le plus besoin de générer de l&#x27;argent, de trouver des clients, il était en mode urgence et en un mois il a fait ce que certains n&#x27;ont pas fait en un an et demi. Et pourtant il y en a en un an et demi, je les ai poussés. Il y en a certains que j&#x27;ai tiré à la culotte, c&#x27;est le cas de le dire.</p>
+<p>Il y en a, il ne faut pas que je les brusque, mais il y en a ils ont besoin d&#x27;être brusqués, c&#x27;est à dire que je me rends compte que la dimension paternelle est assez importante en tant que formateur. Le but c&#x27;est pas tu vends une formation et démerde-toi, c&#x27;est plutôt comment je vais t&#x27;aider et te faire comprendre le plus rapidement possible, que tu l&#x27;acceptes ou non, que tu dois faire ça parce que tu vas réussir et qu&#x27;on est déjà 10 derrière à avoir réussi la chose. Et Hugo, eh bien il a vraiment choqué tout le monde, il en a rendu jaloux déjà.</p>
+<p>Donc Hugo, je vais te poser une petite question pour démarrer. Ça fait combien de temps déjà que tu es dans le labo IA ? Là ça fait 2-3 mois.</p>
+<p>Ça fait plus de 2 mois ou 3 mois ? Parce qu&#x27;il me semble que tu es plus vers les 2 mois non ? Ouais 2 mois et demi quand même, je suis arrivé mi-janvier.</p>
+<p>C&#x27;est marrant parce qu&#x27;en fait eux ils ne voient pas ça dans la vidéo, ils ne vont pas voir ça, mais moi je vois ton évolution en on va dire 3 mois, en arrondi à 3 mois pour la symbolique, c&#x27;est ouf ce que t&#x27;as fait en vrai, tu vois. Ils vont s&#x27;en rendre compte et même les élites le savent et les premiums le savent, ils vont le savoir certainement par le biais de cette vidéo. Et du coup moi je te pose une question, pour ceux imaginons qu&#x27;ils ne te connaissent pas, qu&#x27;ils disent ok c&#x27;est qui ce gars Hugo, t&#x27;es dans quel domaine à la base, tu fais quoi ?</p>
+<p>A la base, je suis dans le BTP, donc j&#x27;ai bossé pendant plus de deux ans et demi sur les chantiers. Et à côté, je m&#x27;intéressais beaucoup à l&#x27;investissement, l&#x27;entrepreneuriat, tout ça. Mais disons qu&#x27;avant de me lancer en IA, j&#x27;étais sur les chantiers.</p>
+<p>J&#x27;ai arrêté un peu avant d&#x27;intégrer le labo, mais voilà, j&#x27;ai bossé sur les chantiers. Ok, tu faisais quoi précisément ? Quel type de chantier ?</p>
+<p>Comment précisément ? J&#x27;étais maçon tailleur de pierre. Je bossais sur les chantiers de rénovation historique, donc les cathédrales, l&#x27;église, des gros bâtiments en pierre, des opéras et tout.</p>
+<p>Ok, je suis en train de l&#x27;apprendre en même temps que cette vidéo. Je ne le savais pas que tu faisais tailleur de pierre. Ok, excellent.</p>
+<p>J&#x27;ai fait un apprentissage chez les Compagnons du Devoir. Je ne sais pas si tu connais. Ah non, je ne connais pas.</p>
+<p>C&#x27;est quoi ? C&#x27;est un espèce d&#x27;organisme ? Oui.</p>
+<p>En plus, toi, t&#x27;aimerais bien, parce qu&#x27;il y a pas mal de symbolique là-dedans. Fais attention à ce que tu dis. Il y en a qui vont m&#x27;accueillir dans les commentaires.</p>
+<p>Je les connais. Non, c&#x27;est vrai. C&#x27;est l&#x27;élite, on va dire, de l&#x27;artisanat en France.</p>
+<p>D&#x27;accord. C&#x27;est plutôt artistique ou c&#x27;est plutôt artisanal ? Non, c&#x27;est plutôt artisanal, vraiment.</p>
+<p>Construire des trucs qui tiennent debout. Ce n&#x27;est pas faire des trucs un peu bancaux. Non, c&#x27;est vraiment droit, c&#x27;est assez carré.</p>
+<p>Il y a Souffleur de Verre ou pas ? Parce que moi, j&#x27;ai fait un CAP à l&#x27;époque, il y avait Souffleur de Verre. Peut-être.</p>
+<p>Peut-être. Je n&#x27;en ai jamais vu, mais peut-être. Tu avais tout.</p>
+<p>Tu avais des maréchal Ferrand. Ah oui. Il y avait vraiment de tout là-dedans, mais Souffleur de Verre, je n&#x27;en ai jamais vu.</p>
+<p>Je ne sais pas. Du coup, tu as fait ça, toi ? Non, je n&#x27;ai pas fait ça, mais j&#x27;étais dans ce métier.</p>
+<p>Il y avait ça. En fait, c&#x27;est un métier qui, comme on l&#x27;était, on va dire, un petit peu des cas sociaux au quartier, un petit peu des jeunes perdus. En vrai, je me rends compte à post-héroïque, ce métier, j&#x27;aimerais bien faire une immersion un jour avec un post-héroïque.</p>
+<p>chou-fleur de verre artistique tu vois, un mec qui prépare parce que ça fait, c&#x27;est aux antipodes de l&#x27;IA pour voir en fait comment le monde d&#x27;à côté qui est pas remplaçable encore par les IA fonctionne, ça permet de te faire redescendre d&#x27;un étage parce qu&#x27;on est beaucoup dans nos étages techniques et c&#x27;est comme ceux qui travaillent trop au bout d&#x27;un moment ils vont sortir, ils vont marcher tu vois pour reset un petit peu, et reset la vision c&#x27;est pas pareil que reset l&#x27;état mental, et reset la vision c&#x27;est important tu vois ce que je veux dire ? C&#x27;est sûr que quand tu passes de Déjà rien que le salariat à te lancer tout seul en entrepreneuriat il y a une grosse différence au niveau du mindset quoi, il faut tenir Ouais t&#x27;as une différence niveau mindset et après il y a ce que j&#x27;appelle le shift en fait, il y a un moment où il faut faire un shift, c&#x27;est le shift important qui va te faire réussir ou bloquer et c&#x27;est là où ça c&#x27;est difficile, toi tu l&#x27;as cassé très rapidement, il y en a qui prennent un an, deux ans, six mois et il y en a qui n&#x27;arrivent pas à casser ce shift, toi tu l&#x27;as cassé très rapidement et c&#x27;est pour ça qu&#x27;en fait le transcript de cette vidéo, la raison pour laquelle je te pose ces questions là parce qu&#x27;effectivement on va être transparent, vous savez on va pas faire cette vidéo comme ça, il y a un plan derrière c&#x27;est pour que tu puisses te regarder dans six mois, un an et te dire ok et comprendre en fait comment j&#x27;ai fait ce shift, pourquoi je suis comme ça, un vrai travail sur toi même en fait parce qu&#x27;au final comme on le dit dans les live elite, moi je le répète tout le temps, la technique va se commoditiser tout ce qui va nous rester c&#x27;est notre cerveau, donc si on travaille et qu&#x27;on travaille que sur la technique et qu&#x27;on n&#x27;a plus de cerveau et bien ça sert à quoi ? Rien, tout le monde va pouvoir faire la même chose donc si tu travailles sur ce transcript dans six mois, un an et que tu travailles ton évolution, ton profil, pourquoi tu prends des décisions x ou y ?</p>
+<p>tu vois, ça va être très bon pour toi sachant que tu démarres dans l&#x27;entrepreneuriat et du coup moi j&#x27;avais une question avant le labo, il y a vraiment, quand tu n&#x27;étais pas dedans, donc il y a on va dire trois mois, il y a plus de trois mois tu étais où concrètement, financièrement et techniquement ? Financièrement c&#x27;était très compliqué parce que du coup je me suis endetté pour investir J&#x27;ai investi en crypto plus de Je me suis endetté à hauteur de plus de 30 000€, pour le coup j&#x27;ai posé mes couilles aussi là-dedans. J&#x27;y croyais, et au final ça ne s&#x27;est pas passé comme prévu, donc c&#x27;est vrai que j&#x27;étais à bout de mes économies, on va dire, et je me suis dit là, il faut que je trouve un truc pour générer du cash, rapidement, il me fallait du cash, parce que derrière quand t&#x27;es endetté, il y a les crédits à rembourser, tous les mois, je suis à plus de 500€ tous les mois, donc il fallait que je puisse rembourser pour ne pas tomber en faillite financière.</p>
+<p>Du coup, je me suis dit, on va tenter quelque chose en IA, automatisation, je savais qu&#x27;il y avait quelque chose à faire dans le VTP, je me suis dit, il y a forcément une porte pour moi, et du coup j&#x27;ai mis le pied dedans. Je connais bien ton parcours depuis que t&#x27;es arrivé, t&#x27;es très carré en fait, si vous voulez, il y a plein de membres, j&#x27;ai plein de membres, et il y en a très rarement qui sont au bout de trois mois qui viennent à tous les lives, donc les lives du mercredi pour les élites, toi tu fais partie des élites, et les lives du dimanche, il est là toujours, dès que le live se lance, il est là à l&#x27;heure précise, et j&#x27;en compte pour l&#x27;instant, moi actuellement, dans un sans faute, j&#x27;en compte qu&#x27;un seul, c&#x27;est toi en vrai, parce qu&#x27;il y en a plein qui sont là 5 minutes après, mais moi je trouve que c&#x27;est très important, la ponctualité c&#x27;est, je crois que je suis fou, mais quand c&#x27;est à 8h ton rendez-vous, il faut que tu sois à 40 minutes avant, 20 minutes, 30 minutes avant, il faut que tu puisses te poser, commencer à réfléchir, arriver à 8h05 c&#x27;est pas possible pour moi, je trouve que c&#x27;est un manque de respect, mais après je pense que c&#x27;est parce que c&#x27;est l&#x27;hyper symbolique, mais toi t&#x27;es vraiment carré pour ça, ça j&#x27;aime bien, c&#x27;est le chantier, l&#x27;heure c&#x27;est l&#x27;heure, après l&#x27;heure c&#x27;est plus l&#x27;heure, à l&#x27;heure t&#x27;es déjà en retard, à l&#x27;heure t&#x27;es déjà en retard, surtout au chantier, toi tu connais, il y en a plein qui doivent arriver en retard 2h, 3h, 4h, 5h, 6h, 7h, 8h, 9h, 10h, 11h, 12h, 13h, 14h, 15h, 16h, 17h, 18h, 19h, 20h, 21h, 22h, 23h, 24h, 25h, 26h, 27h, 28h, 29h, 29h, 30h, 30h, 30h, 30h, 30h, 31h, 32h, 32h, 33h, 32h, 33h, 33h, 33h, 33h, 33h, 33h, 33h, 33h, Alors machin ça va être n&#x27;importe quoi non, des fois ? Ouais, faut pas rigoler avec l&#x27;oeuf, c&#x27;est important.</p>
+<p>On voit bien que ça va, tu respectes cette règle, tu la respectes très bien. Après il y a une différence je trouve quand même avec le salariat. Parce qu&#x27;en fait au salariat aussi ce qui te bloque c&#x27;est les horaires.</p>
+<p>En fait t&#x27;es payé que à l&#x27;heure, et si t&#x27;es pas là t&#x27;es pas payé. Et ça par contre c&#x27;est un truc qui m&#x27;a beaucoup fait chier. Mais là dans les lives en fait c&#x27;est complètement différent.</p>
+<p>C&#x27;est une autre dimension, ça n&#x27;a rien à voir. C&#x27;est pas tu dois être là à l&#x27;heure, c&#x27;est complètement différent. Je pense que c&#x27;est une question du niveau de conscience.</p>
+<p>C&#x27;est plus le gars va avoir son niveau de conscience, son niveau, on en parlera tout à l&#x27;heure, son niveau de danger, son niveau aussi de danger c&#x27;est bien. Plus le mec il est dans le danger, dans la peur, dans la merde en gros, plus il va prendre la chose au sérieux. Donc son niveau de conscience il va monter bien plus rapidement que les autres.</p>
+<p>Mais que ça soit maintenant ou dans 6 mois ou dans un an, tout le monde là qui réfléchissent à passer par exemple, tu sais il y en a plein qui hésitent à prendre, ils ont l&#x27;argent mais ils hésitent à prendre premium, elite etc. Ou ils hésitent par exemple d&#x27;acheter une autre formation ou de passer un coaching avec quelqu&#x27;un. Ces gens là en fait leur niveau de conscience, ils sont au point de friction en fait, le point décisionnel.</p>
+<p>Et il y en a certains qui vont mourir, ils vont être dans leur lit de mort dans 20, 30, 40, 50 ans, avec cette décision qui n&#x27;aura jamais été prise. Et ça ce petit bout là, ils ne l&#x27;ont jamais cassé. Je te laisse imaginer, moi des fois je me projette, imagine toi dans ton lit de mort, tu n&#x27;as pas pris cette putain de décision de lancer une communauté et d&#x27;aider des gens.</p>
+<p>Et qu&#x27;est-ce que ça a fait ? Parce que là ça fait à peine un an et demi que le Laboya existe. Imagine dans 5 ans avec ce qui se passe là, personne je pense, imagine ce qui va se passer.</p>
+<p>Peut-être qu&#x27;on fera des séminaires dans le monde, peut-être qu&#x27;on parlera avec des chinois, avec des anglais dans une seule langue qui sera traduite en IA, on ne sait pas tu vois. C&#x27;est énorme et quand tu comprends certains concepts mathématiques, je le dis beaucoup en live, je parle beaucoup, mais effectivement tout ce qui est l&#x27;effet cumulé, que tu comprends en fait les principes du mathématique. etc, l&#x27;effet cumulé et l&#x27;effet du raisonnement de cause et effet, toute cause a son effet, c&#x27;est énorme.</p>
+<p>Parce que tout ce que tu fais, tu sais que tu mets des graines partout en fait, il faut juste essayer d&#x27;être plus intelligent et mettre des graines au bon endroit et pas trop les disperser. Et continuer de les arroser après. C&#x27;est ça, continuer de les arroser et pas partir dans tous les sens.</p>
+<p>On en revient à la prospection. Au début, je pense que peut-être toi ça t&#x27;est arrivé, tu nous diras, mais il y en a qui veulent prospecter 10 niches en même temps. L&#x27;IA ça va vite, je vais tout faire.</p>
+<p>Ça c&#x27;est mettre des graines partout, n&#x27;importe comment. C&#x27;est vrai que moi je me suis lock-in sur une seule niche BTP parce que c&#x27;était ça que j&#x27;aimais, c&#x27;était ça que je voulais résoudre des problèmes dedans. Et du coup, je me suis enfoncé là-dedans et j&#x27;ai pas bifurqué.</p>
+<p>Ouais, mais t&#x27;as surtout écouté, parce qu&#x27;il y en a plein, on leur donne des conseils. Il y a des mecs dans le labo Yali, tu le sais, ils ont monté des boîtes du CAC 40, il y en a ils sont passés sur TF1. Je balance pas les noms parce qu&#x27;ils vont se reconnaître, c&#x27;est juste pour la symbolique.</p>
+<p>Mais il y en a, ils font des conférences devant 3000 personnes, c&#x27;est des meneurs, vraiment des meneurs, des leaders. Et quand ils te disent quelque chose, tu les écoutes en général. Et toi t&#x27;as réussi à les écouter, il y en a plein, ils n&#x27;ont pas écouté, c&#x27;est pour ça que t&#x27;as avancé vite.</p>
+<p>C&#x27;est de l&#x27;or, franchement, tous les conseils qui sont donnés. Là c&#x27;est un problème de perception du marché, c&#x27;est la dualité entre technicien et entrepreneur. Le technicien veut montrer la technique, il veut faire la technique.</p>
+<p>Là je parle de moi concrètement et du marché la plupart. Mais il n&#x27;est pas très bon au marketing, il ne sait pas modifier la perception de sa valeur sur le marché. C&#x27;est la perception de la valeur du marché, c&#x27;est pas la valeur, la valeur c&#x27;est rien, tout est une question de perception.</p>
+<p>Toi tu perçois la valeur bien plus que quelqu&#x27;un qui te dit c&#x27;est qui ce connard de formateur qui nous vend du rêve. Ta perception de la valeur elle a été influencée par ce que je dois faire. Et là c&#x27;est la dualité, désolé je le sors parce qu&#x27;en ce moment on est en plein dans ça dans les lives, tout le monde commence à l&#x27;acheter, on est en plein dans ça.</p>
+<p>Et je vais sortir la page 211, tu l&#x27;as ? La page 211 pour ceux qui ont ce livre ? Comprenez que la vraie connaissance et la commoditisation, bien joué, on fait une doublette là, c&#x27;est exceptionnel, c&#x27;est exceptionnel, aïe pardon, donc nickel, mais maintenant on va revenir sur une question, parce que c&#x27;est vrai qu&#x27;on a parlé un petit peu de ce qui se passe actuellement, et moi j&#x27;avais une question, avant que tu rejoignes le labo IA, est-ce que tu avais déjà touché à l&#x27;IA, l&#x27;automatisation, au code, vraiment tout ce qui touche à la dimension IA ?</p>
+<p>Très peu, très très peu, je regardais tes vidéos c&#x27;est tout, et je copiais certains workflows, je faisais quelques agents IA et tout, et après j&#x27;essayais de me démerder avec ChatGPT D&#x27;accord, mais dans quel but et comment plus précisément qu&#x27;on puisse vraiment comprendre qu&#x27;est-ce que tu faisais, est-ce que tu lançais des GPTs avec crypto, est-ce que tu lançais des trucs d&#x27;analyse ? Même pas franchement, ah si des fois j&#x27;analysais des projets en crypto, je faisais des recherches fondamentales sur les projets, j&#x27;essayais de comprendre les équipes, le projet c&#x27;est quoi, le business et tout, la tokenomics c&#x27;est un enfer ça, ouais voilà, mais à part ça je m&#x27;en servais, je pense c&#x27;est un peu comme la plupart des gens, tu vas poser des questions, ah si des fois je faisais un peu d&#x27;introspection aussi, des fois je trouvais, ah ouais personnel, personnel avec psychologie ou juste personnel ? Ouais avec psychologie ouais, ok, je trouvais assez marrant parce que c&#x27;est ouf ton profil il me fait, je pense je vais pas en trouver beaucoup des comme toi sérieusement parce que t&#x27;es à la fois un gars du chantier qui on va dire qui parle normalement, qui parle comme les gars du chantier, tu sais t&#x27;adapter, mais on dirait que t&#x27;as une porte qui arrive, t&#x27;arrives à ouvrir cette porte de dire j&#x27;ai pas d&#x27;ego à ce moment là, parce que cette personne elle est meilleure que moi, ou cette personne là elle me dit un truc, je parle de tous les membres élites quand t&#x27;as un conseil et tu l&#x27;appliques direct parce que tu sais que c&#x27;est ce qu&#x27;il faut faire, j&#x27;arrive pas à cerner ça mais il y a quelque chose en ça, et il y a pas grand monde qui a ça dans la communauté quand j&#x27;en parle, il n&#x27;y a pas grand monde qui ouvre cette porte d&#x27;ego et qui arrive à la dégager.</p>
+<p>Mais tu dois avoir un gros ego quand même, dans le chantier, comme n&#x27;importe quel humain. J&#x27;ai l&#x27;impression que tu as une porte chez toi. Je pense que je l&#x27;ai travaillé, le fait de… En fait, c&#x27;est à des bons qui t&#x27;en fassent.</p>
+<p>C&#x27;est une jauge en fait, moi j&#x27;arrive à jauger qui j&#x27;ai en face, je ne vais pas écouter n&#x27;importe qui. Si c&#x27;est même ma famille, je ne leur porte pas la même valeur dans les mots qu&#x27;ils vont me dire que toi, que d&#x27;autres gens dans la commune qui, je sais, ont une expérience et un vécu qui fait que si j&#x27;applique ce qu&#x27;ils me disent, derrière, je gagne énormément de temps et la valeur que je leur donne n&#x27;est pas du tout la même que celle que je vais donner à d&#x27;autres gens. Et d&#x27;autres gens, je vais me comporter plus en mode, toi, tu n&#x27;as rien à reprendre, tu vois.</p>
+<p>Ok. Et c&#x27;est qui tes trois auteurs préférés ? Parce que moi, je sais que tu lis, peut-être qu&#x27;ils ne savent pas, mais pour voir un petit peu ton archétype.</p>
+<p>Aubergrind, je l&#x27;ai vu en numéro 1, numéro 2, là, je dirais Darren, c&#x27;est vrai que l&#x27;effet cumulé, c&#x27;est un sacré livre, mais après, je n&#x27;ai lu que ce livre-là de lui. Ok. C&#x27;est le principal.</p>
+<p>Ce n&#x27;est pas comme Robert Kiyosaki où la plupart vont lire « Père Riche, Père Pauvre », alors qu&#x27;en fait, son vrai livre, c&#x27;est « Le cadran du cachelot », son vrai livre pour comprendre. Et Darren Hardy, c&#x27;est son livre principal. De mon point de vue, il n&#x27;y en a pas un deuxième qui change ta vie ou un qui est très puissant sous-estimé ?</p>
+<p>Darren Hardy. Et un autre livre comme ça, je… C&#x27;est pas un qui commence par un M ? Non, ça c&#x27;est le biais de l&#x27;essence, ça c&#x27;est ce que j&#x27;ai envie de dire.</p>
+<p>Mais c&#x27;est vrai que j&#x27;ai bien aimé. Mais après, est-ce que c&#x27;est vraiment l&#x27;auteur qui va toute ma vie... Là, je ne sais pas encore les limites.</p>
+<p>Peut-être que plus tard, ça va être Michael P. Gerber, en troisième. Franchement, si c&#x27;est Michael P.</p>
+<p>Gerber, tu seras la première personne de toute ma vie. Parce que ma vie, ça ne va pas être que de lire. Il y aura aussi des livres, de la connaissance, etc.</p>
+<p>Je pense que tu seras la personne qui me dit dans mon top 3, je mets Michael Gerber. J&#x27;y croirais pas trop, franchement. Si tu fais ça, tu es un pouf.</p>
+<p>Mais Michael Gerber, il détruit des vies et il détruit des personnes. Il détruit des égos complètement. Ça, c&#x27;est énorme.</p>
+<p>Les égos techniciens. Oui, effectivement. Mais pas que.</p>
+<p>Pas que. Les égos polarisants, en fait. Les égos qui ne se remettent pas en question.</p>
+<p>Parce que la technique, c&#x27;est bien, mais il y en a qui sont trop entrepreneurs. Moi, je me rappelle des mecs qui m&#x27;ont envoyé des Instagram en 2022. Je suis entreprené déjà.</p>
+<p>J&#x27;ai commencé en 2019. Ouais, salut, j&#x27;ai vu ton contenu. J&#x27;ai vu que tu étais graphiste et tout.</p>
+<p>Génial, machin. Bon, moi, je te dis, je suis un entrepreneur, je fais ça. Le mec, il a zéro technicien, zéro manager.</p>
+<p>C&#x27;est un pur entrepreneur. Mais ce mec-là, s&#x27;il est tout seul, il n&#x27;ira nulle part. Parce qu&#x27;il lui faut ses autres dimensions.</p>
+<p>Soit pour lui, soit il délègue. Mais lui, il déléguait, en l&#x27;occurrence. Mais attention, en fait.</p>
+<p>Il y en a beaucoup qui font le biais de, OK, il ne faut pas être un technicien, donc je ne vais être qu&#x27;un manager et qu&#x27;un entrepreneur. Et non, c&#x27;est là le piège. Il faut osciller, comme je dis.</p>
+<p>L&#x27;oscillation intelligente ou l&#x27;oscillation stratégique par rapport à ce que tu as à faire. Et du coup, je vais rebondir. J&#x27;ai une question à te poser.</p>
+<p>Là, on fait un retour en arrière, un retour dans le passé. On est le 1er décembre 2025. C&#x27;est quoi ta journée type ?</p>
+<p>Là, je venais d&#x27;arrêter le salariat depuis quelques mois. J&#x27;étais chez mes parents. J&#x27;avoue que je n&#x27;avais pas des journées très structurées.</p>
+<p>Je me couchais plutôt à 3h du mat. Je mangeais à des heures très aléatoires et je lisais pas mal, en décembre, je lisais pas mal. T&#x27;avais quand même une bonne hygiène de vie, parce que tu lisais, tu mangeais pas trop de la merde, non ?</p>
+<p>T&#x27;étais quand même en place, non ? Non, je mange bien ici, chez moi, je suis pas mal ce qu&#x27;on mange, vous pouvez le savoir. Ouais, c&#x27;est pour ça, y&#x27;a une autre dimension, parce que là, on pourrait croire que tu mangeais des McDo tous les jours, tu te couchais à 30h et tout.</p>
+<p>Non, du tout, non. Et du coup, la journée type, c&#x27;était quoi ? Exemple, du matin au soir, du lever au coucher, tu faisais quoi dans les grandes lignes ?</p>
+<p>Je me levais, la première chose que je faisais, c&#x27;était regarder les marchés, je suivais pas mal les cryptos. Après, j&#x27;ai décroché, en fait, dès que je suis arrivé dans le labo hier, parce que là, il se passe rien. Mais c&#x27;est vrai qu&#x27;à cette période-là, j&#x27;étais beaucoup derrière les graphiques, le matin en tout cas.</p>
+<p>Et après, souvent la journée, je prenais un livre, je lisais. En fait, j&#x27;étais un peu dans une phase transitoire, j&#x27;ai arrêté de bosser dans le salariat, là je suis embêté, j&#x27;ai un peu de côté. Mais si le marché crypto, il repart pas, en fait, il va falloir que je trouve une solution.</p>
+<p>Et j&#x27;étais vraiment dans la phase transitoire entre là je suis chez moi, j&#x27;ai tout mon temps pour moi, qu&#x27;est-ce que je fais de mon temps en fait ? Et j&#x27;ai mis du temps à me structurer. Et en vrai, quand je suis arrivé dans le labo hier, ça a été vraiment un catalyseur à ce niveau-là.</p>
+<p>Sur ma manière de structurer mes journées, d&#x27;occuper mon temps. Ok, excellent. Mais je te pose une question chaotique qui vient comme ça.</p>
+<p>Est-ce que tu es prêt à t&#x27;envoyer en enfer entre 6 mois à dans 2 ans sur la crypto ? les marchés financiers et utiliser tes compétences directes que t&#x27;auras développées maintenant sur le, on va dire, pendant que le temps que le marché est creux pour pouvoir faire des multiples démentiels et à faire des systèmes que personne ne pourra reproduire qui n&#x27;a pas bouffé minimum six mois ou un an de Claude Code. Tu t&#x27;es prêt à ça ou pas ?</p>
+<p>En Israël, je te dis parce que dans la Boïa c&#x27;est pas que la dimension technique à être rigide comme ça dimension investissement, revente de boîte, rachat, tu sais hier il y en a qui sont en train de revendre, il y en a un qui a revendu sa boîte il y en a un autre qui veut vendre sa boîte, il y en a qui veulent racheter des boîtes, il y a tous les profils et il y en a un qui a déjà vendu une quinzaine de boîtes, tu sais de qui je parle, il va se reconnaître et là c&#x27;est des furieux, mais en vrai tu te rends compte tu te rends compte qu&#x27;on est quand même, même moi je me classe dans, j&#x27;ai ouvert deux boîtes, voilà dans ma vie, deux boîtes il y a des mecs dans la commune qui nous donnent des conseils, c&#x27;est on va dire c&#x27;est moi qui ai écrit ça mais il y a des mecs qui nous donnent des conseils qui ont déjà revendu 15 boîtes c&#x27;est énorme en vrai tu sais, les conseils de fous furieux, si on les écoute, on les applique, c&#x27;est quand même un truc de malade il faut quand même les remercier parce que leur expérience business depuis 30 ans et les mecs, j&#x27;étais même pas dans les bourses de mon papa, le mec il avait déjà une boîte, ça tournait déjà et tout, tu te rends compte le truc et on a ces conseils là c&#x27;est une dimension alternative donc génial, génial, moi j&#x27;aimerais bien comprendre le shift décisionnel parce qu&#x27;au moment où tu as rejoint la boya juste avant qu&#x27;est ce qui t&#x27;a fait dire vraiment ok j&#x27;y vais maintenant selon toi c&#x27;est quoi le déclencheur C&#x27;était vraiment l&#x27;urgence, l&#x27;urgence Comme tu dis, le danger en fait qui me piétait, c&#x27;était soit en fait En fait J&#x27;avais, en fait pour moi l&#x27;option c&#x27;était vraiment là, faut que je fasse du cash, faut que faut que je trouve une solution pour m&#x27;en sortir financièrement et Je me suis dit, vas-y je vais envoyer un message à Meydeey, on va voir, je t&#x27;ai demandé est-ce que tu prends les cryptos, je me suis dit oui. Après j&#x27;ai fait l&#x27;appel avec le gars qui gère tes appels, il m&#x27;a bien orienté et puis après j&#x27;ai rejoint. Je m&#x27;étais déjà un peu préparé avant en regardant tes vidéos, depuis un moment j&#x27;y pensais, ça me trottait dans la tête.</p>
+<p>Et il y a eu un moment où je me suis dit que ça ne sert plus à rien d&#x27;attendre, il faut passer à l&#x27;absolument. La question je te la pose parce qu&#x27;il y en a beaucoup qui vont raisonner en terme de prix, en terme qu&#x27;est-ce qu&#x27;il y a de la valeur. Toi tu t&#x27;es dit je suis dans l&#x27;urgence j&#x27;ai besoin qu&#x27;on m&#x27;aide et quand t&#x27;es arrivé on t&#x27;a aidé, tu t&#x27;es exposé.</p>
+<p>Ceux qui s&#x27;exposent le mercredi, je vous explique parce qu&#x27;en fait le mercredi c&#x27;est des ateliers où c&#x27;est que les profils elite, donc les plus élevés, pas forcément techniquement mais en business, il y a avocat, comptable, des avocats il y en a trop, les gars si vous voulez un peu vous calmer il y a trop d&#x27;avocats, il y en a combien, une semaine il y en a eu trois là, il y en a eu trois qui sont arrivés, il n&#x27;y a que des avocats et c&#x27;est chaud pour nos conditions générales, il va falloir les retravailler. Ah ouais c&#x27;est vrai, non ce que je veux dire c&#x27;est que toi t&#x27;arrives tu partages ton écran et Tanguy il fait ça, il n&#x27;y en a pas beaucoup qui, bon les gars j&#x27;ai quelque chose à vous présenter, je vous dis je suis dans la merde, je galère à ça ça ça, je sais que vous êtes meilleurs que moi sur d&#x27;autres dimensions, on va travailler sur ça, mais je vous partage mon écran, je vous montre ce que j&#x27;ai fait, je vous montre mes chiffres, je vous montre qu&#x27;est-ce que j&#x27;ai. Ces mecs là ils avancent trois fois plus vite et genre c&#x27;est la porte de l&#x27;ego tu vois, c&#x27;est la porte de l&#x27;ego, tu vois il y en a qui vont faire un shift de psychopathie, genre Tanguy des fois c&#x27;est un psychopathe, Tanguy des fois il se transforme en psychopathe, il devient fou, il travaille d&#x27;un coup mais il change complètement.</p>
+<p>Toi je pense que t&#x27;arrives à retranscrire ça dans je shift, je supprime mon ego, vas-y on envoie et après j&#x27;avance. Peut-être que je me trompe certainement mais en tout cas c&#x27;est… Et pourtant regarde, quand t&#x27;es arrivé dans la communauté, parce que moi j&#x27;ai une capacité d&#x27;analyse beaucoup plus prononcée que la plupart des gens. Pourquoi je dis ça ?</p>
+<p>Parce que tous les transcripts, je les réutilise. J&#x27;analyse tous vos profils psychologiques, j&#x27;analyse toute la data pour pouvoir vous faire un vrai accompagnement. Je suis pas là pour vous vendre une formation et aller après vous faire foutre.</p>
+<p>Je suis pas comme ça tu vois. Mais toi, quand t&#x27;es arrivé, ton raisonnement c&#x27;était les gars je veux faire du cash. T&#x27;avais un raisonnement de merde, genre vraiment.</p>
+<p>Quand t&#x27;es arrivé, c&#x27;est le premier truc que j&#x27;ai eu. Ouais je me suis dit c&#x27;est qui ce merdeux qui est arrivé ? Il y a des mecs qui ont monté des boîtes du CAC 40, il y a des mecs qui ont déjà levé des millions de dollars, etc.</p>
+<p>Et toi t&#x27;arrives, moi je veux faire du cash. On aurait cru un petit gamin, même pas de crypto, de e-commerce qui vient d&#x27;arriver en 2022, moi je veux faire de l&#x27;argent. Et là t&#x27;as évolué.</p>
+<p>Et c&#x27;est pour ça que je vais faire cette vidéo, ça va être un pilier. On revient à la fin d&#x27;année. Je pense pour la symbolique fin d&#x27;année en décembre, limite mets toi un truc dans ton calendrier.</p>
+<p>Regarde cette vidéo, tu vas comprendre à quel point tu vas aller très très vite. Tu vas dix fois plus vite que les gens qui utilisent l&#x27;IA normalement, parce qu&#x27;il y a plusieurs échelles de comment tu utilises l&#x27;IA. C&#x27;est sûr que, déjà je suis passé à l&#x27;abonnement au-dessus, parce que dans le labo ça envoie.</p>
+<p>Bref, les lives hier c&#x27;était 5h48, la semaine dernière c&#x27;était 6h. Oh les gars, vous vous rendez pas compte, c&#x27;est énorme parce qu&#x27;en fait, à dédicace aussi à Lionel qui nous avait sorti la data hier, que je ne la connaissais pas et je vais y travailler dessus, c&#x27;est lorsque tu es en direct avec des personnes, et bien empiriquement, scientifiquement et historiquement, ça a été prouvé que t&#x27;apprenais mieux et tu faisais plus d&#x27;ancrage quand c&#x27;était en direct, parce qu&#x27;il y avait une interaction en direct, tu vois. Et ça c&#x27;est énorme, on faisait la différenciation entre ceux qui ne viennent pas dans les lives et qui regardent les rediffusions versus ceux qui sont là en direct et qui peuvent écouter ou poser des questions.</p>
+<p>Je pense qu&#x27;énergétiquement il y a un truc entre les deux et ça pousse l&#x27;ancrage. C&#x27;est énorme d&#x27;aller travailler sur ces sujets à la place de travailler sur un nouveau MCP qui vient de sortir et que personne ne le connaît, il est non stable. Il y a une vraie différenciation, c&#x27;est la réflexion par la connaissance et la réflexion par le haut, comme on voyait hier, raisonner avec l&#x27;IA par le haut et pas par le bas.</p>
+<p>En bas, c&#x27;est les agents IA qui travaillent pour nous. Je ne vais pas commencer à balancer toute cette valeur parce que là, on va donner trop d&#x27;élites. On va se calmer, effectivement.</p>
+<p>Il y a plein de solutions qui sont abordées, c&#x27;est hyper intéressant. Il y en a certaines qu&#x27;on n&#x27;aurait pas dû aborder aussi. Je ne vais pas les balancer ici.</p>
+<p>Du coup, j&#x27;ai une question à te poser. Quand tu es arrivé, forcément, il y avait une peur, ce qui est logique. Quand tu passes un achat, il y a toujours la peur quand tu arrives, tu ne connais pas la peur de l&#x27;inconnu, tu ne sais pas où tu as mis les pieds, tout le monde.</p>
+<p>C&#x27;était quoi qui te faisait le plus peur au début ? Est-ce que c&#x27;était plutôt le regard des gens, la technique, l&#x27;argent quand tu es arrivé ? Est-ce que tu t&#x27;en rappelles de ça ?</p>
+<p>Je pense que c&#x27;était surtout la technique parce que je suis parti de nada, je n&#x27;avais aucun bagage technique, ni en IA, ni en code, en quoi que ce soit, et je suis vraiment parti de zéro. C&#x27;est vrai que je suivais tes vidéos, mais c&#x27;était comme les gens qui regardent les formations YouTube gratuites, ça limite, même si t&#x27;apprends des trucs, c&#x27;est pas du tout pareil, déjà quand tu payes, t&#x27;as la pression de te dire, il faut que j&#x27;apprenne, il y a ce côté-là aussi, et je pense que le côté technique, ça m&#x27;a pas mal fait peur quand je vous voyais dans les lives à des niveaux que je ne comprenais rien, plein de termes que je ne comprenais pas, c&#x27;était peut-être cette dimension-là au début, c&#x27;est vrai que je n&#x27;étais pas trop à l&#x27;aise au début dans les lives. et après on a la parole, mais bon, on s&#x27;y fait quoi.</p>
+<p>Non, tu t&#x27;y es fait, et il y en a beaucoup qui ont peur de cette hypertechnique, et ce qui est marrant, c&#x27;est qu&#x27;on l&#x27;a vu avec Mathieu aussi, qui a plus de soie, non, il va me tuer, plus de 50 ans, et c&#x27;est un avocat, et il ne s&#x27;est pas posé cette question. Mais toi en fait, il y en a beaucoup qui se disent, j&#x27;ai peur que ce soit trop technique, et au final, aujourd&#x27;hui, t&#x27;en penses quoi ? Est-ce que tu trouves ça hypertechnique, ou est-ce que tu t&#x27;en sors ?</p>
+<p>C&#x27;est quoi le bilan actuellement ? On sent déjà qu&#x27;il y a quand même des personnes qui ont une longueur d&#x27;avance, ça c&#x27;est indéniable, mais quand toi tu démarres, tu peux arriver, en fait, le fait que les gens qui te donnent des conseils, qui t&#x27;aiguillent, etc., elles aient déjà tout le bagage technique, ça te fait prendre un temps d&#x27;avance exceptionnel, parce que tu passes de pas grand chose, ou même de zéro, en fait, tu arrives à te débrouiller très très bien tout seul, après tu deviens très vite autonome au niveau technique. Et même avec la formation et tout ça, il y a tout dedans en fait, si tu cherches bien, il y a tout.</p>
+<p>Oui, ça c&#x27;est important, tu deviens très vite autonome, mais autonome ne veut pas dire tout seul dans son coin, c&#x27;est ça en fait, il y a toujours le fil conducteur des lives du dimanche et du mercredi, et c&#x27;est ça qui rattache les gens, parce qu&#x27;en fait, une formation dans ton coin, si tu n&#x27;as pas le mindset, ce n&#x27;est pas possible. Par contre, si tu n&#x27;as pas trop le mindset et qu&#x27;il y a en plus de ça des lives, des accompagnements, des confrontations, je ne connais aucune formation où le formateur, ce n&#x27;est pas pour me jeter des fleurs, mais confronte ces mecs, il dit là tu as fait de la merde devant 20 personnes, 20 ou 30 personnes, et ça fait tellement un shift énorme, le mec il veut évoluer, il va changer, et ça c&#x27;est un truc qui est bien, en fait c&#x27;est le côté paternel, c&#x27;est important, le côté paternel du formateur, ça dépasse toute autre dimension, mais il ne faut pas que ce soit trop. on sait c&#x27;est toute une gestion comme tu dis la jauge c&#x27;est hyper important et bon maintenant c&#x27;est bien c&#x27;est beaucoup c&#x27;est très superflu ce qu&#x27;on a fait depuis le début maintenant je te pose une question on va revenir sur l&#x27;histoire des 600 kilomètres et la première fois que tu as généré du cash et que tu as facturé une boîte et je dis pas facturé un système de merde est-ce que tu peux nous parler de ça ouais bah je prospectais j&#x27;ai commencé par faire du porte à porte ça va pas du tout marcher mais au moins ça m&#x27;a fait dans quoi le porte-à-porte plus précisément c&#x27;était dans l&#x27;IA ou dans BTP je suis allé dans les boîtes et tout je l&#x27;ai pas regardé j&#x27;ai fait une petite démo en fait ce qui m&#x27;a fait shifter c&#x27;est vraiment Lucas quand il avait montré son le truc qu&#x27;il avait fait et qu&#x27;il allait en direct voir les mecs et leur parler je me suis dit putain je pourrais faire pareil non c&#x27;était quand c&#x27;est ça ouais c&#x27;est ça ouais il avait montré son truc et disait je personnifie à chaque à chaque boîte je suis peut-être moyen de faire un truc pareil du coup je l&#x27;ai fait ça a pas appris et j&#x27;ai j&#x27;ai vu passer un séminaire d&#x27;un mec que je suis depuis longtemps sur youtube et ça il y avait plusieurs thématiques rachat d&#x27;entreprise immobilier et aussi un mec dans l&#x27;IA donc je savais qu&#x27;en fait il allait avoir des profils qui potentiellement pourraient être intéressés par ce que je faisais et du coup j&#x27;y suis allé j&#x27;ai pris mon billet et j&#x27;ai passé la journée là-bas j&#x27;ai rencontré un mec on a discuté ça c&#x27;est ça c&#x27;est une fin la discussion était naturelle et il m&#x27;a dit d&#x27;ailleurs il avait en fait moi je n&#x27;ai rien vendu de toute façon j&#x27;avais rien à vendre C&#x27;était naturel, on a discuté, on s&#x27;est échangé nos cartes de visite, et après je l&#x27;ai recontacté.</p>
+<p>C&#x27;était un mec dans le BTP, il s&#x27;y intéressait de loin. Je lui ai proposé un audit, on a fait 1h30, c&#x27;était un gros audit, et dedans il m&#x27;a tout balancé ses problèmes, il m&#x27;a balancé plein de détails, et avec ça j&#x27;ai pu construire un système qui résout son problème, et aujourd&#x27;hui ça tourne et il est content. Si on est le plus factuel possible, après combien de temps après avoir rejoint le LaboIA, t&#x27;as facturé combien, et à combien de clients ?</p>
+<p>Dès le premier mois, le séminaire c&#x27;était 3 semaines après que je suis rentré, 2-3 semaines après, on a fait l&#x27;audit dès que je suis rentré, donc j&#x27;ai facturé au bout d&#x27;un mois, et lui m&#x27;a recommandé à une autre entreprise, déjà son système je l&#x27;ai vendu 2000€ avec un abonnement mensuel de 590€, et ensuite il m&#x27;a recommandé à une autre entreprise qui pour le coup n&#x27;est pas dans le BTP, c&#x27;est plutôt une boîte dans la finance, et eux je les ai facturé 3000€ le setup, et un retainer qui augmente à Petit à petit ça commence à mille, après au fur et à meilleur des résultats, plus le système, je vais mettre deux choses en place et ça va augmenter, voilà. Il faut quand même penser à ça, parce que penser c&#x27;est un mot important. T&#x27;es arrivé au bout de trois semaines, t&#x27;es dans le labo IA, forcément tu vois des mecs parler de trucs que tu comprends pas.</p>
+<p>Au bout de trois semaines, tu pars, tu fais 600 kilomètres en train à l&#x27;autre bout de la France pour aller dans un séminaire où tu connais personne. T&#x27;as pas la compétence technique, t&#x27;as pas l&#x27;expérience, t&#x27;as pas tous les retours, t&#x27;as pas les échecs. Tu vends à un client, tu trouves un client là-bas, tu vends, qui ce client de manière collatérale te ramène à un autre client.</p>
+<p>Hors dimension de l&#x27;argent, 2000, 3000 balles c&#x27;est rien, tu vas faire plus que ça, si tu vas dans cette dimension là, c&#x27;est des petites sommes. Après c&#x27;est ton positionnement et ta vision qui vont changer, mais c&#x27;est l&#x27;action qui est énorme en fait, le fait d&#x27;avoir fait ça. Je connais personne qui a fait ça, qui a traversé la France pour aller dans un séminaire.</p>
+<p>Trois semaines après avoir rejoint le labo IA, la plupart des gens que j&#x27;ai me disent, oh je stresse, pour vulgariser. Comme je connais pas Cloud Code, je suis pas prêt à facturer. Là t&#x27;as fait un braquage, je te dis t&#x27;as fait un braquage.</p>
+<p>Tu connais les jeux vidéo ou pas ? Euh, oui. Un petit peu ?</p>
+<p>Oui, oui. Tu sais à quoi tu me fais penser comme jeu vidéo ? Y&#x27;en a qui vont avoir la référence, les anciens.</p>
+<p>GTA ? Non, PAYDAY. Ah, ok.</p>
+<p>C&#x27;est un jeu de braquage, tu me fais penser à ça. C&#x27;est pour ça que je dis t&#x27;es arrivé, t&#x27;es arrivé en mode braquage. T&#x27;es arrivé, tu sors du camion, du fourgon, t&#x27;ouvres les portes, vous êtes à 4.</p>
+<p>Toi t&#x27;étais tout seul, t&#x27;as fait un braquot tout seul. T&#x27;arrives devant la bijouterie, tu mets le masque, tu rentres avec un shotgun et t&#x27;as tout plié. Et tu repars avec le coffre, t&#x27;as fait vraiment ça.</p>
+<p>J&#x27;avais pas d&#x27;autre explication. Et en plus elle colle bien avec toi parce que t&#x27;es dans le BTP. Moi j&#x27;ai bossé aussi avec des gars du chantier, j&#x27;ai eu des clients gars du chantier, on se parle cash tu vois.</p>
+<p>Et il y a aussi stack est bien parce qu&#x27;on est pas en train de se mentir, de se tirer la quéquette c&#x27;est le cas de dire. Avec des costards, cravate, machin. La plupart des mecs qui ont levé des fonds dans la communauté, t&#x27;as vu ils sont en tee-shirt short.</p>
+<p>ils en ont rien à foutre, c&#x27;est de la connerie tout ça après et c&#x27;est pour ça qu&#x27;ils disent en fait t&#x27;as fait un vrai braquage et bravo pour ça et franchement le transcript s&#x27;en souviendra aujourd&#x27;hui personne n&#x27;a fait ce qu&#x27;il a fait, personne n&#x27;a fait ce qu&#x27;il a fait à son niveau et tous les niveaux, tous les niveaux, je te parle, niveau de connaissance, du niveau de le fait de savoir vendre aussi, le fait d&#x27;avoir la technique le fait de ne pas avoir fait les échecs en fait je pense que tu as eu peur pendant longtemps quand tu étais allé là-bas, t&#x27;as dû vraiment avoir peur tout le temps que de la peur Déjà, je suis pas habitué moi, je suis pas vendeur, à la base j&#x27;ai pas de bagages commerciaux ni quoi que ce soit donc bon, faut aller vers les gens, faut discuter avec eux Et là-bas je disais ouais, moi je fais de l&#x27;IA, de l&#x27;automatisation, derrière j&#x27;avais un peu le syndrome de l&#x27;imposteur, forcément Normal, attends, pour moi à fond, à fond le syndrome de l&#x27;imposteur Et et le stress quoi d&#x27;aller là-dedans Il y a un vrai travail de compréhension, alors ça c&#x27;est mon travail parce que moi je suis en quelque sorte le routeur de votre réussite parce que je peux appliquer la même chose pour toi et pour quelqu&#x27;un d&#x27;autre si ça va pas marcher mais le syndrome de l&#x27;imposteur c&#x27;est très difficile et le fait que j&#x27;essaie de comprendre toi t&#x27;es, on va dire, t&#x27;es l&#x27;anomalie dans le truc, faut que je comprenne comment ça se fait que t&#x27;as réussi avec ton syndrome de l&#x27;imposteur à casser cette brique, aller dans une boîte pendant 24 heures Prendre un plode ou un téléphone, enregistrer les conversations, en sortir des transcripts, on t&#x27;a dit exactement le protocole à suivre pour en tirer un maximum de bénéfices et aider ton client parce qu&#x27;il va payer tous les mois un abonnement mais t&#x27;es pas là pour lui, 500 euros c&#x27;est quoi pour une boîte, c&#x27;est que dalle, si tu lui rapporte 20 000 pour toi c&#x27;est bien tu vois mais après ta valeur elle va augmenter, tu vas facturer 2000 balles par mois et puis même tu t&#x27;es projeté à faire ça ce que tu nous as montré hier, on va pas trop spoiler, on va revenir après mais que tu nous as montré hier je connais personne qui au bout de trois mois me disent bon les gars je vais faire un abonnement à 1500 euros par mois des fois je comprends pas, il y a des trucs c&#x27;est trop au dessus de moi, je me dis putain y en a ils me parlent de 100 balles par mois et tout 37 euros par mois j&#x27;ai eu, toi t&#x27;arrives au bout de 3 mois tu sors des 1 500 par mois et ça se vend et ça c&#x27;est énorme. Après il faut aussi apporter du, enfin faut pas vendre du vent quoi, c&#x27;est pas louche. Faut pas vendre du vent mais savoir proposer, faut pas proposer du vent en fait parce que vendre t&#x27;as pas vendu, tu t&#x27;exposes le fait que tu peux proposer ça mais montrer devant des entrepreneurs de haut niveau comme ça, en plus la moyenne du QI maintenant les mercredis pour ceux qui viennent on est à 120 en moyenne, 110-120, on meta raisonne, on raisonne par le haut en fait le mercredi, le dimanche c&#x27;est pas pareil mais le mercredi c&#x27;est un autre niveau et t&#x27;avances très vite, c&#x27;est terrifiant.</p>
+<p>Et du coup comme j&#x27;ai vu que t&#x27;avais une certaine résilience et que tu tenais tout ça et qu&#x27;il y a des mecs, il y a certaines personnes, je pensais qu&#x27;ils étaient résilients je me suis complètement trompé. Moi je suis là pour les aider tu vois, ils ont payé, il y a un vrai accompagnement, j&#x27;ai un protocole, j&#x27;ai une roadmap à suivre avec eux mais toi t&#x27;as une résilience qui était trop puissante donc qu&#x27;est-ce que j&#x27;ai fait le 13 avril, tu t&#x27;en rappelles ce que j&#x27;ai fait le 13 avril 2016 ? Qu&#x27;est-ce que j&#x27;ai fait ?</p>
+<p>J&#x27;ai rejoint l&#x27;appel, je m&#x27;y attendais tellement pas en plus, j&#x27;ai rejoint l&#x27;appel, je me suis pas dit, la journée elle a un petit changé de dimension. Vas-y explique-le avec tes mots tranquillement juste pour avoir le contenu. Ils m&#x27;ont parlé de, je crois que je me projetais sur trouver les prochains clients etc.</p>
+<p>Mon offre, création d&#x27;offres, business etc. Et j&#x27;ai parlé de YouTube sauf que j&#x27;ai dit, le truc qu&#x27;il fallait pas dire c&#x27;est je suis pas prêt, j&#x27;ai un mauvais décor, j&#x27;ai pas un bon micro, j&#x27;ai pas de setup, rien. Mais tout ça au final c&#x27;était des excuses.</p>
+<p>Et toi tu m&#x27;as dit, vas-y, défis, 24h tu sors ta première vidéo. J&#x27;étais plus agressif. tout ce que ça a quand même, je t&#x27;ai dit arrête avec tes conneries, ton décor tu m&#x27;as dit mon papier peint il est pas beau, je t&#x27;ai dit mais putain, après tu m&#x27;as dit quoi, tu m&#x27;as dit ouais il faut que j&#x27;aille investir dans du setup, j&#x27;ai dit écoute tu sais ce qu&#x27;on va faire, t&#x27;as 24h pour faire une vidéo youtube et tu t&#x27;exposes devant tout le monde et tu dis que tu vas faire une vidéo, et tu l&#x27;as fait en fait, et dis-toi qu&#x27;il y en a qui l&#x27;ont pas fait ça, dis-toi que je l&#x27;ai fait avec d&#x27;autres personnes et ils l&#x27;ont pas fait, il y en a certains ils se sont mis en mode fantôme et je les vois plus, toi tu l&#x27;as fait, énorme, d&#x27;ailleurs dédicace à François et à Tanguy qui eux tiennent le cap dans les vidéos, toi t&#x27;as fait ta première, ce que j&#x27;appelle ton icebreaker, je voulais te choquer mentalement, je sais que t&#x27;as la résilence d&#x27;ailleurs, je peux pas faire ça avec des profils comme Nat etc, je peux pas les brusquer comme ça, c&#x27;est pas possible, toi t&#x27;es un gars du chantard, t&#x27;as pas peur, en plus tu tiens sur la route, faut casser la glace, et même si t&#x27;es un gars du chantard, même si t&#x27;as une grosse barbe, même machin, quand t&#x27;es sur le terrain et pour vendre c&#x27;est un autre truc, quand t&#x27;es devant un client etc c&#x27;est un autre niveau, et quand tu dois t&#x27;exposer devant des dizaines de milliers voire des centaines de milliers de personnes, t&#x27;sais Darren Hardy ne ment pas, dans 10 ans ta chaîne tu sais pas ce que ça va devenir, et si tu te projettes avec une vision, et là je t&#x27;ai cassé la glace, et franchement je pense que c&#x27;est le meilleur truc, tu l&#x27;as fait propre, la vidéo elle était bien, c&#x27;est la première, t&#x27;as cassé la glace, c&#x27;est ce qu&#x27;il fallait faire.</p>
+<p>Bah merci pour le coup de pied. Bah avec plaisir, après ça devient une commodité parce que c&#x27;est pour tout le monde pareil en vrai, après ça suit un framework, bon là il est en train de me jouer de la flûte mon setup il est pas bon, mon machin, qu&#x27;est ce que tu me racontes, tu viens de facturer pour 5000 balles, 2 clients en moins de 3 mois, et tu me parles de ton papier pour sortir une vidéo youtube, t&#x27;as fait 600km en train, t&#x27;sais ça fait incohérence incohérence et incompréhensible là dedans, et je me dis arrête et fais le et bravo tu l&#x27;as fait, et dépuce l&#x27;âge, et dépuce l&#x27;âge, l&#x27;âge, ton âge, à ton âge, y&#x27;en a qui vont se reconnaître pour le langage des oiseaux, mais moi je repense à l&#x27;âge, à ton âge de faire ça, t&#x27;as cassé la glace tôt, t&#x27;as quel âge déjà pour le rappel ? 22 ans.</p>
+<p>22 ans, des puces l&#x27;âge très tôt. Dis-toi qu&#x27;il y a des mecs qui n&#x27;arrivent pas à casser ce petit élément que je suis en train de te parler, à 60 ans, que j&#x27;accompagne. Je n&#x27;ai pas envie de rendre la chose déterministe, mais les gens, plus en général ils vieillissent, plus c&#x27;est difficile de les faire changer, plus c&#x27;est difficile.</p>
+<p>Ils sont en hyper-dualité entre eux, ils ont trop d&#x27;ancrages, c&#x27;est très difficile. Putain, ceux qui cassent la glace à 17 ans, des mecs comme toi, dans moins de 5 ans, il y en aura qui auront 15 ans, qui feront ce shift-là, dans moins de 5 ans. Le cerveau, il me semble que jusqu&#x27;à 25 ans, il continue.</p>
+<p>Il y a une neuroplasticité jusqu&#x27;à 25 ans, plus de neuroplasticité, et après ça se rigidifie. Après ça se rigidifie, je ne sais pas si c&#x27;est vraiment ça ou si je n&#x27;ai pas toutes les expériences, mais je sais que plus les gens vieillissent, plus c&#x27;est difficile. Mais il y en a qui tiennent, il y en a qui ont plus de 50 ans et qui tiennent.</p>
+<p>Après c&#x27;est la dualité constante, c&#x27;est pas possible d&#x27;aller bien tout le temps. Et ça rebondit avec la question que je voulais te poser, est-ce que vraiment à des moments tu t&#x27;es dit, je vais lâcher ou j&#x27;ai envie d&#x27;arrêter, ou est-ce que tu as eu des points bas, tu t&#x27;es senti bas, mal ? Tu étais vraiment mal ?</p>
+<p>Je ne dirais pas mal au point de me dire je vais tout arrêter, mais c&#x27;était dur pour moi, de la souffrance, de la peine, on ne sait pas. Mais après ça, il faut aussi savoir le canaliser. Des fois, j&#x27;étais dans une...</p>
+<p>comment dire ? J&#x27;étais un peu étourdi, on va dire, je ne savais pas trop donner de la tête, je me sentais un peu bataillé dans tous les sens. C&#x27;était surtout quand...</p>
+<p>J&#x27;ai commencé à mettre les mains dans Claude Code, dans tout ça, après tu te retrouves un peu... Ouais, j&#x27;étais un peu perdu. C&#x27;est le mot que je cherchais, j&#x27;étais perdu.</p>
+<p>Ça s&#x27;entend, vu comment tu réponds, c&#x27;est normal en fait. Le marché il va dans tous les sens. Quand on n&#x27;est pas dans la boya, quand on n&#x27;est pas dans un accompagnement qui sait te driver, ce que j&#x27;appelle, il n&#x27;y a pas de meilleur mot, canaliser.</p>
+<p>Comme une pipeline, hyper résistante, l&#x27;eau elle passe dedans, mais ça va très vite. Donc il faut canaliser le truc, et à l&#x27;extérieur c&#x27;est le chaos, il part dans tous les sens, je me fais insulter presque tous les jours. Mais putain, tu avais dit que c&#x27;était bien ça, mais aujourd&#x27;hui ça s&#x27;annule.</p>
+<p>Eh oui, parce qu&#x27;il y a une ligne directrice, et ceux qui ne sont pas dans le truc, ils sont en mode théorie la plupart, et ils ne sont pas en mode canalisation. T&#x27;as réussi à canaliser ça, c&#x27;est fort quand même, c&#x27;est vraiment fort. Et si on fait une comparaison entre avant et maintenant, ta situation financière, je mets des parenthèses, c&#x27;est pas pour faire en mode, oui avant tu gagnais 0, maintenant que depuis t&#x27;es dans la boya t&#x27;es riche, non, bien au contraire.</p>
+<p>Et je te ramène la dimension, on fait la comparaison avant après, et comment tu comptes améliorer et consolider le après ? Déjà, j&#x27;ai vite rentabilisé mon entrée dans le labo. C&#x27;est un investissement.</p>
+<p>C&#x27;est un investissement, j&#x27;ai vite rentabilisé du coup. Là je dirais que pour l&#x27;instant ça me permet de souffler, de sortir la tête de l&#x27;eau, plus ou moins. Ça reste relatif.</p>
+<p>Pour plus tard, c&#x27;est surtout une question d&#x27;objectif. Qu&#x27;est-ce que moi j&#x27;ambitionne ? d&#x27;atteindre comme résultat et après structurer mon entreprise de façon à pouvoir atteindre ça.</p>
+<p>Structurer mon entreprise et moi aussi. En fait c&#x27;est pas la même dimension parce qu&#x27;il n&#x27;y a pas grand monde qui arrive dans une communauté en mode urgence avec 30 000 euros de dette quoi. A 22 ans avoir 30 000 euros de dette c&#x27;est le meilleur cadeau qui puisse t&#x27;arriver parce que 30 000 euros tu verras que c&#x27;est rien, si tu tends vers le business et que tout concorde vers ça, 30 000 euros tu verras c&#x27;est rien, tu vas les faire très rapidement, c&#x27;est pas un souci.</p>
+<p>Si tu veux être entrepreneur en dualité tous les jours avec le technicien et le manager, ok, mais tu verras 30 000 c&#x27;est rien et à 22 ans j&#x27;aurais bien aimé avoir ça parce que tu vas avoir une résilience à mon âge, dis-toi dans quatre ans. Sauf que moi je dirais pas que je suis né au meilleur moment, toi t&#x27;es au meilleur moment parce que t&#x27;as 22 ans maintenant, ceux qui ont 18-22 ans là maintenant et qui sont dans l&#x27;IA comme ça et qui sont intelligents et qui investissent, je suis jaloux parce que tu vas avoir quatre ans de plus que moi, dans le sens où t&#x27;as compris à l&#x27;inverse. Dans dix ans, mon cerveau il sera plus vieux que le tien de quatre ans donc après je vais devoir travailler plus.</p>
+<p>Tu te rappelles Amine ce qu&#x27;il disait hier ? Pas exactement. Il y a une composante quand tu vieillis et que tu vois des jeunes arriver, une composante, c&#x27;est un on va dire un extrait chimique de jalousie dans le sens où ils sont pas jaloux envers toi mais ils sont jaloux dans le sens où toi tu as 22 ans, ils en ont 60 et l&#x27;IA ça démarre le créneau à peine maintenant exposition 1952, depuis 1950 l&#x27;IA ça existe mais là on est en pleine exposition de la phase numéro 2 de Shopping Hour, la troisième arrive avant 2030.</p>
+<p>On va dire qu&#x27;on n&#x27;a que quatre ans d&#x27;écart mais dis-toi que des mecs de 50 ans aujourd&#x27;hui ils ont cette composante de putain je suis peut-être pas nul, Et il y en a qui me l&#x27;ont dit en live, c&#x27;est pour ça que j&#x27;ai vu ça, je vois ce pattern. Et je me dis, moi j&#x27;aimerais pas avoir 60 ans maintenant. Putain je vois des gens dire ça, j&#x27;aimerais pas avoir 60 ans maintenant.</p>
+<p>Désolé pour ceux qui ont 60 ans, désolé c&#x27;est pas nous, Alain et tout, on va se faire allumer, ils vont nous défoncer mercredi. Mais non, sérieusement ? C&#x27;est vrai qu&#x27;on a un boulevard dans le groupe qui est immense, et on sait pas en fait où ça va nous mener dans 5 ans, en fait le temps est en train de se complètement changer.</p>
+<p>Ouais, on sait pas vraiment où ça va nous amener, mais putain à notre âge on a fait des erreurs que des mecs n&#x27;ont pas fait dans leur vie, et on ne les a pas toutes faites bien sûr. Par exemple, échouer une boîte, ça j&#x27;ai pas connu ça par exemple, échouer une boîte, faire couler une boîte. Dan Lok à 25 ans, non 25 ans je crois, il en avait déjà fait échouer 13, Dan Lok c&#x27;est 13 ans qu&#x27;il a échoué.</p>
+<p>C&#x27;est pas la même chose, 13 boîtes d&#x27;échouer, je pense que le niveau de résilience, d&#x27;antifragilité, de vision, putain la 14e tu la rates pas quoi, et concrètement à ton âge, ce que je dis c&#x27;est polarise à fond, faites un max d&#x27;échecs le plus rapidement possible, un max d&#x27;échecs et benchmark tout, benchmark tout, tu horodate, tel jour j&#x27;ai fait ça, j&#x27;ai pensé comme ça, j&#x27;ai fait ça, tu fais des erreurs, limite tu fais exprès de faire des erreurs, tu te dis putain un jour je vais aller à l&#x27;inverse de ce qu&#x27;on m&#x27;a dit et ça va marcher, et tu horodes toute la data par rapport à toi, et t&#x27;as fait des erreurs déjà à ton âge, t&#x27;as fait des erreurs que j&#x27;ai pas faites moi, je me suis jamais endetté moi encore, et t&#x27;as deux types d&#x27;endettement, t&#x27;as l&#x27;endettement a priori et a posteriori, a priori c&#x27;est quand tu te rates comme là où ça a pas fonctionné et a posteriori c&#x27;est quand tu vas t&#x27;endetter pour pouvoir investir et réussir ton coup, que ce soit dans l&#x27;immobilier, tu fais un investissement, tu fais un prêt pour acheter un X en crypto, peu importe, tu fais un prêt, comment ça s&#x27;appelle déjà ? C&#x27;est l&#x27;investi... non je l&#x27;ai plus.</p>
+<p>Ah je l&#x27;ai plus le terme. T&#x27;as du vivre Kiyosaki. En plus celui-ci c&#x27;est Terry Shperpov, c&#x27;est pas celui du cadreur de Cashflow.</p>
+<p>Ah ouais. Je l&#x27;ai même parlé de Terry Shperpov, c&#x27;est lui qui est le cadreur. Bon je l&#x27;ai plus, peut-être qu&#x27;ils l&#x27;auront en commentaire.</p>
+<p>Mais il y a prêt dedans, il y a prêt. En fait tu fais travailler l&#x27;argent des autres, pas le tien, plus le tien. Ah oui.</p>
+<p>Tu fais travailler l&#x27;argent des banques. Ça c&#x27;est le niveau supérieur. Mais ça c&#x27;est la post-théorique avant l&#x27;échec.</p>
+<p>Moi j&#x27;aurais peur de faire ma première levée de fond ou mon premier emprunt et que tout marche bien et qu&#x27;il n&#x27;y ait pas d&#x27;erreur et que c&#x27;est fluide. La prochaine étape ça va faire mal. Moi je me dis qu&#x27;il faut que je sois méfiant.</p>
+<p>Parce que c&#x27;est vrai que je me suis lancé dans l&#x27;IA, l&#x27;automatisation, ça a bien marché au départ. Et je me dis qu&#x27;il y a forcément un moment où je vais essayer quelque chose et ça va pas marcher. Donc il faut aussi s&#x27;y attendre.</p>
+<p>Ça peut pas marcher toujours. C&#x27;est ça. Après tu as lu « Les lois de la nature humaine » de Robert Greene.</p>
+<p>Oui. Le principe humain de l&#x27;autodestruction. Oui, l&#x27;autosabotage.</p>
+<p>Oui, l&#x27;autosabotage, moi je l&#x27;appelle l&#x27;autodestruction. Je pense que tous les humains, ou la plupart, sont tirés vers l&#x27;autodestruction. Peut-être qu&#x27;on va te dire ne fais pas ça, ne fais pas ça gamin, ne fais pas ça.</p>
+<p>Un mec qui a 60 ans qui te dit ça, ça pourrait être ton grand-père. Il te dit ne fais pas ça gamin, je pense que tu tendras à le faire quand même. Il faut que tu te brûles.</p>
+<p>Et c&#x27;est pour ça la stratégie de l&#x27;échec c&#x27;est pas mal aussi. Viser l&#x27;échec ou un max. Tu crées plein de trucs, tout s&#x27;effondre d&#x27;un coup.</p>
+<p>Putain, il faut que je consolide ça. Et tu en ressors avec une sacrée vision. Tu documentes bien aussi.</p>
+<p>Et documenter pas comme un technicien. Documenter qu&#x27;est-ce que tu pensais à ce moment-là. Qu&#x27;est-ce que tu pensais que ça allait te rapporter.</p>
+<p>Qu&#x27;est-ce qui s&#x27;est passé pendant, après une vraie documentation. Et là c&#x27;est ton cerveau. C&#x27;est pas de l&#x27;IA, c&#x27;est pas de la technique.</p>
+<p>C&#x27;est tout ce qui se passe autre que la technique. Tout ce que t&#x27;as dans la tête et dans ta tête, c&#x27;est ça le truc, c&#x27;est irrépercutable, personne ne pourra voir la même chose, peut-être en expérience, etc, t&#x27;as trois psychos. Moi j&#x27;ai une question, quelle est la chose, le conseil que t&#x27;as entendu dans un live, peu importe, dans une vidéo de formation, que tu t&#x27;en rappelles, celui qui t&#x27;a le plus marqué, genre le moment précis.</p>
+<p>En fait je pense que je suis quand même rentré à un bon momentum, on va dire, du labo IA, parce que je suis rentré quand t&#x27;avais fait un shift business, un shift rentabilité, et en fait tu disais, les gars là vous êtes trop techniques, passez sur le côté business, il faut shifter, et t&#x27;avais donné le conseil de vendre avant de construire. Christophe l&#x27;avait fait avec Christophe aussi, il a fait avec Christophe à plus de 50 ballets. C&#x27;est vrai, c&#x27;est vraiment ça, et tu vois après je l&#x27;ai appliqué.</p>
+<p>C&#x27;est énorme, parce que beaucoup sont là aujourd&#x27;hui. Et entreprendre au final c&#x27;est ça, je me rends compte que entreprendre c&#x27;est vendre, et maintenant en fait construire c&#x27;est tellement facile, enfin c&#x27;est facile entre guillemets, j&#x27;aurais pas su le faire tout seul ça, mais c&#x27;est plus facile qu&#x27;avant, et du coup vendre avant de construire ça a pris tout son sens pour moi. Le bon terme c&#x27;est beaucoup plus amplifié, si t&#x27;as des bases de merde tu vas amplifier de la merde, donc tu vas dupliquer de la merde partout, si t&#x27;as des bonnes bases solides tu vas amplifier la qualité, ça c&#x27;est Lionel qui le disait, l&#x27;IA c&#x27;est un miroir, et c&#x27;est un miroir amplificateur, si tu penses comme une merde tu vas encore plus amplifier, tu vas penser 10 fois plus vite comme une merde, et c&#x27;est là où après tu joues avec l&#x27;alter ego, mais là apprends dans les dimensions méta etc.</p>
+<p>et c&#x27;est ce que ceux qui font le plus d&#x27;argent, qui sont le plus stable, la plus grande expérience et qui sont des leaders dans la communauté c&#x27;est quatre piliers, je rajoute le cinquième, même si on n&#x27;en a pas, eux ils travaillent sur la dimension d&#x27;en haut c&#x27;est pas pour croire en Dieu etc, mais c&#x27;est tout ce qui se passe en méta, tout ce qui se passe en haut les agents IA, il y en a 1000, il y en a 2000, il y en a 50000, ils sont en bas de la pyramide, ils sont en bas et la plupart du marché ils regardent, ils sont aux mêmes étages que les agents IA, ils regardent en haut comme ça ils regardent tout ce qui se passe en méta et eux là, ceux qui sont vraiment solides en business, et ils le savent, il y a beaucoup de CEO qui regardent ma chaîne ils sont en haut, ils regardent en bas les agents IA et ils voient aussi plein de gens qui sont à la même dimension que les agents IA, tu vois comme une pyramide et bien tout en bas tu as plein d&#x27;agents IA et tu as des humains comme ça, c&#x27;est des anomalies et ceux qui sont en haut, je peux t&#x27;assurer et c&#x27;est pas en faisant un prompt, deux prompts que tu vas arriver en haut, il va falloir te manger des erreurs et ça va être difficile ça c&#x27;est un vrai travail hors dimension ésotérique, hors dimension religieuse etc c&#x27;est juste penser quoi, un CEO il pense quoi, un CEO il va pas se lever le matin il va pas aller, imaginons une entreprise qui vend des pièces métalliques il va pas aller travailler plus vite, construire des pièces métalliques pour gagner plus ça se passe en haut, et doublement en haut, parce que lui il est en haut de la pyramide sociale d&#x27;une boîte logique la pyramide architecturale d&#x27;une boîte et il utilise son cerveau qui est en haut, doublement en haut c&#x27;est bon après j&#x27;arrête, je vais me calmer est-ce que ça joue vraiment un rôle le fait qu&#x27;il y ait des autres membres dans la communauté pour toi imagine si on supprimait les groupes, les live groupés qu&#x27;on fait ensemble ou tout le monde parle etc et que t&#x27;es qu&#x27;avec moi, est-ce que ça apporte selon toi une vraie dimension ça m&#x27;emporte plus qu&#x27;une dimension du coup il y en a plein en fait et moi ça a beaucoup joué aussi ça m&#x27;a rassuré de vendre quelque chose que je savais pas faire parce que je me disais derrière il y a des acteurs qui ont des idées qui sont très intéressantes et qui ont des idées à prendre et qui sont très intéressantes et qui ont des idées à prendre et qui ont des idées à prendre et qui ont des idées à prendre Il y a des mecs qui sont là, qui ont un bagage technique que moi je n&#x27;ai pas, et si jamais j&#x27;ai une question, si jamais j&#x27;ai un blocage, quoi que ce soit, les mecs sont là, ils sont connectés et ils te répondent, ils te donnent des conseils, même hors des lives, si tu as besoin, on t&#x27;aide, il y a toujours quelqu&#x27;un qui va t&#x27;aider, et ça, ça joue énormément, et dans les lives, c&#x27;est tellement enrichissant d&#x27;avoir tous les profils mélangés de partout, ça change tout, c&#x27;est comme des réunions, c&#x27;est des réunions communautaires, c&#x27;est intéressant. C&#x27;est pas la même chose qu&#x27;il y a 3 mois, c&#x27;est pas la même chose qu&#x27;il y a 6 mois, en ce moment, on change de paradigme, je dis on parce que tout le monde suit, c&#x27;est-à-dire qu&#x27;on se suit, on s&#x27;auto-valide par rapport au marché de plus en plus, mais on change de paradigme tous les 3 mois. Il y a des mecs, ça fait 6 mois, ils sont pas venus dans les lives, ils se rendent pas compte à quel point on est haut par rapport à avant, mais dans toute la dimension, et je suis d&#x27;accord avec toi, et moi je suis bien content qu&#x27;il y a les autres, et heureusement qu&#x27;ils sont là, ceux qui ont déjà monté des boîtes, en vrai, on regarde le live d&#x27;hier, vous avez fini à 1h du mat, je crois chez vous c&#x27;est ça, de 20h à 1h du matin, ça c&#x27;est ça, il n&#x27;y a aucun marché mondial qui propose ça, je suis 100% certain et je le sais parce que j&#x27;ai des sentinelles, mes sentinelles c&#x27;est vous, vous êtes allé la plupart dans certaines autres offres etc, et ça c&#x27;est un truc qui est incassable, et je suis d&#x27;accord avec toi que que moi ça aurait été nul, même moi je suis d&#x27;accord avec que si toi tu te formais qu&#x27;avec moi ça aurait été nul, t&#x27;aurais pris plus de temps à faire les choses, j&#x27;aurais peut-être des fois eu pas la même énergie etc, et les autres permettent d&#x27;amplifier cela, et de faire des contrebalances etc, parce que chacun a son expérience, il y en a qui ont 30 ans dans les pattes, putain il y en a 30 ans j&#x27;existais pas, et qui donnent des conseils.</p>
+<p>et au final la fusion de tout le monde c&#x27;est énorme c&#x27;est un truc de malade on a un niveau qui est quand même élevé c&#x27;est pas pour lancer des fleurs mais ça va très très loin et du coup toi t&#x27;en profites bien en plus t&#x27;es tout le temps là tu vois ça en fait le suivi le fil conducteur de notre tapelle de cette vidéo au début et bien je te disais que depuis le début t&#x27;es là tous les lives donc chaque petit élément qu&#x27;on t&#x27;a donné comme conseil comme par exemple être en direct poser des questions apprendre mieux comprendre parce que t&#x27;es en direct t&#x27;étais pas en rediff jusqu&#x27;à là c&#x27;est pour ça que t&#x27;avances plus vite que les autres plus la dimension urgence tu vois donc ça ça fait super plaisir ok pour ça bah écoute là du coup on a fait bien le tour on a compris un petit peu la psychologie du profil et on va partir un petit peu à la démonstration concrète si tu peux nous montrer un petit peu ton écran qu&#x27;est ce que t&#x27;as fait qu&#x27;est ce que t&#x27;as ta page de vente je sais pas ce que tu nous as préparé pour te dire donc je pense que je vais montrer la même chose que ce que j&#x27;ai partagé hier dans le live et je l&#x27;ai corrigé du coup avec les retours qu&#x27;on m&#x27;a fait nickel donc je pense que c&#x27;est plus mieux cadré plus précis mieux adapté hier on a détruit ta page de vente volontairement c&#x27;est ça et comme ça ça va très vite et le lendemain matin elle est optimisée tu vois hier à 1h du mat&#x27; t&#x27;étais en transpiration je fais une dédicace à un membre qui était en transpiration hier vers les 1h du matin et c&#x27;est optimisé le lendemain matin quoi voilà j&#x27;ai j&#x27;ai ennommé ma boîte je l&#x27;ai appelé bataya ok ça ça sonne bien est ce qu&#x27;on peut juste méta méta raisonner s&#x27;il te plaît on va essayer de raisonner par le haut concrètement s&#x27;il y a des mecs là qui voient la vidéo on se projette elle fait 50 mille vues allez on est optimiste on est on est optimiste comment les mecs vont pouvoir s&#x27;identifier et comprendre ce que tu fais concrètement est ce qu&#x27;ils sont adaptés à ton offre et est ce que tu peux nous expliquer Expliquez à qui elles s&#x27;adressent, ce que tu proposes, clairement. Sans forcément du tout lire ce que j&#x27;ai fait, je pense que c&#x27;est une offre qui est exclusivement portée pour les entreprises BTP, parce que c&#x27;est ce que j&#x27;ai décidé de cibler et je n&#x27;ai pas envie de m&#x27;éparpiller de trop ailleurs, étant donné que c&#x27;est une niche que je connais bien, j&#x27;ai l&#x27;expérience T1, donc j&#x27;ai fait en sorte que mon offre soit tournée autour de ça, en fait ma vision c&#x27;est vraiment de créer un écosystème dans le BTP, mais après pour l&#x27;instant j&#x27;ai que, on va dire, un use case dans le BTP pour l&#x27;instant. Je ne te justifie pas, bien au contraire, si je te fais passer ici c&#x27;est que je vais te confronter face au marché avec des gars qui sont dans le BTP qui me regardent ou qui connaissent des gens dans le BTP, beaucoup de gens construisent des maisons par exemple, donc la vidéo elle aura une portée, donc t&#x27;inquiète pas on est derrière, on sait très bien que tu seras aidé et que n&#x27;importe quel client que t&#x27;auras, il aura des résultats derrière.</p>
+<p>Parce qu&#x27;il y a un mec dans le BTP, faut pas hésiter à me faire un retour et me dire que ça c&#x27;est nul, faut changer ça, c&#x27;est… Ouais, si il y en a dans le BTP, allez-y, on prend les gars, allez-y. On n&#x27;a pas de costard cravate là, je suis en short et tout, j&#x27;ai même pas de chaussettes et tout. Et donc pour l&#x27;instant c&#x27;est vrai que j&#x27;ai identifié un problème dans le BTP, c&#x27;est l&#x27;acquisition de chantier, je pense que c&#x27;est le problème numéro 1 de tous les entrepreneurs, c&#x27;est comment je trouve des clients quoi.</p>
+<p>Donc toi t&#x27;es, on va dire, t&#x27;es la personne, on va vraiment vulgariser, t&#x27;es le mec qui fait de l&#x27;IA pour les entreprises dans le BTP afin qu&#x27;elles trouvent plus de clients pour faire plus de chantier, c&#x27;est ça du coup, c&#x27;est en vulgarisme. Aujourd&#x27;hui, oui. Aujourd&#x27;hui.</p>
+<p>Disons que c&#x27;est là-dedans que, aujourd&#x27;hui, ça tourne, mon business. C&#x27;est dans l&#x27;acquisition de clients, l&#x27;acquisition de chantier. C&#x27;est bien que tu dises aujourd&#x27;hui, parce que tu mets une dimension temporelle.</p>
+<p>Maintenant, je suis une boîte d&#x27;IA, je veux intégrer l&#x27;IA dans mes process, aller plus vite, je dis bien, aller plus vite que mes concurrents, parce que, moi, j&#x27;ai un ego, je suis un humain, et mon concurrent, j&#x27;ai envie de le dépasser et de lui prendre plus de chantier que lui. Tu fais de l&#x27;intégration personnalisée aussi ? Oui, bien sûr.</p>
+<p>C&#x27;est du sur-mesure, on va dire. Ce n&#x27;est pas un format agence où on va prendre tout le monde et on ne va pas personnifier. Moi, je fais vraiment un suivi régulier avec les personnes avec qui je travaille aujourd&#x27;hui.</p>
+<p>On s&#x27;appelle souvent, on s&#x27;envoie des messages, etc. C&#x27;est une relation presque amicale avec le mec que j&#x27;ai livré. C&#x27;est presque ça, franchement.</p>
+<p>C&#x27;est amical, tu es un ancien gars du chantier, tu les aimes bien, tu travailles avec ça. Je parle de l&#x27;alignement suprême, aller bosser pour une boîte qui ne t&#x27;intéresse pas. Si demain, je te dis que tu bosses pour les DRH, je te garantis que dans deux mois, tu fais une dépression.</p>
+<p>Tu es dans le chantier, tu t&#x27;amuses, c&#x27;est bien sûr. C&#x27;est pour ça que le marché est totalement rigide et ridicule. C&#x27;est marrant parce que ça commence tous les deux par R.I.</p>
+<p>et ça fait rire aussi. C&#x27;est que tu te dis, vends, gagne de l&#x27;argent, on s&#x27;en fout, vends ça, vends-le à quelqu&#x27;un, tu vas gagner de l&#x27;argent. Non, il y a beaucoup plus de principes à voir.</p>
+<p>Tu as la connaissance du BTP, tu as bossé, tu as fait des chantards, tu as fait aussi des chantiers, tu as bossé avec des gars, etc. Et c&#x27;est ça la vraie dimension. Ouais, disons que j&#x27;ai la vision de ce que les mecs y vivent.</p>
+<p>Je comprends ce que ça veut dire. que mon client, par contre, quand il me parle de ses journées, de ce qu&#x27;il fait, je comprends. Donc, après, derrière, ça se répercute aussi dans ce que je livre, en fait.</p>
+<p>C&#x27;est pas un truc général où tout le monde pourrait le faire, puisque, du coup, toute la stratégie qu&#x27;on met en place ensemble, elle est adaptée vraiment au BTP, purement. Que BTP ? Oui.</p>
+<p>Et du coup, là, tu es sur une frame qui est intéressante, sur une image. Maintenant, imaginons qu&#x27;il y a un gars qui a une boîte dans le BTP ou qui connaît quelqu&#x27;un. OK, c&#x27;est bien jeune, ce que tu montres, mais prouve-moi qu&#x27;il y a un autre gars du chantier qui a eu des résultats.</p>
+<p>Qu&#x27;est-ce que tu réponds à ça ? Là, du coup, c&#x27;est mon client actuel, Vosges Habitat Isolation. On a lancé les campagnes il y a deux semaines, et il a déjà envoyé son premier devis à 40 000 euros sur un profil de client qui correspondait exactement à ce qu&#x27;il recherchait, en ayant dépensé 180 euros de plus.</p>
+<p>Et en plus, là, pour l&#x27;instant, ce n&#x27;est pas encore des devis, mais ça va le devenir. Il a trois rendez-vous qui sont fixés, en plus de celui-là, où il va aller faire des devis pareil. Et ça fait combien de temps que tu as mis ça en place ?</p>
+<p>Parce que du coup, en fait, moi, ce que j&#x27;aime bien, c&#x27;est que c&#x27;est transparent. En fait, les mots, je ne les vois pas, je les ressens. Et je vois que tu ne prends pas les gens pour des cons.</p>
+<p>Pourquoi ? Parce que tu n&#x27;es pas opaque. C&#x27;est quoi opaque ?</p>
+<p>Opaque, c&#x27;est un mec qui te dit, moi, j&#x27;ai un système qui est tout prêt, et je fais de la publicité et ça te rapporte 40 000. Sauf que là, tu marques pour 190 euros de publicité, en deux semaines, ce client a fait 40 000. Donc, tu as la transparence et tu ne prends pas les gens pour des cons, parce qu&#x27;ils ne sont pas cons, les gens.</p>
+<p>Après, je viens de spécifier envoyer. C&#x27;est pas encore signé, ça fait 2 semaines, la dame à qui il a envoyé son devis prend le temps de lire ça, de se poser, mais il y a de fortes chances que ça signe, et si c&#x27;est pas celui-là, ce sera le deuxième, le troisième, dans tous les cas. Donc là tu as 3 RDV qualifiés, ça sera rentabilisé, le système il marche, il ne faut pas partir du principe qu&#x27;il y a une méthode qui marche ou qui ne marche pas, tu regardes le marché, est-ce qu&#x27;il y a des gens qui cherchent des personnes pour faire des chantiers, oui, il y a un marché, il y a une offre et de la demande, est-ce qu&#x27;il y a beaucoup de demandes, il faut que tu le saches, là on a besoin de vision, tu utilises ta technique pour aller scraper etc, mais entrepreneur pour avoir la vision, une fois que tu sais qu&#x27;il y a une offre et une demande et que tu as mis sur table tous les concurrents, qui fait ça, quelles sont les forces et les faiblesses de tout le monde, tu sais qu&#x27;il y a un marché, il ne te reste plus qu&#x27;à actionner la technique, mais avant tu as fait actionner l&#x27;entrepreneur et le manager qui réfléchissent, qui raisonnent, qui voient le problème au-dessus, et après en dessous tu sais ce qu&#x27;il se passe, et il y a une demande, tout le monde qui a un chantier peut avoir ça, même mieux, ça c&#x27;est minable par rapport à ce que tu vas faire, et tu vas t&#x27;améliorer bien sûr, même pour lui, donc c&#x27;est logique, 40 000 euros ça peut devenir fou, il y en a qui vont dire ah ouais moi j&#x27;investis 1000 euros, j&#x27;ai 40 000 euros de chantier, je suis intéressé, il y en a qui vont trouver ça absurde, mais après c&#x27;est une question de mindset, c&#x27;est une question de vision, c&#x27;est une question aussi de QI génétique, et il faut quand même le mentionner, ça peut être froid mais il y a aussi cette partie là, toutes les variables et les constantes sont, désolé je pars un petit peu en steak, mais des fois il faut que j&#x27;en recale pour certains, parce que dans les commentaires je sais qu&#x27;il y en a qui ne comprennent rien, il y en a qui sont très intelligents mais bon, c&#x27;est autre chose encore.</p>
+<p>Donc voilà c&#x27;est mon premier use case, là je me présente vite fait, donc c&#x27;est Exmarson, Bonne photo, bien calibré, le site ne t&#x27;agresse pas, l&#x27;orange il est bien, on en a parlé hier concernant, tu travailles plus le socle, ton identité, le caractère de la marque, pourquoi la couleur orange, pourquoi cela, et ça c&#x27;est important, c&#x27;est le travail hors technique, faire une page de vente c&#x27;est facile techniquement, mais bon, ce qu&#x27;il y a dedans c&#x27;est un vrai travail. Il faudra que tu travailles pour les MDH, oui mais tu vas travailler, tu auras le temps après, là déjà, occupe-toi bien de tes clients, comme on t&#x27;avait dit, bosse bien sur tes clients, délivre leur bien, apporte-leur du résultat, on s&#x27;en fout ce que tu leur délivres, ils en ont rien à foutre, ce qu&#x27;ils veulent c&#x27;est du résultat, si tu délivres moins mais qu&#x27;ils ont le même résultat, délivre moins avec le même résultat et tu fais par importance, mais tout le reste après on s&#x27;en fout, le gars tu l&#x27;as eu, maintenant tu t&#x27;occupes de lui comme il faut, ça c&#x27;est important parce qu&#x27;il y en a plein qui font, c&#x27;est la différence entre un freelance et, un freelance c&#x27;est quelqu&#x27;un qui va bosser, attends, on va faire mieux, tu sais ce que c&#x27;est la différence entre un freeler en freelance et un intégrateur, freelance vs intégrateur, bah c&#x27;est celui qui pense en système, plutôt qu&#x27;en, différemment, bah la vision je pense, changer les process de la boîte, pas forcément changer parce que changer les process ça met du chaos et ils n&#x27;aiment pas la plupart de tout changer, mais en fait ma question elle est mal posée, un freelance, mindset de freelance, bon j&#x27;ai bossé une journée aujourd&#x27;hui, moi mon tarif c&#x27;est 500 euros de la journée, je facture 500 balles et je livre 500 balles, je livre que ça, moi je ne suis pas payé au résultat, j&#x27;en ai rien à foutre que mon client il est ou pas, on l&#x27;a dit qu&#x27;on faisait ça on fait ça, l&#x27;intégrateur c&#x27;est pas pareil, l&#x27;intégrateur il apporte du résultat et il facture et il prend plus de risques qu&#x27;un freelance et il est avec toi, un intégrateur il va dans la boîte, il appelle le gars, il veut comprendre ses besoins, alors c&#x27;est peut être pas le bon terme. intégrateur, mais c&#x27;est pour ne pas que tu tombes dans le piège du freelance qui travaille tarifs aux journaliers, c&#x27;est minable, c&#x27;est ridicule de faire ça, ceux qui font ça...</p>
+<p>J&#x27;ai jamais compté mes heures pour ce client-là, j&#x27;ai fait un dashboard, c&#x27;était pas compris dans le truc à la base, mais je me suis dit lui va être content d&#x27;avoir ça, ça va l&#x27;aider tous les jours pour suivre ses prospects, il va être content, je lui ai rien demandé pour ça, je lui ai pas dit ah tiens il faudrait que tu payes plus, si tu payes plus je te donne ça, ben non, après c&#x27;est une relation, c&#x27;est un partenariat en fait, c&#x27;est toujours du long terme. C&#x27;est une relation, mais il y a un périmètre à définir, quand je dis que c&#x27;est minable c&#x27;est volontaire, parce que je fais exprès ça va trigger des gens, ils vont s&#x27;énerver etc. Quand je dis que c&#x27;est minable, c&#x27;est que c&#x27;est minable avec les outils qu&#x27;on a aujourd&#x27;hui et à la vitesse qu&#x27;on peut délivrer, le paradigme du marché a changé, tu peux plus facturer comme avant à la journée, tu peux faire un site Cloud Code en un seul prompt si tu as défini un bon périmètre avant, par contre voilà tu fais payer au résultat que tu apportes, mais il y a plein de méthodes, on les voit en interne, mais ce que tu fais pour l&#x27;instant c&#x27;est bien, il n&#x27;y a aucune erreur, mais ne tombe pas dans le freelance et ne tombe pas dans le ouais bon ce truc là je vais le faire en deux heures, ok bon ça va je vais facturer 300 balles, deux heures, putain mais tu as fait un site web complet avec un système, une pipeline d&#x27;acquisition lead, 300 balles, deux heures, non ne raisonne pas en heures, mais ça tu l&#x27;as déjà, mais je le dis quand même pour certains autres, pour mettre un peu d&#x27;égard de fou ça fait plaisir et mettre des graines encore une fois, donc ok page de vente propre et du coup les offres là que tu proposes pour l&#x27;instant ?</p>
+<p>Ben là mon modèle économique pour l&#x27;instant il est basé sur une offre gratuite, donc ça c&#x27;est un diagnostic où en fait je vais faire un retour sur tout ce qui peut être intégré dans l&#x27;entreprise, donc un pdf de 3 pages avec De la valeur dedans, gratuite. Nickel. Donc les gars du chantier, c&#x27;est quoi les métiers à peu près ?</p>
+<p>Il y a des mecs dans le thermo ou pas ? Eh bien, le gars que je livre aujourd&#x27;hui, c&#x27;est un mec qui est dans l&#x27;isolation thermique. Ah, l&#x27;isolation...</p>
+<p>Ouais, j&#x27;ai dit thermo, thermique, parce que j&#x27;avais vu tout à l&#x27;heure, je ne me rappelais plus du mot. Ok, isolation thermique, est-ce qu&#x27;il y en a qui bossent dans le chantier, dans le déplacement ? Plombier aussi ou pas tu prends ?</p>
+<p>Ouais, tout. C&#x27;est différent plombier ? Franchement...</p>
+<p>Ah ouais ? Bah en fait, moi j&#x27;ai remarqué un truc sur le terrain, c&#x27;est que les métiers du bâtiment se rejoignent tous plus ou moins dans une certaine dimension. Tu vas prendre un maçon, il va savoir faire de la couverture, tu vas prendre un chercheur franchi, il va savoir faire de la maçonnerie.</p>
+<p>En fait, à partir du moment où tu es bon dans un métier, tu vas savoir te démerder dans un autre métier, tu ne vas pas être expert. Et une fois que tu as compris un métier dans le bâtiment, tu peux te démerder dans d&#x27;autres métiers. Et un mec qui est plombier, il va savoir faire de l&#x27;électricité, un mec qui est plaquiste, il va savoir faire du carrelage, etc.</p>
+<p>Ou de la peinture. Et voilà. Ok.</p>
+<p>Tout le BTP. Tout ça se rejoint. Par contre, je te le dis parce que la vidéo, quand elle va sortir dans très peu de temps, on va dire moins de 24 heures, prépare-toi bien ta pipeline, la récupération des transcripts pour travailler ce que tu vas avoir comme appel.</p>
+<p>Parce que tu vas en avoir. Prépare bien la classification parce que tu vas avoir tout et n&#x27;importe quoi dans les appels de 45 minutes. Raisonne aussi sur le 45 minutes parce que peut-être qu&#x27;il y en a qui vont aller sur ta page de vente bataia.fr et qui vont peut-être voir que ce n&#x27;est plus 45 minutes mais plutôt 20.</p>
+<p>Tu vois, 45 minutes, c&#x27;est beaucoup. Fais attention aussi à ça. Et c&#x27;est pour ça, on est spontané et tout change très vite et tout s&#x27;améliore très vite.</p>
+<p>Et voilà. Comme ça, tu travailles bien et gardes bien tous les transcripts. Vraiment, ça, c&#x27;est important.</p>
+<p>Et du coup, les offres payantes ? Alors, j&#x27;ai mis une offre OneShot. En fait, il n&#x27;y a pas d&#x27;engagement, c&#x27;est 30 jours, on teste un canal et on envoie.</p>
+<p>En soi, on voit que les résultats peuvent arriver dès les... Enfin, le mec avec qui je travaille, Nicolas, il a eu ses premiers prospects le premier jour, en fait. Ça n&#x27;attend pas, c&#x27;est dès les premiers jours, donc en 30 jours, tu as déjà des résultats.</p>
+<p>Et c&#x27;est son engagement, du coup, cette offre-là. Ensuite, la machine à chantier, là, c&#x27;est vraiment quelque chose de complet, où on va mettre un système en place. Pas juste on va faire une pub sur 30 jours et puis on arrête là.</p>
+<p>Là, c&#x27;est vraiment sur du long terme, bosser une stratégie complète, avec toute la partie scoring, relance, collecte d&#x27;avis Google, etc. CRM aussi, non ? Tu places le CRM dedans ou c&#x27;est dans l&#x27;offre ?</p>
+<p>Ouais, avec le dashboard, en fait. Ok, dashboard de pilotage. Voilà, c&#x27;est ça, dans le dashboard, j&#x27;ai un CRM intégré, où les statuts sont mis à jour automatiquement dedans.</p>
+<p>Ok, donc tu leur fais un système qu&#x27;ils peuvent piloter tranquillement le matin avec un café. Ouais, c&#x27;est ça, depuis le téléphone. Même depuis le téléphone, encore mieux, ok.</p>
+<p>Ou lorsqu&#x27;ils sont au feu rouge ou quoi, ils peuvent aller regarder, ok, excellent. Voilà, et dedans, il y a des numéros des gens, ils peuvent appeler direct, cliquer sur le numéro depuis le dashboard, et ils l&#x27;appellent direct, ça va. Ouais, c&#x27;est réactif, c&#x27;est hyper réactif et adapté avec cette niche-là.</p>
+<p>Ils n&#x27;ont pas besoin d&#x27;un CRM hyper complexe. Voilà, et le mec, il est au feu rouge, il s&#x27;arrête, il y a un bouchon. Bam, il appuie deux boutons.</p>
+<p>Le minimum de clics, le mieux, c&#x27;est deux boutons, il appelle le client. Ok, bonjour, j&#x27;ai vu que vous avez rempli, et ça y va direct. Et autant, il est à côté, il fait un coup de volant, il prend la rue qu&#x27;il connaît bien pour aller plus vite chez le client, il est chez le client.</p>
+<p>C&#x27;est ça. Ouais. Ça permet de les rappeler très vite, parce que la notif, en fait, Nicolas lui reçoit des notifs en instantané, dès que le mec il a rempli le truc dans la pub, il reçoit la notif directe, il peut rappeler.</p>
+<p>Et surtout qu&#x27;ils sont en déplacement, donc ils peuvent être très mobiles. Et ça, franchement, pour un client qui donne ses données, au bout d&#x27;une heure, si le mec est devant chez lui, il se dit que c&#x27;est un avantage quand même, parce que là il y a un problème et un besoin chez le client, il faut le résoudre très rapidement. C&#x27;est très bon pour lui.</p>
+<p>Et Empire, j&#x27;aime bien le nom, parce que t&#x27;es plus dans le rationnel. Empire, c&#x27;est ça, tu montes un empire grec. Le but, c&#x27;est vraiment de dominer tous les concurrents locaux, vraiment à 100%.</p>
+<p>Au niveau du site internet, du SEO, GEO, référencement local, le but c&#x27;est de devenir la référence dans la zone. Et derrière, je mets aussi, ça c&#x27;est important pour plus tard, pour la vision 2030 par exemple, pour ceux qui vont commencer à créer des mémoires d&#x27;entreprise, documenter tous les process qui vont être utilisables par l&#x27;IA. Ça va permettre de recruter très vite, même pour le savoir technique, la transmission technique, ça va être énorme.</p>
+<p>Tous les métiers ont besoin de ça, mais n&#x27;en ont pas encore conscience, surtout sur le marché européen. Ça c&#x27;est une dimension, on va travailler sur ça. Il y en a qui travaillent déjà sur ça.</p>
+<p>Moi j&#x27;ai déjà une base de 4900 variables là-dessus, c&#x27;est très puissant. Et c&#x27;est bien que tu te projettes, parce que je te le dis, j&#x27;en ai accompagné beaucoup, j&#x27;en ai vu beaucoup le marché. Il n&#x27;y a pas grand monde qui propose à cette cible là une mémoire d&#x27;entreprise.</p>
+<p>Il n&#x27;y a pas grand monde qui se projette en 2030 qu&#x27;ils auront besoin de ça. Et il y en a qui ne sont pas cons, qui sont CEO de boîte BTP. tu sais ils font de l&#x27;informatique, ils s&#x27;y connaissent un petit peu, un peu même de l&#x27;IA, tu leur proposes ça ils seront bien plus rapides et plus puissants et performants que leurs concurrents et forcément ils ont envie d&#x27;être plus puissants et plus performants que leurs concurrents c&#x27;est pas leur but de devenir Apple les gars, ils font des chantiers etc, ils doivent sous-traiter pas mal de trucs c&#x27;est pas pareil qu&#x27;une boîte d&#x27;Apple etc, dans le sens où eux ils vont vouloir dominer et ça j&#x27;ai bien aimé Empire avec la proximité dominée et la mémoire d&#x27;entreprise, la projection c&#x27;est je sais pas si je vais être très bien compris dans le transcript mais en tout cas moi dans ma tête c&#x27;est très clair c&#x27;est clair pour toi ou pas quand je parle de tout ça ?</p>
+<p>ouais ouais c&#x27;est intéressant bravo bravo SEOGEO, donc bien sûr transformation complète et t&#x27;es derrière, maintenant je te pose une question vitale, on l&#x27;a vu hier, on va voir si tu l&#x27;as travaillé Comment je peux te faire confiance et c&#x27;est quoi ton offre irrésistible ? Parce que je veux bien mettre dix mille balles, je sais je tape sur un point de douleur volontaire Je veux bien mettre dix mille balles mais si ça marche pas c&#x27;est quoi ton offre irrésistible concrètement, je veux bien payer dix mille balles mais qu&#x27;est ce que j&#x27;y gagne ? Moi je mets en place déjà une garantie de résultat ok, ou je rembourse en fait tout simplement si au cours de mois il n&#x27;y a rien c&#x27;est remboursé intégralement, déjà j&#x27;enlève le risque à ce niveau là tu es sûr de ça, remboursé intégralement ?</p>
+<p>Ouais ok, c&#x27;est à dire que si le mec paye dix mille tu rembourses dix mille ? ouais Moi c&#x27;est une forme d&#x27;engagement personnel qui me stimule plutôt que de me faire peur je ne critique pas, au contraire je mets ça en avant et c&#x27;est des techniques très puissantes je ne dirais pas que c&#x27;est bien ou pas bien mais je suis client, j&#x27;ai envie d&#x27;acheter j&#x27;ai envie d&#x27;acheter, je suis dans le btp, le mec me dit je te rembourse si ça va pas si tu construis une maison ça va te coûter cent mille et si jamais les fondations ne sont pas solides au bout de trois ans on te rembourse complètement et en plus on casse la maison et on enlève toutes les briques et toutes les merdes pour tout nettoyer et en plus de ça on t&#x27;a préparé ta prochaine maison tu vois il y a carrément l&#x27;anticipation du futur Mais je pense que c&#x27;est c&#x27;est important d&#x27;apporter du résultat et de pas juste vendre un truc Et une fois que c&#x27;est vendu T&#x27;apportes pas les résultats que t&#x27;as vendu Et du coup moi le fait de mettre la garantie ça derrière ça me stimule et et je sais que je vais faire le nécessaire pour que ça marche dans tous les cas bien sûr ça te stimule non bien sûr c&#x27;est très bien là t&#x27;es en plein dans la construction de l&#x27;empire pour après facturer est-ce que tu factures à 3000 à 10000 tu verras parce qu&#x27;après si tu deviens la sommité sur le secteur ça serait l&#x27;objectif je connais personne qui est la référence numéro 1 en automatisation et intégration pour les btp c&#x27;est pas tous les profits qui peuvent faire ça mais non c&#x27;est très clair donc récupère de la data prend un max d&#x27;appels travaille tes transcripts enrichis les adopte une vision systémique et non pas une vision technicienne je dis systémique pas entrepreneurial et pas managerial systémique voit les systèmes et voit pas la technique et les raisonnements de bas niveau et tout ça c&#x27;est ce qu&#x27;on voit c&#x27;est ce qu&#x27;on voit dans la communauté et c&#x27;est ce qu&#x27;on voit dans la formation il y a pas mal de modules qui arrivent là j&#x27;ai travaillé sur ça et puis non bravo bravo pour ça il nous reste un dernier bloc pour finaliser ça sinon notre chaudron ne sera pas complet c&#x27;est quoi ton prochain palier on va vraiment être très précis dans trois mois tu veux être où dans trois mois Je veux Je veux avoir des process en fait là là du coup je suis en train de travailler comme tu m&#x27;as dit plusieurs fois le socle Mais du coup là c&#x27;est aussi par rapport à à mon alignement, à ce que je mets en place. Là, si demain j&#x27;ai plein de demandes, comment j&#x27;assume, comment je structure ma boîte ?</p>
+<p>Comment je peux libérer 10 clients en un mois ? Comment je peux scaler ma boîte ? Et travailler sur toute la mémoire, l&#x27;architecture de la mémoire, etc.</p>
+<p>C&#x27;est vraiment là-dessus que je vais bosser, je pense, sur les 3 prochains mois. Et livrer les clients que j&#x27;ai vendus aussi. Bien sûr, bien sûr.</p>
+<p>Et puis, préparer les prochains coûts. Est-ce que tu dirais que tu as un problème d&#x27;organisation en ce moment ? Ouais, je pense.</p>
+<p>A quel niveau ? Dans la structuration des fichiers, dans les datas, dans des offres ? C&#x27;est vraiment à quel niveau, plus précisément, l&#x27;organisation ?</p>
+<p>Je suis un peu partout, franchement. En fait, il y a tellement de points à régler, il y a du feu partout. Il faut aller éteindre le feu partout.</p>
+<p>C&#x27;est le pompier freelance. Le pompier freelance, il y a 10 000 clients, il doit éteindre des feux partout. Mais sauf qu&#x27;il est tout seul et il est freelance.</p>
+<p>Donc, il va éteindre des feux et après, il retourne. Il ne peut pas se dupliquer, se cloner, comme sur Paperclip, par exemple, et d&#x27;autres systèmes systémiques. C&#x27;est intéressant.</p>
+<p>C&#x27;est quoi qui te manque ? Selon toi, qu&#x27;est-ce qui te manque pour passer au niveau, pas supérieur, au niveau suivant ? Suivant, c&#x27;est très important.</p>
+<p>Ouais, ouais, ouais. Déjà, il y a les limites, je pense. Et ensuite...</p>
+<p>Je le touche depuis tout à l&#x27;heure. La question, je suis en train de le caresser, tu vois. Je caresse plus de livres que de femmes, carrément, pour te dire à quel point c&#x27;est grave.</p>
+<p>Ah, oui. Ah, putain. Et puis, ouais, vraiment...</p>
+<p>Travailler mon socle, je pense que c&#x27;est ça le plus important pour pouvoir derrière pousser aujourd&#x27;hui avec ce que j&#x27;ai comme base. C&#x27;est trop fragile pour pouvoir pousser l&#x27;IA à ce qu&#x27;elle est capable de faire. En fin de compte, je ne suis pas efficient dans ma manière de travailler.</p>
+<p>C&#x27;est vraiment travailler ça, pouvoir utiliser l&#x27;IA comme il faut. Le socle, c&#x27;est incroyable parce que tout se démultiplie à une vitesse. Je parle de la communauté, même des membres élites qui ne viennent plus trop dans les lives, qui n&#x27;ont pas trop fait de Cloud Code, ils n&#x27;ont pas un socle travaillé propre, un socle sur tous les axes.</p>
+<p>Un socle technique, ça ne sert à rien. Juste une configuration Cloud Code qui est puissante pour utiliser les frameworks, ça ne sert à rien tout seul. Il y a plein d&#x27;autres dimensions à apporter.</p>
+<p>Par exemple, si on a le même objectif, ce que je vais faire en une heure, tu vas le faire en une semaine actuellement. Concrètement, ça va aller très vite. Après, c&#x27;est en expansion, tu vas grimper.</p>
+<p>Ce que je vais faire en une heure et en une semaine, un mec qui regarde la vidéo juste, qui est en mode consommateur et qui n&#x27;applique rien, il lui faut un an. C&#x27;est le chiffre tiré du chapeau, même si je n&#x27;ai pas de chapeau, on va dire des lunettes. Mais c&#x27;est à peu près ça, c&#x27;est impossible de donner des chiffres par rapport à ça.</p>
+<p>Mais les gens ne se rendent pas compte quand ils ne sont pas dedans et à quel point ils sont loin, loin, loin derrière. Il y a des niveaux, ça ne s&#x27;arrête jamais. Le socle, c&#x27;est un enfer.</p>
+<p>Tous les jours, tu vas l&#x27;optimiser ton socle. Après, tu vas plus travailler ton socle que travailler ce qui en découte ton socle, qui va te permettre de pouvoir avoir des clients, etc. Et c&#x27;est là, il ne faut pas que tu partes en steak.</p>
+<p>C&#x27;est trop travailler ton socle et trop raisonner et trop avoir de QI en fait. Raisonner que par le QI, l&#x27;intelligence des systèmes, la systémie. À des moments, il faut être en mode chantier.</p>
+<p>Et c&#x27;est pour ça que je parlais de la pipeline et de la re-canalisation, il va falloir que tu te re-canalises à des moments. Oui et pas que, et pas que faire un truc, parce qu&#x27;en général on met des étiquettes aux gens et si un jour on te met une étiquette par exemple de technicien ou une étiquette de vendeur, pose-toi des questions. Les étiquettes c&#x27;est le marché directement qui t&#x27;envoie un signe et c&#x27;est révélateur.</p>
+<p>Le marché a toujours raison et le client est roi, mais le client ne doit pas te prendre pour un con et tout ça c&#x27;est en train de se redessiner, j&#x27;aurai d&#x27;autres paroles dans six mois et c&#x27;est pour ça qu&#x27;on va évoluer encore dans la commu, ça va être très puissant ce qui va arriver dans les prochains mois. On est le 16 avril 2026 lorsque cette vidéo est tournée, juste cet été déjà, l&#x27;expansion était dans un cercle, tu peux pas sortir, ça va trop vite pour que tu puisses sortir, tellement que ça va vite, tu as la roue de hamster, tellement qu&#x27;elle va vite, tu ne peux même pas sortir en fait, t&#x27;es bloqué dans la roue, là tu peux pas sortir, soit elle s&#x27;arrache, elle fonce dans un mur et on meurt tous ou soit tu peux plus sortir c&#x27;est fini. Mais de toute façon tu seras bien accompagné, y&#x27;a pas de soucis et pas que par moi, c&#x27;est ça qui est vraiment très puissant et pour conclure cette vidéo, on va être un peu brutal pour la fin, ça fait plaisir, toi en plus ça te dérange pas, s&#x27;il y a un mec là qui est full théoricien, qui regarde les vidéos, qui applique, qui prend des notes, qui a des carnets remplis mais qui n&#x27;applique que dalle, qui fait pas d&#x27;erreurs, qui est dans sa zone et qui est toujours en salariat, tu lui dirais quoi à ce mec concrètement avec tes mots par rapport à ton parcours ?</p>
+<p>Moi j&#x27;étais là dedans, j&#x27;étais beaucoup dans la masturbation intellectuelle, je pensais que j&#x27;avais du vécu, que j&#x27;étais important mais en fait tu te rends compte que... des personnes dont la société n&#x27;est rien, que les gens dans la lune ne te regardent pas, ils ne sont pas à l&#x27;écoute de toi, je dois te dire, tout le monde s&#x27;en fout. Et en fait, si tu n&#x27;as pas le déclic de dire, il faut faire le travail, après ça dépend aussi des ambitions de chacun, ça dépend aussi de ce que la personne, est-ce qu&#x27;elle a un feu en elle, est-ce qu&#x27;elle a ce truc, si elle l&#x27;a, il faut l&#x27;alimenter, mais ça passe aussi par le travail, et il n&#x27;y a pas de secret, il faut faire le travail, il n&#x27;y a pas de secret, il faut se lever le matin et y passer les heures devant l&#x27;écran.</p>
+<p>Moi à la base, je ne suis pas habitué pour rester devant l&#x27;écran toute la journée, j&#x27;ai plutôt une nature qui me pousserait à aller dehors, à aller bouger, etc, mais je sais qu&#x27;il faut que je passe par là, il faut traverser cette période, c&#x27;est nécessaire, si je veux réussir, donc je ne me donne pas le choix, j&#x27;y vais, et je sais que derrière la récompense, elle sera immense. Bien sûr, dans trois mois tu seras dans une boîte, parce que tu es devant un écran, mais après tes systèmes seront tellement bien optimisés et ça travaillera pour toi tout seul, concrètement, je ne te parle pas de Nuit Internet, on parle vraiment de cloud code, multi-instances qui travaillent pendant que tu es dans un bureau en train de boire un café et raconter des conneries, voilà tu racontes des conneries, ce que tu aimes faire, et ça tournera tout seul, et ça, ça va arriver dans X temps, c&#x27;est toi qui va le procurer, et pour moi, je pense que ce serait un bon objectif pour toi, de savoir qu&#x27;en fait, tu es en train d&#x27;apporter la dimension humaine, et que toute la technique ça s&#x27;occupe tout seul, et c&#x27;est bien fait en plus. Et ça, ça va arriver très, très vite.</p>
+<p>Donc, ben écoute, on va continuer de te suivre. En tout cas, c&#x27;est bien, tu t&#x27;exposes toujours. T&#x27;es déjà dans la roue, là.</p>
+<p>Dis-toi qu&#x27;il y en a qui ont vu la roue, qui l&#x27;ont touchée. Ils se sont, tu sais, ça a tapé leurs doigts. Et ils ont fait « Oh putain, c&#x27;est chaud cette roue, est-ce que je rentre ou pas ?</p>
+<p>» Mais ils sont avancés jusqu&#x27;à la roue, tu vois. Il y en a, ils sont restés à 20 mètres derrière, ils la voient et ils disent « Waouh, ah, ça bouge vite ! » T&#x27;es fou le théoricien.</p>
+<p>Et ceux qui sont dedans, « Ah, c&#x27;est fini. » Mais là, t&#x27;es rentré dedans. Dis-toi que ça va être très difficile pour toi d&#x27;arrêter et de faire autre chose.</p>
+<p>D&#x27;arrêter, en fait, t&#x27;es déjà rentré. J&#x27;ai sauté dedans, parce qu&#x27;il n&#x27;y a pas d&#x27;autre solution. Et t&#x27;as sauté dedans.</p>
+<p>Donc, ben écoute, c&#x27;était un plaisir. Je pense que je te le ferai passer quand je vais avoir un vrai cap. Quand tu seras à l&#x27;étranger, optimisé fiscalement.</p>
+<p>Ou pas forcément à l&#x27;étranger, mais tu seras optimisé fiscalement. Et que tu auras tous tes systèmes de travail. Fin d&#x27;année ou 2027, tu repasses sur la chaîne.</p>
+<p>Autant, t&#x27;auras une plus grosse chaîne YouTube que moi. Non. Ah non, non, non.</p>
+<p>Ne dis jamais, jamais. Moi, je ne veux pas la posture du mec qui est le meilleur de France. Parce qu&#x27;en général, les snipers, ils visent souvent ces genres de personnes-là.</p>
+<p>Les plus hautes et celles qui parlent le plus. Donc, on va suivre l&#x27;activité. Mais en tout cas, le but, c&#x27;est de transformer des boîtes, des gens.</p>
+<p>D&#x27;essayer de les digitaliser en leur donnant un peu de libre arbitre aussi. Parce que le but, ce n&#x27;est pas juste automatiser tout. Le mec, il n&#x27;a rien, il n&#x27;a pas de dashboard, il ne sait pas ce qui se passe.</p>
+<p>Tu lui fais un dashboard. Il peut cliquer, il peut appuyer. Tu lui donnes un peu de libre arbitre.</p>
+<p>Des rapports tout le temps. Il faut le tenir au courant. Un suivi régulier.</p>
+<p>Tu l&#x27;appelles aussi. Tu l&#x27;appelles. Ouais, salut, ben viens.</p>
+<p>Bon, vas-y, t&#x27;as le temps. Viens, on boit un café, on regarde un peu les systèmes. Je te montre un peu.</p>
+<p>Juste ça. Toi, tu pars, t&#x27;as déjà un prompt qui tourne avec quatre instances. Et quatre instances qui vont travailler.</p>
+<p>Tu vas boire un café, tu reviens. Ça finit à peine, tu vois. Tu mets un loop ou quoi, un alpha loop et d&#x27;autres trucs de techniciens.</p>
+<p>Merci et bravo pour le parcours, franchement braquage à la PID, il nous a fait une bijouterie en 35 secondes. S&#x27;il y en a qui ont la référence, faut être vraiment un gamer pour avoir cette référence les gars, un ancien gamer. Et puis à très vite, salut Militaire !</p>
+</div>
+</div>
 
-    <aside class="sidebar">
-      <div class="sidebar-card youtube-cta">
-        <h4>Voir la vidéo</h4>
-        <a href="https://www.youtube.com/watch?v=YHlHuHNKBSI" target="_blank" rel="noopener" class="btn-youtube btn-full">▶ YouTube</a>
-        <div class="youtube-url-text">youtube.com/watch?v=YHlHuHNKBSI</div>
-      </div>
+<div class="tab-panel" id="tab-fiches">
+<div class="fiche" id="fiche-resume">
+  <div class="fiche-header">
+    <h2>Fiche de résumé</h2>
+    <button onclick="window.print()" class="btn btn-secondary" style="font-size:.85rem">🖨 Imprimer</button>
+  </div>
+  <table class="fiche-table">
+    <tr class="fiche-row"><td class="fiche-label">Titre</td><td>Il avait 30 000€ de dette à 22 ans, voici ce qu&#x27;il a fait</td></tr>
+    <tr class="fiche-row"><td class="fiche-label">Date</td><td>2026-04-17</td></tr>
+    <tr class="fiche-row"><td class="fiche-label">Durée</td><td>92:20</td></tr>
+    <tr class="fiche-row"><td class="fiche-label">Niveau</td><td>Intermédiaire</td></tr>
+    <tr class="fiche-row"><td class="fiche-label">Catégorie</td><td>Management &amp; Entrepreneuriat</td></tr>
+    <tr class="fiche-row"><td class="fiche-label">Thèse</td><td>Hugo, ancien maçon tailleur de pierre formé aux Compagnons du Devoir, s&#x27;est lancé en entrepreneuriat IA après s&#x27;être endetté en crypto.</td></tr>
+    <tr class="fiche-row"><td class="fiche-label">Concepts</td><td>Le Niveau de Conscience, L&#x27;Effet Cumulé, La Perception de la Valeur, L&#x27;Oscillation Stratégique, Le Point de Friction</td></tr>
+    <tr class="fiche-row"><td class="fiche-label">Outils</td><td>ChatGPT, GPTs, Claude Code</td></tr>
+    <tr class="fiche-row"><td class="fiche-label">URL</td><td><code>youtube.com/watch?v=JTagUbRgVQ0</code></td></tr>
+  </table>
+</div>
+<div class="fiche" style="margin-top:var(--gap-xl)">
+  <div class="fiche-header"><h2>Fiche d'action</h2></div>
+  <ul class="action-list">
+    <li><label><input type="checkbox" data-idx="0"> Action 1 : Identifie ton urgence réelle (financière, temporelle, ou créée artificiellement). Si tu n'en as pas, crée-la : fixe une deadline publique, engage de l'argent, ou annonce ton projet à quelqu'un. L'urgence crée la conscience.</label></li>
+    <li><label><input type="checkbox" data-idx="1"> Action 2 : Choisis UNE seule niche et refuse toutes les autres opportunités pendant 3 mois. Écris pourquoi tu as choisi celle-ci et pourquoi tu refuses les autres. C'est un exercice de clarté.</label></li>
+    <li><label><input type="checkbox" data-idx="2"> Action 3 : Identifie 3 experts reconnus dans ta niche et écoute EXACTEMENT ce qu'ils disent sans ego. Applique un conseil avant de le comprendre intellectuellement. Mesure les résultats.</label></li>
+    <li><label><input type="checkbox" data-idx="3"> Action 4 : Partage ton écran et ton travail réel (pas parfait) avec au moins 5 personnes cette semaine. Demande des retours spécifiques. C'est l'exposition publique qui accélère l'apprentissage.</label></li>
+    <li><label><input type="checkbox" data-idx="4"> Action 5 : Utilise l'IA pour une décision stratégique (quelle niche, comment positionner, analyse d'un client) plutôt que pour une tâche d'exécution. Fais un prompt qui commence par 'Je dois décider...' au lieu de 'Fais-moi...'</label></li>
+    <li><label><input type="checkbox" data-idx="5"> Action 6 : Identifie les 3 rôles que tu dois osciller entre (technicien, manager, entrepreneur) et définis quand tu passes de l'un à l'autre. Crée un calendrier : lundi-mercredi = technicien, jeudi = manager, vendredi = entrepreneur.</label></li>
+    <li><label><input type="checkbox" data-idx="6"> Action 7 : Supprime ton ego en écoutant un conseil que tu désapprouves intellectuellement. Applique-le pendant 1 semaine. Mesure les résultats. Si ça marche, tu as appris quelque chose ; si ça ne marche pas, tu as aussi appris quelque chose.</label></li>
+    <li><label><input type="checkbox" data-idx="7"> Action 8 : Participe à un live (webinaire, session en direct) plutôt que de regarder une rediffusion. Pose une question en direct. C'est le feedback en temps réel qui change la trajectoire.</label></li>
+  </ul>
+</div>
+<div class="fiche" style="margin-top:var(--gap-xl)">
+  <div class="fiche-header"><h2>Business &amp; Monétisation</h2></div>
+  <ul>
+    <li>Angle 1 : Positionner-toi comme spécialiste IA pour une niche spécifique (BTP, immobilier, santé, etc.) plutôt que comme 'consultant IA généraliste'. La spécialisation permet une perception de valeur plus élevée et une prospection plus facile.</li>
+    <li>Angle 2 : Vendre basé sur la perception de valeur (résultats pour le client) plutôt que sur le coût de création (heures passées). Un agent IA qui économise 100k€/an au client peut être vendu 50k€, pas 5k€.</li>
+    <li>Angle 3 : Créer des workflows IA reproductibles pour une niche (ex: prospection automatisée pour BTP) et les vendre à plusieurs clients. C'est du leverage : créer une fois, vendre N fois.</li>
+    <li>Angle 4 : Utiliser Claude Code ou GPTs pour créer des agents IA personnalisés pour chaque client, mais basés sur un template réutilisable. C'est la balance entre customisation et scalabilité.</li>
+    <li>Angle 5 : Monétiser via abonnement (client paie 2k€/mois pour un agent IA qui tourne) plutôt que via projet (client paie 10k€ une fois). L'abonnement crée une relation durable et une prévisibilité de revenu.</li>
+    <li>Angle 6 : Créer une communauté ou un groupe de clients dans ta niche et vendre des formations, des templates, ou des services premium. C'est du leverage communautaire.</li>
+  </ul>
+</div>
+<div class="fiche" style="margin-top:var(--gap-xl)">
+  <div class="fiche-header"><h2>Navigation rapide</h2></div>
+  <table class="fiche-table">
+    <tr class="fiche-row"><td class="fiche-label">comprendre pourquoi la technique seule ne suffit pas</td><td>section Philosophie IA et Concepts clés expliqués</td></tr>
+    <tr class="fiche-row"><td class="fiche-label">appliquer la stratégie de Hugo à ton contexte</td><td>section Ce que tu peux faire maintenant</td></tr>
+    <tr class="fiche-row"><td class="fiche-label">explorer les systèmes IA spécifiques et les résultats chiffrés</td><td>section Ouvertures</td></tr>
+    <tr class="fiche-row"><td class="fiche-label">comprendre le shift décisionnel et l&#x27;urgence comme catalyseur</td><td>section Mental models</td></tr>
+  </table>
+</div>
+<div class="fiche" style="margin-top:var(--gap-xl)">
+  <div class="fiche-header"><h2>Prérequis</h2></div>
+  <p style="font-size:.9rem;color:var(--text-secondary)">Tu dois avoir compris que : (1) L'IA est un outil, pas une solution magique. (2) La technique seule ne suffit pas pour réussir en entrepreneuriat. (3) Le mindset, la clarté, et la capacité décisionnelle sont plus importants que la maîtrise technique. (4) L'urgence et la conscience créent la clarté. (5) L'ego est une friction à l'apprentissage rapide. (6) La vraie valeur en IA réside dans l'application stratégique, pas dans la technique elle-même. Si tu penses que 'apprendre ChatGPT' va te rendre riche, tu n'es pas prêt pour cette vidéo. Si tu comprends que 'apprendre à penser stratégiquement a</p>
+</div>
+<div class="fiche" style="margin-top:var(--gap-xl)">
+  <div class="fiche-header"><h2>Thèmes abordés</h2></div>
+  <div class="themes-grid">
+    <span class="theme-pill">ChatGPT</span>
+    <span class="theme-pill">GPTs</span>
+    <span class="theme-pill">Claude Code</span>
+    <span class="theme-pill">Agents IA</span>
+    <span class="theme-pill">Workflows IA</span>
+    <span class="theme-pill">Prompting avancé</span>
+    <span class="theme-pill">Commoditisation technologique</span>
+    <span class="theme-pill">Mindset entrepreneurial</span>
+    <span class="theme-pill">Positioning et niche</span>
+  </div>
+  <div style="margin-top:var(--gap-lg)">
+    <div style="font-size:.8rem;color:var(--text-muted);margin-bottom:.5rem;text-transform:uppercase;letter-spacing:.05em">Catégorie principale</div>
+    <span class="badge cat-badge cat-3">Management &amp; Entrepreneuriat</span>
+  </div>
+</div>
+</div>
 
-      <div class="sidebar-card">
-        <h4>Infos</h4>
-        <div class="info-row"><span class="info-label">Date</span><span>17 avril 2026</span></div>
-        <div class="info-row"><span class="info-label">Durée</span><span>1h 32 min</span></div>
-        <div class="info-row"><span class="info-label">Niveau</span><span>Intermédiaire</span></div>
-        <div class="info-row"><span class="info-label">Catégorie</span><span>Management &amp; Entrepreneuriat</span></div>
-      </div>
+<div class="tab-panel" id="tab-passages">
+<p style="color:var(--text-muted);margin-bottom:var(--gap-lg)">Cliquez sur un timestamp pour ouvrir YouTube au bon moment.</p>
+<ul class="timestamps-list">
+  <li class="timestamp-item">
+    <a href="https://www.youtube.com/watch?v=JTagUbRgVQ0&amp;t=0" target="_blank" rel="noopener">
+      <span class="ts-badge">00:00</span>
+      <span class="ts-label">Acte 2 — État initial avant le labo (décembre 2024)</span>
+    </a>
+  </li>
+  <li class="timestamp-item">
+    <a href="https://www.youtube.com/watch?v=JTagUbRgVQ0&amp;t=1108" target="_blank" rel="noopener">
+      <span class="ts-badge">18:28</span>
+      <span class="ts-label">Acte 3 — Déclencheur et shift décisionnel</span>
+    </a>
+  </li>
+  <li class="timestamp-item">
+    <a href="https://www.youtube.com/watch?v=JTagUbRgVQ0&amp;t=2216" target="_blank" rel="noopener">
+      <span class="ts-badge">36:56</span>
+      <span class="ts-label">Acte 4 — Stratégie de prospection et focus</span>
+    </a>
+  </li>
+  <li class="timestamp-item">
+    <a href="https://www.youtube.com/watch?v=JTagUbRgVQ0&amp;t=3324" target="_blank" rel="noopener">
+      <span class="ts-badge">55:24</span>
+      <span class="ts-label">Acte 5 — Facteurs de succès et mindset</span>
+    </a>
+  </li>
+  <li class="timestamp-item">
+    <a href="https://www.youtube.com/watch?v=JTagUbRgVQ0&amp;t=4432" target="_blank" rel="noopener">
+      <span class="ts-badge">73:52</span>
+      <span class="ts-label">Acte 6 — Philosophie et principes universels</span>
+    </a>
+  </li>
+</ul>
+</div>
 
-      <div class="sidebar-card">
-        <h4>Vidéos liées</h4>
-        <a class="related-video-link" href="2026-04-25_70-equipes-ia.html">70% du temps de tes équipes part en fumée</a>
-        <a class="related-video-link" href="2026-04-16_claude-routines-écrase-les-tâches-répétitives-démo-live.html">Claude Routines — démo live</a>
-      </div>
-    </aside>
+  </main>
+
+<aside class="sidebar">
+  <div class="sidebar-card">
+    <div class="sidebar-card-title">Informations</div>
+    <div class="info-row"><span>Date</span><strong>2026-04-17</strong></div>
+    <div class="info-row"><span>Durée</span><strong>92:20</strong></div>
+    <div class="info-row"><span>Niveau</span><strong>Intermédiaire</strong></div>
+    <div class="info-row"><span>Catégorie</span><strong>Management</strong></div>
   </div>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>meydeey knowledge base — généré le 6 mai 2026</p>
-      <nav class="footer-nav">
-        <a href="../index.html">Accueil</a>
-        <a href="../categories.html">Catégories</a>
-        <a href="../videos.html">Vidéothèque</a>
-        <a href="../ouvertures.html">Ouvertures</a>
-        <a href="../demo.html">Démo</a>
-      </nav>
-    </div>
-  </footer>
+  <a href="https://www.youtube.com/watch?v=JTagUbRgVQ0" target="_blank" rel="noopener" class="btn-youtube"
+     style="display:block;text-align:center;margin-bottom:var(--gap-md)">▶ Voir sur YouTube</a>
 
-  <script src="../js/main.js"></script>
+  <div class="sidebar-card">
+  <div class="sidebar-card-title">Outils mentionnés</div>
+  <div style="line-height:2">  <span class="tool-pill" style="display:inline-block;margin:.2rem .2rem .2rem 0">ChatGPT</span>
+  <span class="tool-pill" style="display:inline-block;margin:.2rem .2rem .2rem 0">GPTs</span>
+  <span class="tool-pill" style="display:inline-block;margin:.2rem .2rem .2rem 0">Claude Code</span></div>
+</div>
+
+  <div class="sidebar-card">
+  <div class="sidebar-card-title">Connexions</div>
+  <div style="line-height:2">  <span class="theme-pill" style="display:inline-block;margin:.2rem .2rem .2rem 0">Agents IA</span>
+  <span class="theme-pill" style="display:inline-block;margin:.2rem .2rem .2rem 0">Workflows IA</span>
+  <span class="theme-pill" style="display:inline-block;margin:.2rem .2rem .2rem 0">Prompting avancé</span>
+  <span class="theme-pill" style="display:inline-block;margin:.2rem .2rem .2rem 0">Commoditisation technologique</span>
+  <span class="theme-pill" style="display:inline-block;margin:.2rem .2rem .2rem 0">Mindset entrepreneurial</span>
+  <span class="theme-pill" style="display:inline-block;margin:.2rem .2rem .2rem 0">Positioning et niche</span></div>
+</div>
+</aside>
+
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Base de connaissance · <a href="../index.html">Accueil</a> · <a href="../videos.html">Vidéothèque</a></p>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
 </body>
 </html>
