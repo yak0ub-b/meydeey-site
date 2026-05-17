@@ -1055,7 +1055,10 @@
       const levelBadge = v.level
         ? `<span class="badge level-${v.level}">${v.level.charAt(0).toUpperCase() + v.level.slice(1)}</span>`
         : '';
-      return `<a class="video-card ${v.hasFullContent ? 'has-content' : 'stub'}" href="videos/${v.slug}.html">
+      let visited = [];
+      try { visited = JSON.parse(localStorage.getItem('kb_visited') || '[]'); } catch (e) {}
+      const visitedClass = visited.includes(v.slug) ? ' visited' : '';
+      return `<a class="video-card ${v.hasFullContent ? 'has-content' : 'stub'}${visitedClass}" href="videos/${v.slug}.html">
         <div class="card-badges">
           <span class="badge cat-badge cat-${v.categoryNum}">${v.categoryLabel}</span>
           ${contentBadge}
@@ -1236,6 +1239,90 @@
   }
 
   // --------------------------------------------------------------------------
+  // MODULE 10 — Info Panel (index.html only)
+  // --------------------------------------------------------------------------
+  const InfoPanel = {
+    init() {
+      const btn = document.getElementById('info-panel-btn');
+      const panel = document.getElementById('info-panel');
+      const closeBtn = document.getElementById('info-panel-close');
+      const backdrop = document.getElementById('info-panel-backdrop');
+      if (!btn || !panel) return;
+
+      const scrollbarW = window.innerWidth - document.documentElement.clientWidth;
+
+      const open = () => {
+        panel.classList.add('open');
+        document.body.style.overflow = 'hidden';
+        if (scrollbarW > 0) document.body.style.paddingRight = scrollbarW + 'px';
+        closeBtn && closeBtn.focus();
+        localStorage.setItem('kb_info_seen', 'true');
+      };
+
+      const close = () => {
+        panel.classList.remove('open');
+        document.body.style.overflow = '';
+        document.body.style.paddingRight = '';
+        btn.focus();
+      };
+
+      btn.addEventListener('click', open);
+      closeBtn && closeBtn.addEventListener('click', close);
+      backdrop && backdrop.addEventListener('click', close);
+
+      document.addEventListener('keydown', e => {
+        if (e.key === 'Escape' && panel.classList.contains('open')) close();
+      });
+
+      if (!localStorage.getItem('kb_info_seen')) {
+        setTimeout(open, 1500);
+      }
+    }
+  };
+
+  // --------------------------------------------------------------------------
+  // MODULE 11 — Visited page tracking
+  // --------------------------------------------------------------------------
+  function markVisited() {
+    const slug = window.location.pathname.split('/').pop().replace('.html', '');
+    const skip = ['', 'index', 'videos', 'categories', 'ouvertures', 'demo'];
+    if (!slug || skip.includes(slug)) return;
+    try {
+      const visited = JSON.parse(localStorage.getItem('kb_visited') || '[]');
+      if (!visited.includes(slug)) {
+        visited.push(slug);
+        localStorage.setItem('kb_visited', JSON.stringify(visited));
+      }
+    } catch (e) {}
+  }
+
+  function applyVisitedToCards() {
+    try {
+      const visited = JSON.parse(localStorage.getItem('kb_visited') || '[]');
+      if (!visited.length) return;
+      document.querySelectorAll('a.video-card[href]').forEach(card => {
+        const href = card.getAttribute('href') || '';
+        const slug = href.split('/').pop().replace('.html', '');
+        if (visited.includes(slug)) card.classList.add('visited');
+      });
+    } catch (e) {}
+  }
+
+  // --------------------------------------------------------------------------
+  // MODULE 12 — Reading progress bar (video pages only)
+  // --------------------------------------------------------------------------
+  function initReadingProgress() {
+    if (!document.querySelector('.tab-nav-sticky')) return;
+    const bar = document.createElement('div');
+    bar.className = 'reading-progress';
+    document.body.prepend(bar);
+    window.addEventListener('scroll', () => {
+      const docH = document.documentElement.scrollHeight - window.innerHeight;
+      bar.style.width = docH > 0 ? (window.scrollY / docH * 100) + '%' : '0%';
+    }, { passive: true });
+  }
+
+  // --------------------------------------------------------------------------
   // Init
   // --------------------------------------------------------------------------
   document.addEventListener('DOMContentLoaded', () => {
@@ -1247,6 +1334,10 @@
     TranscriptSearch.init();
     ActionCheckboxes.init();
     ObsidianGraph.init();
+    InfoPanel.init();
+    markVisited();
+    applyVisitedToCards();
+    initReadingProgress();
   });
 
   // Expose data for video pages
